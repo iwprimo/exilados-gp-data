@@ -1,9 +1,3395 @@
 {
   "ok": true,
-  "generated_at": "2026-08-02T19:52:36.668640+00:00",
+  "generated_at": "2026-08-02T20:41:36.005056+00:00",
   "window_days": 7,
-  "race_count": 31,
+  "race_count": 33,
   "races": [
+    {
+      "Type": "RACE",
+      "Date": "2026-08-02T13:19:00-07:00",
+      "SessionFile": "2026_8_2_13_19_RACE",
+      "TrackName": "road_atlanta2018",
+      "TrackConfig": "grandprix",
+      "Result": [
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "DriverName": "IGAO",
+          "BestLap": 78685,
+          "TotalTime": 730938,
+          "NumLaps": 9,
+          "GridPosition": 24,
+          "CarModel": "porsche_992_gt3_r",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "DriverName": "Borborema",
+          "BestLap": 78744,
+          "TotalTime": 734133,
+          "NumLaps": 9,
+          "GridPosition": 2,
+          "CarModel": "porsche_992_gt3_r",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-9153e36d6baeaf02bc0f",
+          "DriverName": "breno ferreira",
+          "BestLap": 80249,
+          "TotalTime": 741492,
+          "NumLaps": 9,
+          "GridPosition": 5,
+          "CarModel": "corvette_z06_gt3r",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-daec84ea209127a8a053",
+          "DriverName": "William Trostt",
+          "BestLap": 79396,
+          "TotalTime": 744279,
+          "NumLaps": 9,
+          "GridPosition": 3,
+          "CarModel": "lmgt3_aston_gt3",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-72c5dd275ffb6b383bc7",
+          "DriverName": "Truizd",
+          "BestLap": 80127,
+          "TotalTime": 780179,
+          "NumLaps": 9,
+          "GridPosition": 4,
+          "CarModel": "porsche_992_gt3_r",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-fb2f7ad7b307737e5c56",
+          "DriverName": "Felix",
+          "BestLap": 81879,
+          "TotalTime": 671874,
+          "NumLaps": 8,
+          "GridPosition": 13,
+          "CarModel": "corvette_z06_gt3r",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-f2da1b9dff830f07a982",
+          "DriverName": "Leo Firme",
+          "BestLap": 83697,
+          "TotalTime": 749400,
+          "NumLaps": 8,
+          "GridPosition": 1,
+          "CarModel": "fsr_audi_lms_evo_ii_gt3",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-89def28036d6be47eb47",
+          "DriverName": "joao lucas",
+          "BestLap": 79047,
+          "TotalTime": 245926,
+          "NumLaps": 3,
+          "GridPosition": 6,
+          "CarModel": "lamborghini_huracan_gt3_evo2",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-b213215dfd6e1a8b0fa1",
+          "DriverName": "Supreme",
+          "BestLap": 89925,
+          "TotalTime": 307783,
+          "NumLaps": 3,
+          "GridPosition": 7,
+          "CarModel": "lamborghini_huracan_gt3_evo2",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-537042fe404a735c853d",
+          "DriverName": "D3CK0L",
+          "BestLap": 97187,
+          "TotalTime": 225659,
+          "NumLaps": 2,
+          "GridPosition": 8,
+          "CarModel": "porsche_992_gt3_r",
+          "Disqualified": false,
+          "HasPenalty": true
+        }
+      ],
+      "Laps": [
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "DriverName": "Borborema",
+          "LapTime": 85340,
+          "Cuts": 0,
+          "Sectors": [
+            36506,
+            30402,
+            18432
+          ],
+          "Timestamp": 1785701219,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-daec84ea209127a8a053",
+          "DriverName": "William Trostt",
+          "LapTime": 86106,
+          "Cuts": 0,
+          "Sectors": [
+            36795,
+            30473,
+            18838
+          ],
+          "Timestamp": 1785701220,
+          "CarModel": "lmgt3_aston_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-89def28036d6be47eb47",
+          "DriverName": "joao lucas",
+          "LapTime": 86473,
+          "Cuts": 0,
+          "Sectors": [
+            37464,
+            30523,
+            18486
+          ],
+          "Timestamp": 1785701221,
+          "CarModel": "lamborghini_huracan_gt3_evo2",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-72c5dd275ffb6b383bc7",
+          "DriverName": "Truizd",
+          "LapTime": 88007,
+          "Cuts": 0,
+          "Sectors": [
+            38949,
+            30582,
+            18476
+          ],
+          "Timestamp": 1785701222,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "DriverName": "IGAO",
+          "LapTime": 89046,
+          "Cuts": 0,
+          "Sectors": [
+            39347,
+            30893,
+            18806
+          ],
+          "Timestamp": 1785701223,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-9153e36d6baeaf02bc0f",
+          "DriverName": "breno ferreira",
+          "LapTime": 90115,
+          "Cuts": 0,
+          "Sectors": [
+            38779,
+            32494,
+            18842
+          ],
+          "Timestamp": 1785701224,
+          "CarModel": "corvette_z06_gt3r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-fb2f7ad7b307737e5c56",
+          "DriverName": "Felix",
+          "LapTime": 91123,
+          "Cuts": 0,
+          "Sectors": [
+            40826,
+            31312,
+            18985
+          ],
+          "Timestamp": 1785701225,
+          "CarModel": "corvette_z06_gt3r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-537042fe404a735c853d",
+          "DriverName": "D3CK0L",
+          "LapTime": 97187,
+          "Cuts": 0,
+          "Sectors": [
+            40775,
+            38629,
+            17783
+          ],
+          "Timestamp": 1785701231,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-f2da1b9dff830f07a982",
+          "DriverName": "Leo Firme",
+          "LapTime": 118988,
+          "Cuts": 0,
+          "Sectors": [
+            63792,
+            34622,
+            20574
+          ],
+          "Timestamp": 1785701253,
+          "CarModel": "fsr_audi_lms_evo_ii_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-b213215dfd6e1a8b0fa1",
+          "DriverName": "Supreme",
+          "LapTime": 122083,
+          "Cuts": 0,
+          "Sectors": [
+            47666,
+            48772,
+            25645
+          ],
+          "Timestamp": 1785701256,
+          "CarModel": "lamborghini_huracan_gt3_evo2",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "DriverName": "Borborema",
+          "LapTime": 78978,
+          "Cuts": 0,
+          "Sectors": [
+            30422,
+            30335,
+            18221
+          ],
+          "Timestamp": 1785701298,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-89def28036d6be47eb47",
+          "DriverName": "joao lucas",
+          "LapTime": 80466,
+          "Cuts": 0,
+          "Sectors": [
+            30470,
+            31469,
+            18527
+          ],
+          "Timestamp": 1785701301,
+          "CarModel": "lamborghini_huracan_gt3_evo2",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "DriverName": "IGAO",
+          "LapTime": 79236,
+          "Cuts": 0,
+          "Sectors": [
+            30617,
+            30160,
+            18459
+          ],
+          "Timestamp": 1785701302,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-daec84ea209127a8a053",
+          "DriverName": "William Trostt",
+          "LapTime": 82979,
+          "Cuts": 0,
+          "Sectors": [
+            30568,
+            33934,
+            18477
+          ],
+          "Timestamp": 1785701303,
+          "CarModel": "lmgt3_aston_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-9153e36d6baeaf02bc0f",
+          "DriverName": "breno ferreira",
+          "LapTime": 81302,
+          "Cuts": 0,
+          "Sectors": [
+            31713,
+            30653,
+            18936
+          ],
+          "Timestamp": 1785701305,
+          "CarModel": "corvette_z06_gt3r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-fb2f7ad7b307737e5c56",
+          "DriverName": "Felix",
+          "LapTime": 82292,
+          "Cuts": 0,
+          "Sectors": [
+            31631,
+            31347,
+            19314
+          ],
+          "Timestamp": 1785701307,
+          "CarModel": "corvette_z06_gt3r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-72c5dd275ffb6b383bc7",
+          "DriverName": "Truizd",
+          "LapTime": 101725,
+          "Cuts": 0,
+          "Sectors": [
+            45439,
+            31010,
+            25276
+          ],
+          "Timestamp": 1785701324,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-f2da1b9dff830f07a982",
+          "DriverName": "Leo Firme",
+          "LapTime": 94795,
+          "Cuts": 0,
+          "Sectors": [
+            40763,
+            33084,
+            20948
+          ],
+          "Timestamp": 1785701348,
+          "CarModel": "fsr_audi_lms_evo_ii_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-b213215dfd6e1a8b0fa1",
+          "DriverName": "Supreme",
+          "LapTime": 95851,
+          "Cuts": 0,
+          "Sectors": [
+            35213,
+            32999,
+            27639
+          ],
+          "Timestamp": 1785701352,
+          "CarModel": "lamborghini_huracan_gt3_evo2",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-537042fe404a735c853d",
+          "DriverName": "D3CK0L",
+          "LapTime": 128540,
+          "Cuts": 0,
+          "Sectors": [
+            47675,
+            46305,
+            34560
+          ],
+          "Timestamp": 1785701360,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "DriverName": "Borborema",
+          "LapTime": 79731,
+          "Cuts": 0,
+          "Sectors": [
+            30811,
+            30636,
+            18284
+          ],
+          "Timestamp": 1785701378,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-89def28036d6be47eb47",
+          "DriverName": "joao lucas",
+          "LapTime": 79047,
+          "Cuts": 0,
+          "Sectors": [
+            30330,
+            30410,
+            18307
+          ],
+          "Timestamp": 1785701380,
+          "CarModel": "lamborghini_huracan_gt3_evo2",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "DriverName": "IGAO",
+          "LapTime": 79523,
+          "Cuts": 0,
+          "Sectors": [
+            30892,
+            30361,
+            18270
+          ],
+          "Timestamp": 1785701382,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-daec84ea209127a8a053",
+          "DriverName": "William Trostt",
+          "LapTime": 79499,
+          "Cuts": 0,
+          "Sectors": [
+            30571,
+            30438,
+            18490
+          ],
+          "Timestamp": 1785701383,
+          "CarModel": "lmgt3_aston_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-9153e36d6baeaf02bc0f",
+          "DriverName": "breno ferreira",
+          "LapTime": 82312,
+          "Cuts": 0,
+          "Sectors": [
+            32574,
+            31076,
+            18662
+          ],
+          "Timestamp": 1785701388,
+          "CarModel": "corvette_z06_gt3r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-fb2f7ad7b307737e5c56",
+          "DriverName": "Felix",
+          "LapTime": 83275,
+          "Cuts": 0,
+          "Sectors": [
+            32573,
+            31906,
+            18796
+          ],
+          "Timestamp": 1785701391,
+          "CarModel": "corvette_z06_gt3r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-72c5dd275ffb6b383bc7",
+          "DriverName": "Truizd",
+          "LapTime": 86725,
+          "Cuts": 0,
+          "Sectors": [
+            30988,
+            30542,
+            25195
+          ],
+          "Timestamp": 1785701410,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-f2da1b9dff830f07a982",
+          "DriverName": "Leo Firme",
+          "LapTime": 86099,
+          "Cuts": 0,
+          "Sectors": [
+            32721,
+            31976,
+            21402
+          ],
+          "Timestamp": 1785701434,
+          "CarModel": "fsr_audi_lms_evo_ii_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-b213215dfd6e1a8b0fa1",
+          "DriverName": "Supreme",
+          "LapTime": 89925,
+          "Cuts": 0,
+          "Sectors": [
+            34089,
+            35563,
+            20273
+          ],
+          "Timestamp": 1785701442,
+          "CarModel": "lamborghini_huracan_gt3_evo2",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "DriverName": "IGAO",
+          "LapTime": 78685,
+          "Cuts": 0,
+          "Sectors": [
+            30180,
+            30032,
+            18473
+          ],
+          "Timestamp": 1785701461,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-daec84ea209127a8a053",
+          "DriverName": "William Trostt",
+          "LapTime": 79549,
+          "Cuts": 0,
+          "Sectors": [
+            30269,
+            30556,
+            18724
+          ],
+          "Timestamp": 1785701462,
+          "CarModel": "lmgt3_aston_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-9153e36d6baeaf02bc0f",
+          "DriverName": "breno ferreira",
+          "LapTime": 81320,
+          "Cuts": 0,
+          "Sectors": [
+            31613,
+            30915,
+            18792
+          ],
+          "Timestamp": 1785701469,
+          "CarModel": "corvette_z06_gt3r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "DriverName": "Borborema",
+          "LapTime": 93879,
+          "Cuts": 0,
+          "Sectors": [
+            43056,
+            32111,
+            18712
+          ],
+          "Timestamp": 1785701472,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-fb2f7ad7b307737e5c56",
+          "DriverName": "Felix",
+          "LapTime": 82508,
+          "Cuts": 0,
+          "Sectors": [
+            31830,
+            31549,
+            19129
+          ],
+          "Timestamp": 1785701473,
+          "CarModel": "corvette_z06_gt3r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-72c5dd275ffb6b383bc7",
+          "DriverName": "Truizd",
+          "LapTime": 82068,
+          "Cuts": 0,
+          "Sectors": [
+            31627,
+            30915,
+            19526
+          ],
+          "Timestamp": 1785701493,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-f2da1b9dff830f07a982",
+          "DriverName": "Leo Firme",
+          "LapTime": 92756,
+          "Cuts": 0,
+          "Sectors": [
+            40061,
+            33008,
+            19687
+          ],
+          "Timestamp": 1785701527,
+          "CarModel": "fsr_audi_lms_evo_ii_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "DriverName": "IGAO",
+          "LapTime": 79403,
+          "Cuts": 0,
+          "Sectors": [
+            30506,
+            30429,
+            18468
+          ],
+          "Timestamp": 1785701540,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-daec84ea209127a8a053",
+          "DriverName": "William Trostt",
+          "LapTime": 79566,
+          "Cuts": 0,
+          "Sectors": [
+            30390,
+            30852,
+            18324
+          ],
+          "Timestamp": 1785701542,
+          "CarModel": "lmgt3_aston_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-9153e36d6baeaf02bc0f",
+          "DriverName": "breno ferreira",
+          "LapTime": 80593,
+          "Cuts": 0,
+          "Sectors": [
+            31584,
+            30384,
+            18625
+          ],
+          "Timestamp": 1785701550,
+          "CarModel": "corvette_z06_gt3r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "DriverName": "Borborema",
+          "LapTime": 79334,
+          "Cuts": 0,
+          "Sectors": [
+            30694,
+            30245,
+            18395
+          ],
+          "Timestamp": 1785701551,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-fb2f7ad7b307737e5c56",
+          "DriverName": "Felix",
+          "LapTime": 82600,
+          "Cuts": 0,
+          "Sectors": [
+            32294,
+            31325,
+            18981
+          ],
+          "Timestamp": 1785701556,
+          "CarModel": "corvette_z06_gt3r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-72c5dd275ffb6b383bc7",
+          "DriverName": "Truizd",
+          "LapTime": 80127,
+          "Cuts": 0,
+          "Sectors": [
+            31131,
+            30545,
+            18451
+          ],
+          "Timestamp": 1785701573,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-f2da1b9dff830f07a982",
+          "DriverName": "Leo Firme",
+          "LapTime": 88788,
+          "Cuts": 0,
+          "Sectors": [
+            32893,
+            35698,
+            20197
+          ],
+          "Timestamp": 1785701615,
+          "CarModel": "fsr_audi_lms_evo_ii_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "DriverName": "IGAO",
+          "LapTime": 86187,
+          "Cuts": 0,
+          "Sectors": [
+            36974,
+            30794,
+            18419
+          ],
+          "Timestamp": 1785701626,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-9153e36d6baeaf02bc0f",
+          "DriverName": "breno ferreira",
+          "LapTime": 80249,
+          "Cuts": 0,
+          "Sectors": [
+            30565,
+            30577,
+            19107
+          ],
+          "Timestamp": 1785701630,
+          "CarModel": "corvette_z06_gt3r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "DriverName": "Borborema",
+          "LapTime": 78941,
+          "Cuts": 0,
+          "Sectors": [
+            30486,
+            30267,
+            18188
+          ],
+          "Timestamp": 1785701630,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-fb2f7ad7b307737e5c56",
+          "DriverName": "Felix",
+          "LapTime": 81879,
+          "Cuts": 0,
+          "Sectors": [
+            31281,
+            31752,
+            18846
+          ],
+          "Timestamp": 1785701638,
+          "CarModel": "corvette_z06_gt3r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-daec84ea209127a8a053",
+          "DriverName": "William Trostt",
+          "LapTime": 97883,
+          "Cuts": 0,
+          "Sectors": [
+            30500,
+            30987,
+            36396
+          ],
+          "Timestamp": 1785701640,
+          "CarModel": "lmgt3_aston_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-72c5dd275ffb6b383bc7",
+          "DriverName": "Truizd",
+          "LapTime": 80765,
+          "Cuts": 0,
+          "Sectors": [
+            31108,
+            30983,
+            18674
+          ],
+          "Timestamp": 1785701653,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-f2da1b9dff830f07a982",
+          "DriverName": "Leo Firme",
+          "LapTime": 85738,
+          "Cuts": 0,
+          "Sectors": [
+            33515,
+            32342,
+            19881
+          ],
+          "Timestamp": 1785701701,
+          "CarModel": "fsr_audi_lms_evo_ii_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "DriverName": "IGAO",
+          "LapTime": 79551,
+          "Cuts": 0,
+          "Sectors": [
+            30820,
+            30226,
+            18505
+          ],
+          "Timestamp": 1785701706,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "DriverName": "Borborema",
+          "LapTime": 80319,
+          "Cuts": 0,
+          "Sectors": [
+            31453,
+            30447,
+            18419
+          ],
+          "Timestamp": 1785701711,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-9153e36d6baeaf02bc0f",
+          "DriverName": "breno ferreira",
+          "LapTime": 81776,
+          "Cuts": 0,
+          "Sectors": [
+            31930,
+            31144,
+            18702
+          ],
+          "Timestamp": 1785701712,
+          "CarModel": "corvette_z06_gt3r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-daec84ea209127a8a053",
+          "DriverName": "William Trostt",
+          "LapTime": 79490,
+          "Cuts": 0,
+          "Sectors": [
+            29707,
+            31387,
+            18396
+          ],
+          "Timestamp": 1785701719,
+          "CarModel": "lmgt3_aston_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-fb2f7ad7b307737e5c56",
+          "DriverName": "Felix",
+          "LapTime": 86026,
+          "Cuts": 0,
+          "Sectors": [
+            31540,
+            35613,
+            18873
+          ],
+          "Timestamp": 1785701724,
+          "CarModel": "corvette_z06_gt3r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-72c5dd275ffb6b383bc7",
+          "DriverName": "Truizd",
+          "LapTime": 80948,
+          "Cuts": 0,
+          "Sectors": [
+            31197,
+            30446,
+            19305
+          ],
+          "Timestamp": 1785701734,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "DriverName": "IGAO",
+          "LapTime": 80207,
+          "Cuts": 0,
+          "Sectors": [
+            30977,
+            30699,
+            18531
+          ],
+          "Timestamp": 1785701786,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "DriverName": "Borborema",
+          "LapTime": 78956,
+          "Cuts": 0,
+          "Sectors": [
+            30568,
+            30213,
+            18175
+          ],
+          "Timestamp": 1785701789,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-9153e36d6baeaf02bc0f",
+          "DriverName": "breno ferreira",
+          "LapTime": 81894,
+          "Cuts": 0,
+          "Sectors": [
+            31538,
+            31739,
+            18617
+          ],
+          "Timestamp": 1785701794,
+          "CarModel": "corvette_z06_gt3r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-daec84ea209127a8a053",
+          "DriverName": "William Trostt",
+          "LapTime": 79886,
+          "Cuts": 0,
+          "Sectors": [
+            30351,
+            31104,
+            18431
+          ],
+          "Timestamp": 1785701799,
+          "CarModel": "lmgt3_aston_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-f2da1b9dff830f07a982",
+          "DriverName": "Leo Firme",
+          "LapTime": 98632,
+          "Cuts": 0,
+          "Sectors": [
+            45932,
+            33517,
+            19183
+          ],
+          "Timestamp": 1785701800,
+          "CarModel": "fsr_audi_lms_evo_ii_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-fb2f7ad7b307737e5c56",
+          "DriverName": "Felix",
+          "LapTime": 82247,
+          "Cuts": 0,
+          "Sectors": [
+            32113,
+            31221,
+            18913
+          ],
+          "Timestamp": 1785701806,
+          "CarModel": "corvette_z06_gt3r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-72c5dd275ffb6b383bc7",
+          "DriverName": "Truizd",
+          "LapTime": 87347,
+          "Cuts": 0,
+          "Sectors": [
+            38000,
+            31114,
+            18233
+          ],
+          "Timestamp": 1785701822,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "DriverName": "IGAO",
+          "LapTime": 79167,
+          "Cuts": 0,
+          "Sectors": [
+            30368,
+            30366,
+            18433
+          ],
+          "Timestamp": 1785701865,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "DriverName": "Borborema",
+          "LapTime": 78744,
+          "Cuts": 0,
+          "Sectors": [
+            30292,
+            30213,
+            18239
+          ],
+          "Timestamp": 1785701868,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-9153e36d6baeaf02bc0f",
+          "DriverName": "breno ferreira",
+          "LapTime": 81985,
+          "Cuts": 0,
+          "Sectors": [
+            31814,
+            31366,
+            18805
+          ],
+          "Timestamp": 1785701876,
+          "CarModel": "corvette_z06_gt3r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-daec84ea209127a8a053",
+          "DriverName": "William Trostt",
+          "LapTime": 79396,
+          "Cuts": 0,
+          "Sectors": [
+            30368,
+            30601,
+            18427
+          ],
+          "Timestamp": 1785701878,
+          "CarModel": "lmgt3_aston_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-f2da1b9dff830f07a982",
+          "DriverName": "Leo Firme",
+          "LapTime": 83697,
+          "Cuts": 0,
+          "Sectors": [
+            32801,
+            31478,
+            19418
+          ],
+          "Timestamp": 1785701884,
+          "CarModel": "fsr_audi_lms_evo_ii_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-72c5dd275ffb6b383bc7",
+          "DriverName": "Truizd",
+          "LapTime": 92545,
+          "Cuts": 0,
+          "Sectors": [
+            30963,
+            30428,
+            31154
+          ],
+          "Timestamp": 1785701914,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        }
+      ],
+      "Events": [
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785701105,
+          "AfterSessionEnd": false,
+          "CarId": 22,
+          "OtherCarId": 9,
+          "Driver": {
+            "Id": "driver-537042fe404a735c853d",
+            "Name": "D3CK0L"
+          },
+          "OtherDriver": {
+            "Id": "driver-fb2f7ad7b307737e5c56",
+            "Name": "Felix"
+          },
+          "WorldPosition": {
+            "X": -362.12537,
+            "Y": 2.3221407,
+            "Z": 1574.7772
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785701105,
+          "AfterSessionEnd": false,
+          "CarId": 8,
+          "OtherCarId": 15,
+          "Driver": {
+            "Id": "driver-9153e36d6baeaf02bc0f",
+            "Name": "breno ferreira"
+          },
+          "OtherDriver": {
+            "Id": "driver-89def28036d6be47eb47",
+            "Name": "joao lucas"
+          },
+          "WorldPosition": {
+            "X": -366.7231,
+            "Y": 0.47534126,
+            "Z": 1363.8854
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1785701105,
+          "AfterSessionEnd": false,
+          "CarId": 8,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-9153e36d6baeaf02bc0f",
+            "Name": "breno ferreira"
+          },
+          "OtherDriver": {
+            "Id": "driver-535abc0ce51c7ff9b18b",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -368.433,
+            "Y": 0.13376029,
+            "Z": 1369.5662
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785701149,
+          "AfterSessionEnd": false,
+          "CarId": 3,
+          "OtherCarId": 5,
+          "Driver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "Name": "Borborema"
+          },
+          "OtherDriver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "Name": "William Trostt"
+          },
+          "WorldPosition": {
+            "X": 358.59198,
+            "Y": -12.3977585,
+            "Z": 267.42706
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785701149,
+          "AfterSessionEnd": false,
+          "CarId": 5,
+          "OtherCarId": 3,
+          "Driver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "Name": "William Trostt"
+          },
+          "OtherDriver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "Name": "Borborema"
+          },
+          "WorldPosition": {
+            "X": 356.17825,
+            "Y": -12.324594,
+            "Z": 260.86877
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785701149,
+          "AfterSessionEnd": false,
+          "CarId": 22,
+          "OtherCarId": 6,
+          "Driver": {
+            "Id": "driver-537042fe404a735c853d",
+            "Name": "D3CK0L"
+          },
+          "OtherDriver": {
+            "Id": "driver-72c5dd275ffb6b383bc7",
+            "Name": "Truizd"
+          },
+          "WorldPosition": {
+            "X": 324.1793,
+            "Y": -9.7434435,
+            "Z": 218.79756
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785701151,
+          "AfterSessionEnd": false,
+          "CarId": 6,
+          "OtherCarId": 22,
+          "Driver": {
+            "Id": "driver-72c5dd275ffb6b383bc7",
+            "Name": "Truizd"
+          },
+          "OtherDriver": {
+            "Id": "driver-537042fe404a735c853d",
+            "Name": "D3CK0L"
+          },
+          "WorldPosition": {
+            "X": 313.64758,
+            "Y": -9.324402,
+            "Z": 208.57487
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785701157,
+          "AfterSessionEnd": false,
+          "CarId": 9,
+          "OtherCarId": 18,
+          "Driver": {
+            "Id": "driver-fb2f7ad7b307737e5c56",
+            "Name": "Felix"
+          },
+          "OtherDriver": {
+            "Id": "driver-b213215dfd6e1a8b0fa1",
+            "Name": "Supreme"
+          },
+          "WorldPosition": {
+            "X": 200.00476,
+            "Y": 6.970357,
+            "Z": 564.1832
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1785701159,
+          "AfterSessionEnd": false,
+          "CarId": 0,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-f2da1b9dff830f07a982",
+            "Name": "Leo Firme"
+          },
+          "OtherDriver": {
+            "Id": "driver-535abc0ce51c7ff9b18b",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 188.65558,
+            "Y": 6.2315683,
+            "Z": 637.651
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785701160,
+          "AfterSessionEnd": false,
+          "CarId": 18,
+          "OtherCarId": 9,
+          "Driver": {
+            "Id": "driver-b213215dfd6e1a8b0fa1",
+            "Name": "Supreme"
+          },
+          "OtherDriver": {
+            "Id": "driver-fb2f7ad7b307737e5c56",
+            "Name": "Felix"
+          },
+          "WorldPosition": {
+            "X": 199.90262,
+            "Y": 6.9623933,
+            "Z": 564.5324
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785701162,
+          "AfterSessionEnd": false,
+          "CarId": 9,
+          "OtherCarId": 18,
+          "Driver": {
+            "Id": "driver-fb2f7ad7b307737e5c56",
+            "Name": "Felix"
+          },
+          "OtherDriver": {
+            "Id": "driver-b213215dfd6e1a8b0fa1",
+            "Name": "Supreme"
+          },
+          "WorldPosition": {
+            "X": 198.0793,
+            "Y": 6.872747,
+            "Z": 568.871
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1785701194,
+          "AfterSessionEnd": false,
+          "CarId": 0,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-f2da1b9dff830f07a982",
+            "Name": "Leo Firme"
+          },
+          "OtherDriver": {
+            "Id": "driver-535abc0ce51c7ff9b18b",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -194.15927,
+            "Y": 6.4619803,
+            "Z": 1133.3771
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1785701224,
+          "AfterSessionEnd": false,
+          "CarId": 22,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-537042fe404a735c853d",
+            "Name": "D3CK0L"
+          },
+          "OtherDriver": {
+            "Id": "driver-535abc0ce51c7ff9b18b",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -339.19867,
+            "Y": 21.370312,
+            "Z": 71.54273
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1785701254,
+          "AfterSessionEnd": false,
+          "CarId": 22,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-537042fe404a735c853d",
+            "Name": "D3CK0L"
+          },
+          "OtherDriver": {
+            "Id": "driver-535abc0ce51c7ff9b18b",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 38.091385,
+            "Y": -4.1429257,
+            "Z": 750.27734
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785701264,
+          "AfterSessionEnd": false,
+          "CarId": 15,
+          "OtherCarId": 5,
+          "Driver": {
+            "Id": "driver-89def28036d6be47eb47",
+            "Name": "joao lucas"
+          },
+          "OtherDriver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "Name": "William Trostt"
+          },
+          "WorldPosition": {
+            "X": -371.06094,
+            "Y": 2.488016,
+            "Z": 1571.8242
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785701264,
+          "AfterSessionEnd": false,
+          "CarId": 5,
+          "OtherCarId": 15,
+          "Driver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "Name": "William Trostt"
+          },
+          "OtherDriver": {
+            "Id": "driver-89def28036d6be47eb47",
+            "Name": "joao lucas"
+          },
+          "WorldPosition": {
+            "X": -373.59546,
+            "Y": 2.2928636,
+            "Z": 1569.4619
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1785701269,
+          "AfterSessionEnd": false,
+          "CarId": 5,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "Name": "William Trostt"
+          },
+          "OtherDriver": {
+            "Id": "driver-535abc0ce51c7ff9b18b",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -390.5296,
+            "Y": 1.4072789,
+            "Z": 1476.6588
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1785701289,
+          "AfterSessionEnd": false,
+          "CarId": 0,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-f2da1b9dff830f07a982",
+            "Name": "Leo Firme"
+          },
+          "OtherDriver": {
+            "Id": "driver-535abc0ce51c7ff9b18b",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -187.67612,
+            "Y": 3.5254836,
+            "Z": 1071.352
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785701335,
+          "AfterSessionEnd": false,
+          "CarId": 22,
+          "OtherCarId": 18,
+          "Driver": {
+            "Id": "driver-537042fe404a735c853d",
+            "Name": "D3CK0L"
+          },
+          "OtherDriver": {
+            "Id": "driver-b213215dfd6e1a8b0fa1",
+            "Name": "Supreme"
+          },
+          "WorldPosition": {
+            "X": -368.22552,
+            "Y": 13.630489,
+            "Z": 166.22464
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785701335,
+          "AfterSessionEnd": false,
+          "CarId": 18,
+          "OtherCarId": 22,
+          "Driver": {
+            "Id": "driver-b213215dfd6e1a8b0fa1",
+            "Name": "Supreme"
+          },
+          "OtherDriver": {
+            "Id": "driver-537042fe404a735c853d",
+            "Name": "D3CK0L"
+          },
+          "WorldPosition": {
+            "X": -368.0552,
+            "Y": 13.449154,
+            "Z": 166.0982
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1785701385,
+          "AfterSessionEnd": false,
+          "CarId": 22,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-537042fe404a735c853d",
+            "Name": "D3CK0L"
+          },
+          "OtherDriver": {
+            "Id": "driver-535abc0ce51c7ff9b18b",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 45.10203,
+            "Y": -1.8586028,
+            "Z": 723.56134
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1785701404,
+          "AfterSessionEnd": false,
+          "CarId": 3,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "Name": "Borborema"
+          },
+          "OtherDriver": {
+            "Id": "driver-535abc0ce51c7ff9b18b",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -118.04102,
+            "Y": -10.834153,
+            "Z": 959.9957
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785701409,
+          "AfterSessionEnd": false,
+          "CarId": 3,
+          "OtherCarId": 15,
+          "Driver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "Name": "Borborema"
+          },
+          "OtherDriver": {
+            "Id": "driver-89def28036d6be47eb47",
+            "Name": "joao lucas"
+          },
+          "WorldPosition": {
+            "X": -198.48955,
+            "Y": -2.4465516,
+            "Z": 1001.4177
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785701409,
+          "AfterSessionEnd": false,
+          "CarId": 15,
+          "OtherCarId": 3,
+          "Driver": {
+            "Id": "driver-89def28036d6be47eb47",
+            "Name": "joao lucas"
+          },
+          "OtherDriver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "Name": "Borborema"
+          },
+          "WorldPosition": {
+            "X": -199.55241,
+            "Y": -2.5594685,
+            "Z": 1001.53015
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785701414,
+          "AfterSessionEnd": false,
+          "CarId": 3,
+          "OtherCarId": 15,
+          "Driver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "Name": "Borborema"
+          },
+          "OtherDriver": {
+            "Id": "driver-89def28036d6be47eb47",
+            "Name": "joao lucas"
+          },
+          "WorldPosition": {
+            "X": -216.73341,
+            "Y": 1.1632645,
+            "Z": 1029.0647
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785701414,
+          "AfterSessionEnd": false,
+          "CarId": 15,
+          "OtherCarId": 3,
+          "Driver": {
+            "Id": "driver-89def28036d6be47eb47",
+            "Name": "joao lucas"
+          },
+          "OtherDriver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "Name": "Borborema"
+          },
+          "WorldPosition": {
+            "X": -216.78578,
+            "Y": 1.0856128,
+            "Z": 1028.8787
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785701414,
+          "AfterSessionEnd": false,
+          "CarId": 15,
+          "OtherCarId": 5,
+          "Driver": {
+            "Id": "driver-89def28036d6be47eb47",
+            "Name": "joao lucas"
+          },
+          "OtherDriver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "Name": "William Trostt"
+          },
+          "WorldPosition": {
+            "X": -213.08304,
+            "Y": 0.5617744,
+            "Z": 1033.6427
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785701414,
+          "AfterSessionEnd": false,
+          "CarId": 5,
+          "OtherCarId": 15,
+          "Driver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "Name": "William Trostt"
+          },
+          "OtherDriver": {
+            "Id": "driver-89def28036d6be47eb47",
+            "Name": "joao lucas"
+          },
+          "WorldPosition": {
+            "X": -213.26225,
+            "Y": 0.6125729,
+            "Z": 1034.675
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785701419,
+          "AfterSessionEnd": false,
+          "CarId": 15,
+          "OtherCarId": 8,
+          "Driver": {
+            "Id": "driver-89def28036d6be47eb47",
+            "Name": "joao lucas"
+          },
+          "OtherDriver": {
+            "Id": "driver-9153e36d6baeaf02bc0f",
+            "Name": "breno ferreira"
+          },
+          "WorldPosition": {
+            "X": -209.54012,
+            "Y": -0.19873649,
+            "Z": 1030.0665
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1785701419,
+          "AfterSessionEnd": false,
+          "CarId": 0,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-f2da1b9dff830f07a982",
+            "Name": "Leo Firme"
+          },
+          "OtherDriver": {
+            "Id": "driver-535abc0ce51c7ff9b18b",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -345.96194,
+            "Y": 8.675058,
+            "Z": 272.43176
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785701420,
+          "AfterSessionEnd": false,
+          "CarId": 8,
+          "OtherCarId": 15,
+          "Driver": {
+            "Id": "driver-9153e36d6baeaf02bc0f",
+            "Name": "breno ferreira"
+          },
+          "OtherDriver": {
+            "Id": "driver-89def28036d6be47eb47",
+            "Name": "joao lucas"
+          },
+          "WorldPosition": {
+            "X": -209.40791,
+            "Y": -0.13800402,
+            "Z": 1030.3206
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1785701469,
+          "AfterSessionEnd": false,
+          "CarId": 0,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-f2da1b9dff830f07a982",
+            "Name": "Leo Firme"
+          },
+          "OtherDriver": {
+            "Id": "driver-535abc0ce51c7ff9b18b",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -187.82466,
+            "Y": 3.704456,
+            "Z": 1074.0342
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1785701492,
+          "AfterSessionEnd": false,
+          "CarId": 22,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-537042fe404a735c853d",
+            "Name": "D3CK0L"
+          },
+          "OtherDriver": {
+            "Id": "driver-535abc0ce51c7ff9b18b",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -110.54209,
+            "Y": -12.84426,
+            "Z": 915.6952
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1785701497,
+          "AfterSessionEnd": false,
+          "CarId": 22,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-537042fe404a735c853d",
+            "Name": "D3CK0L"
+          },
+          "OtherDriver": {
+            "Id": "driver-535abc0ce51c7ff9b18b",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -96.029236,
+            "Y": -12.36917,
+            "Z": 938.41095
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1785701568,
+          "AfterSessionEnd": false,
+          "CarId": 23,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "Name": "IGAO"
+          },
+          "OtherDriver": {
+            "Id": "driver-535abc0ce51c7ff9b18b",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -52.651268,
+            "Y": -17.553844,
+            "Z": 899.0202
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1785701574,
+          "AfterSessionEnd": false,
+          "CarId": 0,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-f2da1b9dff830f07a982",
+            "Name": "Leo Firme"
+          },
+          "OtherDriver": {
+            "Id": "driver-535abc0ce51c7ff9b18b",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -355.54877,
+            "Y": 2.3372772,
+            "Z": 1563.4677
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1785701624,
+          "AfterSessionEnd": false,
+          "CarId": 5,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "Name": "William Trostt"
+          },
+          "OtherDriver": {
+            "Id": "driver-535abc0ce51c7ff9b18b",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -123.572136,
+            "Y": 4.264919,
+            "Z": -144.73952
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785701672,
+          "AfterSessionEnd": false,
+          "CarId": 9,
+          "OtherCarId": 5,
+          "Driver": {
+            "Id": "driver-fb2f7ad7b307737e5c56",
+            "Name": "Felix"
+          },
+          "OtherDriver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "Name": "William Trostt"
+          },
+          "WorldPosition": {
+            "X": -214.0877,
+            "Y": 1.6134176,
+            "Z": 1286.7476
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785701674,
+          "AfterSessionEnd": false,
+          "CarId": 5,
+          "OtherCarId": 9,
+          "Driver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "Name": "William Trostt"
+          },
+          "OtherDriver": {
+            "Id": "driver-fb2f7ad7b307737e5c56",
+            "Name": "Felix"
+          },
+          "WorldPosition": {
+            "X": -208.28133,
+            "Y": -5.3086014,
+            "Z": 1433.4009
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785701677,
+          "AfterSessionEnd": false,
+          "CarId": 9,
+          "OtherCarId": 5,
+          "Driver": {
+            "Id": "driver-fb2f7ad7b307737e5c56",
+            "Name": "Felix"
+          },
+          "OtherDriver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "Name": "William Trostt"
+          },
+          "WorldPosition": {
+            "X": -207.67545,
+            "Y": -5.5841293,
+            "Z": 1438.8506
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785701679,
+          "AfterSessionEnd": false,
+          "CarId": 5,
+          "OtherCarId": 9,
+          "Driver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "Name": "William Trostt"
+          },
+          "OtherDriver": {
+            "Id": "driver-fb2f7ad7b307737e5c56",
+            "Name": "Felix"
+          },
+          "WorldPosition": {
+            "X": -202.85606,
+            "Y": -3.4083297,
+            "Z": 1499.7161
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1785701761,
+          "AfterSessionEnd": false,
+          "CarId": 6,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-72c5dd275ffb6b383bc7",
+            "Name": "Truizd"
+          },
+          "OtherDriver": {
+            "Id": "driver-535abc0ce51c7ff9b18b",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -121.44593,
+            "Y": -10.248712,
+            "Z": 962.89325
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785701765,
+          "AfterSessionEnd": false,
+          "CarId": 0,
+          "OtherCarId": 5,
+          "Driver": {
+            "Id": "driver-f2da1b9dff830f07a982",
+            "Name": "Leo Firme"
+          },
+          "OtherDriver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "Name": "William Trostt"
+          },
+          "WorldPosition": {
+            "X": -383.72385,
+            "Y": 2.0516508,
+            "Z": 1515.3876
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785701765,
+          "AfterSessionEnd": false,
+          "CarId": 5,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "Name": "William Trostt"
+          },
+          "OtherDriver": {
+            "Id": "driver-f2da1b9dff830f07a982",
+            "Name": "Leo Firme"
+          },
+          "WorldPosition": {
+            "X": -384.4356,
+            "Y": 2.1955345,
+            "Z": 1520.7413
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1785701766,
+          "AfterSessionEnd": false,
+          "CarId": 6,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-72c5dd275ffb6b383bc7",
+            "Name": "Truizd"
+          },
+          "OtherDriver": {
+            "Id": "driver-535abc0ce51c7ff9b18b",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -139.4525,
+            "Y": -8.728133,
+            "Z": 977.12573
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785701780,
+          "AfterSessionEnd": false,
+          "CarId": 0,
+          "OtherCarId": 5,
+          "Driver": {
+            "Id": "driver-f2da1b9dff830f07a982",
+            "Name": "Leo Firme"
+          },
+          "OtherDriver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "Name": "William Trostt"
+          },
+          "WorldPosition": {
+            "X": -401.88367,
+            "Y": 16.86029,
+            "Z": 831.4569
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785701780,
+          "AfterSessionEnd": false,
+          "CarId": 5,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "Name": "William Trostt"
+          },
+          "OtherDriver": {
+            "Id": "driver-f2da1b9dff830f07a982",
+            "Name": "Leo Firme"
+          },
+          "WorldPosition": {
+            "X": -402.0995,
+            "Y": 16.869234,
+            "Z": 830.19165
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1785701885,
+          "AfterSessionEnd": true,
+          "CarId": 8,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-9153e36d6baeaf02bc0f",
+            "Name": "breno ferreira"
+          },
+          "OtherDriver": {
+            "Id": "driver-535abc0ce51c7ff9b18b",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 399.68576,
+            "Y": -11.827007,
+            "Z": 258.1114
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1785701910,
+          "AfterSessionEnd": true,
+          "CarId": 5,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "Name": "William Trostt"
+          },
+          "OtherDriver": {
+            "Id": "driver-535abc0ce51c7ff9b18b",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -220.51976,
+            "Y": 5.8444633,
+            "Z": 1117.6936
+          }
+        }
+      ]
+    },
+    {
+      "Type": "RACE",
+      "Date": "2026-08-02T12:54:00-07:00",
+      "SessionFile": "2026_8_2_12_54_RACE",
+      "TrackName": "lilski_road_america",
+      "TrackConfig": null,
+      "Result": [
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "DriverName": "Borborema",
+          "BestLap": 123637,
+          "TotalTime": 751370,
+          "NumLaps": 6,
+          "GridPosition": 2,
+          "CarModel": "porsche_992_gt3_r",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "DriverName": "IGAO",
+          "BestLap": 123373,
+          "TotalTime": 753572,
+          "NumLaps": 6,
+          "GridPosition": 6,
+          "CarModel": "porsche_992_gt3_r",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-89def28036d6be47eb47",
+          "DriverName": "joao lucas",
+          "BestLap": 123659,
+          "TotalTime": 756676,
+          "NumLaps": 6,
+          "GridPosition": 8,
+          "CarModel": "porsche_992_gt3_r",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-9153e36d6baeaf02bc0f",
+          "DriverName": "breno ferreira",
+          "BestLap": 123901,
+          "TotalTime": 758037,
+          "NumLaps": 6,
+          "GridPosition": 1,
+          "CarModel": "corvette_z06_gt3r",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-daec84ea209127a8a053",
+          "DriverName": "William Trostt",
+          "BestLap": 123960,
+          "TotalTime": 760852,
+          "NumLaps": 6,
+          "GridPosition": 5,
+          "CarModel": "lmgt3_aston_gt3",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-fb2f7ad7b307737e5c56",
+          "DriverName": "Felix",
+          "BestLap": 128608,
+          "TotalTime": 272303,
+          "NumLaps": 2,
+          "GridPosition": 16,
+          "CarModel": "corvette_z06_gt3r",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-b213215dfd6e1a8b0fa1",
+          "DriverName": "Supreme",
+          "BestLap": 151712,
+          "TotalTime": 151639,
+          "NumLaps": 1,
+          "GridPosition": 4,
+          "CarModel": "lmgt3_bmw_m4_gt3",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-b213215dfd6e1a8b0fa1",
+          "DriverName": "Supreme",
+          "BestLap": 304890,
+          "TotalTime": 617230,
+          "NumLaps": 1,
+          "GridPosition": 9,
+          "CarModel": "porsche_992_gt3_r",
+          "Disqualified": false,
+          "HasPenalty": false
+        }
+      ],
+      "Laps": [
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "DriverName": "Borborema",
+          "LapTime": 131645,
+          "Cuts": 0,
+          "Sectors": [
+            52729,
+            43609,
+            35307
+          ],
+          "Timestamp": 1785699789,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-9153e36d6baeaf02bc0f",
+          "DriverName": "breno ferreira",
+          "LapTime": 133334,
+          "Cuts": 0,
+          "Sectors": [
+            53347,
+            43835,
+            36152
+          ],
+          "Timestamp": 1785699790,
+          "CarModel": "corvette_z06_gt3r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "DriverName": "IGAO",
+          "LapTime": 133776,
+          "Cuts": 0,
+          "Sectors": [
+            54571,
+            43564,
+            35641
+          ],
+          "Timestamp": 1785699791,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-89def28036d6be47eb47",
+          "DriverName": "joao lucas",
+          "LapTime": 135632,
+          "Cuts": 0,
+          "Sectors": [
+            57261,
+            43357,
+            35014
+          ],
+          "Timestamp": 1785699793,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-daec84ea209127a8a053",
+          "DriverName": "William Trostt",
+          "LapTime": 137386,
+          "Cuts": 0,
+          "Sectors": [
+            55680,
+            45962,
+            35744
+          ],
+          "Timestamp": 1785699794,
+          "CarModel": "lmgt3_aston_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-fb2f7ad7b307737e5c56",
+          "DriverName": "Felix",
+          "LapTime": 143528,
+          "Cuts": 0,
+          "Sectors": [
+            60373,
+            46355,
+            36800
+          ],
+          "Timestamp": 1785699801,
+          "CarModel": "corvette_z06_gt3r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-b213215dfd6e1a8b0fa1",
+          "DriverName": "Supreme",
+          "LapTime": 151712,
+          "Cuts": 0,
+          "Sectors": [
+            55480,
+            52538,
+            43694
+          ],
+          "Timestamp": 1785699809,
+          "CarModel": "lmgt3_bmw_m4_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "DriverName": "Borborema",
+          "LapTime": 124266,
+          "Cuts": 0,
+          "Sectors": [
+            45569,
+            43480,
+            35217
+          ],
+          "Timestamp": 1785699913,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "DriverName": "IGAO",
+          "LapTime": 124290,
+          "Cuts": 0,
+          "Sectors": [
+            45422,
+            43664,
+            35204
+          ],
+          "Timestamp": 1785699915,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-9153e36d6baeaf02bc0f",
+          "DriverName": "breno ferreira",
+          "LapTime": 124751,
+          "Cuts": 0,
+          "Sectors": [
+            45578,
+            43466,
+            35707
+          ],
+          "Timestamp": 1785699915,
+          "CarModel": "corvette_z06_gt3r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-89def28036d6be47eb47",
+          "DriverName": "joao lucas",
+          "LapTime": 124162,
+          "Cuts": 0,
+          "Sectors": [
+            45201,
+            43550,
+            35411
+          ],
+          "Timestamp": 1785699917,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-daec84ea209127a8a053",
+          "DriverName": "William Trostt",
+          "LapTime": 124043,
+          "Cuts": 0,
+          "Sectors": [
+            45221,
+            43371,
+            35451
+          ],
+          "Timestamp": 1785699919,
+          "CarModel": "lmgt3_aston_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-fb2f7ad7b307737e5c56",
+          "DriverName": "Felix",
+          "LapTime": 128608,
+          "Cuts": 0,
+          "Sectors": [
+            46929,
+            44973,
+            36706
+          ],
+          "Timestamp": 1785699929,
+          "CarModel": "corvette_z06_gt3r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "DriverName": "Borborema",
+          "LapTime": 123912,
+          "Cuts": 0,
+          "Sectors": [
+            45206,
+            43353,
+            35353
+          ],
+          "Timestamp": 1785700037,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "DriverName": "IGAO",
+          "LapTime": 124182,
+          "Cuts": 0,
+          "Sectors": [
+            45301,
+            43376,
+            35505
+          ],
+          "Timestamp": 1785700039,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-9153e36d6baeaf02bc0f",
+          "DriverName": "breno ferreira",
+          "LapTime": 125399,
+          "Cuts": 0,
+          "Sectors": [
+            46074,
+            43595,
+            35730
+          ],
+          "Timestamp": 1785700041,
+          "CarModel": "corvette_z06_gt3r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-89def28036d6be47eb47",
+          "DriverName": "joao lucas",
+          "LapTime": 124246,
+          "Cuts": 0,
+          "Sectors": [
+            45379,
+            43155,
+            35712
+          ],
+          "Timestamp": 1785700041,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-daec84ea209127a8a053",
+          "DriverName": "William Trostt",
+          "LapTime": 123960,
+          "Cuts": 0,
+          "Sectors": [
+            45210,
+            43425,
+            35325
+          ],
+          "Timestamp": 1785700042,
+          "CarModel": "lmgt3_aston_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "DriverName": "Borborema",
+          "LapTime": 123894,
+          "Cuts": 0,
+          "Sectors": [
+            45206,
+            43295,
+            35393
+          ],
+          "Timestamp": 1785700161,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "DriverName": "IGAO",
+          "LapTime": 124218,
+          "Cuts": 0,
+          "Sectors": [
+            45333,
+            43406,
+            35479
+          ],
+          "Timestamp": 1785700164,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-9153e36d6baeaf02bc0f",
+          "DriverName": "breno ferreira",
+          "LapTime": 123901,
+          "Cuts": 0,
+          "Sectors": [
+            45272,
+            43462,
+            35167
+          ],
+          "Timestamp": 1785700164,
+          "CarModel": "corvette_z06_gt3r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-89def28036d6be47eb47",
+          "DriverName": "joao lucas",
+          "LapTime": 124062,
+          "Cuts": 0,
+          "Sectors": [
+            45510,
+            43290,
+            35262
+          ],
+          "Timestamp": 1785700165,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-daec84ea209127a8a053",
+          "DriverName": "William Trostt",
+          "LapTime": 124605,
+          "Cuts": 0,
+          "Sectors": [
+            45423,
+            43672,
+            35510
+          ],
+          "Timestamp": 1785700167,
+          "CarModel": "lmgt3_aston_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-b213215dfd6e1a8b0fa1",
+          "DriverName": "Supreme",
+          "LapTime": 304890,
+          "Cuts": 0,
+          "Sectors": [
+            223224,
+            45008,
+            36658
+          ],
+          "Timestamp": 1785700274,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "DriverName": "Borborema",
+          "LapTime": 123637,
+          "Cuts": 0,
+          "Sectors": [
+            45072,
+            43335,
+            35230
+          ],
+          "Timestamp": 1785700284,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "DriverName": "IGAO",
+          "LapTime": 123799,
+          "Cuts": 0,
+          "Sectors": [
+            45351,
+            43227,
+            35221
+          ],
+          "Timestamp": 1785700287,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-9153e36d6baeaf02bc0f",
+          "DriverName": "breno ferreira",
+          "LapTime": 123944,
+          "Cuts": 0,
+          "Sectors": [
+            45370,
+            43308,
+            35266
+          ],
+          "Timestamp": 1785700288,
+          "CarModel": "corvette_z06_gt3r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-89def28036d6be47eb47",
+          "DriverName": "joao lucas",
+          "LapTime": 123659,
+          "Cuts": 0,
+          "Sectors": [
+            45283,
+            43286,
+            35090
+          ],
+          "Timestamp": 1785700289,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-daec84ea209127a8a053",
+          "DriverName": "William Trostt",
+          "LapTime": 125873,
+          "Cuts": 0,
+          "Sectors": [
+            45535,
+            44132,
+            36206
+          ],
+          "Timestamp": 1785700293,
+          "CarModel": "lmgt3_aston_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "DriverName": "Borborema",
+          "LapTime": 124102,
+          "Cuts": 0,
+          "Sectors": [
+            45420,
+            43456,
+            35226
+          ],
+          "Timestamp": 1785700409,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "DriverName": "IGAO",
+          "LapTime": 123373,
+          "Cuts": 0,
+          "Sectors": [
+            45024,
+            43397,
+            34952
+          ],
+          "Timestamp": 1785700411,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-89def28036d6be47eb47",
+          "DriverName": "joao lucas",
+          "LapTime": 124994,
+          "Cuts": 0,
+          "Sectors": [
+            45128,
+            44470,
+            35396
+          ],
+          "Timestamp": 1785700414,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-9153e36d6baeaf02bc0f",
+          "DriverName": "breno ferreira",
+          "LapTime": 126759,
+          "Cuts": 0,
+          "Sectors": [
+            45750,
+            45206,
+            35803
+          ],
+          "Timestamp": 1785700415,
+          "CarModel": "corvette_z06_gt3r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-daec84ea209127a8a053",
+          "DriverName": "William Trostt",
+          "LapTime": 125049,
+          "Cuts": 0,
+          "Sectors": [
+            46253,
+            43587,
+            35209
+          ],
+          "Timestamp": 1785700418,
+          "CarModel": "lmgt3_aston_gt3",
+          "Tyre": "S8M"
+        }
+      ],
+      "Events": [
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785699674,
+          "AfterSessionEnd": false,
+          "CarId": 22,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-89def28036d6be47eb47",
+            "Name": "joao lucas"
+          },
+          "OtherDriver": {
+            "Id": "driver-9153e36d6baeaf02bc0f",
+            "Name": "breno ferreira"
+          },
+          "WorldPosition": {
+            "X": 370.75793,
+            "Y": -26.990398,
+            "Z": 688.4619
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785699674,
+          "AfterSessionEnd": false,
+          "CarId": 22,
+          "OtherCarId": 12,
+          "Driver": {
+            "Id": "driver-89def28036d6be47eb47",
+            "Name": "joao lucas"
+          },
+          "OtherDriver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "Name": "William Trostt"
+          },
+          "WorldPosition": {
+            "X": 355.36813,
+            "Y": -27.136671,
+            "Z": 723.45166
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785699674,
+          "AfterSessionEnd": false,
+          "CarId": 0,
+          "OtherCarId": 22,
+          "Driver": {
+            "Id": "driver-9153e36d6baeaf02bc0f",
+            "Name": "breno ferreira"
+          },
+          "OtherDriver": {
+            "Id": "driver-89def28036d6be47eb47",
+            "Name": "joao lucas"
+          },
+          "WorldPosition": {
+            "X": 371.1398,
+            "Y": -26.974932,
+            "Z": 687.27454
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785699677,
+          "AfterSessionEnd": false,
+          "CarId": 12,
+          "OtherCarId": 22,
+          "Driver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "Name": "William Trostt"
+          },
+          "OtherDriver": {
+            "Id": "driver-89def28036d6be47eb47",
+            "Name": "joao lucas"
+          },
+          "WorldPosition": {
+            "X": 355.4903,
+            "Y": -27.032305,
+            "Z": 725.41345
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1785699682,
+          "AfterSessionEnd": false,
+          "CarId": 12,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "Name": "William Trostt"
+          },
+          "OtherDriver": {
+            "Id": "driver-535abc0ce51c7ff9b18b",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 163.65356,
+            "Y": -28.360289,
+            "Z": 760.38226
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785699693,
+          "AfterSessionEnd": false,
+          "CarId": 18,
+          "OtherCarId": 8,
+          "Driver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "Name": "IGAO"
+          },
+          "OtherDriver": {
+            "Id": "driver-b213215dfd6e1a8b0fa1",
+            "Name": "Supreme"
+          },
+          "WorldPosition": {
+            "X": -67.264084,
+            "Y": -38.79669,
+            "Z": 429.8313
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785699697,
+          "AfterSessionEnd": false,
+          "CarId": 8,
+          "OtherCarId": 18,
+          "Driver": {
+            "Id": "driver-b213215dfd6e1a8b0fa1",
+            "Name": "Supreme"
+          },
+          "OtherDriver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "Name": "IGAO"
+          },
+          "WorldPosition": {
+            "X": -67.645035,
+            "Y": -38.260612,
+            "Z": 431.15164
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785699698,
+          "AfterSessionEnd": false,
+          "CarId": 18,
+          "OtherCarId": 8,
+          "Driver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "Name": "IGAO"
+          },
+          "OtherDriver": {
+            "Id": "driver-b213215dfd6e1a8b0fa1",
+            "Name": "Supreme"
+          },
+          "WorldPosition": {
+            "X": -67.05675,
+            "Y": -38.208603,
+            "Z": 428.75677
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785699707,
+          "AfterSessionEnd": false,
+          "CarId": 8,
+          "OtherCarId": 18,
+          "Driver": {
+            "Id": "driver-b213215dfd6e1a8b0fa1",
+            "Name": "Supreme"
+          },
+          "OtherDriver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "Name": "IGAO"
+          },
+          "WorldPosition": {
+            "X": 161.16821,
+            "Y": -52.085716,
+            "Z": -361.84372
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785699708,
+          "AfterSessionEnd": false,
+          "CarId": 18,
+          "OtherCarId": 8,
+          "Driver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "Name": "IGAO"
+          },
+          "OtherDriver": {
+            "Id": "driver-b213215dfd6e1a8b0fa1",
+            "Name": "Supreme"
+          },
+          "WorldPosition": {
+            "X": 161.1591,
+            "Y": -51.964794,
+            "Z": -361.52927
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785699712,
+          "AfterSessionEnd": false,
+          "CarId": 8,
+          "OtherCarId": 18,
+          "Driver": {
+            "Id": "driver-b213215dfd6e1a8b0fa1",
+            "Name": "Supreme"
+          },
+          "OtherDriver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "Name": "IGAO"
+          },
+          "WorldPosition": {
+            "X": 159.69014,
+            "Y": -52.098892,
+            "Z": -364.45242
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785699717,
+          "AfterSessionEnd": false,
+          "CarId": 12,
+          "OtherCarId": 8,
+          "Driver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "Name": "William Trostt"
+          },
+          "OtherDriver": {
+            "Id": "driver-b213215dfd6e1a8b0fa1",
+            "Name": "Supreme"
+          },
+          "WorldPosition": {
+            "X": -103.44186,
+            "Y": -39.038322,
+            "Z": -368.878
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785699717,
+          "AfterSessionEnd": false,
+          "CarId": 8,
+          "OtherCarId": 12,
+          "Driver": {
+            "Id": "driver-b213215dfd6e1a8b0fa1",
+            "Name": "Supreme"
+          },
+          "OtherDriver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "Name": "William Trostt"
+          },
+          "WorldPosition": {
+            "X": -97.81126,
+            "Y": -39.031994,
+            "Z": -370.3189
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1785699722,
+          "AfterSessionEnd": false,
+          "CarId": 8,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-b213215dfd6e1a8b0fa1",
+            "Name": "Supreme"
+          },
+          "OtherDriver": {
+            "Id": "driver-535abc0ce51c7ff9b18b",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -148.24515,
+            "Y": -38.44636,
+            "Z": -376.59253
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1785699797,
+          "AfterSessionEnd": false,
+          "CarId": 8,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-b213215dfd6e1a8b0fa1",
+            "Name": "Supreme"
+          },
+          "OtherDriver": {
+            "Id": "driver-535abc0ce51c7ff9b18b",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 368.9008,
+            "Y": -52.273697,
+            "Z": -483.47363
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1785699902,
+          "AfterSessionEnd": false,
+          "CarId": 8,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-b213215dfd6e1a8b0fa1",
+            "Name": "Supreme"
+          },
+          "OtherDriver": {
+            "Id": "driver-535abc0ce51c7ff9b18b",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -636.23663,
+            "Y": -75.066086,
+            "Z": 156.2062
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1785699917,
+          "AfterSessionEnd": false,
+          "CarId": 8,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-b213215dfd6e1a8b0fa1",
+            "Name": "Supreme"
+          },
+          "OtherDriver": {
+            "Id": "driver-535abc0ce51c7ff9b18b",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -649.50604,
+            "Y": -78.11215,
+            "Z": -47.213905
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1785699937,
+          "AfterSessionEnd": false,
+          "CarId": 8,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-b213215dfd6e1a8b0fa1",
+            "Name": "Supreme"
+          },
+          "OtherDriver": {
+            "Id": "driver-535abc0ce51c7ff9b18b",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -156.90782,
+            "Y": -72.01971,
+            "Z": -706.1934
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1785700080,
+          "AfterSessionEnd": false,
+          "CarId": 23,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-b213215dfd6e1a8b0fa1",
+            "Name": "Supreme"
+          },
+          "OtherDriver": {
+            "Id": "driver-535abc0ce51c7ff9b18b",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -245.4143,
+            "Y": -48.66188,
+            "Z": -53.032024
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1785700085,
+          "AfterSessionEnd": false,
+          "CarId": 23,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-b213215dfd6e1a8b0fa1",
+            "Name": "Supreme"
+          },
+          "OtherDriver": {
+            "Id": "driver-535abc0ce51c7ff9b18b",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -279.8313,
+            "Y": -50.58525,
+            "Z": 16.093437
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1785700257,
+          "AfterSessionEnd": false,
+          "CarId": 12,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "Name": "William Trostt"
+          },
+          "OtherDriver": {
+            "Id": "driver-535abc0ce51c7ff9b18b",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -620.33746,
+            "Y": -77.01915,
+            "Z": -120.07858
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1785700290,
+          "AfterSessionEnd": false,
+          "CarId": 23,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-b213215dfd6e1a8b0fa1",
+            "Name": "Supreme"
+          },
+          "OtherDriver": {
+            "Id": "driver-535abc0ce51c7ff9b18b",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 238.47166,
+            "Y": -26.920017,
+            "Z": 742.2928
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785700339,
+          "AfterSessionEnd": false,
+          "CarId": 22,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-89def28036d6be47eb47",
+            "Name": "joao lucas"
+          },
+          "OtherDriver": {
+            "Id": "driver-9153e36d6baeaf02bc0f",
+            "Name": "breno ferreira"
+          },
+          "WorldPosition": {
+            "X": -87.81183,
+            "Y": -38.996033,
+            "Z": -373.47507
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785700340,
+          "AfterSessionEnd": false,
+          "CarId": 0,
+          "OtherCarId": 22,
+          "Driver": {
+            "Id": "driver-9153e36d6baeaf02bc0f",
+            "Name": "breno ferreira"
+          },
+          "OtherDriver": {
+            "Id": "driver-89def28036d6be47eb47",
+            "Name": "joao lucas"
+          },
+          "WorldPosition": {
+            "X": -93.09555,
+            "Y": -38.967686,
+            "Z": -372.36633
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785700420,
+          "AfterSessionEnd": true,
+          "CarId": 2,
+          "OtherCarId": 18,
+          "Driver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "Name": "Borborema"
+          },
+          "OtherDriver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "Name": "IGAO"
+          },
+          "WorldPosition": {
+            "X": 372.2634,
+            "Y": -25.364965,
+            "Z": 577.2128
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1785700420,
+          "AfterSessionEnd": true,
+          "CarId": 2,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "Name": "Borborema"
+          },
+          "OtherDriver": {
+            "Id": "driver-535abc0ce51c7ff9b18b",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 356.84628,
+            "Y": -26.70798,
+            "Z": 663.8165
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785700423,
+          "AfterSessionEnd": true,
+          "CarId": 18,
+          "OtherCarId": 2,
+          "Driver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "Name": "IGAO"
+          },
+          "OtherDriver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "Name": "Borborema"
+          },
+          "WorldPosition": {
+            "X": 371.86642,
+            "Y": -25.442331,
+            "Z": 577.1876
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1785700423,
+          "AfterSessionEnd": true,
+          "CarId": 18,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "Name": "IGAO"
+          },
+          "OtherDriver": {
+            "Id": "driver-535abc0ce51c7ff9b18b",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 357.81564,
+            "Y": -26.060658,
+            "Z": 634.0682
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785700424,
+          "AfterSessionEnd": true,
+          "CarId": 22,
+          "OtherCarId": 2,
+          "Driver": {
+            "Id": "driver-89def28036d6be47eb47",
+            "Name": "joao lucas"
+          },
+          "OtherDriver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "Name": "Borborema"
+          },
+          "WorldPosition": {
+            "X": 355.6747,
+            "Y": -27.1987,
+            "Z": 714.60565
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1785700425,
+          "AfterSessionEnd": true,
+          "CarId": 2,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "Name": "Borborema"
+          },
+          "OtherDriver": {
+            "Id": "driver-535abc0ce51c7ff9b18b",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 356.84253,
+            "Y": -26.704718,
+            "Z": 664.21277
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785700425,
+          "AfterSessionEnd": true,
+          "CarId": 2,
+          "OtherCarId": 22,
+          "Driver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "Name": "Borborema"
+          },
+          "OtherDriver": {
+            "Id": "driver-89def28036d6be47eb47",
+            "Name": "joao lucas"
+          },
+          "WorldPosition": {
+            "X": 355.3862,
+            "Y": -27.16251,
+            "Z": 714.4308
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785700429,
+          "AfterSessionEnd": true,
+          "CarId": 22,
+          "OtherCarId": 2,
+          "Driver": {
+            "Id": "driver-89def28036d6be47eb47",
+            "Name": "joao lucas"
+          },
+          "OtherDriver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "Name": "Borborema"
+          },
+          "WorldPosition": {
+            "X": 356.64804,
+            "Y": -27.204433,
+            "Z": 717.1908
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785700430,
+          "AfterSessionEnd": true,
+          "CarId": 0,
+          "OtherCarId": 22,
+          "Driver": {
+            "Id": "driver-9153e36d6baeaf02bc0f",
+            "Name": "breno ferreira"
+          },
+          "OtherDriver": {
+            "Id": "driver-89def28036d6be47eb47",
+            "Name": "joao lucas"
+          },
+          "WorldPosition": {
+            "X": 359.76373,
+            "Y": -26.939043,
+            "Z": 752.0162
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785700430,
+          "AfterSessionEnd": true,
+          "CarId": 2,
+          "OtherCarId": 12,
+          "Driver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "Name": "Borborema"
+          },
+          "OtherDriver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "Name": "William Trostt"
+          },
+          "WorldPosition": {
+            "X": 352.72903,
+            "Y": -27.040699,
+            "Z": 727.81226
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785700432,
+          "AfterSessionEnd": true,
+          "CarId": 12,
+          "OtherCarId": 2,
+          "Driver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "Name": "William Trostt"
+          },
+          "OtherDriver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "Name": "Borborema"
+          },
+          "WorldPosition": {
+            "X": 352.55515,
+            "Y": -26.68784,
+            "Z": 727.7722
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1785700432,
+          "AfterSessionEnd": true,
+          "CarId": 12,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "Name": "William Trostt"
+          },
+          "OtherDriver": {
+            "Id": "driver-535abc0ce51c7ff9b18b",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 349.1842,
+            "Y": -26.529152,
+            "Z": 791.6663
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1785700435,
+          "AfterSessionEnd": true,
+          "CarId": 0,
+          "OtherCarId": 22,
+          "Driver": {
+            "Id": "driver-9153e36d6baeaf02bc0f",
+            "Name": "breno ferreira"
+          },
+          "OtherDriver": {
+            "Id": "driver-89def28036d6be47eb47",
+            "Name": "joao lucas"
+          },
+          "WorldPosition": {
+            "X": 358.68076,
+            "Y": -26.567465,
+            "Z": 757.42285
+          }
+        }
+      ]
+    },
     {
       "Type": "RACE",
       "Date": "2026-08-02T12:13:00-07:00",
