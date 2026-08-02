@@ -1,0 +1,695 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Ranking automático dos últimos 7 dias do servidor Exilados GP, com resultados e Safety Rating." />
+  <title>Exilados GP — Ranking dos últimos 7 dias</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #080a0d;
+      --bg-elevated: #101319;
+      --panel: rgba(18, 22, 28, .86);
+      --panel-strong: #151920;
+      --line: rgba(255,255,255,.095);
+      --line-strong: rgba(255,255,255,.18);
+      --text: #f4f6f8;
+      --muted: #8d96a3;
+      --yellow: #f5c518;
+      --yellow-soft: #ffe169;
+      --orange: #ff8a00;
+      --green: #75e6a4;
+      --red: #ff5964;
+      --blue: #5fb7ff;
+      --radius-lg: 24px;
+      --radius-md: 16px;
+      --shadow: 0 26px 80px rgba(0,0,0,.42);
+      --font-body: "Segoe UI Variable Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      --font-display: "Segoe UI Variable Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: var(--font-body);
+      color: var(--text);
+      background:
+        radial-gradient(circle at 82% -5%, rgba(245,197,24,.14), transparent 28rem),
+        radial-gradient(circle at -5% 28%, rgba(95,183,255,.06), transparent 26rem),
+        linear-gradient(180deg, #090b0e 0%, #07090c 58%, #0a0c10 100%);
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: .17;
+      background-image:
+        linear-gradient(rgba(255,255,255,.028) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.028) 1px, transparent 1px);
+      background-size: 46px 46px;
+      mask-image: linear-gradient(to bottom, black, transparent 75%);
+    }
+
+    button, select { font: inherit; }
+    button { color: inherit; }
+
+    .shell { width: min(1480px, calc(100% - 40px)); margin: 0 auto; }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(18px);
+      background: rgba(8,10,13,.72);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .topbar-inner {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand { display: flex; align-items: center; gap: 14px; }
+    .brand-mark {
+      width: 44px;
+      aspect-ratio: 1;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(245,197,24,.55);
+      background: linear-gradient(145deg, rgba(245,197,24,.19), rgba(245,197,24,.03));
+      clip-path: polygon(14% 0, 100% 0, 86% 100%, 0 100%);
+      box-shadow: inset 0 0 22px rgba(245,197,24,.08);
+    }
+    .brand-mark svg { width: 25px; }
+    .brand-copy strong {
+      display: block;
+      font: 900 25px/1 var(--font-display);
+      letter-spacing: .08em;
+    }
+    .brand-copy span { color: var(--muted); font-size: 11px; letter-spacing: .16em; text-transform: uppercase; }
+
+    .status-cluster { display: flex; align-items: center; gap: 10px; }
+    .status-pill, .data-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: #c7cdd5;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .04em;
+      background: rgba(255,255,255,.025);
+    }
+    .status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--green); box-shadow: 0 0 14px var(--green); }
+    .status-pill.offline .status-dot { background: var(--orange); box-shadow: 0 0 14px var(--orange); }
+
+    .hero { padding: 72px 0 36px; position: relative; }
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -18vw;
+      top: 60px;
+      width: 62vw;
+      height: 220px;
+      transform: skewX(-22deg);
+      background: linear-gradient(90deg, transparent, rgba(245,197,24,.035), transparent);
+      border-top: 1px solid rgba(245,197,24,.12);
+      border-bottom: 1px solid rgba(245,197,24,.05);
+      pointer-events: none;
+    }
+
+    .eyebrow { display: flex; align-items: center; gap: 12px; color: var(--yellow); font: 800 13px/1 var(--font-display); letter-spacing: .17em; text-transform: uppercase; }
+    .eyebrow::before { content: ""; width: 40px; height: 2px; background: var(--yellow); }
+    h1 {
+      max-width: 940px;
+      margin: 18px 0 16px;
+      font: 850 clamp(54px, 7.4vw, 108px)/.96 var(--font-display);
+      text-transform: uppercase;
+      letter-spacing: -.012em;
+    }
+    h1 em { color: transparent; -webkit-text-stroke: 1px rgba(255,255,255,.65); font-style: italic; }
+    .hero-copy { max-width: 700px; color: #aeb6c1; font-size: clamp(15px, 1.3vw, 18px); line-height: 1.75; }
+
+    .hero-meta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    .meta-card { min-width: 176px; padding: 16px 18px; border: 1px solid var(--line); border-radius: 14px; background: rgba(255,255,255,.024); }
+    .meta-card span { color: var(--muted); display: block; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; }
+    .meta-card strong { display: block; margin-top: 6px; font: 800 23px/1 var(--font-display); }
+
+    .notice {
+      display: none;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      margin: 18px 0 28px;
+      padding: 16px 18px;
+      border: 1px solid rgba(255,138,0,.35);
+      border-radius: 14px;
+      background: rgba(255,138,0,.075);
+      color: #ffd7aa;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+    .notice.visible { display: flex; }
+
+    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin: 42px 0 20px; }
+    .section-kicker { color: var(--yellow); font: 800 12px/1 var(--font-display); letter-spacing: .15em; text-transform: uppercase; }
+    h2 { margin: 7px 0 0; font: 800 clamp(32px, 3.7vw, 50px)/1.08 var(--font-display); text-transform: uppercase; letter-spacing: .005em; }
+    .section-note { max-width: 480px; color: var(--muted); font-size: 13px; line-height: 1.55; text-align: right; }
+
+    .podium-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .podium-card {
+      position: relative;
+      min-height: 230px;
+      padding: 26px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      background: linear-gradient(145deg, rgba(255,255,255,.055), rgba(255,255,255,.016));
+      box-shadow: var(--shadow);
+    }
+    .podium-card:first-child { border-color: rgba(245,197,24,.43); background: linear-gradient(145deg, rgba(245,197,24,.135), rgba(255,255,255,.018) 55%); }
+    .podium-card::after {
+      content: attr(data-place);
+      position: absolute;
+      right: -4px;
+      bottom: -45px;
+      color: rgba(255,255,255,.035);
+      font: 900 190px/1 var(--font-display);
+    }
+    .podium-place { color: var(--yellow); font: 800 12px/1 var(--font-display); letter-spacing: .16em; text-transform: uppercase; }
+    .podium-name { position: relative; z-index: 1; margin-top: 30px; font: 800 clamp(29px, 2.8vw, 44px)/1.06 var(--font-display); text-transform: uppercase; }
+    .podium-stats { position: relative; z-index: 1; display: flex; gap: 28px; margin-top: 24px; }
+    .podium-stats span { color: var(--muted); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; }
+    .podium-stats strong { display: block; margin-top: 5px; color: var(--text); font: 800 22px/1 var(--font-display); }
+
+    .dashboard-grid { display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(310px, .75fr); gap: 18px; }
+    .panel { border: 1px solid var(--line); border-radius: var(--radius-lg); background: var(--panel); box-shadow: var(--shadow); overflow: hidden; }
+    .panel-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 21px 23px; border-bottom: 1px solid var(--line); }
+    .panel-title { font: 750 22px/1.15 var(--font-display); text-transform: uppercase; letter-spacing: .025em; }
+    .panel-subtitle { color: var(--muted); font-size: 11px; margin-top: 5px; }
+
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; min-width: 740px; }
+    th { padding: 13px 18px; color: #6f7885; font-size: 10px; text-align: left; letter-spacing: .13em; text-transform: uppercase; font-weight: 700; background: rgba(0,0,0,.17); }
+    td { padding: 16px 18px; border-top: 1px solid rgba(255,255,255,.055); font-size: 13px; }
+    tbody tr { transition: background .2s ease, transform .2s ease; }
+    tbody tr:hover { background: rgba(245,197,24,.045); }
+    .position { width: 54px; font: 900 25px/1 var(--font-display); color: #69727f; }
+    tr:nth-child(-n+3) .position { color: var(--yellow); }
+    .driver-cell strong { font: 750 18px/1.15 var(--font-display); text-transform: uppercase; }
+    .driver-cell small { display: block; margin-top: 5px; color: var(--muted); }
+    .points { color: var(--yellow-soft); font: 900 21px/1 var(--font-display); }
+    .delta-positive { color: var(--green); }
+    .delta-negative { color: var(--red); }
+    .delta-neutral { color: var(--muted); }
+
+    .insights { padding: 8px 22px 22px; }
+    .insight { padding: 18px 0; border-bottom: 1px solid var(--line); }
+    .insight:last-child { border-bottom: 0; }
+    .insight span { color: var(--muted); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; }
+    .insight strong { display: block; margin-top: 6px; font: 800 27px/1 var(--font-display); }
+    .insight small { display: block; margin-top: 7px; color: #78818e; font-size: 11px; line-height: 1.45; }
+
+    .race-tabs { display: flex; gap: 9px; overflow-x: auto; padding-bottom: 3px; }
+    .race-tab {
+      min-width: 215px;
+      padding: 13px 16px;
+      text-align: left;
+      cursor: pointer;
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      background: rgba(255,255,255,.025);
+      transition: border .2s ease, background .2s ease, transform .2s ease;
+    }
+    .race-tab:hover { transform: translateY(-2px); border-color: var(--line-strong); }
+    .race-tab.active { border-color: rgba(245,197,24,.5); background: rgba(245,197,24,.09); }
+    .race-tab small { display: block; color: var(--muted); font-size: 9px; letter-spacing: .12em; text-transform: uppercase; }
+    .race-tab strong { display: block; margin-top: 5px; font: 750 17px/1.15 var(--font-display); text-transform: uppercase; letter-spacing: .01em; white-space: nowrap; }
+
+    .race-hero { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(280px, .8fr); gap: 18px; margin: 18px 0; }
+    .race-summary {
+      position: relative;
+      min-height: 240px;
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      background:
+        linear-gradient(90deg, rgba(8,10,13,.92), rgba(8,10,13,.54)),
+        linear-gradient(135deg, rgba(245,197,24,.12), transparent 54%);
+    }
+    .race-summary::after { content: "RACE"; position: absolute; right: -15px; bottom: -38px; color: rgba(255,255,255,.035); font: 900 120px/1 var(--font-display); font-style: italic; }
+    .race-index { color: var(--yellow); font: 800 11px/1 var(--font-display); letter-spacing: .15em; text-transform: uppercase; }
+    .race-title { margin-top: 20px; max-width: 630px; font: 800 clamp(37px, 4.6vw, 62px)/1.02 var(--font-display); text-transform: uppercase; }
+    .race-detail-row { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 27px; position: relative; z-index: 1; }
+    .race-detail-row span { color: var(--muted); font-size: 9px; letter-spacing: .12em; text-transform: uppercase; }
+    .race-detail-row strong { display: block; margin-top: 5px; color: var(--text); font-size: 13px; }
+
+    .winner-card { padding: 27px; border: 1px solid rgba(245,197,24,.36); border-radius: var(--radius-lg); background: linear-gradient(150deg, rgba(245,197,24,.13), rgba(255,255,255,.025)); }
+    .winner-card .label { color: var(--yellow); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; font-weight: 800; }
+    .winner-name { margin-top: 22px; font: 800 40px/1.04 var(--font-display); text-transform: uppercase; }
+    .winner-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 13px; margin-top: 25px; }
+    .winner-stat { padding: 12px; border: 1px solid var(--line); border-radius: 11px; background: rgba(0,0,0,.12); }
+    .winner-stat span { color: var(--muted); font-size: 8px; letter-spacing: .12em; text-transform: uppercase; }
+    .winner-stat strong { display: block; margin-top: 4px; font: 750 18px/1.15 var(--font-display); }
+
+    .loading { min-height: 280px; display: grid; place-items: center; color: var(--muted); }
+    .loader { width: 42px; height: 42px; margin: 0 auto 14px; border: 3px solid rgba(255,255,255,.08); border-top-color: var(--yellow); border-radius: 50%; animation: spin .8s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    footer { margin-top: 66px; border-top: 1px solid var(--line); padding: 28px 0 40px; color: #626b77; font-size: 11px; }
+    .footer-inner { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+
+    @media (max-width: 980px) {
+      .dashboard-grid, .race-hero { grid-template-columns: 1fr; }
+      .podium-grid { grid-template-columns: 1fr; }
+      .podium-card { min-height: 190px; }
+      .section-head { align-items: start; flex-direction: column; }
+      .section-note { text-align: left; }
+    }
+
+    @media (max-width: 680px) {
+      .shell { width: min(100% - 22px, 1480px); }
+      .topbar-inner { min-height: 66px; }
+      .status-cluster .data-pill { display: none; }
+      .brand-copy strong { font-size: 21px; }
+      .hero { padding-top: 50px; }
+      h1 { font-size: clamp(51px, 18vw, 78px); }
+      .hero-meta { display: grid; grid-template-columns: repeat(2, 1fr); }
+      .meta-card { min-width: 0; }
+      .podium-stats { gap: 18px; }
+      .race-tab { min-width: 178px; }
+      .notice { flex-direction: column; }
+    }
+
+
+    .local-tools {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      margin: 0 0 30px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      background: rgba(255,255,255,.025);
+    }
+    .local-tools-copy strong {
+      display: block;
+      font: 750 20px/1.15 var(--font-display);
+      text-transform: uppercase;
+      letter-spacing: .02em;
+    }
+    .local-tools-copy span {
+      display: block;
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.45;
+    }
+    .local-tools-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+    .action-button {
+      appearance: none;
+      border: 1px solid rgba(245,197,24,.45);
+      border-radius: 12px;
+      padding: 11px 15px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      background: var(--yellow);
+      color: #121212;
+      transition: transform .2s ease, filter .2s ease;
+    }
+    .action-button:hover { transform: translateY(-1px); filter: brightness(1.06); }
+    .action-button.secondary {
+      border-color: var(--line-strong);
+      background: rgba(255,255,255,.035);
+      color: var(--text);
+    }
+    .import-feedback {
+      display: none;
+      margin: -12px 0 28px;
+      padding: 12px 15px;
+      border-radius: 12px;
+      border: 1px solid rgba(117,230,164,.28);
+      background: rgba(117,230,164,.07);
+      color: #bff4d3;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+    .import-feedback.visible { display: block; }
+    .import-feedback.error {
+      border-color: rgba(255,89,100,.35);
+      background: rgba(255,89,100,.08);
+      color: #ffb9bf;
+    }
+    @media (max-width: 680px) {
+      .local-tools { align-items: flex-start; flex-direction: column; }
+      .local-tools-actions, .action-button { width: 100%; }
+    }
+
+    .sr-badge { display:inline-flex; align-items:center; justify-content:center; min-width:58px; padding:7px 10px; border-radius:999px; font-weight:900; letter-spacing:.04em; background:rgba(117,230,164,.12); color:var(--green); border:1px solid rgba(117,230,164,.24); }
+    .sr-badge.medium { color:var(--yellow-soft); background:rgba(245,197,24,.10); border-color:rgba(245,197,24,.24); }
+    .sr-badge.low { color:#ff9ca4; background:rgba(255,89,100,.10); border-color:rgba(255,89,100,.25); }
+    .collision-pair { display:flex; gap:7px; flex-wrap:wrap; }
+    .collision-chip { display:inline-flex; padding:5px 8px; border-radius:8px; background:rgba(255,255,255,.055); color:var(--muted); font-size:.72rem; white-space:nowrap; }
+    .identity-note { color:var(--muted); font-size:.68rem; margin-top:4px; }
+    .status-pill.loading .status-dot { background:var(--yellow); box-shadow:0 0 0 5px rgba(245,197,24,.12); }
+
+    /* Tipografia mais aberta e legível */
+    .brand-copy strong, .eyebrow, .section-kicker, .podium-place, .race-index { letter-spacing: .09em; }
+    .podium-name, .winner-name, .race-title, .driver-cell strong { overflow-wrap: anywhere; }
+    .driver-cell strong { line-height: 1.2; letter-spacing: .01em; }
+    .meta-card strong, .podium-stats strong, .points, .position { font-variant-numeric: tabular-nums; }
+    .sync-feedback {
+      display: none;
+      margin: 0 0 28px;
+      padding: 12px 15px;
+      border-radius: 12px;
+      border: 1px solid rgba(117,230,164,.28);
+      background: rgba(117,230,164,.07);
+      color: #bff4d3;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+    .sync-feedback.visible { display: block; }
+    .sync-feedback.error { border-color: rgba(255,89,100,.35); background: rgba(255,89,100,.08); color: #ffb9bf; }
+
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none"><path d="M7 5h18l-3 6H10L7 5Zm3 8h12l3 6H7l3-6Zm-3 8h18l-3 6H10l-3-6Z" fill="#F5C518"/></svg>
+        </div>
+        <div class="brand-copy"><strong>EXILADOS GP</strong><span>Race Control</span></div>
+      </div>
+      <div class="status-cluster">
+        <span class="data-pill" id="updatedAt">Aguardando atualização</span>
+        <span class="status-pill loading" id="apiStatus"><span class="status-dot"></span><span>Conectando</span></span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="shell">
+        <div class="eyebrow">Assetto Corsa Community</div>
+        <h1>Últimos <em>7 dias.</em><br>Performance e segurança.</h1>
+        <p class="hero-copy">Resultados consolidados das corridas registradas nos últimos 7 dias, com classificação única por piloto, desempenho e Safety Rating.</p>
+        <div class="hero-meta">
+          <div class="meta-card"><span>Servidor</span><strong>Exilados GP</strong></div>
+          <div class="meta-card"><span>Corridas analisadas</span><strong id="raceCount">—</strong></div>
+          <div class="meta-card"><span>Pilotos únicos</span><strong id="driverCount">—</strong></div>
+          <div class="meta-card"><span>Período</span><strong id="periodLabel">7 dias</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="shell">
+      <div class="sync-feedback" id="syncFeedback" role="status" aria-live="polite"></div>
+
+      <section aria-labelledby="overall-title">
+        <div class="section-head">
+          <div><div class="section-kicker">Janela móvel de 7 dias</div><h2 id="overall-title">Ranking acumulado</h2></div>
+          <div class="section-note">Pontuação: 25, 18, 15, 12, 10, 8, 6, 4, 2 e 1. Nomes repetidos são consolidados; desempate por vitórias, pódios e melhor resultado.</div>
+        </div>
+        <div class="podium-grid" id="podiumGrid"></div>
+
+        <div class="dashboard-grid" style="margin-top:18px">
+          <div class="panel">
+            <div class="panel-head">
+              <div><div class="panel-title">Classificação geral</div><div class="panel-subtitle">Uma linha por piloto, consolidada por identidade normalizada</div></div>
+            </div>
+            <div class="table-wrap"><table><thead><tr><th>Pos.</th><th>Piloto</th><th>Corridas</th><th>Vitórias</th><th>Pódios</th><th>Melhor chegada</th><th>SR</th><th>Pontos</th></tr></thead><tbody id="overallTable"></tbody></table></div>
+          </div>
+          <aside class="panel">
+            <div class="panel-head"><div><div class="panel-title">Race insights</div><div class="panel-subtitle">Destaques do recorte atual</div></div></div>
+            <div class="insights" id="insights"></div>
+          </aside>
+        </div>
+      </section>
+
+
+      <section aria-labelledby="safety-title">
+        <div class="section-head">
+          <div><div class="section-kicker">Incidentes registrados</div><h2 id="safety-title">Safety Rating</h2></div>
+          <div class="section-note">Todos começam com 500 SR. Cada colisão com outro veículo desconta 2 pontos; colisão com o ambiente desconta 1. Eventos após o encerramento da sessão não entram no cálculo.</div>
+        </div>
+        <div class="panel">
+          <div class="panel-head"><div><div class="panel-title">Ranking de segurança</div><div class="panel-subtitle">Quanto maior o SR, mais limpa foi a participação no período</div></div></div>
+          <div class="table-wrap"><table><thead><tr><th>Pos.</th><th>Piloto</th><th>SR</th><th>Veículo</th><th>Ambiente</th><th>Perda total</th></tr></thead><tbody id="safetyTable"></tbody></table></div>
+        </div>
+      </section>
+
+      <section aria-labelledby="races-title">
+        <div class="section-head">
+          <div><div class="section-kicker">Resultados detalhados</div><h2 id="races-title">Corrida por corrida</h2></div>
+          <div class="race-tabs" id="raceTabs" role="tablist" aria-label="Selecione uma corrida"></div>
+        </div>
+        <div id="raceDetail"><div class="loading"><div><div class="loader"></div>Carregando resultados...</div></div></div>
+      </section>
+    </div>
+  </main>
+
+  <footer><div class="shell footer-inner"><span>EXILADOS GP · RANKING DE PILOTOS</span><span>Sincronização automática · janela móvel de 7 dias</span></div></footer>
+
+  <script>
+const POINTS = [25, 18, 15, 12, 10, 8, 6, 4, 2, 1];
+const INITIAL_SR = 500;
+const CAR_COLLISION_PENALTY = 2;
+const ENV_COLLISION_PENALTY = 1;
+const DAYS_WINDOW = 7;
+const DATA_ENDPOINT = "https://raw.githubusercontent.com/SEU_USUARIO/exilados-gp-data/main/data/races.json";
+const REFRESH_INTERVAL_MS = 5 * 60 * 1000;
+const STORAGE_KEY = "exilados-gp-races-v5";
+const state = { races: [], activeRace: 0, demo: false };
+
+const el = id => document.getElementById(id);
+const escapeHtml = (value = "") => String(value).replace(/[&<>'"]/g, char => ({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#039;",'"':"&quot;"}[char]));
+
+function normalizeName(value = "") {
+  return String(value).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase().replace(/[^A-Z0-9]/g, "");
+}
+
+function hashIdentity(value) {
+  const source = String(value || "PILOTO-SEM-ID");
+  let hash = 2166136261;
+  for (let i = 0; i < source.length; i += 1) { hash ^= source.charCodeAt(i); hash = Math.imul(hash, 16777619); }
+  return `driver-${(hash >>> 0).toString(36)}`;
+}
+
+function makeDriverId(guid, name) {
+  const supplied = String(guid || "").trim();
+  if (supplied.startsWith("driver-")) return supplied;
+  return hashIdentity(supplied || normalizeName(name));
+}
+function cutoffDate() { return new Date(Date.now() - DAYS_WINDOW * 24 * 60 * 60 * 1000); }
+function isInsideWindow(date) { const value = new Date(date); return Number.isFinite(value.getTime()) && value >= cutoffDate(); }
+function filterLast7Days(races) { return races.filter(race => isInsideWindow(race.date)).sort((a,b) => new Date(b.date)-new Date(a.date)); }
+
+function formatTime(ms) {
+  if (!Number.isFinite(ms) || ms <= 0) return "—";
+  const hours = Math.floor(ms / 3600000), minutes = Math.floor((ms % 3600000) / 60000), seconds = Math.floor((ms % 60000) / 1000), millis = Math.floor(ms % 1000);
+  const base = `${String(minutes).padStart(hours ? 2 : 1, "0")}:${String(seconds).padStart(2, "0")}.${String(millis).padStart(3, "0")}`;
+  return hours ? `${hours}:${base}` : base;
+}
+function formatDate(iso) { if (!iso) return "Data não informada"; return new Intl.DateTimeFormat("pt-BR", {day:"2-digit",month:"short",year:"numeric",hour:"2-digit",minute:"2-digit"}).format(new Date(iso)); }
+function formatShortDate(date) { return new Intl.DateTimeFormat("pt-BR", {day:"2-digit",month:"short"}).format(date); }
+function humanizeTrack(value = "") {
+  const aliases={"rt_bannochbrae":"Bannochbrae","vir":"Virginia International Raceway","vhe_interlagos":"Interlagos","vhe_velopark":"Velopark","rt_bathurst":"Mount Panorama","spa":"Spa-Francorchamps","ks_nordschleife":"Nordschleife","lilski_watkins_glen":"Watkins Glen","rt_misano":"Misano","fn_imola":"Imola"};
+  return aliases[value] || value.replace(/^(ks|rt|vhe|fn|lilski)_/,"").replaceAll("_"," ").replace(/\b\w/g,c=>c.toUpperCase());
+}
+function humanizeCar(value = "") { const aliases={"toyota_gr86_2022":"Toyota GR86 2022"}; return aliases[value] || value.replaceAll("_"," ").replace(/\b\w/g,c=>c.toUpperCase()); }
+function srValue(car, env) { return Math.max(0, INITIAL_SR - CAR_COLLISION_PENALTY * car - ENV_COLLISION_PENALTY * env); }
+function srClass(sr) { return sr >= 480 ? "" : sr >= 450 ? "medium" : "low"; }
+
+function collisionMap(events = []) {
+  const map = new Map(), seen = new Set();
+  for (const event of events) {
+    if (!event || event.AfterSessionEnd === true) continue;
+    if (!["COLLISION_WITH_CAR","COLLISION_WITH_ENV"].includes(event.Type)) continue;
+    const driver = event.Driver || {};
+    const name = driver.Name || "";
+    const id = makeDriverId(driver.Id || driver.Guid, name);
+    const other = event.OtherDriver || {};
+    const position = event.WorldPosition || {};
+    const dedupe = [id,event.Type,event.Timestamp,other.Id || other.Guid || event.OtherCarId || "",Math.round(Number(position.X||0)*10),Math.round(Number(position.Y||0)*10),Math.round(Number(position.Z||0)*10)].join("|");
+    if (seen.has(dedupe)) continue;
+    seen.add(dedupe);
+    if (!map.has(id)) map.set(id, {car:0,env:0});
+    map.get(id)[event.Type === "COLLISION_WITH_CAR" ? "car" : "env"] += 1;
+  }
+  return map;
+}
+
+function normalizeRaceJson(raw, filename = "resultado.json") {
+  const officialResults = Array.isArray(raw?.Result) ? raw.Result : [];
+  if (!officialResults.length) throw new Error(`${filename} não possui classificação em Result.`);
+  const raceType=String(raw.Type||"").toUpperCase();
+  if (raceType && raceType !== "RACE") throw new Error(`${filename} é uma sessão ${raceType}, não uma corrida.`);
+  const collisions=collisionMap(raw.Events || []);
+  return {
+    track: raw.TrackName || "pista_desconhecida", trackLayout: raw.TrackConfig || null, date: raw.Date || new Date().toISOString(),
+    carModel: officialResults[0]?.CarModel || raw.Cars?.find(car=>car?.Model)?.Model || "", sessionFile: raw.SessionFile || filename.replace(/\.(json|txt)$/i,""), isDemo:false,
+    results: officialResults.map(item => {
+      const driverName=item.DriverName || "Piloto sem nome", driverId=makeDriverId(item.DriverId || item.DriverGuid,driverName), incident=collisions.get(driverId) || {car:0,env:0};
+      return {driverId,driverGuid:item.DriverId||item.DriverGuid||"",driverName,bestLap:Number(item.BestLap||0),totalTime:Number(item.TotalTime||0),numLaps:Number(item.NumLaps||0),gridPosition:Number.isFinite(Number(item.GridPosition))?Number(item.GridPosition):null,carModel:item.CarModel||"",disqualified:Boolean(item.Disqualified),hasPenalty:Boolean(item.HasPenalty),collisionsCar:incident.car,collisionsEnv:incident.env};
+    })
+  };
+}
+
+function buildOverallRanking(races) {
+  const drivers=new Map();
+  for (const race of races) for (const [index,result] of race.results.entries()) {
+    // The normalized visible name is deliberate: identical names never appear in separate rows.
+    const key=normalizeName(result.driverName) || result.driverId;
+    if (!drivers.has(key)) drivers.set(key,{driverName:result.driverName,nameCounts:new Map(),points:0,starts:0,wins:0,podiums:0,bestFinish:Infinity,finishes:[],carCollisions:0,envCollisions:0});
+    const driver=drivers.get(key), count=driver.nameCounts.get(result.driverName)||0;
+    driver.nameCounts.set(result.driverName,count+1); driver.starts++; driver.points+=POINTS[index]||0; driver.wins+=index===0?1:0; driver.podiums+=index<3?1:0; driver.bestFinish=Math.min(driver.bestFinish,index+1); driver.finishes.push(index+1); driver.carCollisions+=Number(result.collisionsCar||0); driver.envCollisions+=Number(result.collisionsEnv||0);
+  }
+  const result=[...drivers.values()].map(driver=>{ driver.driverName=[...driver.nameCounts.entries()].sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0]))[0]?.[0]||driver.driverName; driver.safetyRating=srValue(driver.carCollisions,driver.envCollisions); driver.srLoss=INITIAL_SR-driver.safetyRating; delete driver.nameCounts; return driver; });
+  return result.sort((a,b)=>b.points-a.points||b.wins-a.wins||b.podiums-a.podiums||a.bestFinish-b.bestFinish||a.driverName.localeCompare(b.driverName));
+}
+
+function renderPodium(ranking) {
+  const labels=["Líder","Vice-líder","Terceiro lugar"];
+  el("podiumGrid").innerHTML=ranking.slice(0,3).map((driver,i)=>`<article class="podium-card" data-place="${i+1}"><div class="podium-place">${labels[i]}</div><div class="podium-name">${escapeHtml(driver.driverName)}</div><div class="podium-stats"><div><span>Pontos</span><strong>${driver.points}</strong></div><div><span>Vitórias</span><strong>${driver.wins}</strong></div><div><span>Safety Rating</span><strong>${driver.safetyRating}</strong></div></div></article>`).join("");
+}
+function renderOverallTable(ranking) {
+  el("overallTable").innerHTML=ranking.map((driver,index)=>`<tr><td class="position">${String(index+1).padStart(2,"0")}</td><td class="driver-cell"><strong>${escapeHtml(driver.driverName)}</strong><small>${driver.finishes.map(p=>`P${p}`).join(" · ")}</small></td><td>${driver.starts}</td><td>${driver.wins}</td><td>${driver.podiums}</td><td>P${driver.bestFinish}</td><td><span class="sr-badge ${srClass(driver.safetyRating)}">${driver.safetyRating}</span></td><td class="points">${driver.points}</td></tr>`).join("");
+}
+function renderSafetyTable(ranking) {
+  const safety=[...ranking].sort((a,b)=>b.safetyRating-a.safetyRating||a.carCollisions-b.carCollisions||a.envCollisions-b.envCollisions||a.driverName.localeCompare(b.driverName));
+  el("safetyTable").innerHTML=safety.map((driver,index)=>`<tr><td class="position">${String(index+1).padStart(2,"0")}</td><td class="driver-cell"><strong>${escapeHtml(driver.driverName)}</strong><small>${driver.starts} corrida${driver.starts!==1?"s":""} no período</small></td><td><span class="sr-badge ${srClass(driver.safetyRating)}">${driver.safetyRating}</span></td><td>${driver.carCollisions}</td><td>${driver.envCollisions}</td><td class="delta-negative">-${driver.srLoss}</td></tr>`).join("");
+}
+function renderInsights(races,ranking) {
+  const all=races.flatMap(r=>r.results.map((x,i)=>({...x,finish:i+1,race:r}))), fastest=all.filter(x=>x.bestLap>0).sort((a,b)=>a.bestLap-b.bestLap)[0], mover=all.filter(x=>Number.isFinite(x.gridPosition)).sort((a,b)=>(b.gridPosition-b.finish)-(a.gridPosition-a.finish))[0], totalLaps=all.reduce((s,x)=>s+(x.numLaps||0),0), safest=[...ranking].sort((a,b)=>b.safetyRating-a.safetyRating||a.carCollisions-b.carCollisions)[0];
+  el("insights").innerHTML=`<div class="insight"><span>Maior pontuador</span><strong>${escapeHtml(ranking[0]?.driverName||"—")}</strong><small>${ranking[0]?.points||0} pontos nos últimos 7 dias.</small></div><div class="insight"><span>Melhor Safety Rating</span><strong>${safest?.safetyRating??"—"} SR</strong><small>${safest?escapeHtml(safest.driverName):"Sem dados de incidentes."}</small></div><div class="insight"><span>Volta mais rápida</span><strong>${fastest?formatTime(fastest.bestLap):"—"}</strong><small>${fastest?`${escapeHtml(fastest.driverName)} · ${escapeHtml(humanizeTrack(fastest.race.track))}`:"Sem volta registrada."}</small></div><div class="insight"><span>Maior recuperação</span><strong>${mover?`+${Math.max(0,mover.gridPosition-mover.finish)} posições`:"—"}</strong><small>${mover?`${escapeHtml(mover.driverName)} · ${escapeHtml(humanizeTrack(mover.race.track))}`:"Grid indisponível."}</small></div><div class="insight"><span>Voltas contabilizadas</span><strong>${totalLaps}</strong><small>Soma das voltas dos classificados no período.</small></div>`;
+}
+function renderTabs() {
+  el("raceTabs").innerHTML=state.races.map((race,index)=>`<button class="race-tab ${index===state.activeRace?"active":""}" data-index="${index}" role="tab" aria-selected="${index===state.activeRace}"><small>${formatShortDate(new Date(race.date))}</small><strong>${escapeHtml(humanizeTrack(race.track))}</strong></button>`).join("");
+  el("raceTabs").querySelectorAll("button").forEach(button=>button.addEventListener("click",()=>{state.activeRace=Number(button.dataset.index);renderTabs();renderRaceDetail();}));
+}
+function gapLabel(result,leader) { if(!leader||result.position===1)return"Vencedor"; const lapDiff=(leader.numLaps||0)-(result.numLaps||0); if(lapDiff>0)return`+${lapDiff} volta${lapDiff>1?"s":""}`; const gap=(result.totalTime||0)-(leader.totalTime||0); return gap>0?`+${formatTime(gap)}`:"—"; }
+function renderRaceDetail() {
+  const race=state.races[state.activeRace]; if(!race){el("raceDetail").innerHTML='<div class="panel"><div class="loading">Nenhuma corrida encontrada no período.</div></div>';return;}
+  const winner=race.results[0],fastest=[...race.results].filter(r=>r.bestLap>0).sort((a,b)=>a.bestLap-b.bestLap)[0];
+  el("raceDetail").innerHTML=`<div class="race-hero"><article class="race-summary"><div class="race-index">Resultado oficial</div><div class="race-title">${escapeHtml(humanizeTrack(race.track))}</div><div class="race-detail-row"><div><span>Layout</span><strong>${escapeHtml(race.trackLayout||"Padrão")}</strong></div><div><span>Data</span><strong>${escapeHtml(formatDate(race.date))}</strong></div><div><span>Carro</span><strong>${escapeHtml(humanizeCar(race.carModel))}</strong></div><div><span>Classificados</span><strong>${race.results.length}</strong></div></div></article><article class="winner-card"><div class="label">Vencedor da prova</div><div class="winner-name">${escapeHtml(winner?.driverName||"—")}</div><div class="winner-stats"><div class="winner-stat"><span>Tempo total</span><strong>${formatTime(winner?.totalTime)}</strong></div><div class="winner-stat"><span>Melhor volta</span><strong>${formatTime(winner?.bestLap)}</strong></div><div class="winner-stat"><span>Voltas</span><strong>${winner?.numLaps??"—"}</strong></div><div class="winner-stat"><span>Fastest lap</span><strong>${escapeHtml(fastest?.driverName||"—")}</strong></div></div></article></div><div class="panel"><div class="panel-head"><div><div class="panel-title">Resultado da corrida</div><div class="panel-subtitle">Incidentes contam apenas durante a sessão</div></div></div><div class="table-wrap"><table><thead><tr><th>Pos.</th><th>Piloto</th><th>Grid</th><th>Ganho</th><th>Voltas</th><th>Melhor volta</th><th>Colisões</th><th>SR prova</th><th>Diferença</th></tr></thead><tbody>${race.results.map((result,index)=>{const gain=Number.isFinite(result.gridPosition)?result.gridPosition-(index+1):null,gainClass=gain>0?"delta-positive":gain<0?"delta-negative":"delta-neutral",loss=CAR_COLLISION_PENALTY*(result.collisionsCar||0)+ENV_COLLISION_PENALTY*(result.collisionsEnv||0);return`<tr><td class="position">${String(index+1).padStart(2,"0")}</td><td class="driver-cell"><strong>${escapeHtml(result.driverName)}</strong><small>${escapeHtml(humanizeCar(result.carModel||race.carModel))}</small></td><td>${Number.isFinite(result.gridPosition)?`P${result.gridPosition}`:"—"}</td><td class="${gainClass}">${gain===null?"—":gain>0?`+${gain}`:String(gain)}</td><td>${result.numLaps??"—"}</td><td>${formatTime(result.bestLap)}</td><td><div class="collision-pair"><span class="collision-chip">carro ${result.collisionsCar||0}</span><span class="collision-chip">amb. ${result.collisionsEnv||0}</span></div></td><td class="${loss?"delta-negative":"delta-positive"}">${loss?`-${loss}`:"0"}</td><td>${gapLabel({...result,position:index+1},winner)}</td></tr>`;}).join("")}</tbody></table></div></div>`;
+}
+function render(data) {
+  state.races=data.races||[]; state.activeRace=Math.min(state.activeRace,Math.max(0,state.races.length-1));
+  const ranking=buildOverallRanking(state.races); el("raceCount").textContent=String(state.races.length).padStart(2,"0"); el("driverCount").textContent=String(ranking.length).padStart(2,"0");
+  const end=new Date(),start=cutoffDate(); el("periodLabel").textContent=`${formatShortDate(start)}–${formatShortDate(end)}`;
+  renderPodium(ranking); renderOverallTable(ranking); renderSafetyTable(ranking); renderInsights(state.races,ranking); renderTabs(); renderRaceDetail();
+}
+function showSyncFeedback(message, isError = false, autoHide = false) {
+  const feedback = el("syncFeedback");
+  feedback.textContent = message;
+  feedback.classList.add("visible");
+  feedback.classList.toggle("error", isError);
+  if (autoHide) window.setTimeout(() => feedback.classList.remove("visible"), 4200);
+}
+function hideSyncFeedback() { el("syncFeedback").classList.remove("visible"); }
+function setStatus(label, mode = "offline", updatedAt = null) {
+  const status = el("apiStatus");
+  status.classList.toggle("offline", mode === "offline");
+  status.classList.toggle("loading", mode === "loading");
+  status.querySelector("span:last-child").textContent = label;
+  const stamp = updatedAt ? new Date(updatedAt) : new Date();
+  el("updatedAt").textContent = Number.isFinite(stamp.getTime())
+    ? `Atualizado ${new Intl.DateTimeFormat("pt-BR", {day:"2-digit", month:"2-digit", hour:"2-digit", minute:"2-digit"}).format(stamp)}`
+    : "Atualização automática";
+}
+function persistRaces(races) { localStorage.setItem(STORAGE_KEY, JSON.stringify(races)); }
+function loadPersistedRaces() {
+  try {
+    const races = JSON.parse(localStorage.getItem(STORAGE_KEY) || "null");
+    return Array.isArray(races) && races.length ? filterLast7Days(races) : null;
+  } catch { return null; }
+}
+
+async function fetchJson(url, timeout = 90000) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeout);
+  try {
+    const response = await fetch(url, {
+      headers: {Accept: "application/json"},
+      cache: "no-store",
+      signal: controller.signal
+    });
+    const payload = await response.json().catch(() => null);
+    if (!response.ok) throw new Error(payload?.error || `HTTP ${response.status}`);
+    return payload;
+  } finally { clearTimeout(timer); }
+}
+
+async function fetchApiResults({silent = false} = {}) {
+  setStatus("Atualizando", "loading");
+  if (!silent) showSyncFeedback("Carregando automaticamente as corridas dos últimos 7 dias...");
+  try {
+    const payload = await fetchJson(`${DATA_ENDPOINT}?_=${Date.now()}`);
+    if (!payload?.ok || !Array.isArray(payload.races)) throw new Error(payload?.error || "Resposta inválida do servidor.");
+
+    const normalized = [];
+    const failures = [];
+    for (const raw of payload.races) {
+      try { normalized.push(normalizeRaceJson(raw, raw?.SessionFile || "resultado remoto")); }
+      catch (error) { failures.push(error.message); }
+    }
+
+    const recent = [...new Map(filterLast7Days(normalized).map(race => [race.sessionFile, race])).values()]
+      .sort((a,b) => new Date(b.date) - new Date(a.date));
+    if (!recent.length) throw new Error("Nenhuma corrida válida foi encontrada nos últimos 7 dias.");
+
+    persistRaces(recent);
+    state.activeRace = 0;
+    render({races: recent, demo: false});
+    setStatus("Dados sincronizados", "online", payload.generated_at);
+    const suffix = failures.length ? ` ${failures.length} arquivo(s) inválido(s) foram ignorados.` : "";
+    showSyncFeedback(`${recent.length} corrida${recent.length !== 1 ? "s" : ""} carregada${recent.length !== 1 ? "s" : ""}. Ranking e Safety Rating atualizados.${suffix}`, false, true);
+  } catch (error) {
+    console.error(error);
+    const cached = loadPersistedRaces();
+    if (cached?.length) {
+      state.activeRace = 0;
+      render({races: cached, demo: false});
+      setStatus("Último cache", "offline");
+      showSyncFeedback(`A sincronização externa falhou (${error.message}). Exibindo os últimos dados salvos neste navegador.`, true);
+    } else {
+      render({races: [], demo: false});
+      setStatus("API indisponível", "offline");
+      showSyncFeedback(`Não foi possível carregar os resultados: ${error.message}. Verifique a URL DATA_ENDPOINT configurada no código e a execução do sincronizador no GitHub Actions.`, true);
+    }
+  }
+}
+
+function init() {
+  const cached = loadPersistedRaces();
+  if (cached?.length) render({races: cached, demo: false});
+  else render({races: [], demo: false});
+  fetchApiResults();
+  window.setInterval(() => fetchApiResults({silent: true}), REFRESH_INTERVAL_MS);
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "visible") fetchApiResults({silent: true});
+  });
+}
+init();
+</script>
+</body>
+</html>
