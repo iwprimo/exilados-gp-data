@@ -1,0 +1,43 @@
+name: Atualizar resultados Exilados GP
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/5 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: exilados-gp-results
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Consultar corridas dos últimos 7 dias
+        run: python scripts/update_results.py
+
+      - name: Publicar JSON atualizado
+        run: |
+          if git diff --quiet -- data/races.json; then
+            echo "Nenhuma corrida nova ou alterada."
+            exit 0
+          fi
+
+          git config user.name "exilados-gp-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/races.json
+          git commit -m "Atualiza resultados do ranking"
+          git push
