@@ -24,7 +24,7 @@ DAYS = int(os.environ.get("DAYS_WINDOW", "7"))
 MAX_PAGES = 100
 MAX_RACES = 100
 OUTPUT = Path(os.environ.get("OUTPUT_FILE", "data/races.json"))
-USER_AGENT = "Mozilla/5.0 (compatible; ExiladosGP-GitHubSync/1.1)"
+USER_AGENT = "Mozilla/5.0 (compatible; ExiladosGP-GitHubSync/1.2)"
 
 # A documentação do ACSM limita a API a 5 requisições em 20 segundos.
 MIN_REQUEST_INTERVAL = 4.2
@@ -153,6 +153,47 @@ def sanitize_result(row: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+
+def sanitize_lap(lap: dict[str, Any]) -> dict[str, Any] | None:
+    name = str(lap.get("DriverName") or "Piloto sem nome")
+    try:
+        lap_time = int(lap.get("LapTime") or 0)
+    except (TypeError, ValueError):
+        lap_time = 0
+    if lap_time <= 0:
+        return None
+
+    raw_cuts = lap.get("Cuts")
+    try:
+        cuts = int(raw_cuts) if raw_cuts is not None else None
+    except (TypeError, ValueError):
+        cuts = None
+
+    sectors_raw = lap.get("Sectors") if isinstance(lap.get("Sectors"), list) else []
+    sectors: list[int] = []
+    for value in sectors_raw[:3]:
+        try:
+            sectors.append(max(0, int(value or 0)))
+        except (TypeError, ValueError):
+            sectors.append(0)
+
+    timestamp = lap.get("Timestamp")
+    try:
+        timestamp = int(timestamp) if timestamp is not None else None
+    except (TypeError, ValueError):
+        timestamp = None
+
+    return {
+        "DriverId": stable_driver_id(lap.get("DriverGuid"), name),
+        "DriverName": name,
+        "LapTime": lap_time,
+        "Cuts": cuts,
+        "Sectors": sectors,
+        "Timestamp": timestamp,
+        "CarModel": str(lap.get("CarModel") or ""),
+        "Tyre": str(lap.get("Tyre") or ""),
+    }
+
 def sanitize_driver(driver: Any) -> dict[str, Any]:
     if not isinstance(driver, dict):
         return {"Id": stable_driver_id("", ""), "Name": ""}
@@ -183,7 +224,13 @@ def sanitize_event(event: dict[str, Any]) -> dict[str, Any] | None:
 
 def sanitize_race(raw: dict[str, Any], metadata: dict[str, Any]) -> dict[str, Any]:
     results = raw.get("Result") if isinstance(raw.get("Result"), list) else []
+    laps = raw.get("Laps") if isinstance(raw.get("Laps"), list) else []
     events = raw.get("Events") if isinstance(raw.get("Events"), list) else []
+    clean_laps = [
+        item
+        for lap in laps
+        if isinstance(lap, dict) and (item := sanitize_lap(lap))
+    ]
     clean_events = [
         item
         for event in events
@@ -199,6 +246,7 @@ def sanitize_race(raw: dict[str, Any], metadata: dict[str, Any]) -> dict[str, An
         or "pista_desconhecida",
         "TrackConfig": raw.get("TrackConfig") or metadata.get("track_layout"),
         "Result": [sanitize_result(row) for row in results if isinstance(row, dict)],
+        "Laps": clean_laps,
         "Events": clean_events,
     }
 
