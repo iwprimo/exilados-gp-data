@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import base64
 import hashlib
 import json
 import os
@@ -17,6 +18,8 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
+from cryptography.hazmat.primitives.ciphers.aead import AESGCM
+
 REMOTE_BASE = os.environ.get(
     "ACSM_BASE_URL", "https://usa4.assettohosting.com:50709"
 ).rstrip("/")
@@ -24,10 +27,11 @@ DAYS = int(os.environ.get("DAYS_WINDOW", "7"))
 MAX_PAGES = 100
 MAX_RACES = 100
 OUTPUT = Path(os.environ.get("OUTPUT_FILE", "data/races.json"))
-USER_AGENT = "Mozilla/5.0 (compatible; ExiladosGP-GitHubSync/1.3)"
-IDENTITY_INGEST_URL = os.environ.get("IDENTITY_INGEST_URL", "").strip()
-IDENTITY_INGEST_KEY = os.environ.get("IDENTITY_INGEST_KEY", "").strip()
-IDENTITY_INGEST_REQUIRED = os.environ.get("IDENTITY_INGEST_REQUIRED", "0").strip().lower() in {"1", "true", "yes"}
+IDENTITY_BUNDLE_OUTPUT = Path(os.environ.get("IDENTITY_BUNDLE_OUTPUT", "data/identities.enc.json"))
+USER_AGENT = "Mozilla/5.0 (compatible; ExiladosGP-GitHubSync/1.4)"
+IDENTITY_BUNDLE_KEY = os.environ.get("IDENTITY_BUNDLE_KEY", "").strip()
+IDENTITY_BUNDLE_REQUIRED = os.environ.get("IDENTITY_BUNDLE_REQUIRED", "1").strip().lower() in {"1", "true", "yes"}
+IDENTITY_BUNDLE_AAD = b"exilados-gp-identity-bundle-v1"
 
 IDENTITIES: dict[str, dict[str, Any]] = {}
 FALLBACK_DRIVER_IDS: set[str] = set()
@@ -321,51 +325,74 @@ def private_identity_payload(generated_at: str) -> dict[str, Any]:
     }
 
 
-def post_identity_payload(payload: dict[str, Any], timeout: int = 45, attempts: int = 3) -> None:
-    if not IDENTITY_INGEST_URL and not IDENTITY_INGEST_KEY:
-        print("Captura privada de SteamID não configurada; races.json continuará sem IDs brutos.")
-        return
-    if not IDENTITY_INGEST_URL or not IDENTITY_INGEST_KEY:
-        raise RuntimeError("Configure simultaneamente IDENTITY_INGEST_URL e IDENTITY_INGEST_KEY.")
+def identity_content_without_timestamp(payload: dict[str, Any]) -> str:
+    comparable = dict(payload)
+    comparable.pop("generated_at", None)
+    return json.dumps(comparable, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
 
-    body = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
-    last_error: Exception | None = None
-    for attempt in range(1, attempts + 1):
-        request = urllib.request.Request(
-            IDENTITY_INGEST_URL,
-            data=body,
-            method="POST",
-            headers={
-                "Accept": "application/json",
-                "Content-Type": "application/json; charset=utf-8",
-                "User-Agent": USER_AGENT,
-                "X-Exilados-Identity-Key": IDENTITY_INGEST_KEY,
-            },
+
+def identity_bundle_key_bytes() -> bytes:
+    if not IDENTITY_BUNDLE_KEY:
+        raise RuntimeError("Configure o secret IDENTITY_INGEST_KEY usado como chave do bundle privado.")
+    return hashlib.sha256(IDENTITY_BUNDLE_KEY.encode("utf-8")).digest()
+
+
+def decrypt_identity_bundle(path: Path) -> dict[str, Any] | None:
+    if not path.exists():
+        return None
+    try:
+        bundle = json.loads(path.read_text(encoding="utf-8"))
+        if not isinstance(bundle, dict) or int(bundle.get("version") or 0) != 1:
+            return None
+        nonce = base64.b64decode(str(bundle.get("nonce") or ""), validate=True)
+        ciphertext = base64.b64decode(str(bundle.get("ciphertext") or ""), validate=True)
+        tag = base64.b64decode(str(bundle.get("tag") or ""), validate=True)
+        plaintext = AESGCM(identity_bundle_key_bytes()).decrypt(
+            nonce, ciphertext + tag, IDENTITY_BUNDLE_AAD
         )
-        try:
-            with urllib.request.urlopen(request, timeout=timeout, context=ssl.create_default_context()) as response:
-                raw = response.read().decode("utf-8-sig", errors="replace")
-                status = int(getattr(response, "status", 200))
-            if status < 200 or status >= 300:
-                raise RuntimeError(f"HTTP {status} no endpoint privado de identidade")
-            answer = json.loads(raw)
-            if not isinstance(answer, dict) or answer.get("ok") is not True:
-                raise RuntimeError(f"Endpoint privado recusou o lote: {response_preview(raw)}")
-            print(
-                "Identidades enviadas com segurança: "
-                f"{int(answer.get('accepted') or 0)} aceitas, "
-                f"{int(answer.get('created') or 0)} novas."
-            )
-            return
-        except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, json.JSONDecodeError, RuntimeError) as exc:
-            last_error = exc
-            if attempt < attempts:
-                time.sleep(4 * attempt)
+        payload = json.loads(plaintext.decode("utf-8"))
+        return payload if isinstance(payload, dict) else None
+    except Exception:
+        return None
 
-    message = f"Falha ao enviar identidades ao endpoint privado: {last_error}"
-    if IDENTITY_INGEST_REQUIRED:
-        raise RuntimeError(message)
-    print(f"Aviso: {message}", file=sys.stderr)
+
+def write_identity_bundle(payload: dict[str, Any]) -> bool:
+    if not IDENTITY_BUNDLE_KEY:
+        message = "Chave do bundle de identidades não configurada."
+        if IDENTITY_BUNDLE_REQUIRED:
+            raise RuntimeError(message)
+        print(f"Aviso: {message}", file=sys.stderr)
+        return False
+
+    previous = decrypt_identity_bundle(IDENTITY_BUNDLE_OUTPUT)
+    if previous is not None and identity_content_without_timestamp(previous) == identity_content_without_timestamp(payload):
+        print("Nenhuma mudança nas identidades capturadas.")
+        return False
+
+    plaintext = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
+    nonce = os.urandom(12)
+    sealed = AESGCM(identity_bundle_key_bytes()).encrypt(nonce, plaintext, IDENTITY_BUNDLE_AAD)
+    ciphertext, tag = sealed[:-16], sealed[-16:]
+    bundle = {
+        "ok": True,
+        "format": "exilados-gp-identity-bundle",
+        "version": 1,
+        "algorithm": "AES-256-GCM",
+        "generated_at": payload.get("generated_at"),
+        "driver_count": len(payload.get("drivers") or []),
+        "nonce": base64.b64encode(nonce).decode("ascii"),
+        "ciphertext": base64.b64encode(ciphertext).decode("ascii"),
+        "tag": base64.b64encode(tag).decode("ascii"),
+    }
+    IDENTITY_BUNDLE_OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+    IDENTITY_BUNDLE_OUTPUT.write_text(
+        json.dumps(bundle, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+    print(
+        f"Bundle privado atualizado: {IDENTITY_BUNDLE_OUTPUT} "
+        f"({bundle['driver_count']} identidades, conteúdo criptografado)"
+    )
+    return True
 
 
 def fetch_recent_races() -> list[dict[str, Any]]:
@@ -436,7 +463,7 @@ def main() -> int:
             raise RuntimeError(f"Nenhuma corrida encontrada nos últimos {DAYS} dias.")
 
         generated_at = datetime.now(timezone.utc).isoformat()
-        post_identity_payload(private_identity_payload(generated_at))
+        write_identity_bundle(private_identity_payload(generated_at))
 
         payload = {
             "ok": True,
