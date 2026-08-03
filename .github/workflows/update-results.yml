@@ -26,21 +26,26 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Consultar corridas e capturar SteamID64
+      - name: Instalar criptografia
+        run: python -m pip install --disable-pip-version-check cryptography
+
+      - name: Consultar corridas e gerar bundle privado
         env:
-          IDENTITY_INGEST_URL: ${{ secrets.IDENTITY_INGEST_URL }}
-          IDENTITY_INGEST_KEY: ${{ secrets.IDENTITY_INGEST_KEY }}
-          IDENTITY_INGEST_REQUIRED: "1"
+          # Reutiliza o mesmo secret criado na V11. Ele agora criptografa o
+          # arquivo de identidades; não é mais usado para chamar o InfinityFree.
+          IDENTITY_BUNDLE_KEY: ${{ secrets.IDENTITY_INGEST_KEY }}
+          IDENTITY_BUNDLE_REQUIRED: "1"
+          IDENTITY_BUNDLE_OUTPUT: data/identities.enc.json
         run: python scripts/update_results.py
 
-      - name: Publicar JSON atualizado
+      - name: Publicar arquivos atualizados
         run: |
-          if git diff --quiet -- data/races.json; then
-            echo "Nenhuma corrida nova ou alterada."
+          if [ -z "$(git status --porcelain -- data/races.json data/identities.enc.json)" ]; then
+            echo "Nenhuma corrida ou identidade nova/alterada."
             exit 0
           fi
           git config user.name "exilados-gp-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/races.json
-          git commit -m "Atualiza resultados do ranking"
+          git add data/races.json data/identities.enc.json
+          git commit -m "Atualiza resultados e identidades criptografadas"
           git push
