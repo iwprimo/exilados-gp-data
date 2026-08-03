@@ -24,7 +24,13 @@ DAYS = int(os.environ.get("DAYS_WINDOW", "7"))
 MAX_PAGES = 100
 MAX_RACES = 100
 OUTPUT = Path(os.environ.get("OUTPUT_FILE", "data/races.json"))
-USER_AGENT = "Mozilla/5.0 (compatible; ExiladosGP-GitHubSync/1.2)"
+USER_AGENT = "Mozilla/5.0 (compatible; ExiladosGP-GitHubSync/1.3)"
+IDENTITY_INGEST_URL = os.environ.get("IDENTITY_INGEST_URL", "").strip()
+IDENTITY_INGEST_KEY = os.environ.get("IDENTITY_INGEST_KEY", "").strip()
+IDENTITY_INGEST_REQUIRED = os.environ.get("IDENTITY_INGEST_REQUIRED", "0").strip().lower() in {"1", "true", "yes"}
+
+IDENTITIES: dict[str, dict[str, Any]] = {}
+FALLBACK_DRIVER_IDS: set[str] = set()
 
 # A documentação do ACSM limita a API a 5 requisições em 20 segundos.
 MIN_REQUEST_INTERVAL = 4.2
@@ -130,18 +136,63 @@ def get_json(url: str, timeout: int = 45, attempts: int = 3) -> dict[str, Any]:
     raise RuntimeError(f"Não foi possível consultar {url}")
 
 
+def canonical_steam_guid(value: Any) -> str:
+    guid = str(value or "").strip()
+    return guid if re.fullmatch(r"\d{17}", guid) else ""
+
+
 def stable_driver_id(guid: Any, name: Any) -> str:
-    source = str(guid or "").strip()
+    source = canonical_steam_guid(guid)
     if not source:
         source = re.sub(r"[^A-Z0-9]", "", str(name or "").upper()) or "PILOTO-SEM-ID"
     digest = hashlib.sha256(source.encode("utf-8")).hexdigest()[:20]
     return f"driver-{digest}"
 
 
-def sanitize_result(row: dict[str, Any]) -> dict[str, Any]:
+def normalized_seen_at(value: Any) -> str:
+    parsed = parse_date(str(value or ""))
+    return (parsed or datetime.now(timezone.utc)).isoformat()
+
+
+def capture_driver_identity(guid: Any, name: Any, seen_at: Any) -> tuple[str, str]:
+    clean_name = str(name or "Piloto sem nome").strip() or "Piloto sem nome"
+    steam_guid = canonical_steam_guid(guid)
+    driver_id = stable_driver_id(steam_guid, clean_name)
+
+    if not steam_guid:
+        FALLBACK_DRIVER_IDS.add(driver_id)
+        return driver_id, "name_fallback"
+
+    seen = normalized_seen_at(seen_at)
+    record = IDENTITIES.get(driver_id)
+    if record is None:
+        record = {
+            "driver_id": driver_id,
+            "steam_guid": steam_guid,
+            "display_name": clean_name,
+            "first_seen": seen,
+            "last_seen": seen,
+            "aliases": [clean_name],
+        }
+        IDENTITIES[driver_id] = record
+    else:
+        if seen < str(record["first_seen"]):
+            record["first_seen"] = seen
+        if seen >= str(record["last_seen"]):
+            record["last_seen"] = seen
+            record["display_name"] = clean_name
+        if clean_name not in record["aliases"]:
+            record["aliases"].append(clean_name)
+
+    return driver_id, "steam_guid"
+
+
+def sanitize_result(row: dict[str, Any], seen_at: Any) -> dict[str, Any]:
     name = str(row.get("DriverName") or "Piloto sem nome")
+    driver_id, identity_type = capture_driver_identity(row.get("DriverGuid"), name, seen_at)
     return {
-        "DriverId": stable_driver_id(row.get("DriverGuid"), name),
+        "DriverId": driver_id,
+        "IdentityType": identity_type,
         "DriverName": name,
         "BestLap": int(row.get("BestLap") or 0),
         "TotalTime": int(row.get("TotalTime") or 0),
@@ -153,8 +204,7 @@ def sanitize_result(row: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-
-def sanitize_lap(lap: dict[str, Any]) -> dict[str, Any] | None:
+def sanitize_lap(lap: dict[str, Any], seen_at: Any) -> dict[str, Any] | None:
     name = str(lap.get("DriverName") or "Piloto sem nome")
     try:
         lap_time = int(lap.get("LapTime") or 0)
@@ -183,8 +233,10 @@ def sanitize_lap(lap: dict[str, Any]) -> dict[str, Any] | None:
     except (TypeError, ValueError):
         timestamp = None
 
+    driver_id, identity_type = capture_driver_identity(lap.get("DriverGuid"), name, seen_at)
     return {
-        "DriverId": stable_driver_id(lap.get("DriverGuid"), name),
+        "DriverId": driver_id,
+        "IdentityType": identity_type,
         "DriverName": name,
         "LapTime": lap_time,
         "Cuts": cuts,
@@ -194,14 +246,17 @@ def sanitize_lap(lap: dict[str, Any]) -> dict[str, Any] | None:
         "Tyre": str(lap.get("Tyre") or ""),
     }
 
-def sanitize_driver(driver: Any) -> dict[str, Any]:
+
+def sanitize_driver(driver: Any, seen_at: Any) -> dict[str, Any]:
     if not isinstance(driver, dict):
-        return {"Id": stable_driver_id("", ""), "Name": ""}
+        driver_id, identity_type = capture_driver_identity("", "", seen_at)
+        return {"Id": driver_id, "IdentityType": identity_type, "Name": ""}
     name = str(driver.get("Name") or "")
-    return {"Id": stable_driver_id(driver.get("Guid"), name), "Name": name}
+    driver_id, identity_type = capture_driver_identity(driver.get("Guid"), name, seen_at)
+    return {"Id": driver_id, "IdentityType": identity_type, "Name": name}
 
 
-def sanitize_event(event: dict[str, Any]) -> dict[str, Any] | None:
+def sanitize_event(event: dict[str, Any], seen_at: Any) -> dict[str, Any] | None:
     event_type = str(event.get("Type") or "")
     if event_type not in {"COLLISION_WITH_CAR", "COLLISION_WITH_ENV"}:
         return None
@@ -212,8 +267,8 @@ def sanitize_event(event: dict[str, Any]) -> dict[str, Any] | None:
         "AfterSessionEnd": bool(event.get("AfterSessionEnd")),
         "CarId": event.get("CarId"),
         "OtherCarId": event.get("OtherCarId"),
-        "Driver": sanitize_driver(event.get("Driver")),
-        "OtherDriver": sanitize_driver(event.get("OtherDriver")),
+        "Driver": sanitize_driver(event.get("Driver"), seen_at),
+        "OtherDriver": sanitize_driver(event.get("OtherDriver"), seen_at),
         "WorldPosition": {
             "X": position.get("X", 0),
             "Y": position.get("Y", 0),
@@ -226,29 +281,91 @@ def sanitize_race(raw: dict[str, Any], metadata: dict[str, Any]) -> dict[str, An
     results = raw.get("Result") if isinstance(raw.get("Result"), list) else []
     laps = raw.get("Laps") if isinstance(raw.get("Laps"), list) else []
     events = raw.get("Events") if isinstance(raw.get("Events"), list) else []
+    seen_at = raw.get("Date") or metadata.get("date") or datetime.now(timezone.utc).isoformat()
     clean_laps = [
         item
         for lap in laps
-        if isinstance(lap, dict) and (item := sanitize_lap(lap))
+        if isinstance(lap, dict) and (item := sanitize_lap(lap, seen_at))
     ]
     clean_events = [
         item
         for event in events
-        if isinstance(event, dict) and (item := sanitize_event(event))
+        if isinstance(event, dict) and (item := sanitize_event(event, seen_at))
     ]
     return {
         "Type": "RACE",
-        "Date": raw.get("Date") or metadata.get("date"),
+        "Date": seen_at,
         "SessionFile": raw.get("SessionFile")
         or Path(str(metadata.get("results_json_url", "resultado"))).stem,
         "TrackName": raw.get("TrackName")
         or metadata.get("track")
         or "pista_desconhecida",
         "TrackConfig": raw.get("TrackConfig") or metadata.get("track_layout"),
-        "Result": [sanitize_result(row) for row in results if isinstance(row, dict)],
+        "Result": [sanitize_result(row, seen_at) for row in results if isinstance(row, dict)],
         "Laps": clean_laps,
         "Events": clean_events,
     }
+
+
+def private_identity_payload(generated_at: str) -> dict[str, Any]:
+    drivers = []
+    for driver_id in sorted(IDENTITIES):
+        record = dict(IDENTITIES[driver_id])
+        record["aliases"] = sorted(set(str(alias) for alias in record.get("aliases", []) if str(alias).strip()))
+        drivers.append(record)
+    return {
+        "ok": True,
+        "generated_at": generated_at,
+        "source": "acsm-github-actions",
+        "drivers": drivers,
+    }
+
+
+def post_identity_payload(payload: dict[str, Any], timeout: int = 45, attempts: int = 3) -> None:
+    if not IDENTITY_INGEST_URL and not IDENTITY_INGEST_KEY:
+        print("Captura privada de SteamID não configurada; races.json continuará sem IDs brutos.")
+        return
+    if not IDENTITY_INGEST_URL or not IDENTITY_INGEST_KEY:
+        raise RuntimeError("Configure simultaneamente IDENTITY_INGEST_URL e IDENTITY_INGEST_KEY.")
+
+    body = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
+    last_error: Exception | None = None
+    for attempt in range(1, attempts + 1):
+        request = urllib.request.Request(
+            IDENTITY_INGEST_URL,
+            data=body,
+            method="POST",
+            headers={
+                "Accept": "application/json",
+                "Content-Type": "application/json; charset=utf-8",
+                "User-Agent": USER_AGENT,
+                "X-Exilados-Identity-Key": IDENTITY_INGEST_KEY,
+            },
+        )
+        try:
+            with urllib.request.urlopen(request, timeout=timeout, context=ssl.create_default_context()) as response:
+                raw = response.read().decode("utf-8-sig", errors="replace")
+                status = int(getattr(response, "status", 200))
+            if status < 200 or status >= 300:
+                raise RuntimeError(f"HTTP {status} no endpoint privado de identidade")
+            answer = json.loads(raw)
+            if not isinstance(answer, dict) or answer.get("ok") is not True:
+                raise RuntimeError(f"Endpoint privado recusou o lote: {response_preview(raw)}")
+            print(
+                "Identidades enviadas com segurança: "
+                f"{int(answer.get('accepted') or 0)} aceitas, "
+                f"{int(answer.get('created') or 0)} novas."
+            )
+            return
+        except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, json.JSONDecodeError, RuntimeError) as exc:
+            last_error = exc
+            if attempt < attempts:
+                time.sleep(4 * attempt)
+
+    message = f"Falha ao enviar identidades ao endpoint privado: {last_error}"
+    if IDENTITY_INGEST_REQUIRED:
+        raise RuntimeError(message)
+    print(f"Aviso: {message}", file=sys.stderr)
 
 
 def fetch_recent_races() -> list[dict[str, Any]]:
@@ -318,11 +435,19 @@ def main() -> int:
         if not races:
             raise RuntimeError(f"Nenhuma corrida encontrada nos últimos {DAYS} dias.")
 
+        generated_at = datetime.now(timezone.utc).isoformat()
+        post_identity_payload(private_identity_payload(generated_at))
+
         payload = {
             "ok": True,
-            "generated_at": datetime.now(timezone.utc).isoformat(),
+            "generated_at": generated_at,
             "window_days": DAYS,
             "race_count": len(races),
+            "identity_summary": {
+                "steam_guid_captured": len(IDENTITIES),
+                "name_fallback": len(FALLBACK_DRIVER_IDS),
+                "raw_steam_ids_public": False,
+            },
             "races": races,
         }
 
