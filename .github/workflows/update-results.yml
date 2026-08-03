@@ -3,7 +3,7 @@ name: Atualizar resultados Exilados GP
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "7/5 * * * *"
 
 permissions:
   contents: write
@@ -26,7 +26,11 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Consultar corridas dos últimos 7 dias
+      - name: Consultar corridas e capturar SteamID64
+        env:
+          IDENTITY_INGEST_URL: ${{ secrets.IDENTITY_INGEST_URL }}
+          IDENTITY_INGEST_KEY: ${{ secrets.IDENTITY_INGEST_KEY }}
+          IDENTITY_INGEST_REQUIRED: "1"
         run: python scripts/update_results.py
 
       - name: Publicar JSON atualizado
@@ -35,7 +39,6 @@ jobs:
             echo "Nenhuma corrida nova ou alterada."
             exit 0
           fi
-
           git config user.name "exilados-gp-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data/races.json
