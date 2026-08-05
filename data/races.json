@@ -1,8 +1,8 @@
 {
   "ok": true,
-  "generated_at": "2026-08-05T04:28:10.720028+00:00",
+  "generated_at": "2026-08-05T07:12:16.667814+00:00",
   "window_days": 7,
-  "race_count": 31,
+  "race_count": 29,
   "identity_summary": {
     "steam_guid_captured": 62,
     "name_fallback": 1,
@@ -69201,122 +69201,6 @@
             "X": -166.14607,
             "Y": 15.826749,
             "Z": -478.89307
-          }
-        }
-      ]
-    },
-    {
-      "Type": "RACE",
-      "Date": "2026-07-28T23:18:00-07:00",
-      "SessionFile": "2026_7_28_23_18_RACE",
-      "TrackName": "rt_misano",
-      "TrackConfig": null,
-      "Result": [
-        {
-          "DriverId": "driver-3b3e6900f672ec05d9a1",
-          "IdentityType": "steam_guid",
-          "DriverName": "Primo",
-          "BestLap": 999999999,
-          "TotalTime": 574382,
-          "NumLaps": 1,
-          "GridPosition": 1,
-          "CarModel": "rss_gtm_bayer_i6_evo",
-          "Disqualified": false,
-          "HasPenalty": false
-        }
-      ],
-      "Laps": [
-        {
-          "DriverId": "driver-3b3e6900f672ec05d9a1",
-          "IdentityType": "steam_guid",
-          "DriverName": "Primo",
-          "LapTime": 574449,
-          "Cuts": 2,
-          "Sectors": [
-            226086,
-            214159,
-            134204
-          ],
-          "Timestamp": 1785305887,
-          "CarModel": "rss_gtm_bayer_i6_evo",
-          "Tyre": "D"
-        }
-      ],
-      "Events": []
-    },
-    {
-      "Type": "RACE",
-      "Date": "2026-07-28T23:06:00-07:00",
-      "SessionFile": "2026_7_28_23_6_RACE",
-      "TrackName": "rt_misano",
-      "TrackConfig": null,
-      "Result": [
-        {
-          "DriverId": "driver-3b3e6900f672ec05d9a1",
-          "IdentityType": "steam_guid",
-          "DriverName": "Primo",
-          "BestLap": 999999999,
-          "TotalTime": 581086,
-          "NumLaps": 2,
-          "GridPosition": 1,
-          "CarModel": "rss_gtm_bayer_i6_evo",
-          "Disqualified": false,
-          "HasPenalty": false
-        }
-      ],
-      "Laps": [
-        {
-          "DriverId": "driver-3b3e6900f672ec05d9a1",
-          "IdentityType": "steam_guid",
-          "DriverName": "Primo",
-          "LapTime": 176715,
-          "Cuts": 5,
-          "Sectors": [
-            77647,
-            39956,
-            59112
-          ],
-          "Timestamp": 1785304615,
-          "CarModel": "rss_gtm_bayer_i6_evo",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-3b3e6900f672ec05d9a1",
-          "IdentityType": "steam_guid",
-          "DriverName": "Primo",
-          "LapTime": 404441,
-          "Cuts": 2,
-          "Sectors": [
-            20213,
-            35694,
-            348534
-          ],
-          "Timestamp": 1785305020,
-          "CarModel": "rss_gtm_bayer_i6_evo",
-          "Tyre": "D"
-        }
-      ],
-      "Events": [
-        {
-          "Type": "COLLISION_WITH_ENV",
-          "Timestamp": 1785305020,
-          "AfterSessionEnd": false,
-          "CarId": 15,
-          "OtherCarId": 0,
-          "Driver": {
-            "Id": "driver-3b3e6900f672ec05d9a1",
-            "IdentityType": "steam_guid",
-            "Name": "Primo"
-          },
-          "OtherDriver": {
-            "Id": "driver-7a115c3ef9b2810403c3",
-            "IdentityType": "name_fallback",
-            "Name": ""
-          },
-          "WorldPosition": {
-            "X": 117.829765,
-            "Y": -3.168377,
-            "Z": -129.93681
           }
         }
       ]
