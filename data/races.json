@@ -1,14 +1,961 @@
 {
   "ok": true,
-  "generated_at": "2026-08-07T22:50:33.373835+00:00",
+  "generated_at": "2026-08-07T23:22:21.948541+00:00",
   "window_days": 7,
-  "race_count": 31,
+  "race_count": 32,
   "identity_summary": {
     "steam_guid_captured": 54,
     "name_fallback": 1,
     "raw_steam_ids_public": false
   },
   "races": [
+    {
+      "Type": "RACE",
+      "Date": "2026-08-07T16:15:00-07:00",
+      "SessionFile": "2026_8_7_16_15_RACE",
+      "TrackName": "road_atlanta2018",
+      "TrackConfig": "grandprix",
+      "Result": [
+        {
+          "DriverId": "driver-fe9327deed6b75f9e634",
+          "IdentityType": "steam_guid",
+          "DriverName": "hades lima",
+          "BestLap": 78368,
+          "TotalTime": 721767,
+          "NumLaps": 9,
+          "GridPosition": 4,
+          "CarModel": "lmgt3_aston_gt3",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "BestLap": 78626,
+          "TotalTime": 737551,
+          "NumLaps": 9,
+          "GridPosition": 5,
+          "CarModel": "porsche_992_gt3_r",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-4bff70aba5b75d5c0fe0",
+          "IdentityType": "steam_guid",
+          "DriverName": "Neo Ferreira",
+          "BestLap": 78340,
+          "TotalTime": 738266,
+          "NumLaps": 9,
+          "GridPosition": 1,
+          "CarModel": "lmgt3_mercedes_amg_gt3_evo",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-278557d174834c60d087",
+          "IdentityType": "steam_guid",
+          "DriverName": "Weverson Tavares",
+          "BestLap": 82344,
+          "TotalTime": 618885,
+          "NumLaps": 4,
+          "GridPosition": 9,
+          "CarModel": "fsr_audi_lms_evo_ii_gt3",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-2fde939babd70b26ac8e",
+          "IdentityType": "steam_guid",
+          "DriverName": "m araujo",
+          "BestLap": 83495,
+          "TotalTime": 175383,
+          "NumLaps": 2,
+          "GridPosition": 3,
+          "CarModel": "ng_lexus_rcf_gt3",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-b213215dfd6e1a8b0fa1",
+          "IdentityType": "steam_guid",
+          "DriverName": "Supreme",
+          "BestLap": 103419,
+          "TotalTime": 103350,
+          "NumLaps": 1,
+          "GridPosition": 2,
+          "CarModel": "porsche_992_gt3_r",
+          "Disqualified": false,
+          "HasPenalty": false
+        }
+      ],
+      "Laps": [
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 86510,
+          "Cuts": 0,
+          "Sectors": [
+            36772,
+            30632,
+            19106
+          ],
+          "Timestamp": 1786143802,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-fe9327deed6b75f9e634",
+          "IdentityType": "steam_guid",
+          "DriverName": "hades lima",
+          "LapTime": 86699,
+          "Cuts": 0,
+          "Sectors": [
+            37015,
+            30749,
+            18935
+          ],
+          "Timestamp": 1786143802,
+          "CarModel": "lmgt3_aston_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-4bff70aba5b75d5c0fe0",
+          "IdentityType": "steam_guid",
+          "DriverName": "Neo Ferreira",
+          "LapTime": 86846,
+          "Cuts": 0,
+          "Sectors": [
+            37536,
+            30419,
+            18891
+          ],
+          "Timestamp": 1786143802,
+          "CarModel": "lmgt3_mercedes_amg_gt3_evo",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-2fde939babd70b26ac8e",
+          "IdentityType": "steam_guid",
+          "DriverName": "m araujo",
+          "LapTime": 91958,
+          "Cuts": 0,
+          "Sectors": [
+            39498,
+            31283,
+            21177
+          ],
+          "Timestamp": 1786143807,
+          "CarModel": "ng_lexus_rcf_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-b213215dfd6e1a8b0fa1",
+          "IdentityType": "steam_guid",
+          "DriverName": "Supreme",
+          "LapTime": 103419,
+          "Cuts": 0,
+          "Sectors": [
+            41211,
+            43190,
+            19018
+          ],
+          "Timestamp": 1786143819,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 79220,
+          "Cuts": 0,
+          "Sectors": [
+            30377,
+            30520,
+            18323
+          ],
+          "Timestamp": 1786143881,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-4bff70aba5b75d5c0fe0",
+          "IdentityType": "steam_guid",
+          "DriverName": "Neo Ferreira",
+          "LapTime": 81029,
+          "Cuts": 0,
+          "Sectors": [
+            30711,
+            30294,
+            20024
+          ],
+          "Timestamp": 1786143883,
+          "CarModel": "lmgt3_mercedes_amg_gt3_evo",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-fe9327deed6b75f9e634",
+          "IdentityType": "steam_guid",
+          "DriverName": "hades lima",
+          "LapTime": 81822,
+          "Cuts": 0,
+          "Sectors": [
+            30567,
+            30537,
+            20718
+          ],
+          "Timestamp": 1786143884,
+          "CarModel": "lmgt3_aston_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-2fde939babd70b26ac8e",
+          "IdentityType": "steam_guid",
+          "DriverName": "m araujo",
+          "LapTime": 83495,
+          "Cuts": 0,
+          "Sectors": [
+            33766,
+            30798,
+            18931
+          ],
+          "Timestamp": 1786143891,
+          "CarModel": "ng_lexus_rcf_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 79310,
+          "Cuts": 0,
+          "Sectors": [
+            30666,
+            30248,
+            18396
+          ],
+          "Timestamp": 1786143960,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-4bff70aba5b75d5c0fe0",
+          "IdentityType": "steam_guid",
+          "DriverName": "Neo Ferreira",
+          "LapTime": 79077,
+          "Cuts": 0,
+          "Sectors": [
+            30008,
+            30088,
+            18981
+          ],
+          "Timestamp": 1786143962,
+          "CarModel": "lmgt3_mercedes_amg_gt3_evo",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-fe9327deed6b75f9e634",
+          "IdentityType": "steam_guid",
+          "DriverName": "hades lima",
+          "LapTime": 79276,
+          "Cuts": 0,
+          "Sectors": [
+            30177,
+            30343,
+            18756
+          ],
+          "Timestamp": 1786143963,
+          "CarModel": "lmgt3_aston_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-278557d174834c60d087",
+          "IdentityType": "steam_guid",
+          "DriverName": "Weverson Tavares",
+          "LapTime": 111907,
+          "Cuts": 0,
+          "Sectors": [
+            59491,
+            32575,
+            19841
+          ],
+          "Timestamp": 1786143991,
+          "CarModel": "fsr_audi_lms_evo_ii_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 79571,
+          "Cuts": 0,
+          "Sectors": [
+            30909,
+            30415,
+            18247
+          ],
+          "Timestamp": 1786144040,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-4bff70aba5b75d5c0fe0",
+          "IdentityType": "steam_guid",
+          "DriverName": "Neo Ferreira",
+          "LapTime": 78340,
+          "Cuts": 0,
+          "Sectors": [
+            30123,
+            30176,
+            18041
+          ],
+          "Timestamp": 1786144041,
+          "CarModel": "lmgt3_mercedes_amg_gt3_evo",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-fe9327deed6b75f9e634",
+          "IdentityType": "steam_guid",
+          "DriverName": "hades lima",
+          "LapTime": 78566,
+          "Cuts": 0,
+          "Sectors": [
+            29939,
+            30326,
+            18301
+          ],
+          "Timestamp": 1786144042,
+          "CarModel": "lmgt3_aston_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-278557d174834c60d087",
+          "IdentityType": "steam_guid",
+          "DriverName": "Weverson Tavares",
+          "LapTime": 86612,
+          "Cuts": 0,
+          "Sectors": [
+            35088,
+            32067,
+            19457
+          ],
+          "Timestamp": 1786144078,
+          "CarModel": "fsr_audi_lms_evo_ii_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-fe9327deed6b75f9e634",
+          "IdentityType": "steam_guid",
+          "DriverName": "hades lima",
+          "LapTime": 79441,
+          "Cuts": 0,
+          "Sectors": [
+            29883,
+            30370,
+            19188
+          ],
+          "Timestamp": 1786144121,
+          "CarModel": "lmgt3_aston_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-4bff70aba5b75d5c0fe0",
+          "IdentityType": "steam_guid",
+          "DriverName": "Neo Ferreira",
+          "LapTime": 86559,
+          "Cuts": 0,
+          "Sectors": [
+            29589,
+            30550,
+            26420
+          ],
+          "Timestamp": 1786144127,
+          "CarModel": "lmgt3_mercedes_amg_gt3_evo",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 91784,
+          "Cuts": 0,
+          "Sectors": [
+            30080,
+            30690,
+            31014
+          ],
+          "Timestamp": 1786144132,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-278557d174834c60d087",
+          "IdentityType": "steam_guid",
+          "DriverName": "Weverson Tavares",
+          "LapTime": 82344,
+          "Cuts": 0,
+          "Sectors": [
+            32218,
+            31324,
+            18802
+          ],
+          "Timestamp": 1786144160,
+          "CarModel": "fsr_audi_lms_evo_ii_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-fe9327deed6b75f9e634",
+          "IdentityType": "steam_guid",
+          "DriverName": "hades lima",
+          "LapTime": 78643,
+          "Cuts": 0,
+          "Sectors": [
+            30012,
+            30258,
+            18373
+          ],
+          "Timestamp": 1786144200,
+          "CarModel": "lmgt3_aston_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-4bff70aba5b75d5c0fe0",
+          "IdentityType": "steam_guid",
+          "DriverName": "Neo Ferreira",
+          "LapTime": 79766,
+          "Cuts": 0,
+          "Sectors": [
+            30613,
+            30829,
+            18324
+          ],
+          "Timestamp": 1786144207,
+          "CarModel": "lmgt3_mercedes_amg_gt3_evo",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 78626,
+          "Cuts": 0,
+          "Sectors": [
+            30265,
+            30213,
+            18148
+          ],
+          "Timestamp": 1786144210,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-fe9327deed6b75f9e634",
+          "IdentityType": "steam_guid",
+          "DriverName": "hades lima",
+          "LapTime": 79354,
+          "Cuts": 0,
+          "Sectors": [
+            30246,
+            30618,
+            18490
+          ],
+          "Timestamp": 1786144279,
+          "CarModel": "lmgt3_aston_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-4bff70aba5b75d5c0fe0",
+          "IdentityType": "steam_guid",
+          "DriverName": "Neo Ferreira",
+          "LapTime": 78726,
+          "Cuts": 0,
+          "Sectors": [
+            30017,
+            30349,
+            18360
+          ],
+          "Timestamp": 1786144286,
+          "CarModel": "lmgt3_mercedes_amg_gt3_evo",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 78941,
+          "Cuts": 0,
+          "Sectors": [
+            30319,
+            30330,
+            18292
+          ],
+          "Timestamp": 1786144289,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-278557d174834c60d087",
+          "IdentityType": "steam_guid",
+          "DriverName": "Weverson Tavares",
+          "LapTime": 174446,
+          "Cuts": 0,
+          "Sectors": [
+            122876,
+            31572,
+            19998
+          ],
+          "Timestamp": 1786144334,
+          "CarModel": "fsr_audi_lms_evo_ii_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-fe9327deed6b75f9e634",
+          "IdentityType": "steam_guid",
+          "DriverName": "hades lima",
+          "LapTime": 79678,
+          "Cuts": 0,
+          "Sectors": [
+            30376,
+            31010,
+            18292
+          ],
+          "Timestamp": 1786144359,
+          "CarModel": "lmgt3_aston_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 84693,
+          "Cuts": 0,
+          "Sectors": [
+            35998,
+            30253,
+            18442
+          ],
+          "Timestamp": 1786144374,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-4bff70aba5b75d5c0fe0",
+          "IdentityType": "steam_guid",
+          "DriverName": "Neo Ferreira",
+          "LapTime": 89459,
+          "Cuts": 0,
+          "Sectors": [
+            40617,
+            30546,
+            18296
+          ],
+          "Timestamp": 1786144375,
+          "CarModel": "lmgt3_mercedes_amg_gt3_evo",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-fe9327deed6b75f9e634",
+          "IdentityType": "steam_guid",
+          "DriverName": "hades lima",
+          "LapTime": 78368,
+          "Cuts": 0,
+          "Sectors": [
+            29912,
+            30276,
+            18180
+          ],
+          "Timestamp": 1786144437,
+          "CarModel": "lmgt3_aston_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 78992,
+          "Cuts": 0,
+          "Sectors": [
+            30150,
+            30586,
+            18256
+          ],
+          "Timestamp": 1786144453,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-4bff70aba5b75d5c0fe0",
+          "IdentityType": "steam_guid",
+          "DriverName": "Neo Ferreira",
+          "LapTime": 78527,
+          "Cuts": 0,
+          "Sectors": [
+            29775,
+            30311,
+            18441
+          ],
+          "Timestamp": 1786144454,
+          "CarModel": "lmgt3_mercedes_amg_gt3_evo",
+          "Tyre": "S8M"
+        }
+      ],
+      "Events": [
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1786143778,
+          "AfterSessionEnd": false,
+          "CarId": 8,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-b213215dfd6e1a8b0fa1",
+            "IdentityType": "steam_guid",
+            "Name": "Supreme"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -362.86948,
+            "Y": 1.1739249,
+            "Z": 1497.4019
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1786143868,
+          "AfterSessionEnd": false,
+          "CarId": 8,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-b213215dfd6e1a8b0fa1",
+            "IdentityType": "steam_guid",
+            "Name": "Supreme"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -185.758,
+            "Y": 0.7888228,
+            "Z": 1041.1727
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786143873,
+          "AfterSessionEnd": false,
+          "CarId": 11,
+          "OtherCarId": 1,
+          "Driver": {
+            "Id": "driver-fe9327deed6b75f9e634",
+            "IdentityType": "steam_guid",
+            "Name": "hades lima"
+          },
+          "OtherDriver": {
+            "Id": "driver-4bff70aba5b75d5c0fe0",
+            "IdentityType": "steam_guid",
+            "Name": "Neo Ferreira"
+          },
+          "WorldPosition": {
+            "X": -368.35355,
+            "Y": 14.3485775,
+            "Z": 158.79913
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786143876,
+          "AfterSessionEnd": false,
+          "CarId": 1,
+          "OtherCarId": 11,
+          "Driver": {
+            "Id": "driver-4bff70aba5b75d5c0fe0",
+            "IdentityType": "steam_guid",
+            "Name": "Neo Ferreira"
+          },
+          "OtherDriver": {
+            "Id": "driver-fe9327deed6b75f9e634",
+            "IdentityType": "steam_guid",
+            "Name": "hades lima"
+          },
+          "WorldPosition": {
+            "X": -368.2356,
+            "Y": 14.341125,
+            "Z": 158.8153
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786143878,
+          "AfterSessionEnd": false,
+          "CarId": 11,
+          "OtherCarId": 1,
+          "Driver": {
+            "Id": "driver-fe9327deed6b75f9e634",
+            "IdentityType": "steam_guid",
+            "Name": "hades lima"
+          },
+          "OtherDriver": {
+            "Id": "driver-4bff70aba5b75d5c0fe0",
+            "IdentityType": "steam_guid",
+            "Name": "Neo Ferreira"
+          },
+          "WorldPosition": {
+            "X": -367.95404,
+            "Y": 15.070689,
+            "Z": 150.46617
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1786143893,
+          "AfterSessionEnd": false,
+          "CarId": 8,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-b213215dfd6e1a8b0fa1",
+            "IdentityType": "steam_guid",
+            "Name": "Supreme"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -390.44656,
+            "Y": 1.2597603,
+            "Z": 1476.5243
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1786143898,
+          "AfterSessionEnd": false,
+          "CarId": 8,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-b213215dfd6e1a8b0fa1",
+            "IdentityType": "steam_guid",
+            "Name": "Supreme"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -386.01068,
+            "Y": 1.5333303,
+            "Z": 1468.4626
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1786143919,
+          "AfterSessionEnd": false,
+          "CarId": 4,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-278557d174834c60d087",
+            "IdentityType": "steam_guid",
+            "Name": "Weverson Tavares"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 134.56305,
+            "Y": 3.234139,
+            "Z": 678.7022
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786144110,
+          "AfterSessionEnd": false,
+          "CarId": 19,
+          "OtherCarId": 1,
+          "Driver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "IdentityType": "steam_guid",
+            "Name": "Borborema"
+          },
+          "OtherDriver": {
+            "Id": "driver-4bff70aba5b75d5c0fe0",
+            "IdentityType": "steam_guid",
+            "Name": "Neo Ferreira"
+          },
+          "WorldPosition": {
+            "X": -329.05103,
+            "Y": 9.267414,
+            "Z": 256.23605
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786144111,
+          "AfterSessionEnd": false,
+          "CarId": 1,
+          "OtherCarId": 19,
+          "Driver": {
+            "Id": "driver-4bff70aba5b75d5c0fe0",
+            "IdentityType": "steam_guid",
+            "Name": "Neo Ferreira"
+          },
+          "OtherDriver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "IdentityType": "steam_guid",
+            "Name": "Borborema"
+          },
+          "WorldPosition": {
+            "X": -329.05682,
+            "Y": 9.90905,
+            "Z": 250.57875
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786144111,
+          "AfterSessionEnd": false,
+          "CarId": 1,
+          "OtherCarId": 11,
+          "Driver": {
+            "Id": "driver-4bff70aba5b75d5c0fe0",
+            "IdentityType": "steam_guid",
+            "Name": "Neo Ferreira"
+          },
+          "OtherDriver": {
+            "Id": "driver-fe9327deed6b75f9e634",
+            "IdentityType": "steam_guid",
+            "Name": "hades lima"
+          },
+          "WorldPosition": {
+            "X": -348.0602,
+            "Y": 11.328487,
+            "Z": 210.24918
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786144113,
+          "AfterSessionEnd": false,
+          "CarId": 11,
+          "OtherCarId": 1,
+          "Driver": {
+            "Id": "driver-fe9327deed6b75f9e634",
+            "IdentityType": "steam_guid",
+            "Name": "hades lima"
+          },
+          "OtherDriver": {
+            "Id": "driver-4bff70aba5b75d5c0fe0",
+            "IdentityType": "steam_guid",
+            "Name": "Neo Ferreira"
+          },
+          "WorldPosition": {
+            "X": -347.96536,
+            "Y": 11.2030525,
+            "Z": 210.13716
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1786144115,
+          "AfterSessionEnd": false,
+          "CarId": 19,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "IdentityType": "steam_guid",
+            "Name": "Borborema"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -380.83194,
+            "Y": 12.326925,
+            "Z": 203.87857
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1786144189,
+          "AfterSessionEnd": false,
+          "CarId": 4,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-278557d174834c60d087",
+            "IdentityType": "steam_guid",
+            "Name": "Weverson Tavares"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -107.33569,
+            "Y": -11.9593115,
+            "Z": 949.5891
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1786144296,
+          "AfterSessionEnd": false,
+          "CarId": 1,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-4bff70aba5b75d5c0fe0",
+            "IdentityType": "steam_guid",
+            "Name": "Neo Ferreira"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 389.0914,
+            "Y": -10.250046,
+            "Z": 311.40475
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1786144364,
+          "AfterSessionEnd": false,
+          "CarId": 4,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-278557d174834c60d087",
+            "IdentityType": "steam_guid",
+            "Name": "Weverson Tavares"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -13.771572,
+            "Y": -15.318946,
+            "Z": 883.6022
+          }
+        }
+      ]
+    },
     {
       "Type": "RACE",
       "Date": "2026-08-07T15:47:00-07:00",
