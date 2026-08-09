@@ -1,14 +1,1388 @@
 {
   "ok": true,
-  "generated_at": "2026-08-09T04:59:14.772101+00:00",
+  "generated_at": "2026-08-09T17:55:32.220853+00:00",
   "window_days": 7,
-  "race_count": 30,
+  "race_count": 31,
   "identity_summary": {
-    "steam_guid_captured": 46,
+    "steam_guid_captured": 48,
     "name_fallback": 1,
     "raw_steam_ids_public": false
   },
   "races": [
+    {
+      "Type": "RACE",
+      "Date": "2026-08-09T10:46:00-07:00",
+      "SessionFile": "2026_8_9_10_46_RACE",
+      "TrackName": "rt_daytona",
+      "TrackConfig": "sportscar_m4x_lfm_nodrs",
+      "Result": [
+        {
+          "DriverId": "driver-537042fe404a735c853d",
+          "IdentityType": "steam_guid",
+          "DriverName": "D3CK0L",
+          "BestLap": 91659,
+          "TotalTime": 752127,
+          "NumLaps": 8,
+          "GridPosition": 4,
+          "CarModel": "cadillac_v_series_r_2023",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "BestLap": 91856,
+          "TotalTime": 754884,
+          "NumLaps": 8,
+          "GridPosition": 2,
+          "CarModel": "porsche_963_2023",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-186835adbd1f5b61006c",
+          "IdentityType": "steam_guid",
+          "DriverName": "Matheus da Silva",
+          "BestLap": 92725,
+          "TotalTime": 756720,
+          "NumLaps": 8,
+          "GridPosition": 3,
+          "CarModel": "bmw_m_hybrid_v8_2023",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-278557d174834c60d087",
+          "IdentityType": "steam_guid",
+          "DriverName": "Weverson Tavares",
+          "BestLap": 92705,
+          "TotalTime": 776941,
+          "NumLaps": 8,
+          "GridPosition": 5,
+          "CarModel": "toyota_gr010",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-f2da1b9dff830f07a982",
+          "IdentityType": "steam_guid",
+          "DriverName": "L. Firme",
+          "BestLap": 88838,
+          "TotalTime": 670597,
+          "NumLaps": 7,
+          "GridPosition": 6,
+          "CarModel": "cadillac_v_series_r_2023",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-b213215dfd6e1a8b0fa1",
+          "IdentityType": "steam_guid",
+          "DriverName": "Supreme",
+          "BestLap": 96194,
+          "TotalTime": 816389,
+          "NumLaps": 6,
+          "GridPosition": 29,
+          "CarModel": "cadillac_v_series_r_2023",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-c159bceee74ce3af6a1a",
+          "IdentityType": "steam_guid",
+          "DriverName": "jefferson azevedo",
+          "BestLap": 98904,
+          "TotalTime": 218318,
+          "NumLaps": 2,
+          "GridPosition": 7,
+          "CarModel": "ferrari_499p_2023",
+          "Disqualified": false,
+          "HasPenalty": false
+        }
+      ],
+      "Laps": [
+        {
+          "DriverId": "driver-186835adbd1f5b61006c",
+          "IdentityType": "steam_guid",
+          "DriverName": "Matheus da Silva",
+          "LapTime": 100108,
+          "Cuts": 0,
+          "Sectors": [
+            40433,
+            33593,
+            26082
+          ],
+          "Timestamp": 1786296766,
+          "CarModel": "bmw_m_hybrid_v8_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 102970,
+          "Cuts": 0,
+          "Sectors": [
+            43413,
+            33543,
+            26014
+          ],
+          "Timestamp": 1786296769,
+          "CarModel": "porsche_963_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-537042fe404a735c853d",
+          "IdentityType": "steam_guid",
+          "DriverName": "D3CK0L",
+          "LapTime": 103487,
+          "Cuts": 0,
+          "Sectors": [
+            44835,
+            33160,
+            25492
+          ],
+          "Timestamp": 1786296770,
+          "CarModel": "cadillac_v_series_r_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-278557d174834c60d087",
+          "IdentityType": "steam_guid",
+          "DriverName": "Weverson Tavares",
+          "LapTime": 109106,
+          "Cuts": 0,
+          "Sectors": [
+            48114,
+            33880,
+            27112
+          ],
+          "Timestamp": 1786296775,
+          "CarModel": "toyota_gr010",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-f2da1b9dff830f07a982",
+          "IdentityType": "steam_guid",
+          "DriverName": "L. Firme",
+          "LapTime": 111406,
+          "Cuts": 0,
+          "Sectors": [
+            47425,
+            34160,
+            29821
+          ],
+          "Timestamp": 1786296778,
+          "CarModel": "cadillac_v_series_r_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-c159bceee74ce3af6a1a",
+          "IdentityType": "steam_guid",
+          "DriverName": "jefferson azevedo",
+          "LapTime": 119477,
+          "Cuts": 0,
+          "Sectors": [
+            56747,
+            34974,
+            27756
+          ],
+          "Timestamp": 1786296786,
+          "CarModel": "ferrari_499p_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-186835adbd1f5b61006c",
+          "IdentityType": "steam_guid",
+          "DriverName": "Matheus da Silva",
+          "LapTime": 93866,
+          "Cuts": 0,
+          "Sectors": [
+            34692,
+            33218,
+            25956
+          ],
+          "Timestamp": 1786296860,
+          "CarModel": "bmw_m_hybrid_v8_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-537042fe404a735c853d",
+          "IdentityType": "steam_guid",
+          "DriverName": "D3CK0L",
+          "LapTime": 95006,
+          "Cuts": 0,
+          "Sectors": [
+            35508,
+            33700,
+            25798
+          ],
+          "Timestamp": 1786296865,
+          "CarModel": "cadillac_v_series_r_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 96157,
+          "Cuts": 0,
+          "Sectors": [
+            36941,
+            33584,
+            25632
+          ],
+          "Timestamp": 1786296865,
+          "CarModel": "porsche_963_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-278557d174834c60d087",
+          "IdentityType": "steam_guid",
+          "DriverName": "Weverson Tavares",
+          "LapTime": 92941,
+          "Cuts": 0,
+          "Sectors": [
+            33779,
+            33508,
+            25654
+          ],
+          "Timestamp": 1786296868,
+          "CarModel": "toyota_gr010",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-f2da1b9dff830f07a982",
+          "IdentityType": "steam_guid",
+          "DriverName": "L. Firme",
+          "LapTime": 95019,
+          "Cuts": 0,
+          "Sectors": [
+            34872,
+            33786,
+            26361
+          ],
+          "Timestamp": 1786296873,
+          "CarModel": "cadillac_v_series_r_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-c159bceee74ce3af6a1a",
+          "IdentityType": "steam_guid",
+          "DriverName": "jefferson azevedo",
+          "LapTime": 98904,
+          "Cuts": 0,
+          "Sectors": [
+            36817,
+            35073,
+            27014
+          ],
+          "Timestamp": 1786296885,
+          "CarModel": "ferrari_499p_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-186835adbd1f5b61006c",
+          "IdentityType": "steam_guid",
+          "DriverName": "Matheus da Silva",
+          "LapTime": 92725,
+          "Cuts": 0,
+          "Sectors": [
+            34041,
+            33039,
+            25645
+          ],
+          "Timestamp": 1786296953,
+          "CarModel": "bmw_m_hybrid_v8_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-537042fe404a735c853d",
+          "IdentityType": "steam_guid",
+          "DriverName": "D3CK0L",
+          "LapTime": 91659,
+          "Cuts": 0,
+          "Sectors": [
+            33294,
+            33012,
+            25353
+          ],
+          "Timestamp": 1786296956,
+          "CarModel": "cadillac_v_series_r_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 92354,
+          "Cuts": 0,
+          "Sectors": [
+            33486,
+            33110,
+            25758
+          ],
+          "Timestamp": 1786296958,
+          "CarModel": "porsche_963_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-278557d174834c60d087",
+          "IdentityType": "steam_guid",
+          "DriverName": "Weverson Tavares",
+          "LapTime": 92705,
+          "Cuts": 0,
+          "Sectors": [
+            33089,
+            33800,
+            25816
+          ],
+          "Timestamp": 1786296961,
+          "CarModel": "toyota_gr010",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-f2da1b9dff830f07a982",
+          "IdentityType": "steam_guid",
+          "DriverName": "L. Firme",
+          "LapTime": 94495,
+          "Cuts": 0,
+          "Sectors": [
+            34146,
+            33660,
+            26689
+          ],
+          "Timestamp": 1786296967,
+          "CarModel": "cadillac_v_series_r_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-b213215dfd6e1a8b0fa1",
+          "IdentityType": "steam_guid",
+          "DriverName": "Supreme",
+          "LapTime": 155832,
+          "Cuts": 0,
+          "Sectors": [
+            94289,
+            34875,
+            26668
+          ],
+          "Timestamp": 1786296985,
+          "CarModel": "cadillac_v_series_r_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-186835adbd1f5b61006c",
+          "IdentityType": "steam_guid",
+          "DriverName": "Matheus da Silva",
+          "LapTime": 92750,
+          "Cuts": 0,
+          "Sectors": [
+            34120,
+            33061,
+            25569
+          ],
+          "Timestamp": 1786297046,
+          "CarModel": "bmw_m_hybrid_v8_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-537042fe404a735c853d",
+          "IdentityType": "steam_guid",
+          "DriverName": "D3CK0L",
+          "LapTime": 92789,
+          "Cuts": 0,
+          "Sectors": [
+            33718,
+            33687,
+            25384
+          ],
+          "Timestamp": 1786297049,
+          "CarModel": "cadillac_v_series_r_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 91856,
+          "Cuts": 0,
+          "Sectors": [
+            33298,
+            33196,
+            25362
+          ],
+          "Timestamp": 1786297049,
+          "CarModel": "porsche_963_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-278557d174834c60d087",
+          "IdentityType": "steam_guid",
+          "DriverName": "Weverson Tavares",
+          "LapTime": 92783,
+          "Cuts": 0,
+          "Sectors": [
+            33307,
+            34088,
+            25388
+          ],
+          "Timestamp": 1786297054,
+          "CarModel": "toyota_gr010",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-f2da1b9dff830f07a982",
+          "IdentityType": "steam_guid",
+          "DriverName": "L. Firme",
+          "LapTime": 95730,
+          "Cuts": 0,
+          "Sectors": [
+            34080,
+            35266,
+            26384
+          ],
+          "Timestamp": 1786297063,
+          "CarModel": "cadillac_v_series_r_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-b213215dfd6e1a8b0fa1",
+          "IdentityType": "steam_guid",
+          "DriverName": "Supreme",
+          "LapTime": 101403,
+          "Cuts": 0,
+          "Sectors": [
+            36728,
+            34237,
+            30438
+          ],
+          "Timestamp": 1786297087,
+          "CarModel": "cadillac_v_series_r_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-186835adbd1f5b61006c",
+          "IdentityType": "steam_guid",
+          "DriverName": "Matheus da Silva",
+          "LapTime": 93809,
+          "Cuts": 0,
+          "Sectors": [
+            34274,
+            33562,
+            25973
+          ],
+          "Timestamp": 1786297139,
+          "CarModel": "bmw_m_hybrid_v8_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-537042fe404a735c853d",
+          "IdentityType": "steam_guid",
+          "DriverName": "D3CK0L",
+          "LapTime": 91758,
+          "Cuts": 0,
+          "Sectors": [
+            33204,
+            33336,
+            25218
+          ],
+          "Timestamp": 1786297141,
+          "CarModel": "cadillac_v_series_r_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 92050,
+          "Cuts": 0,
+          "Sectors": [
+            33447,
+            33313,
+            25290
+          ],
+          "Timestamp": 1786297142,
+          "CarModel": "porsche_963_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-278557d174834c60d087",
+          "IdentityType": "steam_guid",
+          "DriverName": "Weverson Tavares",
+          "LapTime": 93431,
+          "Cuts": 0,
+          "Sectors": [
+            34482,
+            33282,
+            25667
+          ],
+          "Timestamp": 1786297147,
+          "CarModel": "toyota_gr010",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-f2da1b9dff830f07a982",
+          "IdentityType": "steam_guid",
+          "DriverName": "L. Firme",
+          "LapTime": 88838,
+          "Cuts": 0,
+          "Sectors": [
+            34411,
+            33286,
+            21141
+          ],
+          "Timestamp": 1786297152,
+          "CarModel": "cadillac_v_series_r_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-b213215dfd6e1a8b0fa1",
+          "IdentityType": "steam_guid",
+          "DriverName": "Supreme",
+          "LapTime": 105669,
+          "Cuts": 0,
+          "Sectors": [
+            35365,
+            43560,
+            26744
+          ],
+          "Timestamp": 1786297192,
+          "CarModel": "cadillac_v_series_r_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-186835adbd1f5b61006c",
+          "IdentityType": "steam_guid",
+          "DriverName": "Matheus da Silva",
+          "LapTime": 93787,
+          "Cuts": 0,
+          "Sectors": [
+            34009,
+            33300,
+            26478
+          ],
+          "Timestamp": 1786297233,
+          "CarModel": "bmw_m_hybrid_v8_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-537042fe404a735c853d",
+          "IdentityType": "steam_guid",
+          "DriverName": "D3CK0L",
+          "LapTime": 92385,
+          "Cuts": 0,
+          "Sectors": [
+            33439,
+            33449,
+            25497
+          ],
+          "Timestamp": 1786297233,
+          "CarModel": "cadillac_v_series_r_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 92247,
+          "Cuts": 0,
+          "Sectors": [
+            33387,
+            33327,
+            25533
+          ],
+          "Timestamp": 1786297234,
+          "CarModel": "porsche_963_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-278557d174834c60d087",
+          "IdentityType": "steam_guid",
+          "DriverName": "Weverson Tavares",
+          "LapTime": 92864,
+          "Cuts": 0,
+          "Sectors": [
+            33852,
+            33624,
+            25388
+          ],
+          "Timestamp": 1786297240,
+          "CarModel": "toyota_gr010",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-f2da1b9dff830f07a982",
+          "IdentityType": "steam_guid",
+          "DriverName": "L. Firme",
+          "LapTime": 93485,
+          "Cuts": 0,
+          "Sectors": [
+            38783,
+            33557,
+            21145
+          ],
+          "Timestamp": 1786297245,
+          "CarModel": "cadillac_v_series_r_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-b213215dfd6e1a8b0fa1",
+          "IdentityType": "steam_guid",
+          "DriverName": "Supreme",
+          "LapTime": 97105,
+          "Cuts": 0,
+          "Sectors": [
+            36332,
+            34434,
+            26339
+          ],
+          "Timestamp": 1786297290,
+          "CarModel": "cadillac_v_series_r_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-537042fe404a735c853d",
+          "IdentityType": "steam_guid",
+          "DriverName": "D3CK0L",
+          "LapTime": 92772,
+          "Cuts": 0,
+          "Sectors": [
+            33678,
+            33498,
+            25596
+          ],
+          "Timestamp": 1786297326,
+          "CarModel": "cadillac_v_series_r_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-186835adbd1f5b61006c",
+          "IdentityType": "steam_guid",
+          "DriverName": "Matheus da Silva",
+          "LapTime": 93633,
+          "Cuts": 0,
+          "Sectors": [
+            34692,
+            33538,
+            25403
+          ],
+          "Timestamp": 1786297327,
+          "CarModel": "bmw_m_hybrid_v8_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 93604,
+          "Cuts": 0,
+          "Sectors": [
+            33552,
+            34699,
+            25353
+          ],
+          "Timestamp": 1786297327,
+          "CarModel": "porsche_963_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-278557d174834c60d087",
+          "IdentityType": "steam_guid",
+          "DriverName": "Weverson Tavares",
+          "LapTime": 94071,
+          "Cuts": 0,
+          "Sectors": [
+            33622,
+            34492,
+            25957
+          ],
+          "Timestamp": 1786297334,
+          "CarModel": "toyota_gr010",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-f2da1b9dff830f07a982",
+          "IdentityType": "steam_guid",
+          "DriverName": "L. Firme",
+          "LapTime": 91712,
+          "Cuts": 0,
+          "Sectors": [
+            34482,
+            33318,
+            23912
+          ],
+          "Timestamp": 1786297337,
+          "CarModel": "cadillac_v_series_r_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-b213215dfd6e1a8b0fa1",
+          "IdentityType": "steam_guid",
+          "DriverName": "Supreme",
+          "LapTime": 96836,
+          "Cuts": 0,
+          "Sectors": [
+            36460,
+            34583,
+            25793
+          ],
+          "Timestamp": 1786297386,
+          "CarModel": "cadillac_v_series_r_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-537042fe404a735c853d",
+          "IdentityType": "steam_guid",
+          "DriverName": "D3CK0L",
+          "LapTime": 92340,
+          "Cuts": 0,
+          "Sectors": [
+            33407,
+            33336,
+            25597
+          ],
+          "Timestamp": 1786297418,
+          "CarModel": "cadillac_v_series_r_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 93732,
+          "Cuts": 0,
+          "Sectors": [
+            34782,
+            33129,
+            25821
+          ],
+          "Timestamp": 1786297421,
+          "CarModel": "porsche_963_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-186835adbd1f5b61006c",
+          "IdentityType": "steam_guid",
+          "DriverName": "Matheus da Silva",
+          "LapTime": 96106,
+          "Cuts": 0,
+          "Sectors": [
+            37169,
+            33201,
+            25736
+          ],
+          "Timestamp": 1786297423,
+          "CarModel": "bmw_m_hybrid_v8_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-278557d174834c60d087",
+          "IdentityType": "steam_guid",
+          "DriverName": "Weverson Tavares",
+          "LapTime": 109129,
+          "Cuts": 0,
+          "Sectors": [
+            45882,
+            32791,
+            30456
+          ],
+          "Timestamp": 1786297443,
+          "CarModel": "toyota_gr010",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-b213215dfd6e1a8b0fa1",
+          "IdentityType": "steam_guid",
+          "DriverName": "Supreme",
+          "LapTime": 96194,
+          "Cuts": 0,
+          "Sectors": [
+            34851,
+            35459,
+            25884
+          ],
+          "Timestamp": 1786297483,
+          "CarModel": "cadillac_v_series_r_2023",
+          "Tyre": "M"
+        }
+      ],
+      "Events": [
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786296670,
+          "AfterSessionEnd": false,
+          "CarId": 21,
+          "OtherCarId": 1,
+          "Driver": {
+            "Id": "driver-c159bceee74ce3af6a1a",
+            "IdentityType": "steam_guid",
+            "Name": "jefferson azevedo"
+          },
+          "OtherDriver": {
+            "Id": "driver-90465baeb4986916e2a6",
+            "IdentityType": "steam_guid",
+            "Name": "Dallas"
+          },
+          "WorldPosition": {
+            "X": 277.34155,
+            "Y": -6.0976453,
+            "Z": -367.27167
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786296673,
+          "AfterSessionEnd": false,
+          "CarId": 1,
+          "OtherCarId": 10,
+          "Driver": {
+            "Id": "driver-90465baeb4986916e2a6",
+            "IdentityType": "steam_guid",
+            "Name": "Dallas"
+          },
+          "OtherDriver": {
+            "Id": "driver-278557d174834c60d087",
+            "IdentityType": "steam_guid",
+            "Name": "Weverson Tavares"
+          },
+          "WorldPosition": {
+            "X": 281.06747,
+            "Y": -6.2553964,
+            "Z": -366.24762
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786296673,
+          "AfterSessionEnd": false,
+          "CarId": 1,
+          "OtherCarId": 21,
+          "Driver": {
+            "Id": "driver-90465baeb4986916e2a6",
+            "IdentityType": "steam_guid",
+            "Name": "Dallas"
+          },
+          "OtherDriver": {
+            "Id": "driver-c159bceee74ce3af6a1a",
+            "IdentityType": "steam_guid",
+            "Name": "jefferson azevedo"
+          },
+          "WorldPosition": {
+            "X": 277.23834,
+            "Y": -6.023865,
+            "Z": -367.35413
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786296678,
+          "AfterSessionEnd": false,
+          "CarId": 14,
+          "OtherCarId": 9,
+          "Driver": {
+            "Id": "driver-f2da1b9dff830f07a982",
+            "IdentityType": "steam_guid",
+            "Name": "L. Firme"
+          },
+          "OtherDriver": {
+            "Id": "driver-537042fe404a735c853d",
+            "IdentityType": "steam_guid",
+            "Name": "D3CK0L"
+          },
+          "WorldPosition": {
+            "X": -27.653698,
+            "Y": -5.8786454,
+            "Z": -428.47607
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786296681,
+          "AfterSessionEnd": false,
+          "CarId": 9,
+          "OtherCarId": 14,
+          "Driver": {
+            "Id": "driver-537042fe404a735c853d",
+            "IdentityType": "steam_guid",
+            "Name": "D3CK0L"
+          },
+          "OtherDriver": {
+            "Id": "driver-f2da1b9dff830f07a982",
+            "IdentityType": "steam_guid",
+            "Name": "L. Firme"
+          },
+          "WorldPosition": {
+            "X": -36.044067,
+            "Y": -5.858041,
+            "Z": -427.7571
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786296683,
+          "AfterSessionEnd": false,
+          "CarId": 10,
+          "OtherCarId": 21,
+          "Driver": {
+            "Id": "driver-278557d174834c60d087",
+            "IdentityType": "steam_guid",
+            "Name": "Weverson Tavares"
+          },
+          "OtherDriver": {
+            "Id": "driver-c159bceee74ce3af6a1a",
+            "IdentityType": "steam_guid",
+            "Name": "jefferson azevedo"
+          },
+          "WorldPosition": {
+            "X": -279.802,
+            "Y": -6.0412765,
+            "Z": -366.3131
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786296688,
+          "AfterSessionEnd": false,
+          "CarId": 10,
+          "OtherCarId": 21,
+          "Driver": {
+            "Id": "driver-278557d174834c60d087",
+            "IdentityType": "steam_guid",
+            "Name": "Weverson Tavares"
+          },
+          "OtherDriver": {
+            "Id": "driver-c159bceee74ce3af6a1a",
+            "IdentityType": "steam_guid",
+            "Name": "jefferson azevedo"
+          },
+          "WorldPosition": {
+            "X": -385.78268,
+            "Y": -6.878621,
+            "Z": -206.4258
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786296690,
+          "AfterSessionEnd": false,
+          "CarId": 21,
+          "OtherCarId": 10,
+          "Driver": {
+            "Id": "driver-c159bceee74ce3af6a1a",
+            "IdentityType": "steam_guid",
+            "Name": "jefferson azevedo"
+          },
+          "OtherDriver": {
+            "Id": "driver-278557d174834c60d087",
+            "IdentityType": "steam_guid",
+            "Name": "Weverson Tavares"
+          },
+          "WorldPosition": {
+            "X": -385.49515,
+            "Y": -6.966174,
+            "Z": -206.34377
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1786296743,
+          "AfterSessionEnd": false,
+          "CarId": 1,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-90465baeb4986916e2a6",
+            "IdentityType": "steam_guid",
+            "Name": "Dallas"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -432.2029,
+            "Y": -7.0413413,
+            "Z": -217.62012
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1786296775,
+          "AfterSessionEnd": false,
+          "CarId": 21,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-c159bceee74ce3af6a1a",
+            "IdentityType": "steam_guid",
+            "Name": "jefferson azevedo"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 779.7083,
+            "Y": -0.0004418717,
+            "Z": 204.33017
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786296783,
+          "AfterSessionEnd": false,
+          "CarId": 4,
+          "OtherCarId": 9,
+          "Driver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "IdentityType": "steam_guid",
+            "Name": "Borborema"
+          },
+          "OtherDriver": {
+            "Id": "driver-537042fe404a735c853d",
+            "IdentityType": "steam_guid",
+            "Name": "D3CK0L"
+          },
+          "WorldPosition": {
+            "X": -159.89163,
+            "Y": -6.5279284,
+            "Z": -144.07732
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786296786,
+          "AfterSessionEnd": false,
+          "CarId": 9,
+          "OtherCarId": 4,
+          "Driver": {
+            "Id": "driver-537042fe404a735c853d",
+            "IdentityType": "steam_guid",
+            "Name": "D3CK0L"
+          },
+          "OtherDriver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "IdentityType": "steam_guid",
+            "Name": "Borborema"
+          },
+          "WorldPosition": {
+            "X": -159.72435,
+            "Y": -6.4823294,
+            "Z": -144.54982
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786296788,
+          "AfterSessionEnd": false,
+          "CarId": 4,
+          "OtherCarId": 9,
+          "Driver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "IdentityType": "steam_guid",
+            "Name": "Borborema"
+          },
+          "OtherDriver": {
+            "Id": "driver-537042fe404a735c853d",
+            "IdentityType": "steam_guid",
+            "Name": "D3CK0L"
+          },
+          "WorldPosition": {
+            "X": -128.63602,
+            "Y": -5.968734,
+            "Z": -141.00128
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1786296788,
+          "AfterSessionEnd": false,
+          "CarId": 4,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "IdentityType": "steam_guid",
+            "Name": "Borborema"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -54.917,
+            "Y": -6.8798623,
+            "Z": -156.70534
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1786296845,
+          "AfterSessionEnd": false,
+          "CarId": 21,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-c159bceee74ce3af6a1a",
+            "IdentityType": "steam_guid",
+            "Name": "jefferson azevedo"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -741.85315,
+            "Y": -0.100916505,
+            "Z": -140.6294
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1786296875,
+          "AfterSessionEnd": false,
+          "CarId": 21,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-c159bceee74ce3af6a1a",
+            "IdentityType": "steam_guid",
+            "Name": "jefferson azevedo"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 807.1855,
+            "Y": -0.015960317,
+            "Z": 135.40771
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1786297065,
+          "AfterSessionEnd": false,
+          "CarId": 28,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-b213215dfd6e1a8b0fa1",
+            "IdentityType": "steam_guid",
+            "Name": "Supreme"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 229.21042,
+            "Y": -5.973266,
+            "Z": 293.66565
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786297241,
+          "AfterSessionEnd": false,
+          "CarId": 6,
+          "OtherCarId": 4,
+          "Driver": {
+            "Id": "driver-186835adbd1f5b61006c",
+            "IdentityType": "steam_guid",
+            "Name": "Matheus da Silva"
+          },
+          "OtherDriver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "IdentityType": "steam_guid",
+            "Name": "Borborema"
+          },
+          "WorldPosition": {
+            "X": -383.06287,
+            "Y": -6.492002,
+            "Z": -247.93626
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786297243,
+          "AfterSessionEnd": false,
+          "CarId": 4,
+          "OtherCarId": 6,
+          "Driver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "IdentityType": "steam_guid",
+            "Name": "Borborema"
+          },
+          "OtherDriver": {
+            "Id": "driver-186835adbd1f5b61006c",
+            "IdentityType": "steam_guid",
+            "Name": "Matheus da Silva"
+          },
+          "WorldPosition": {
+            "X": -382.46295,
+            "Y": -6.6715107,
+            "Z": -243.65392
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786297273,
+          "AfterSessionEnd": false,
+          "CarId": 4,
+          "OtherCarId": 6,
+          "Driver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "IdentityType": "steam_guid",
+            "Name": "Borborema"
+          },
+          "OtherDriver": {
+            "Id": "driver-186835adbd1f5b61006c",
+            "IdentityType": "steam_guid",
+            "Name": "Matheus da Silva"
+          },
+          "WorldPosition": {
+            "X": -608.28754,
+            "Y": -6.7144723,
+            "Z": -11.364243
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1786297300,
+          "AfterSessionEnd": false,
+          "CarId": 28,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-b213215dfd6e1a8b0fa1",
+            "IdentityType": "steam_guid",
+            "Name": "Supreme"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -399.90195,
+            "Y": -6.878691,
+            "Z": -212.62187
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1786297331,
+          "AfterSessionEnd": false,
+          "CarId": 9,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-537042fe404a735c853d",
+            "IdentityType": "steam_guid",
+            "Name": "D3CK0L"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -172.88734,
+            "Y": -4.243581,
+            "Z": -411.46777
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786297336,
+          "AfterSessionEnd": false,
+          "CarId": 6,
+          "OtherCarId": 4,
+          "Driver": {
+            "Id": "driver-186835adbd1f5b61006c",
+            "IdentityType": "steam_guid",
+            "Name": "Matheus da Silva"
+          },
+          "OtherDriver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "IdentityType": "steam_guid",
+            "Name": "Borborema"
+          },
+          "WorldPosition": {
+            "X": -364.52435,
+            "Y": -6.3931994,
+            "Z": -207.20998
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786297338,
+          "AfterSessionEnd": false,
+          "CarId": 4,
+          "OtherCarId": 6,
+          "Driver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "IdentityType": "steam_guid",
+            "Name": "Borborema"
+          },
+          "OtherDriver": {
+            "Id": "driver-186835adbd1f5b61006c",
+            "IdentityType": "steam_guid",
+            "Name": "Matheus da Silva"
+          },
+          "WorldPosition": {
+            "X": -363.66782,
+            "Y": -6.6941257,
+            "Z": -206.79628
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1786297348,
+          "AfterSessionEnd": false,
+          "CarId": 10,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-278557d174834c60d087",
+            "IdentityType": "steam_guid",
+            "Name": "Weverson Tavares"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -365.19257,
+            "Y": -6.647784,
+            "Z": -220.45062
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1786297418,
+          "AfterSessionEnd": false,
+          "CarId": 10,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-278557d174834c60d087",
+            "IdentityType": "steam_guid",
+            "Name": "Weverson Tavares"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 228.9763,
+            "Y": -6.1393924,
+            "Z": 363.15073
+          }
+        }
+      ]
+    },
     {
       "Type": "RACE",
       "Date": "2026-08-08T21:01:00-07:00",
