@@ -1,14 +1,191 @@
 {
   "ok": true,
-  "generated_at": "2026-08-09T03:57:43.618565+00:00",
+  "generated_at": "2026-08-09T04:59:14.772101+00:00",
   "window_days": 7,
-  "race_count": 29,
+  "race_count": 30,
   "identity_summary": {
     "steam_guid_captured": 46,
     "name_fallback": 1,
     "raw_steam_ids_public": false
   },
   "races": [
+    {
+      "Type": "RACE",
+      "Date": "2026-08-08T21:01:00-07:00",
+      "SessionFile": "2026_8_8_21_1_RACE",
+      "TrackName": "spa",
+      "TrackConfig": null,
+      "Result": [
+        {
+          "DriverId": "driver-1a4e0fb03de7e5802d29",
+          "IdentityType": "steam_guid",
+          "DriverName": "S.Fernandes",
+          "BestLap": 207047,
+          "TotalTime": 206969,
+          "NumLaps": 1,
+          "GridPosition": 2,
+          "CarModel": "toyota_gr86_2022",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-e24c66a6a307d8b8ec3d",
+          "IdentityType": "steam_guid",
+          "DriverName": "joão_paulo",
+          "BestLap": 210561,
+          "TotalTime": 210494,
+          "NumLaps": 1,
+          "GridPosition": 1,
+          "CarModel": "toyota_gr86_2022",
+          "Disqualified": false,
+          "HasPenalty": false
+        }
+      ],
+      "Laps": [
+        {
+          "DriverId": "driver-1a4e0fb03de7e5802d29",
+          "IdentityType": "steam_guid",
+          "DriverName": "S.Fernandes",
+          "LapTime": 207047,
+          "Cuts": 0,
+          "Sectors": [
+            59893,
+            98771,
+            48383
+          ],
+          "Timestamp": 1786247934,
+          "CarModel": "toyota_gr86_2022",
+          "Tyre": "SS"
+        },
+        {
+          "DriverId": "driver-e24c66a6a307d8b8ec3d",
+          "IdentityType": "steam_guid",
+          "DriverName": "joão_paulo",
+          "LapTime": 210561,
+          "Cuts": 0,
+          "Sectors": [
+            59900,
+            98307,
+            52354
+          ],
+          "Timestamp": 1786247938,
+          "CarModel": "toyota_gr86_2022",
+          "Tyre": "SS"
+        }
+      ],
+      "Events": [
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1786247740,
+          "AfterSessionEnd": false,
+          "CarId": 0,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-e24c66a6a307d8b8ec3d",
+            "IdentityType": "steam_guid",
+            "Name": "joão_paulo"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -428.50195,
+            "Y": 27.624844,
+            "Z": -935.5464
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1786247760,
+          "AfterSessionEnd": false,
+          "CarId": 0,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-e24c66a6a307d8b8ec3d",
+            "IdentityType": "steam_guid",
+            "Name": "joão_paulo"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 76.12139,
+            "Y": -5.260665,
+            "Z": -579.38666
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1786247795,
+          "AfterSessionEnd": false,
+          "CarId": 0,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-e24c66a6a307d8b8ec3d",
+            "IdentityType": "steam_guid",
+            "Name": "joão_paulo"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 636.45056,
+            "Y": 69.29244,
+            "Z": 621.11304
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1786247950,
+          "AfterSessionEnd": false,
+          "CarId": 0,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-e24c66a6a307d8b8ec3d",
+            "IdentityType": "steam_guid",
+            "Name": "joão_paulo"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -428.1634,
+            "Y": 27.623215,
+            "Z": -934.98236
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1786247955,
+          "AfterSessionEnd": false,
+          "CarId": 0,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-e24c66a6a307d8b8ec3d",
+            "IdentityType": "steam_guid",
+            "Name": "joão_paulo"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -431.0091,
+            "Y": 27.832943,
+            "Z": -939.4638
+          }
+        }
+      ]
+    },
     {
       "Type": "RACE",
       "Date": "2026-08-08T20:47:00-07:00",
