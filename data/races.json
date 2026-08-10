@@ -1,14 +1,113 @@
 {
   "ok": true,
-  "generated_at": "2026-08-10T22:56:26.696279+00:00",
+  "generated_at": "2026-08-10T23:26:27.378402+00:00",
   "window_days": 7,
-  "race_count": 28,
+  "race_count": 29,
   "identity_summary": {
     "steam_guid_captured": 45,
     "name_fallback": 1,
     "raw_steam_ids_public": false
   },
   "races": [
+    {
+      "Type": "RACE",
+      "Date": "2026-08-10T16:07:00-07:00",
+      "SessionFile": "2026_8_10_16_7_RACE",
+      "TrackName": "lilski_watkins_glen",
+      "TrackConfig": "boot",
+      "Result": [
+        {
+          "DriverId": "driver-daec84ea209127a8a053",
+          "IdentityType": "steam_guid",
+          "DriverName": "William Trostt",
+          "BestLap": 107124,
+          "TotalTime": 219357,
+          "NumLaps": 2,
+          "GridPosition": 2,
+          "CarModel": "toyota_gr_gt3",
+          "Disqualified": false,
+          "HasPenalty": false
+        }
+      ],
+      "Laps": [
+        {
+          "DriverId": "driver-daec84ea209127a8a053",
+          "IdentityType": "steam_guid",
+          "DriverName": "William Trostt",
+          "LapTime": 112297,
+          "Cuts": 0,
+          "Sectors": [
+            29636,
+            40960,
+            41701
+          ],
+          "Timestamp": 1786403087,
+          "CarModel": "toyota_gr_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-daec84ea209127a8a053",
+          "IdentityType": "steam_guid",
+          "DriverName": "William Trostt",
+          "LapTime": 107124,
+          "Cuts": 0,
+          "Sectors": [
+            24494,
+            40042,
+            42588
+          ],
+          "Timestamp": 1786403194,
+          "CarModel": "toyota_gr_gt3",
+          "Tyre": "S8M"
+        }
+      ],
+      "Events": [
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1786403192,
+          "AfterSessionEnd": false,
+          "CarId": 5,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "IdentityType": "steam_guid",
+            "Name": "William Trostt"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -465.3671,
+            "Y": 10.972717,
+            "Z": -277.93573
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1786403242,
+          "AfterSessionEnd": false,
+          "CarId": 5,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "IdentityType": "steam_guid",
+            "Name": "William Trostt"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 28.7924,
+            "Y": 12.200217,
+            "Z": 553.4009
+          }
+        }
+      ]
+    },
     {
       "Type": "RACE",
       "Date": "2026-08-10T15:48:00-07:00",
