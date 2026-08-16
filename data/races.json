@@ -1,14 +1,999 @@
 {
   "ok": true,
-  "generated_at": "2026-08-16T16:37:10.730363+00:00",
+  "generated_at": "2026-08-16T16:57:18.564996+00:00",
   "window_days": 7,
-  "race_count": 27,
+  "race_count": 28,
   "identity_summary": {
     "steam_guid_captured": 36,
     "name_fallback": 1,
     "raw_steam_ids_public": false
   },
   "races": [
+    {
+      "Type": "RACE",
+      "Date": "2026-08-16T09:46:00-07:00",
+      "SessionFile": "2026_8_16_9_46_RACE",
+      "TrackName": "ks_red_bull_ring",
+      "TrackConfig": "layout_gp_lfm",
+      "Result": [
+        {
+          "DriverId": "driver-daec84ea209127a8a053",
+          "IdentityType": "steam_guid",
+          "DriverName": "William Trostt",
+          "BestLap": 89613,
+          "TotalTime": 762047,
+          "NumLaps": 8,
+          "GridPosition": 2,
+          "CarModel": "rss_gtm_furiano_96_v6",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "IdentityType": "steam_guid",
+          "DriverName": "IGAO",
+          "BestLap": 90112,
+          "TotalTime": 763364,
+          "NumLaps": 8,
+          "GridPosition": 4,
+          "CarModel": "rss_gtm_protech_p92_f6",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "BestLap": 90716,
+          "TotalTime": 593752,
+          "NumLaps": 5,
+          "GridPosition": 1,
+          "CarModel": "rss_gtm_bayer_i6_evo",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-1a4e0fb03de7e5802d29",
+          "IdentityType": "steam_guid",
+          "DriverName": "S.Fernandes",
+          "BestLap": 180469,
+          "TotalTime": 813343,
+          "NumLaps": 1,
+          "GridPosition": 8,
+          "CarModel": "rss_gtm_cortex_v8",
+          "Disqualified": false,
+          "HasPenalty": false
+        }
+      ],
+      "Laps": [
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 112114,
+          "Cuts": 0,
+          "Sectors": [
+            25651,
+            54391,
+            32072
+          ],
+          "Timestamp": 1786898077,
+          "CarModel": "rss_gtm_bayer_i6_evo",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "IdentityType": "steam_guid",
+          "DriverName": "IGAO",
+          "LapTime": 112790,
+          "Cuts": 0,
+          "Sectors": [
+            26575,
+            53780,
+            32435
+          ],
+          "Timestamp": 1786898078,
+          "CarModel": "rss_gtm_protech_p92_f6",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-daec84ea209127a8a053",
+          "IdentityType": "steam_guid",
+          "DriverName": "William Trostt",
+          "LapTime": 113013,
+          "Cuts": 0,
+          "Sectors": [
+            26257,
+            54293,
+            32463
+          ],
+          "Timestamp": 1786898078,
+          "CarModel": "rss_gtm_furiano_96_v6",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 91531,
+          "Cuts": 0,
+          "Sectors": [
+            20444,
+            38439,
+            32648
+          ],
+          "Timestamp": 1786898169,
+          "CarModel": "rss_gtm_bayer_i6_evo",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-daec84ea209127a8a053",
+          "IdentityType": "steam_guid",
+          "DriverName": "William Trostt",
+          "LapTime": 90710,
+          "Cuts": 0,
+          "Sectors": [
+            20650,
+            37381,
+            32679
+          ],
+          "Timestamp": 1786898169,
+          "CarModel": "rss_gtm_furiano_96_v6",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "IdentityType": "steam_guid",
+          "DriverName": "IGAO",
+          "LapTime": 91474,
+          "Cuts": 0,
+          "Sectors": [
+            20995,
+            37822,
+            32657
+          ],
+          "Timestamp": 1786898170,
+          "CarModel": "rss_gtm_protech_p92_f6",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-daec84ea209127a8a053",
+          "IdentityType": "steam_guid",
+          "DriverName": "William Trostt",
+          "LapTime": 90660,
+          "Cuts": 0,
+          "Sectors": [
+            20847,
+            37286,
+            32527
+          ],
+          "Timestamp": 1786898260,
+          "CarModel": "rss_gtm_furiano_96_v6",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "IdentityType": "steam_guid",
+          "DriverName": "IGAO",
+          "LapTime": 91256,
+          "Cuts": 0,
+          "Sectors": [
+            20660,
+            38511,
+            32085
+          ],
+          "Timestamp": 1786898261,
+          "CarModel": "rss_gtm_protech_p92_f6",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 93493,
+          "Cuts": 0,
+          "Sectors": [
+            21246,
+            38470,
+            33777
+          ],
+          "Timestamp": 1786898262,
+          "CarModel": "rss_gtm_bayer_i6_evo",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-daec84ea209127a8a053",
+          "IdentityType": "steam_guid",
+          "DriverName": "William Trostt",
+          "LapTime": 90049,
+          "Cuts": 0,
+          "Sectors": [
+            20664,
+            37116,
+            32269
+          ],
+          "Timestamp": 1786898350,
+          "CarModel": "rss_gtm_furiano_96_v6",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "IdentityType": "steam_guid",
+          "DriverName": "IGAO",
+          "LapTime": 96865,
+          "Cuts": 0,
+          "Sectors": [
+            20851,
+            37368,
+            38646
+          ],
+          "Timestamp": 1786898358,
+          "CarModel": "rss_gtm_protech_p92_f6",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-daec84ea209127a8a053",
+          "IdentityType": "steam_guid",
+          "DriverName": "William Trostt",
+          "LapTime": 107515,
+          "Cuts": 0,
+          "Sectors": [
+            20503,
+            40927,
+            46085
+          ],
+          "Timestamp": 1786898457,
+          "CarModel": "rss_gtm_furiano_96_v6",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "IdentityType": "steam_guid",
+          "DriverName": "IGAO",
+          "LapTime": 99725,
+          "Cuts": 0,
+          "Sectors": [
+            21408,
+            37669,
+            40648
+          ],
+          "Timestamp": 1786898457,
+          "CarModel": "rss_gtm_protech_p92_f6",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 205984,
+          "Cuts": 0,
+          "Sectors": [
+            136329,
+            37556,
+            32099
+          ],
+          "Timestamp": 1786898468,
+          "CarModel": "rss_gtm_bayer_i6_evo",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-daec84ea209127a8a053",
+          "IdentityType": "steam_guid",
+          "DriverName": "William Trostt",
+          "LapTime": 90825,
+          "Cuts": 0,
+          "Sectors": [
+            21066,
+            37345,
+            32414
+          ],
+          "Timestamp": 1786898548,
+          "CarModel": "rss_gtm_furiano_96_v6",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "IdentityType": "steam_guid",
+          "DriverName": "IGAO",
+          "LapTime": 90876,
+          "Cuts": 0,
+          "Sectors": [
+            20955,
+            37862,
+            32059
+          ],
+          "Timestamp": 1786898548,
+          "CarModel": "rss_gtm_protech_p92_f6",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 90716,
+          "Cuts": 0,
+          "Sectors": [
+            20498,
+            37764,
+            32454
+          ],
+          "Timestamp": 1786898559,
+          "CarModel": "rss_gtm_bayer_i6_evo",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-daec84ea209127a8a053",
+          "IdentityType": "steam_guid",
+          "DriverName": "William Trostt",
+          "LapTime": 89613,
+          "Cuts": 0,
+          "Sectors": [
+            20772,
+            36990,
+            31851
+          ],
+          "Timestamp": 1786898638,
+          "CarModel": "rss_gtm_furiano_96_v6",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "IdentityType": "steam_guid",
+          "DriverName": "IGAO",
+          "LapTime": 90112,
+          "Cuts": 0,
+          "Sectors": [
+            20735,
+            37341,
+            32036
+          ],
+          "Timestamp": 1786898638,
+          "CarModel": "rss_gtm_protech_p92_f6",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-daec84ea209127a8a053",
+          "IdentityType": "steam_guid",
+          "DriverName": "William Trostt",
+          "LapTime": 89720,
+          "Cuts": 0,
+          "Sectors": [
+            20474,
+            37143,
+            32103
+          ],
+          "Timestamp": 1786898727,
+          "CarModel": "rss_gtm_furiano_96_v6",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "IdentityType": "steam_guid",
+          "DriverName": "IGAO",
+          "LapTime": 90334,
+          "Cuts": 0,
+          "Sectors": [
+            20710,
+            37399,
+            32225
+          ],
+          "Timestamp": 1786898729,
+          "CarModel": "rss_gtm_protech_p92_f6",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-1a4e0fb03de7e5802d29",
+          "IdentityType": "steam_guid",
+          "DriverName": "S.Fernandes",
+          "LapTime": 180469,
+          "Cuts": 0,
+          "Sectors": [
+            108114,
+            39185,
+            33170
+          ],
+          "Timestamp": 1786898779,
+          "CarModel": "rss_gtm_cortex_v8",
+          "Tyre": "D"
+        }
+      ],
+      "Events": [
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786897998,
+          "AfterSessionEnd": false,
+          "CarId": 19,
+          "OtherCarId": 8,
+          "Driver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "OtherDriver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "IdentityType": "steam_guid",
+            "Name": "William Trostt"
+          },
+          "WorldPosition": {
+            "X": -600.5861,
+            "Y": 48.923508,
+            "Z": -356.139
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786898000,
+          "AfterSessionEnd": false,
+          "CarId": 8,
+          "OtherCarId": 19,
+          "Driver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "IdentityType": "steam_guid",
+            "Name": "William Trostt"
+          },
+          "OtherDriver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "WorldPosition": {
+            "X": -589.99335,
+            "Y": 50.117424,
+            "Z": -365.58408
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786898003,
+          "AfterSessionEnd": false,
+          "CarId": 19,
+          "OtherCarId": 8,
+          "Driver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "OtherDriver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "IdentityType": "steam_guid",
+            "Name": "William Trostt"
+          },
+          "WorldPosition": {
+            "X": -586.60284,
+            "Y": 50.65313,
+            "Z": -366.4911
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786898120,
+          "AfterSessionEnd": false,
+          "CarId": 6,
+          "OtherCarId": 8,
+          "Driver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "IdentityType": "steam_guid",
+            "Name": "Borborema"
+          },
+          "OtherDriver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "IdentityType": "steam_guid",
+            "Name": "William Trostt"
+          },
+          "WorldPosition": {
+            "X": 177.03033,
+            "Y": 24.746977,
+            "Z": -313.791
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786898120,
+          "AfterSessionEnd": false,
+          "CarId": 8,
+          "OtherCarId": 6,
+          "Driver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "IdentityType": "steam_guid",
+            "Name": "William Trostt"
+          },
+          "OtherDriver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "IdentityType": "steam_guid",
+            "Name": "Borborema"
+          },
+          "WorldPosition": {
+            "X": 179.87321,
+            "Y": 24.78814,
+            "Z": -312.5999
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786898145,
+          "AfterSessionEnd": false,
+          "CarId": 6,
+          "OtherCarId": 8,
+          "Driver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "IdentityType": "steam_guid",
+            "Name": "Borborema"
+          },
+          "OtherDriver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "IdentityType": "steam_guid",
+            "Name": "William Trostt"
+          },
+          "WorldPosition": {
+            "X": -61.757923,
+            "Y": 0.9423688,
+            "Z": 81.40735
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786898145,
+          "AfterSessionEnd": false,
+          "CarId": 8,
+          "OtherCarId": 6,
+          "Driver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "IdentityType": "steam_guid",
+            "Name": "William Trostt"
+          },
+          "OtherDriver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "IdentityType": "steam_guid",
+            "Name": "Borborema"
+          },
+          "WorldPosition": {
+            "X": -68.377075,
+            "Y": 0.50643015,
+            "Z": 84.57821
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786898148,
+          "AfterSessionEnd": false,
+          "CarId": 19,
+          "OtherCarId": 8,
+          "Driver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "OtherDriver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "IdentityType": "steam_guid",
+            "Name": "William Trostt"
+          },
+          "WorldPosition": {
+            "X": 72.03544,
+            "Y": 3.0351057,
+            "Z": -20.570879
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786898150,
+          "AfterSessionEnd": false,
+          "CarId": 8,
+          "OtherCarId": 19,
+          "Driver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "IdentityType": "steam_guid",
+            "Name": "William Trostt"
+          },
+          "OtherDriver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "WorldPosition": {
+            "X": 78.70113,
+            "Y": 3.0539732,
+            "Z": -22.69153
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786898175,
+          "AfterSessionEnd": false,
+          "CarId": 8,
+          "OtherCarId": 6,
+          "Driver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "IdentityType": "steam_guid",
+            "Name": "William Trostt"
+          },
+          "OtherDriver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "IdentityType": "steam_guid",
+            "Name": "Borborema"
+          },
+          "WorldPosition": {
+            "X": -81.09319,
+            "Y": 4.22808,
+            "Z": 393.36865
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786898180,
+          "AfterSessionEnd": false,
+          "CarId": 6,
+          "OtherCarId": 8,
+          "Driver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "IdentityType": "steam_guid",
+            "Name": "Borborema"
+          },
+          "OtherDriver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "IdentityType": "steam_guid",
+            "Name": "William Trostt"
+          },
+          "WorldPosition": {
+            "X": -83.46074,
+            "Y": 4.861205,
+            "Z": 391.4654
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786898180,
+          "AfterSessionEnd": false,
+          "CarId": 8,
+          "OtherCarId": 6,
+          "Driver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "IdentityType": "steam_guid",
+            "Name": "William Trostt"
+          },
+          "OtherDriver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "IdentityType": "steam_guid",
+            "Name": "Borborema"
+          },
+          "WorldPosition": {
+            "X": -86.23708,
+            "Y": 4.614135,
+            "Z": 389.22794
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786898195,
+          "AfterSessionEnd": false,
+          "CarId": 6,
+          "OtherCarId": 19,
+          "Driver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "IdentityType": "steam_guid",
+            "Name": "Borborema"
+          },
+          "OtherDriver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "WorldPosition": {
+            "X": -599.7276,
+            "Y": 49.28092,
+            "Z": -360.7193
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786898198,
+          "AfterSessionEnd": false,
+          "CarId": 19,
+          "OtherCarId": 6,
+          "Driver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "OtherDriver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "IdentityType": "steam_guid",
+            "Name": "Borborema"
+          },
+          "WorldPosition": {
+            "X": -599.6698,
+            "Y": 49.379543,
+            "Z": -360.18216
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786898200,
+          "AfterSessionEnd": false,
+          "CarId": 6,
+          "OtherCarId": 19,
+          "Driver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "IdentityType": "steam_guid",
+            "Name": "Borborema"
+          },
+          "OtherDriver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "WorldPosition": {
+            "X": -597.62115,
+            "Y": 49.865322,
+            "Z": -362.55475
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1786898330,
+          "AfterSessionEnd": false,
+          "CarId": 6,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "IdentityType": "steam_guid",
+            "Name": "Borborema"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 14.914681,
+            "Y": 3.2206883,
+            "Z": 45.790173
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1786898335,
+          "AfterSessionEnd": false,
+          "CarId": 6,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "IdentityType": "steam_guid",
+            "Name": "Borborema"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 20.84685,
+            "Y": 4.5532823,
+            "Z": 37.933315
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786898430,
+          "AfterSessionEnd": false,
+          "CarId": 8,
+          "OtherCarId": 19,
+          "Driver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "IdentityType": "steam_guid",
+            "Name": "William Trostt"
+          },
+          "OtherDriver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "WorldPosition": {
+            "X": 241.87872,
+            "Y": 8.431649,
+            "Z": -36.803505
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786898440,
+          "AfterSessionEnd": false,
+          "CarId": 8,
+          "OtherCarId": 19,
+          "Driver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "IdentityType": "steam_guid",
+            "Name": "William Trostt"
+          },
+          "OtherDriver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "WorldPosition": {
+            "X": 655.5552,
+            "Y": -3.0813076,
+            "Z": 120.4481
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786898443,
+          "AfterSessionEnd": false,
+          "CarId": 19,
+          "OtherCarId": 8,
+          "Driver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "OtherDriver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "IdentityType": "steam_guid",
+            "Name": "William Trostt"
+          },
+          "WorldPosition": {
+            "X": 656.53296,
+            "Y": -3.3979208,
+            "Z": 126.78287
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786898445,
+          "AfterSessionEnd": false,
+          "CarId": 8,
+          "OtherCarId": 19,
+          "Driver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "IdentityType": "steam_guid",
+            "Name": "William Trostt"
+          },
+          "OtherDriver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "WorldPosition": {
+            "X": 617.06757,
+            "Y": -8.290627,
+            "Z": 195.06915
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786898448,
+          "AfterSessionEnd": false,
+          "CarId": 19,
+          "OtherCarId": 8,
+          "Driver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "OtherDriver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "IdentityType": "steam_guid",
+            "Name": "William Trostt"
+          },
+          "WorldPosition": {
+            "X": 616.7548,
+            "Y": -8.065111,
+            "Z": 195.62694
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786898450,
+          "AfterSessionEnd": false,
+          "CarId": 8,
+          "OtherCarId": 19,
+          "Driver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "IdentityType": "steam_guid",
+            "Name": "William Trostt"
+          },
+          "OtherDriver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "WorldPosition": {
+            "X": 610.4029,
+            "Y": -8.552997,
+            "Z": 197.04672
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786898735,
+          "AfterSessionEnd": true,
+          "CarId": 8,
+          "OtherCarId": 19,
+          "Driver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "IdentityType": "steam_guid",
+            "Name": "William Trostt"
+          },
+          "OtherDriver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "WorldPosition": {
+            "X": -66.7271,
+            "Y": 2.9638863,
+            "Z": 398.14966
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786898738,
+          "AfterSessionEnd": true,
+          "CarId": 19,
+          "OtherCarId": 8,
+          "Driver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "OtherDriver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "IdentityType": "steam_guid",
+            "Name": "William Trostt"
+          },
+          "WorldPosition": {
+            "X": -67.29464,
+            "Y": 2.755179,
+            "Z": 397.52713
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1786898738,
+          "AfterSessionEnd": true,
+          "CarId": 19,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -139.29155,
+            "Y": 8.8651285,
+            "Z": 395.08133
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1786898780,
+          "AfterSessionEnd": true,
+          "CarId": 8,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-daec84ea209127a8a053",
+            "IdentityType": "steam_guid",
+            "Name": "William Trostt"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -90.83976,
+            "Y": 6.6612883,
+            "Z": 343.84744
+          }
+        }
+      ]
+    },
     {
       "Type": "RACE",
       "Date": "2026-08-16T09:23:00-07:00",
