@@ -1,14 +1,763 @@
 {
   "ok": true,
-  "generated_at": "2026-08-16T01:53:30.990251+00:00",
+  "generated_at": "2026-08-16T02:50:41.277655+00:00",
   "window_days": 7,
-  "race_count": 27,
+  "race_count": 28,
   "identity_summary": {
     "steam_guid_captured": 38,
     "name_fallback": 1,
     "raw_steam_ids_public": false
   },
   "races": [
+    {
+      "Type": "RACE",
+      "Date": "2026-08-15T19:40:00-07:00",
+      "SessionFile": "2026_8_15_19_40_RACE",
+      "TrackName": "fn_imola",
+      "TrackConfig": null,
+      "Result": [
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "BestLap": 103416,
+          "TotalTime": 739332,
+          "NumLaps": 7,
+          "GridPosition": 4,
+          "CarModel": "rss_gtm_bayer_i6_evo",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-bcb7db465fb3f4c14f82",
+          "IdentityType": "steam_guid",
+          "DriverName": "Marcos Braga",
+          "BestLap": 103765,
+          "TotalTime": 744811,
+          "NumLaps": 7,
+          "GridPosition": 5,
+          "CarModel": "rss_gtm_cortex_v8",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-4ce32d744c4b74d2e1a6",
+          "IdentityType": "steam_guid",
+          "DriverName": "D. Batista",
+          "BestLap": 100108,
+          "TotalTime": 755235,
+          "NumLaps": 7,
+          "GridPosition": 1,
+          "CarModel": "rss_gtm_cortex_v8",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-d36007d9436d568d6440",
+          "IdentityType": "steam_guid",
+          "DriverName": "FunguS RenaN",
+          "BestLap": 111147,
+          "TotalTime": 729550,
+          "NumLaps": 6,
+          "GridPosition": 2,
+          "CarModel": "rss_gtm_lanzo_v8",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-09512a857c038a3dcba4",
+          "IdentityType": "steam_guid",
+          "DriverName": "DieggoSena",
+          "BestLap": 105437,
+          "TotalTime": 463034,
+          "NumLaps": 4,
+          "GridPosition": 3,
+          "CarModel": "rss_gtm_macca_72_evo_v8",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-db07d155a08914c5d258",
+          "IdentityType": "steam_guid",
+          "DriverName": "George Amaro",
+          "BestLap": 98394,
+          "TotalTime": 338744,
+          "NumLaps": 3,
+          "GridPosition": 10,
+          "CarModel": "rss_gtm_furiano_96_v6",
+          "Disqualified": false,
+          "HasPenalty": false
+        }
+      ],
+      "Laps": [
+        {
+          "DriverId": "driver-4ce32d744c4b74d2e1a6",
+          "IdentityType": "steam_guid",
+          "DriverName": "D. Batista",
+          "LapTime": 109969,
+          "Cuts": 0,
+          "Sectors": [
+            35822,
+            36667,
+            37480
+          ],
+          "Timestamp": 1786847357,
+          "CarModel": "rss_gtm_cortex_v8",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 111093,
+          "Cuts": 0,
+          "Sectors": [
+            36730,
+            37165,
+            37198
+          ],
+          "Timestamp": 1786847358,
+          "CarModel": "rss_gtm_bayer_i6_evo",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-09512a857c038a3dcba4",
+          "IdentityType": "steam_guid",
+          "DriverName": "DieggoSena",
+          "LapTime": 114527,
+          "Cuts": 0,
+          "Sectors": [
+            39242,
+            37873,
+            37412
+          ],
+          "Timestamp": 1786847362,
+          "CarModel": "rss_gtm_macca_72_evo_v8",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-d36007d9436d568d6440",
+          "IdentityType": "steam_guid",
+          "DriverName": "FunguS RenaN",
+          "LapTime": 116887,
+          "Cuts": 0,
+          "Sectors": [
+            37971,
+            39973,
+            38943
+          ],
+          "Timestamp": 1786847364,
+          "CarModel": "rss_gtm_lanzo_v8",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-bcb7db465fb3f4c14f82",
+          "IdentityType": "steam_guid",
+          "DriverName": "Marcos Braga",
+          "LapTime": 120335,
+          "Cuts": 0,
+          "Sectors": [
+            45995,
+            37143,
+            37197
+          ],
+          "Timestamp": 1786847368,
+          "CarModel": "rss_gtm_cortex_v8",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-db07d155a08914c5d258",
+          "IdentityType": "steam_guid",
+          "DriverName": "George Amaro",
+          "LapTime": 121978,
+          "Cuts": 0,
+          "Sectors": [
+            49447,
+            40113,
+            32418
+          ],
+          "Timestamp": 1786847377,
+          "CarModel": "rss_gtm_furiano_96_v6",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-4ce32d744c4b74d2e1a6",
+          "IdentityType": "steam_guid",
+          "DriverName": "D. Batista",
+          "LapTime": 104009,
+          "Cuts": 0,
+          "Sectors": [
+            29773,
+            36905,
+            37331
+          ],
+          "Timestamp": 1786847461,
+          "CarModel": "rss_gtm_cortex_v8",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 104944,
+          "Cuts": 0,
+          "Sectors": [
+            30447,
+            36962,
+            37535
+          ],
+          "Timestamp": 1786847463,
+          "CarModel": "rss_gtm_bayer_i6_evo",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-09512a857c038a3dcba4",
+          "IdentityType": "steam_guid",
+          "DriverName": "DieggoSena",
+          "LapTime": 105437,
+          "Cuts": 0,
+          "Sectors": [
+            29950,
+            37940,
+            37547
+          ],
+          "Timestamp": 1786847467,
+          "CarModel": "rss_gtm_macca_72_evo_v8",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-bcb7db465fb3f4c14f82",
+          "IdentityType": "steam_guid",
+          "DriverName": "Marcos Braga",
+          "LapTime": 103885,
+          "Cuts": 0,
+          "Sectors": [
+            30324,
+            36391,
+            37170
+          ],
+          "Timestamp": 1786847471,
+          "CarModel": "rss_gtm_cortex_v8",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-db07d155a08914c5d258",
+          "IdentityType": "steam_guid",
+          "DriverName": "George Amaro",
+          "LapTime": 98394,
+          "Cuts": 0,
+          "Sectors": [
+            25232,
+            37049,
+            36113
+          ],
+          "Timestamp": 1786847475,
+          "CarModel": "rss_gtm_furiano_96_v6",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-d36007d9436d568d6440",
+          "IdentityType": "steam_guid",
+          "DriverName": "FunguS RenaN",
+          "LapTime": 127886,
+          "Cuts": 0,
+          "Sectors": [
+            40208,
+            49195,
+            38483
+          ],
+          "Timestamp": 1786847492,
+          "CarModel": "rss_gtm_lanzo_v8",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-4ce32d744c4b74d2e1a6",
+          "IdentityType": "steam_guid",
+          "DriverName": "D. Batista",
+          "LapTime": 103543,
+          "Cuts": 0,
+          "Sectors": [
+            29671,
+            36760,
+            37112
+          ],
+          "Timestamp": 1786847565,
+          "CarModel": "rss_gtm_cortex_v8",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 107790,
+          "Cuts": 0,
+          "Sectors": [
+            29719,
+            40378,
+            37693
+          ],
+          "Timestamp": 1786847571,
+          "CarModel": "rss_gtm_bayer_i6_evo",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-bcb7db465fb3f4c14f82",
+          "IdentityType": "steam_guid",
+          "DriverName": "Marcos Braga",
+          "LapTime": 104100,
+          "Cuts": 0,
+          "Sectors": [
+            29939,
+            36824,
+            37337
+          ],
+          "Timestamp": 1786847576,
+          "CarModel": "rss_gtm_cortex_v8",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-db07d155a08914c5d258",
+          "IdentityType": "steam_guid",
+          "DriverName": "George Amaro",
+          "LapTime": 110893,
+          "Cuts": 0,
+          "Sectors": [
+            37016,
+            36982,
+            36895
+          ],
+          "Timestamp": 1786847586,
+          "CarModel": "rss_gtm_furiano_96_v6",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-09512a857c038a3dcba4",
+          "IdentityType": "steam_guid",
+          "DriverName": "DieggoSena",
+          "LapTime": 130269,
+          "Cuts": 0,
+          "Sectors": [
+            55389,
+            37489,
+            37391
+          ],
+          "Timestamp": 1786847597,
+          "CarModel": "rss_gtm_macca_72_evo_v8",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-d36007d9436d568d6440",
+          "IdentityType": "steam_guid",
+          "DriverName": "FunguS RenaN",
+          "LapTime": 119860,
+          "Cuts": 0,
+          "Sectors": [
+            31061,
+            37715,
+            51084
+          ],
+          "Timestamp": 1786847612,
+          "CarModel": "rss_gtm_lanzo_v8",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 104107,
+          "Cuts": 0,
+          "Sectors": [
+            30100,
+            36675,
+            37332
+          ],
+          "Timestamp": 1786847675,
+          "CarModel": "rss_gtm_bayer_i6_evo",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-bcb7db465fb3f4c14f82",
+          "IdentityType": "steam_guid",
+          "DriverName": "Marcos Braga",
+          "LapTime": 103765,
+          "Cuts": 0,
+          "Sectors": [
+            29915,
+            36649,
+            37201
+          ],
+          "Timestamp": 1786847679,
+          "CarModel": "rss_gtm_cortex_v8",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-4ce32d744c4b74d2e1a6",
+          "IdentityType": "steam_guid",
+          "DriverName": "D. Batista",
+          "LapTime": 119638,
+          "Cuts": 0,
+          "Sectors": [
+            45978,
+            36850,
+            36810
+          ],
+          "Timestamp": 1786847684,
+          "CarModel": "rss_gtm_cortex_v8",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-09512a857c038a3dcba4",
+          "IdentityType": "steam_guid",
+          "DriverName": "DieggoSena",
+          "LapTime": 112878,
+          "Cuts": 0,
+          "Sectors": [
+            39258,
+            37907,
+            35713
+          ],
+          "Timestamp": 1786847710,
+          "CarModel": "rss_gtm_macca_72_evo_v8",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-d36007d9436d568d6440",
+          "IdentityType": "steam_guid",
+          "DriverName": "FunguS RenaN",
+          "LapTime": 114058,
+          "Cuts": 0,
+          "Sectors": [
+            31568,
+            43335,
+            39155
+          ],
+          "Timestamp": 1786847726,
+          "CarModel": "rss_gtm_lanzo_v8",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 103416,
+          "Cuts": 0,
+          "Sectors": [
+            29777,
+            36432,
+            37207
+          ],
+          "Timestamp": 1786847779,
+          "CarModel": "rss_gtm_bayer_i6_evo",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-bcb7db465fb3f4c14f82",
+          "IdentityType": "steam_guid",
+          "DriverName": "Marcos Braga",
+          "LapTime": 104419,
+          "Cuts": 0,
+          "Sectors": [
+            29544,
+            37129,
+            37746
+          ],
+          "Timestamp": 1786847784,
+          "CarModel": "rss_gtm_cortex_v8",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-4ce32d744c4b74d2e1a6",
+          "IdentityType": "steam_guid",
+          "DriverName": "D. Batista",
+          "LapTime": 103915,
+          "Cuts": 0,
+          "Sectors": [
+            29724,
+            36945,
+            37246
+          ],
+          "Timestamp": 1786847788,
+          "CarModel": "rss_gtm_cortex_v8",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-d36007d9436d568d6440",
+          "IdentityType": "steam_guid",
+          "DriverName": "FunguS RenaN",
+          "LapTime": 111147,
+          "Cuts": 0,
+          "Sectors": [
+            32541,
+            39527,
+            39079
+          ],
+          "Timestamp": 1786847837,
+          "CarModel": "rss_gtm_lanzo_v8",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 104026,
+          "Cuts": 0,
+          "Sectors": [
+            29682,
+            36755,
+            37589
+          ],
+          "Timestamp": 1786847883,
+          "CarModel": "rss_gtm_bayer_i6_evo",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-bcb7db465fb3f4c14f82",
+          "IdentityType": "steam_guid",
+          "DriverName": "Marcos Braga",
+          "LapTime": 104158,
+          "Cuts": 0,
+          "Sectors": [
+            30232,
+            36846,
+            37080
+          ],
+          "Timestamp": 1786847888,
+          "CarModel": "rss_gtm_cortex_v8",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-4ce32d744c4b74d2e1a6",
+          "IdentityType": "steam_guid",
+          "DriverName": "D. Batista",
+          "LapTime": 114121,
+          "Cuts": 0,
+          "Sectors": [
+            41788,
+            38151,
+            34182
+          ],
+          "Timestamp": 1786847902,
+          "CarModel": "rss_gtm_cortex_v8",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-d36007d9436d568d6440",
+          "IdentityType": "steam_guid",
+          "DriverName": "FunguS RenaN",
+          "LapTime": 139787,
+          "Cuts": 0,
+          "Sectors": [
+            31545,
+            39010,
+            69232
+          ],
+          "Timestamp": 1786847977,
+          "CarModel": "rss_gtm_lanzo_v8",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 104059,
+          "Cuts": 0,
+          "Sectors": [
+            30282,
+            36495,
+            37282
+          ],
+          "Timestamp": 1786847987,
+          "CarModel": "rss_gtm_bayer_i6_evo",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-bcb7db465fb3f4c14f82",
+          "IdentityType": "steam_guid",
+          "DriverName": "Marcos Braga",
+          "LapTime": 104262,
+          "Cuts": 0,
+          "Sectors": [
+            30210,
+            36747,
+            37305
+          ],
+          "Timestamp": 1786847992,
+          "CarModel": "rss_gtm_cortex_v8",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-4ce32d744c4b74d2e1a6",
+          "IdentityType": "steam_guid",
+          "DriverName": "D. Batista",
+          "LapTime": 100108,
+          "Cuts": 0,
+          "Sectors": [
+            30052,
+            36347,
+            33709
+          ],
+          "Timestamp": 1786848003,
+          "CarModel": "rss_gtm_cortex_v8",
+          "Tyre": "D"
+        }
+      ],
+      "Events": [
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1786847285,
+          "AfterSessionEnd": false,
+          "CarId": 12,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-bcb7db465fb3f4c14f82",
+            "IdentityType": "steam_guid",
+            "Name": "Marcos Braga"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -815.7567,
+            "Y": -79.550606,
+            "Z": 303.13278
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1786847290,
+          "AfterSessionEnd": false,
+          "CarId": 12,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-bcb7db465fb3f4c14f82",
+            "IdentityType": "steam_guid",
+            "Name": "Marcos Braga"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -818.4446,
+            "Y": -79.56922,
+            "Z": 307.6675
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786847495,
+          "AfterSessionEnd": false,
+          "CarId": 4,
+          "OtherCarId": 9,
+          "Driver": {
+            "Id": "driver-db07d155a08914c5d258",
+            "IdentityType": "steam_guid",
+            "Name": "George Amaro"
+          },
+          "OtherDriver": {
+            "Id": "driver-09512a857c038a3dcba4",
+            "IdentityType": "steam_guid",
+            "Name": "DieggoSena"
+          },
+          "WorldPosition": {
+            "X": -619.4541,
+            "Y": -82.098526,
+            "Z": -226.27931
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1786847495,
+          "AfterSessionEnd": false,
+          "CarId": 9,
+          "OtherCarId": 4,
+          "Driver": {
+            "Id": "driver-09512a857c038a3dcba4",
+            "IdentityType": "steam_guid",
+            "Name": "DieggoSena"
+          },
+          "OtherDriver": {
+            "Id": "driver-db07d155a08914c5d258",
+            "IdentityType": "steam_guid",
+            "Name": "George Amaro"
+          },
+          "WorldPosition": {
+            "X": -618.74286,
+            "Y": -81.78831,
+            "Z": -226.36957
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1786847595,
+          "AfterSessionEnd": false,
+          "CarId": 7,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-d36007d9436d568d6440",
+            "IdentityType": "steam_guid",
+            "Name": "FunguS RenaN"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 752.65393,
+            "Y": -86.64533,
+            "Z": -483.35965
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1786847685,
+          "AfterSessionEnd": false,
+          "CarId": 9,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-09512a857c038a3dcba4",
+            "IdentityType": "steam_guid",
+            "Name": "DieggoSena"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 501.99652,
+            "Y": -60.174236,
+            "Z": -124.263916
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1786847818,
+          "AfterSessionEnd": false,
+          "CarId": 6,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-4ce32d744c4b74d2e1a6",
+            "IdentityType": "steam_guid",
+            "Name": "D. Batista"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -812.1213,
+            "Y": -79.80916,
+            "Z": 296.39038
+          }
+        }
+      ]
+    },
     {
       "Type": "RACE",
       "Date": "2026-08-15T09:01:00-07:00",
