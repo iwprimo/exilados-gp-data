@@ -1,14 +1,128 @@
 {
   "ok": true,
-  "generated_at": "2026-08-16T23:31:15.892310+00:00",
+  "generated_at": "2026-08-17T17:06:59.362144+00:00",
   "window_days": 7,
-  "race_count": 32,
+  "race_count": 33,
   "identity_summary": {
     "steam_guid_captured": 30,
     "name_fallback": 1,
     "raw_steam_ids_public": false
   },
   "races": [
+    {
+      "Type": "RACE",
+      "Date": "2026-08-17T09:58:00-07:00",
+      "SessionFile": "2026_8_17_9_58_RACE",
+      "TrackName": "fn_bahrain",
+      "TrackConfig": "gp",
+      "Result": [
+        {
+          "DriverId": "driver-f2da1b9dff830f07a982",
+          "IdentityType": "steam_guid",
+          "DriverName": "Léo Firme",
+          "BestLap": 121613,
+          "TotalTime": 743109,
+          "NumLaps": 6,
+          "GridPosition": 1,
+          "CarModel": "rss_gtm_bayer_i6_evo",
+          "Disqualified": false,
+          "HasPenalty": false
+        }
+      ],
+      "Laps": [
+        {
+          "DriverId": "driver-f2da1b9dff830f07a982",
+          "IdentityType": "steam_guid",
+          "DriverName": "Léo Firme",
+          "LapTime": 126935,
+          "Cuts": 0,
+          "Sectors": [
+            40311,
+            55403,
+            31221
+          ],
+          "Timestamp": 1786985231,
+          "CarModel": "rss_gtm_bayer_i6_evo",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-f2da1b9dff830f07a982",
+          "IdentityType": "steam_guid",
+          "DriverName": "Léo Firme",
+          "LapTime": 125588,
+          "Cuts": 0,
+          "Sectors": [
+            38027,
+            55346,
+            32215
+          ],
+          "Timestamp": 1786985357,
+          "CarModel": "rss_gtm_bayer_i6_evo",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-f2da1b9dff830f07a982",
+          "IdentityType": "steam_guid",
+          "DriverName": "Léo Firme",
+          "LapTime": 123514,
+          "Cuts": 0,
+          "Sectors": [
+            38464,
+            54036,
+            31014
+          ],
+          "Timestamp": 1786985480,
+          "CarModel": "rss_gtm_bayer_i6_evo",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-f2da1b9dff830f07a982",
+          "IdentityType": "steam_guid",
+          "DriverName": "Léo Firme",
+          "LapTime": 123616,
+          "Cuts": 0,
+          "Sectors": [
+            38094,
+            53991,
+            31531
+          ],
+          "Timestamp": 1786985604,
+          "CarModel": "rss_gtm_bayer_i6_evo",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-f2da1b9dff830f07a982",
+          "IdentityType": "steam_guid",
+          "DriverName": "Léo Firme",
+          "LapTime": 121613,
+          "Cuts": 0,
+          "Sectors": [
+            37607,
+            53244,
+            30762
+          ],
+          "Timestamp": 1786985725,
+          "CarModel": "rss_gtm_bayer_i6_evo",
+          "Tyre": "D"
+        },
+        {
+          "DriverId": "driver-f2da1b9dff830f07a982",
+          "IdentityType": "steam_guid",
+          "DriverName": "Léo Firme",
+          "LapTime": 121934,
+          "Cuts": 0,
+          "Sectors": [
+            38118,
+            53415,
+            30401
+          ],
+          "Timestamp": 1786985847,
+          "CarModel": "rss_gtm_bayer_i6_evo",
+          "Tyre": "D"
+        }
+      ],
+      "Events": []
+    },
     {
       "Type": "RACE",
       "Date": "2026-08-16T16:11:00-07:00",
