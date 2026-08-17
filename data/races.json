@@ -1,8 +1,8 @@
 {
   "ok": true,
-  "generated_at": "2026-08-17T17:06:59.362144+00:00",
+  "generated_at": "2026-08-17T22:59:15.978639+00:00",
   "window_days": 7,
-  "race_count": 33,
+  "race_count": 32,
   "identity_summary": {
     "steam_guid_captured": 30,
     "name_fallback": 1,
@@ -43242,117 +43242,6 @@
             "X": 28.7924,
             "Y": 12.200217,
             "Z": 553.4009
-          }
-        }
-      ]
-    },
-    {
-      "Type": "RACE",
-      "Date": "2026-08-10T15:48:00-07:00",
-      "SessionFile": "2026_8_10_15_48_RACE",
-      "TrackName": "lilski_watkins_glen",
-      "TrackConfig": "boot",
-      "Result": [
-        {
-          "DriverId": "driver-1cdad67a2bc13147e250",
-          "IdentityType": "steam_guid",
-          "DriverName": "Borborema",
-          "BestLap": 122393,
-          "TotalTime": 122286,
-          "NumLaps": 1,
-          "GridPosition": 1,
-          "CarModel": "lmgt3_aston_gt3",
-          "Disqualified": false,
-          "HasPenalty": false
-        },
-        {
-          "DriverId": "driver-89def28036d6be47eb47",
-          "IdentityType": "steam_guid",
-          "DriverName": "joao lucas",
-          "BestLap": 122679,
-          "TotalTime": 122617,
-          "NumLaps": 1,
-          "GridPosition": 2,
-          "CarModel": "mclaren_720s_gt3_evo_endurance",
-          "Disqualified": false,
-          "HasPenalty": false
-        }
-      ],
-      "Laps": [
-        {
-          "DriverId": "driver-1cdad67a2bc13147e250",
-          "IdentityType": "steam_guid",
-          "DriverName": "Borborema",
-          "LapTime": 122393,
-          "Cuts": 0,
-          "Sectors": [
-            30350,
-            40393,
-            51650
-          ],
-          "Timestamp": 1786402010,
-          "CarModel": "lmgt3_aston_gt3",
-          "Tyre": "S8M"
-        },
-        {
-          "DriverId": "driver-89def28036d6be47eb47",
-          "IdentityType": "steam_guid",
-          "DriverName": "joao lucas",
-          "LapTime": 122679,
-          "Cuts": 0,
-          "Sectors": [
-            29736,
-            41985,
-            50958
-          ],
-          "Timestamp": 1786402010,
-          "CarModel": "mclaren_720s_gt3_evo_endurance",
-          "Tyre": "S8M"
-        }
-      ],
-      "Events": [
-        {
-          "Type": "COLLISION_WITH_ENV",
-          "Timestamp": 1786401946,
-          "AfterSessionEnd": false,
-          "CarId": 3,
-          "OtherCarId": 0,
-          "Driver": {
-            "Id": "driver-89def28036d6be47eb47",
-            "IdentityType": "steam_guid",
-            "Name": "joao lucas"
-          },
-          "OtherDriver": {
-            "Id": "driver-7a115c3ef9b2810403c3",
-            "IdentityType": "name_fallback",
-            "Name": ""
-          },
-          "WorldPosition": {
-            "X": -177.48714,
-            "Y": -1.2065374,
-            "Z": 308.7228
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_ENV",
-          "Timestamp": 1786402057,
-          "AfterSessionEnd": false,
-          "CarId": 5,
-          "OtherCarId": 0,
-          "Driver": {
-            "Id": "driver-daec84ea209127a8a053",
-            "IdentityType": "steam_guid",
-            "Name": "William Trostt"
-          },
-          "OtherDriver": {
-            "Id": "driver-7a115c3ef9b2810403c3",
-            "IdentityType": "name_fallback",
-            "Name": ""
-          },
-          "WorldPosition": {
-            "X": -236.33754,
-            "Y": -12.327313,
-            "Z": -985.7251
           }
         }
       ]
