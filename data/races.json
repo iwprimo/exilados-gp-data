@@ -1,14 +1,1269 @@
 {
   "ok": true,
-  "generated_at": "2026-08-22T21:36:05.007466+00:00",
+  "generated_at": "2026-08-22T21:54:05.827375+00:00",
   "window_days": 7,
-  "race_count": 41,
+  "race_count": 42,
   "identity_summary": {
-    "steam_guid_captured": 36,
+    "steam_guid_captured": 37,
     "name_fallback": 1,
     "raw_steam_ids_public": false
   },
   "races": [
+    {
+      "Type": "RACE",
+      "Date": "2026-08-22T14:49:00-07:00",
+      "SessionFile": "2026_8_22_14_49_RACE",
+      "TrackName": "jr_daytona_2026",
+      "TrackConfig": "road_course",
+      "Result": [
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "IdentityType": "steam_guid",
+          "DriverName": "IGAO",
+          "BestLap": 92390,
+          "TotalTime": 774006,
+          "NumLaps": 8,
+          "GridPosition": 4,
+          "CarModel": "cadillac_v_series_r_2023",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "BestLap": 92038,
+          "TotalTime": 779656,
+          "NumLaps": 8,
+          "GridPosition": 1,
+          "CarModel": "porsche_963_2023",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-b689e104b09150d04d42",
+          "IdentityType": "steam_guid",
+          "DriverName": "macedodoc",
+          "BestLap": 96201,
+          "TotalTime": 826185,
+          "NumLaps": 8,
+          "GridPosition": 3,
+          "CarModel": "lamborghini_sc63",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-09512a857c038a3dcba4",
+          "IdentityType": "steam_guid",
+          "DriverName": "DieggoSena",
+          "BestLap": 94038,
+          "TotalTime": 745583,
+          "NumLaps": 6,
+          "GridPosition": 5,
+          "CarModel": "ferrari_499p_2023",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-c8748627de0d3f0707f7",
+          "IdentityType": "steam_guid",
+          "DriverName": "Lord_Crayz",
+          "BestLap": 127974,
+          "TotalTime": 805138,
+          "NumLaps": 3,
+          "GridPosition": 13,
+          "CarModel": "alpine_a424",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-4ce32d744c4b74d2e1a6",
+          "IdentityType": "steam_guid",
+          "DriverName": "D. Batista",
+          "BestLap": 122482,
+          "TotalTime": 122425,
+          "NumLaps": 1,
+          "GridPosition": 2,
+          "CarModel": "ferrari_499p_2023",
+          "Disqualified": false,
+          "HasPenalty": false
+        }
+      ],
+      "Laps": [
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 121795,
+          "Cuts": 0,
+          "Sectors": [
+            49259,
+            48776,
+            23760
+          ],
+          "Timestamp": 1787434654,
+          "CarModel": "porsche_963_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-4ce32d744c4b74d2e1a6",
+          "IdentityType": "steam_guid",
+          "DriverName": "D. Batista",
+          "LapTime": 122482,
+          "Cuts": 0,
+          "Sectors": [
+            51377,
+            47480,
+            23625
+          ],
+          "Timestamp": 1787434655,
+          "CarModel": "ferrari_499p_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "IdentityType": "steam_guid",
+          "DriverName": "IGAO",
+          "LapTime": 123320,
+          "Cuts": 0,
+          "Sectors": [
+            51230,
+            48641,
+            23449
+          ],
+          "Timestamp": 1787434656,
+          "CarModel": "cadillac_v_series_r_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-b689e104b09150d04d42",
+          "IdentityType": "steam_guid",
+          "DriverName": "macedodoc",
+          "LapTime": 124050,
+          "Cuts": 0,
+          "Sectors": [
+            50771,
+            48492,
+            24787
+          ],
+          "Timestamp": 1787434657,
+          "CarModel": "lamborghini_sc63",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-c8748627de0d3f0707f7",
+          "IdentityType": "steam_guid",
+          "DriverName": "Lord_Crayz",
+          "LapTime": 127974,
+          "Cuts": 0,
+          "Sectors": [
+            51807,
+            51344,
+            24823
+          ],
+          "Timestamp": 1787434661,
+          "CarModel": "alpine_a424",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 93543,
+          "Cuts": 0,
+          "Sectors": [
+            26380,
+            43821,
+            23342
+          ],
+          "Timestamp": 1787434748,
+          "CarModel": "porsche_963_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "IdentityType": "steam_guid",
+          "DriverName": "IGAO",
+          "LapTime": 93580,
+          "Cuts": 0,
+          "Sectors": [
+            26895,
+            43461,
+            23224
+          ],
+          "Timestamp": 1787434750,
+          "CarModel": "cadillac_v_series_r_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-b689e104b09150d04d42",
+          "IdentityType": "steam_guid",
+          "DriverName": "macedodoc",
+          "LapTime": 96201,
+          "Cuts": 0,
+          "Sectors": [
+            26928,
+            45346,
+            23927
+          ],
+          "Timestamp": 1787434753,
+          "CarModel": "lamborghini_sc63",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-09512a857c038a3dcba4",
+          "IdentityType": "steam_guid",
+          "DriverName": "DieggoSena",
+          "LapTime": 138642,
+          "Cuts": 0,
+          "Sectors": [
+            69382,
+            45752,
+            23508
+          ],
+          "Timestamp": 1787434785,
+          "CarModel": "ferrari_499p_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 93122,
+          "Cuts": 0,
+          "Sectors": [
+            26266,
+            43466,
+            23390
+          ],
+          "Timestamp": 1787434841,
+          "CarModel": "porsche_963_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "IdentityType": "steam_guid",
+          "DriverName": "IGAO",
+          "LapTime": 92620,
+          "Cuts": 0,
+          "Sectors": [
+            26420,
+            43146,
+            23054
+          ],
+          "Timestamp": 1787434842,
+          "CarModel": "cadillac_v_series_r_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-b689e104b09150d04d42",
+          "IdentityType": "steam_guid",
+          "DriverName": "macedodoc",
+          "LapTime": 102199,
+          "Cuts": 0,
+          "Sectors": [
+            28448,
+            45612,
+            28139
+          ],
+          "Timestamp": 1787434855,
+          "CarModel": "lamborghini_sc63",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-09512a857c038a3dcba4",
+          "IdentityType": "steam_guid",
+          "DriverName": "DieggoSena",
+          "LapTime": 109979,
+          "Cuts": 0,
+          "Sectors": [
+            27206,
+            47656,
+            35117
+          ],
+          "Timestamp": 1787434895,
+          "CarModel": "ferrari_499p_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 93134,
+          "Cuts": 0,
+          "Sectors": [
+            26417,
+            43250,
+            23467
+          ],
+          "Timestamp": 1787434934,
+          "CarModel": "porsche_963_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "IdentityType": "steam_guid",
+          "DriverName": "IGAO",
+          "LapTime": 92390,
+          "Cuts": 0,
+          "Sectors": [
+            26330,
+            42944,
+            23116
+          ],
+          "Timestamp": 1787434935,
+          "CarModel": "cadillac_v_series_r_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-b689e104b09150d04d42",
+          "IdentityType": "steam_guid",
+          "DriverName": "macedodoc",
+          "LapTime": 105126,
+          "Cuts": 1,
+          "Sectors": [
+            30353,
+            49460,
+            25313
+          ],
+          "Timestamp": 1787434960,
+          "CarModel": "lamborghini_sc63",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-09512a857c038a3dcba4",
+          "IdentityType": "steam_guid",
+          "DriverName": "DieggoSena",
+          "LapTime": 98904,
+          "Cuts": 1,
+          "Sectors": [
+            29207,
+            45963,
+            23734
+          ],
+          "Timestamp": 1787434994,
+          "CarModel": "ferrari_499p_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 92955,
+          "Cuts": 0,
+          "Sectors": [
+            26174,
+            43430,
+            23351
+          ],
+          "Timestamp": 1787435027,
+          "CarModel": "porsche_963_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "IdentityType": "steam_guid",
+          "DriverName": "IGAO",
+          "LapTime": 92846,
+          "Cuts": 0,
+          "Sectors": [
+            26355,
+            43425,
+            23066
+          ],
+          "Timestamp": 1787435027,
+          "CarModel": "cadillac_v_series_r_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-b689e104b09150d04d42",
+          "IdentityType": "steam_guid",
+          "DriverName": "macedodoc",
+          "LapTime": 102284,
+          "Cuts": 0,
+          "Sectors": [
+            27827,
+            46332,
+            28125
+          ],
+          "Timestamp": 1787435063,
+          "CarModel": "lamborghini_sc63",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-09512a857c038a3dcba4",
+          "IdentityType": "steam_guid",
+          "DriverName": "DieggoSena",
+          "LapTime": 95301,
+          "Cuts": 0,
+          "Sectors": [
+            26981,
+            44641,
+            23679
+          ],
+          "Timestamp": 1787435089,
+          "CarModel": "ferrari_499p_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 92038,
+          "Cuts": 0,
+          "Sectors": [
+            25937,
+            43205,
+            22896
+          ],
+          "Timestamp": 1787435119,
+          "CarModel": "porsche_963_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "IdentityType": "steam_guid",
+          "DriverName": "IGAO",
+          "LapTime": 92495,
+          "Cuts": 0,
+          "Sectors": [
+            26246,
+            43165,
+            23084
+          ],
+          "Timestamp": 1787435120,
+          "CarModel": "cadillac_v_series_r_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-c8748627de0d3f0707f7",
+          "IdentityType": "steam_guid",
+          "DriverName": "Lord_Crayz",
+          "LapTime": 468418,
+          "Cuts": 3,
+          "Sectors": [
+            395658,
+            47978,
+            24782
+          ],
+          "Timestamp": 1787435129,
+          "CarModel": "alpine_a424",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-b689e104b09150d04d42",
+          "IdentityType": "steam_guid",
+          "DriverName": "macedodoc",
+          "LapTime": 97184,
+          "Cuts": 0,
+          "Sectors": [
+            27767,
+            45396,
+            24021
+          ],
+          "Timestamp": 1787435160,
+          "CarModel": "lamborghini_sc63",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-09512a857c038a3dcba4",
+          "IdentityType": "steam_guid",
+          "DriverName": "DieggoSena",
+          "LapTime": 95170,
+          "Cuts": 1,
+          "Sectors": [
+            27189,
+            43731,
+            24250
+          ],
+          "Timestamp": 1787435184,
+          "CarModel": "ferrari_499p_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "IdentityType": "steam_guid",
+          "DriverName": "IGAO",
+          "LapTime": 93913,
+          "Cuts": 1,
+          "Sectors": [
+            26359,
+            43124,
+            24430
+          ],
+          "Timestamp": 1787435214,
+          "CarModel": "cadillac_v_series_r_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 100526,
+          "Cuts": 0,
+          "Sectors": [
+            26349,
+            43645,
+            30532
+          ],
+          "Timestamp": 1787435220,
+          "CarModel": "porsche_963_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-b689e104b09150d04d42",
+          "IdentityType": "steam_guid",
+          "DriverName": "macedodoc",
+          "LapTime": 99637,
+          "Cuts": 0,
+          "Sectors": [
+            29725,
+            45499,
+            24413
+          ],
+          "Timestamp": 1787435259,
+          "CarModel": "lamborghini_sc63",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-09512a857c038a3dcba4",
+          "IdentityType": "steam_guid",
+          "DriverName": "DieggoSena",
+          "LapTime": 94038,
+          "Cuts": 0,
+          "Sectors": [
+            26753,
+            44109,
+            23176
+          ],
+          "Timestamp": 1787435278,
+          "CarModel": "ferrari_499p_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "IdentityType": "steam_guid",
+          "DriverName": "IGAO",
+          "LapTime": 92912,
+          "Cuts": 0,
+          "Sectors": [
+            26555,
+            43165,
+            23192
+          ],
+          "Timestamp": 1787435307,
+          "CarModel": "cadillac_v_series_r_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 92631,
+          "Cuts": 0,
+          "Sectors": [
+            26269,
+            43340,
+            23022
+          ],
+          "Timestamp": 1787435312,
+          "CarModel": "porsche_963_2023",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-c8748627de0d3f0707f7",
+          "IdentityType": "steam_guid",
+          "DriverName": "Lord_Crayz",
+          "LapTime": 208796,
+          "Cuts": 1,
+          "Sectors": [
+            132953,
+            47026,
+            28817
+          ],
+          "Timestamp": 1787435338,
+          "CarModel": "alpine_a424",
+          "Tyre": "M"
+        },
+        {
+          "DriverId": "driver-b689e104b09150d04d42",
+          "IdentityType": "steam_guid",
+          "DriverName": "macedodoc",
+          "LapTime": 99600,
+          "Cuts": 1,
+          "Sectors": [
+            29139,
+            45828,
+            24633
+          ],
+          "Timestamp": 1787435359,
+          "CarModel": "lamborghini_sc63",
+          "Tyre": "M"
+        }
+      ],
+      "Events": [
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1787434535,
+          "AfterSessionEnd": false,
+          "CarId": 11,
+          "OtherCarId": 16,
+          "Driver": {
+            "Id": "driver-b689e104b09150d04d42",
+            "IdentityType": "steam_guid",
+            "Name": "macedodoc"
+          },
+          "OtherDriver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "WorldPosition": {
+            "X": -161.0898,
+            "Y": 0.58424,
+            "Z": 105.381584
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1787434537,
+          "AfterSessionEnd": false,
+          "CarId": 10,
+          "OtherCarId": 16,
+          "Driver": {
+            "Id": "driver-4ce32d744c4b74d2e1a6",
+            "IdentityType": "steam_guid",
+            "Name": "D. Batista"
+          },
+          "OtherDriver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "WorldPosition": {
+            "X": -169.22734,
+            "Y": 1.407452,
+            "Z": 110.89228
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787434537,
+          "AfterSessionEnd": false,
+          "CarId": 10,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-4ce32d744c4b74d2e1a6",
+            "IdentityType": "steam_guid",
+            "Name": "D. Batista"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -169.59874,
+            "Y": 2.2933824,
+            "Z": 102.70409
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1787434537,
+          "AfterSessionEnd": false,
+          "CarId": 21,
+          "OtherCarId": 16,
+          "Driver": {
+            "Id": "driver-09512a857c038a3dcba4",
+            "IdentityType": "steam_guid",
+            "Name": "DieggoSena"
+          },
+          "OtherDriver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "WorldPosition": {
+            "X": -168.33885,
+            "Y": 0.8221732,
+            "Z": 112.89672
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1787434538,
+          "AfterSessionEnd": false,
+          "CarId": 16,
+          "OtherCarId": 10,
+          "Driver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "OtherDriver": {
+            "Id": "driver-4ce32d744c4b74d2e1a6",
+            "IdentityType": "steam_guid",
+            "Name": "D. Batista"
+          },
+          "WorldPosition": {
+            "X": -168.97945,
+            "Y": 1.4431198,
+            "Z": 110.63435
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1787434538,
+          "AfterSessionEnd": false,
+          "CarId": 16,
+          "OtherCarId": 21,
+          "Driver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "OtherDriver": {
+            "Id": "driver-09512a857c038a3dcba4",
+            "IdentityType": "steam_guid",
+            "Name": "DieggoSena"
+          },
+          "WorldPosition": {
+            "X": -159.56514,
+            "Y": 0.6555733,
+            "Z": 103.763054
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1787434538,
+          "AfterSessionEnd": false,
+          "CarId": 16,
+          "OtherCarId": 11,
+          "Driver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "OtherDriver": {
+            "Id": "driver-b689e104b09150d04d42",
+            "IdentityType": "steam_guid",
+            "Name": "macedodoc"
+          },
+          "WorldPosition": {
+            "X": -163.48422,
+            "Y": 1.0390501,
+            "Z": 107.13226
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1787434540,
+          "AfterSessionEnd": false,
+          "CarId": 11,
+          "OtherCarId": 16,
+          "Driver": {
+            "Id": "driver-b689e104b09150d04d42",
+            "IdentityType": "steam_guid",
+            "Name": "macedodoc"
+          },
+          "OtherDriver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "WorldPosition": {
+            "X": -165.34225,
+            "Y": 0.96107453,
+            "Z": 107.96828
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1787434542,
+          "AfterSessionEnd": false,
+          "CarId": 10,
+          "OtherCarId": 8,
+          "Driver": {
+            "Id": "driver-4ce32d744c4b74d2e1a6",
+            "IdentityType": "steam_guid",
+            "Name": "D. Batista"
+          },
+          "OtherDriver": {
+            "Id": "driver-c8748627de0d3f0707f7",
+            "IdentityType": "steam_guid",
+            "Name": "Lord_Crayz"
+          },
+          "WorldPosition": {
+            "X": -172.70406,
+            "Y": 0.9831646,
+            "Z": 112.15831
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1787434550,
+          "AfterSessionEnd": false,
+          "CarId": 11,
+          "OtherCarId": 21,
+          "Driver": {
+            "Id": "driver-b689e104b09150d04d42",
+            "IdentityType": "steam_guid",
+            "Name": "macedodoc"
+          },
+          "OtherDriver": {
+            "Id": "driver-09512a857c038a3dcba4",
+            "IdentityType": "steam_guid",
+            "Name": "DieggoSena"
+          },
+          "WorldPosition": {
+            "X": -360.76294,
+            "Y": -0.12352865,
+            "Z": 655.7002
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1787434550,
+          "AfterSessionEnd": false,
+          "CarId": 11,
+          "OtherCarId": 16,
+          "Driver": {
+            "Id": "driver-b689e104b09150d04d42",
+            "IdentityType": "steam_guid",
+            "Name": "macedodoc"
+          },
+          "OtherDriver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "WorldPosition": {
+            "X": -346.5751,
+            "Y": -0.38357922,
+            "Z": 661.3647
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1787434552,
+          "AfterSessionEnd": false,
+          "CarId": 21,
+          "OtherCarId": 11,
+          "Driver": {
+            "Id": "driver-09512a857c038a3dcba4",
+            "IdentityType": "steam_guid",
+            "Name": "DieggoSena"
+          },
+          "OtherDriver": {
+            "Id": "driver-b689e104b09150d04d42",
+            "IdentityType": "steam_guid",
+            "Name": "macedodoc"
+          },
+          "WorldPosition": {
+            "X": -364.88095,
+            "Y": -0.3707038,
+            "Z": 653.3605
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1787434552,
+          "AfterSessionEnd": false,
+          "CarId": 21,
+          "OtherCarId": 16,
+          "Driver": {
+            "Id": "driver-09512a857c038a3dcba4",
+            "IdentityType": "steam_guid",
+            "Name": "DieggoSena"
+          },
+          "OtherDriver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "WorldPosition": {
+            "X": -318.84503,
+            "Y": -0.37016967,
+            "Z": 660.3415
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1787434553,
+          "AfterSessionEnd": false,
+          "CarId": 16,
+          "OtherCarId": 11,
+          "Driver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "OtherDriver": {
+            "Id": "driver-b689e104b09150d04d42",
+            "IdentityType": "steam_guid",
+            "Name": "macedodoc"
+          },
+          "WorldPosition": {
+            "X": -346.5324,
+            "Y": -0.29818225,
+            "Z": 661.3349
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1787434553,
+          "AfterSessionEnd": false,
+          "CarId": 16,
+          "OtherCarId": 21,
+          "Driver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "OtherDriver": {
+            "Id": "driver-09512a857c038a3dcba4",
+            "IdentityType": "steam_guid",
+            "Name": "DieggoSena"
+          },
+          "WorldPosition": {
+            "X": -318.40857,
+            "Y": -0.10411935,
+            "Z": 660.99066
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1787434603,
+          "AfterSessionEnd": false,
+          "CarId": 16,
+          "OtherCarId": 11,
+          "Driver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "OtherDriver": {
+            "Id": "driver-b689e104b09150d04d42",
+            "IdentityType": "steam_guid",
+            "Name": "macedodoc"
+          },
+          "WorldPosition": {
+            "X": -320.54364,
+            "Y": -0.21727107,
+            "Z": 857.81384
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1787434605,
+          "AfterSessionEnd": false,
+          "CarId": 11,
+          "OtherCarId": 16,
+          "Driver": {
+            "Id": "driver-b689e104b09150d04d42",
+            "IdentityType": "steam_guid",
+            "Name": "macedodoc"
+          },
+          "OtherDriver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "WorldPosition": {
+            "X": -320.81375,
+            "Y": -0.68577445,
+            "Z": 856.80023
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787434681,
+          "AfterSessionEnd": false,
+          "CarId": 21,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-09512a857c038a3dcba4",
+            "IdentityType": "steam_guid",
+            "Name": "DieggoSena"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -312.09256,
+            "Y": -0.20712699,
+            "Z": 401.18994
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787434821,
+          "AfterSessionEnd": false,
+          "CarId": 21,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-09512a857c038a3dcba4",
+            "IdentityType": "steam_guid",
+            "Name": "DieggoSena"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -183.97849,
+            "Y": -0.1547898,
+            "Z": 959.65656
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787434835,
+          "AfterSessionEnd": false,
+          "CarId": 8,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-c8748627de0d3f0707f7",
+            "IdentityType": "steam_guid",
+            "Name": "Lord_Crayz"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 51.33011,
+            "Y": 0.20492798,
+            "Z": 370.4376
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787434861,
+          "AfterSessionEnd": false,
+          "CarId": 21,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-09512a857c038a3dcba4",
+            "IdentityType": "steam_guid",
+            "Name": "DieggoSena"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 497.36478,
+            "Y": 0.0055471445,
+            "Z": 488.21198
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787434866,
+          "AfterSessionEnd": false,
+          "CarId": 21,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-09512a857c038a3dcba4",
+            "IdentityType": "steam_guid",
+            "Name": "DieggoSena"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 498.12732,
+            "Y": 0.031498235,
+            "Z": 488.8833
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787435010,
+          "AfterSessionEnd": false,
+          "CarId": 8,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-c8748627de0d3f0707f7",
+            "IdentityType": "steam_guid",
+            "Name": "Lord_Crayz"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -305.5111,
+            "Y": -0.2663002,
+            "Z": 392.15585
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787435015,
+          "AfterSessionEnd": false,
+          "CarId": 8,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-c8748627de0d3f0707f7",
+            "IdentityType": "steam_guid",
+            "Name": "Lord_Crayz"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -308.5186,
+            "Y": 0.34916246,
+            "Z": 396.2844
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787435040,
+          "AfterSessionEnd": false,
+          "CarId": 11,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-b689e104b09150d04d42",
+            "IdentityType": "steam_guid",
+            "Name": "macedodoc"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 495.29565,
+            "Y": 0.02380888,
+            "Z": 449.4848
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787435065,
+          "AfterSessionEnd": false,
+          "CarId": 8,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-c8748627de0d3f0707f7",
+            "IdentityType": "steam_guid",
+            "Name": "Lord_Crayz"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -219.17334,
+            "Y": -0.24224417,
+            "Z": 1102.0929
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787435100,
+          "AfterSessionEnd": false,
+          "CarId": 8,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-c8748627de0d3f0707f7",
+            "IdentityType": "steam_guid",
+            "Name": "Lord_Crayz"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 272.2727,
+            "Y": 0.3780608,
+            "Z": 823.87256
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787435188,
+          "AfterSessionEnd": false,
+          "CarId": 16,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 340.85483,
+            "Y": 0.41919896,
+            "Z": 729.73755
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787435195,
+          "AfterSessionEnd": false,
+          "CarId": 4,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "IdentityType": "steam_guid",
+            "Name": "Borborema"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 539.627,
+            "Y": 0.65118265,
+            "Z": 456.3856
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787435290,
+          "AfterSessionEnd": false,
+          "CarId": 8,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-c8748627de0d3f0707f7",
+            "IdentityType": "steam_guid",
+            "Name": "Lord_Crayz"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -489.83365,
+            "Y": 1.4371911,
+            "Z": 828.19104
+          }
+        }
+      ]
+    },
     {
       "Type": "RACE",
       "Date": "2026-08-22T14:24:00-07:00",
