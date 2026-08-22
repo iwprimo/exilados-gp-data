@@ -1,14 +1,162 @@
 {
   "ok": true,
-  "generated_at": "2026-08-22T02:43:35.127979+00:00",
+  "generated_at": "2026-08-22T05:07:10.331994+00:00",
   "window_days": 7,
-  "race_count": 39,
+  "race_count": 40,
   "identity_summary": {
-    "steam_guid_captured": 34,
+    "steam_guid_captured": 35,
     "name_fallback": 1,
     "raw_steam_ids_public": false
   },
   "races": [
+    {
+      "Type": "RACE",
+      "Date": "2026-08-21T21:56:00-07:00",
+      "SessionFile": "2026_8_21_21_56_RACE",
+      "TrackName": "spa",
+      "TrackConfig": null,
+      "Result": [
+        {
+          "DriverId": "driver-05c69b21372d0b05d95c",
+          "IdentityType": "steam_guid",
+          "DriverName": "VICTOR GABRIELCG",
+          "BestLap": 154555,
+          "TotalTime": 328166,
+          "NumLaps": 2,
+          "GridPosition": 1,
+          "CarModel": "lmgt3_bmw_m4_gt3",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-426d7c4b7ef7a2dcc04b",
+          "IdentityType": "steam_guid",
+          "DriverName": "corvo_patine",
+          "BestLap": 244490,
+          "TotalTime": 326708,
+          "NumLaps": 1,
+          "GridPosition": 2,
+          "CarModel": "lmgt3_bmw_m4_gt3",
+          "Disqualified": false,
+          "HasPenalty": false
+        }
+      ],
+      "Laps": [
+        {
+          "DriverId": "driver-05c69b21372d0b05d95c",
+          "IdentityType": "steam_guid",
+          "DriverName": "VICTOR GABRIELCG",
+          "LapTime": 154555,
+          "Cuts": 0,
+          "Sectors": [
+            47802,
+            68449,
+            38304
+          ],
+          "Timestamp": 1787374285,
+          "CarModel": "lmgt3_bmw_m4_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-426d7c4b7ef7a2dcc04b",
+          "IdentityType": "steam_guid",
+          "DriverName": "corvo_patine",
+          "LapTime": 244490,
+          "Cuts": 0,
+          "Sectors": [
+            117050,
+            81198,
+            46242
+          ],
+          "Timestamp": 1787374457,
+          "CarModel": "lmgt3_bmw_m4_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-05c69b21372d0b05d95c",
+          "IdentityType": "steam_guid",
+          "DriverName": "VICTOR GABRIELCG",
+          "LapTime": 173687,
+          "Cuts": 0,
+          "Sectors": [
+            44690,
+            83485,
+            45512
+          ],
+          "Timestamp": 1787374459,
+          "CarModel": "lmgt3_bmw_m4_gt3",
+          "Tyre": "S8M"
+        }
+      ],
+      "Events": [
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787374528,
+          "AfterSessionEnd": false,
+          "CarId": 2,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-426d7c4b7ef7a2dcc04b",
+            "IdentityType": "steam_guid",
+            "Name": "corvo_patine"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 349.39807,
+            "Y": 45.093536,
+            "Z": 947.59314
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1787374568,
+          "AfterSessionEnd": false,
+          "CarId": 2,
+          "OtherCarId": 1,
+          "Driver": {
+            "Id": "driver-426d7c4b7ef7a2dcc04b",
+            "IdentityType": "steam_guid",
+            "Name": "corvo_patine"
+          },
+          "OtherDriver": {
+            "Id": "driver-05c69b21372d0b05d95c",
+            "IdentityType": "steam_guid",
+            "Name": "VICTOR GABRIELCG"
+          },
+          "WorldPosition": {
+            "X": -117.06032,
+            "Y": -18.402052,
+            "Z": 750.6942
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1787374568,
+          "AfterSessionEnd": false,
+          "CarId": 1,
+          "OtherCarId": 2,
+          "Driver": {
+            "Id": "driver-05c69b21372d0b05d95c",
+            "IdentityType": "steam_guid",
+            "Name": "VICTOR GABRIELCG"
+          },
+          "OtherDriver": {
+            "Id": "driver-426d7c4b7ef7a2dcc04b",
+            "IdentityType": "steam_guid",
+            "Name": "corvo_patine"
+          },
+          "WorldPosition": {
+            "X": -122.443756,
+            "Y": -18.621544,
+            "Z": 758.2313
+          }
+        }
+      ]
+    },
     {
       "Type": "RACE",
       "Date": "2026-08-21T19:22:00-07:00",
