@@ -1,14 +1,98 @@
 {
   "ok": true,
-  "generated_at": "2026-08-23T17:07:09.467831+00:00",
+  "generated_at": "2026-08-23T18:44:43.541612+00:00",
   "window_days": 7,
-  "race_count": 47,
+  "race_count": 48,
   "identity_summary": {
     "steam_guid_captured": 40,
     "name_fallback": 1,
     "raw_steam_ids_public": false
   },
   "races": [
+    {
+      "Type": "RACE",
+      "Date": "2026-08-23T11:27:00-07:00",
+      "SessionFile": "2026_8_23_11_27_RACE",
+      "TrackName": "jr_road_atlanta_2022",
+      "TrackConfig": "full",
+      "Result": [
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "IdentityType": "steam_guid",
+          "DriverName": "IGAO",
+          "BestLap": 85332,
+          "TotalTime": 85268,
+          "NumLaps": 1,
+          "GridPosition": 1,
+          "CarModel": "porsche_992_gt3_r",
+          "Disqualified": false,
+          "HasPenalty": false
+        }
+      ],
+      "Laps": [
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "IdentityType": "steam_guid",
+          "DriverName": "IGAO",
+          "LapTime": 85332,
+          "Cuts": 0,
+          "Sectors": [
+            31030,
+            37318,
+            16984
+          ],
+          "Timestamp": 1787509338,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        }
+      ],
+      "Events": [
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1787509276,
+          "AfterSessionEnd": false,
+          "CarId": 0,
+          "OtherCarId": 16,
+          "Driver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "OtherDriver": {
+            "Id": "driver-4ce32d744c4b74d2e1a6",
+            "IdentityType": "steam_guid",
+            "Name": "D. Batista"
+          },
+          "WorldPosition": {
+            "X": -71.97772,
+            "Y": -13.219746,
+            "Z": 409.72443
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787509351,
+          "AfterSessionEnd": false,
+          "CarId": 0,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -55.612946,
+            "Y": -12.675239,
+            "Z": 346.98047
+          }
+        }
+      ]
+    },
     {
       "Type": "RACE",
       "Date": "2026-08-22T19:09:00-07:00",
