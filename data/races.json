@@ -1,14 +1,1940 @@
 {
   "ok": true,
-  "generated_at": "2026-08-23T19:32:14.929680+00:00",
+  "generated_at": "2026-08-23T20:36:33.346154+00:00",
   "window_days": 7,
-  "race_count": 47,
+  "race_count": 46,
   "identity_summary": {
     "steam_guid_captured": 39,
     "name_fallback": 1,
     "raw_steam_ids_public": false
   },
   "races": [
+    {
+      "Type": "RACE",
+      "Date": "2026-08-23T13:03:00-07:00",
+      "SessionFile": "2026_8_23_13_3_RACE",
+      "TrackName": "road_atlanta2018",
+      "TrackConfig": "grandprix",
+      "Result": [
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "IdentityType": "steam_guid",
+          "DriverName": "IGAO",
+          "BestLap": 78438,
+          "TotalTime": 720730,
+          "NumLaps": 9,
+          "GridPosition": 8,
+          "CarModel": "ford_mustang_gt3",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "BestLap": 78704,
+          "TotalTime": 730186,
+          "NumLaps": 9,
+          "GridPosition": 2,
+          "CarModel": "porsche_992_gt3_r",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-bcb7db465fb3f4c14f82",
+          "IdentityType": "steam_guid",
+          "DriverName": "Marcos Braga",
+          "BestLap": 78912,
+          "TotalTime": 733174,
+          "NumLaps": 9,
+          "GridPosition": 3,
+          "CarModel": "mclaren_720s_gt3_evo_endurance",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-4ce32d744c4b74d2e1a6",
+          "IdentityType": "steam_guid",
+          "DriverName": "D. Batista",
+          "BestLap": 78577,
+          "TotalTime": 735940,
+          "NumLaps": 9,
+          "GridPosition": 4,
+          "CarModel": "ng_lexus_rcf_gt3",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-76cddf439ce87ce6ed79",
+          "IdentityType": "steam_guid",
+          "DriverName": "edrick09",
+          "BestLap": 83294,
+          "TotalTime": 774774,
+          "NumLaps": 9,
+          "GridPosition": 10,
+          "CarModel": "lamborghini_huracan_gt3_evo2",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-e24c66a6a307d8b8ec3d",
+          "IdentityType": "steam_guid",
+          "DriverName": "jp_games421",
+          "BestLap": 97605,
+          "TotalTime": 591593,
+          "NumLaps": 5,
+          "GridPosition": 11,
+          "CarModel": "ks_ferrari_296_gt3",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-0662342e6895a4302420",
+          "IdentityType": "steam_guid",
+          "DriverName": "Max Verstappen",
+          "BestLap": 82140,
+          "TotalTime": 320301,
+          "NumLaps": 3,
+          "GridPosition": 5,
+          "CarModel": "lmgt3_bmw_m4_gt3",
+          "Disqualified": false,
+          "HasPenalty": false
+        }
+      ],
+      "Laps": [
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 84670,
+          "Cuts": 0,
+          "Sectors": [
+            35876,
+            30483,
+            18311
+          ],
+          "Timestamp": 1787514664,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-4ce32d744c4b74d2e1a6",
+          "IdentityType": "steam_guid",
+          "DriverName": "D. Batista",
+          "LapTime": 85557,
+          "Cuts": 0,
+          "Sectors": [
+            36219,
+            30676,
+            18662
+          ],
+          "Timestamp": 1787514664,
+          "CarModel": "ng_lexus_rcf_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-bcb7db465fb3f4c14f82",
+          "IdentityType": "steam_guid",
+          "DriverName": "Marcos Braga",
+          "LapTime": 85773,
+          "Cuts": 0,
+          "Sectors": [
+            36718,
+            30181,
+            18874
+          ],
+          "Timestamp": 1787514665,
+          "CarModel": "mclaren_720s_gt3_evo_endurance",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "IdentityType": "steam_guid",
+          "DriverName": "IGAO",
+          "LapTime": 86246,
+          "Cuts": 0,
+          "Sectors": [
+            37107,
+            30321,
+            18818
+          ],
+          "Timestamp": 1787514665,
+          "CarModel": "ford_mustang_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-76cddf439ce87ce6ed79",
+          "IdentityType": "steam_guid",
+          "DriverName": "edrick09",
+          "LapTime": 93384,
+          "Cuts": 0,
+          "Sectors": [
+            41390,
+            32176,
+            19818
+          ],
+          "Timestamp": 1787514672,
+          "CarModel": "lamborghini_huracan_gt3_evo2",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-e24c66a6a307d8b8ec3d",
+          "IdentityType": "steam_guid",
+          "DriverName": "jp_games421",
+          "LapTime": 100298,
+          "Cuts": 0,
+          "Sectors": [
+            41308,
+            39307,
+            19683
+          ],
+          "Timestamp": 1787514679,
+          "CarModel": "ks_ferrari_296_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-0662342e6895a4302420",
+          "IdentityType": "steam_guid",
+          "DriverName": "Max Verstappen",
+          "LapTime": 103378,
+          "Cuts": 0,
+          "Sectors": [
+            50552,
+            33903,
+            18923
+          ],
+          "Timestamp": 1787514682,
+          "CarModel": "lmgt3_bmw_m4_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 79255,
+          "Cuts": 0,
+          "Sectors": [
+            30403,
+            30569,
+            18283
+          ],
+          "Timestamp": 1787514743,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-4ce32d744c4b74d2e1a6",
+          "IdentityType": "steam_guid",
+          "DriverName": "D. Batista",
+          "LapTime": 79451,
+          "Cuts": 0,
+          "Sectors": [
+            30896,
+            30308,
+            18247
+          ],
+          "Timestamp": 1787514744,
+          "CarModel": "ng_lexus_rcf_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "IdentityType": "steam_guid",
+          "DriverName": "IGAO",
+          "LapTime": 79932,
+          "Cuts": 0,
+          "Sectors": [
+            30675,
+            30348,
+            18909
+          ],
+          "Timestamp": 1787514745,
+          "CarModel": "ford_mustang_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-bcb7db465fb3f4c14f82",
+          "IdentityType": "steam_guid",
+          "DriverName": "Marcos Braga",
+          "LapTime": 80567,
+          "Cuts": 0,
+          "Sectors": [
+            31198,
+            30830,
+            18539
+          ],
+          "Timestamp": 1787514745,
+          "CarModel": "mclaren_720s_gt3_evo_endurance",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-76cddf439ce87ce6ed79",
+          "IdentityType": "steam_guid",
+          "DriverName": "edrick09",
+          "LapTime": 83294,
+          "Cuts": 0,
+          "Sectors": [
+            32481,
+            31162,
+            19651
+          ],
+          "Timestamp": 1787514756,
+          "CarModel": "lamborghini_huracan_gt3_evo2",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-0662342e6895a4302420",
+          "IdentityType": "steam_guid",
+          "DriverName": "Max Verstappen",
+          "LapTime": 82140,
+          "Cuts": 0,
+          "Sectors": [
+            31132,
+            31765,
+            19243
+          ],
+          "Timestamp": 1787514764,
+          "CarModel": "lmgt3_bmw_m4_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-e24c66a6a307d8b8ec3d",
+          "IdentityType": "steam_guid",
+          "DriverName": "jp_games421",
+          "LapTime": 132833,
+          "Cuts": 0,
+          "Sectors": [
+            45893,
+            57056,
+            29884
+          ],
+          "Timestamp": 1787514812,
+          "CarModel": "ks_ferrari_296_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 78747,
+          "Cuts": 0,
+          "Sectors": [
+            30210,
+            30266,
+            18271
+          ],
+          "Timestamp": 1787514822,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-4ce32d744c4b74d2e1a6",
+          "IdentityType": "steam_guid",
+          "DriverName": "D. Batista",
+          "LapTime": 79823,
+          "Cuts": 0,
+          "Sectors": [
+            31017,
+            30555,
+            18251
+          ],
+          "Timestamp": 1787514824,
+          "CarModel": "ng_lexus_rcf_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "IdentityType": "steam_guid",
+          "DriverName": "IGAO",
+          "LapTime": 78965,
+          "Cuts": 0,
+          "Sectors": [
+            30104,
+            30394,
+            18467
+          ],
+          "Timestamp": 1787514824,
+          "CarModel": "ford_mustang_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-bcb7db465fb3f4c14f82",
+          "IdentityType": "steam_guid",
+          "DriverName": "Marcos Braga",
+          "LapTime": 79427,
+          "Cuts": 0,
+          "Sectors": [
+            30369,
+            30347,
+            18711
+          ],
+          "Timestamp": 1787514825,
+          "CarModel": "mclaren_720s_gt3_evo_endurance",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-76cddf439ce87ce6ed79",
+          "IdentityType": "steam_guid",
+          "DriverName": "edrick09",
+          "LapTime": 93720,
+          "Cuts": 0,
+          "Sectors": [
+            33537,
+            40023,
+            20160
+          ],
+          "Timestamp": 1787514849,
+          "CarModel": "lamborghini_huracan_gt3_evo2",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-0662342e6895a4302420",
+          "IdentityType": "steam_guid",
+          "DriverName": "Max Verstappen",
+          "LapTime": 134855,
+          "Cuts": 0,
+          "Sectors": [
+            83880,
+            32071,
+            18904
+          ],
+          "Timestamp": 1787514899,
+          "CarModel": "lmgt3_bmw_m4_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-4ce32d744c4b74d2e1a6",
+          "IdentityType": "steam_guid",
+          "DriverName": "D. Batista",
+          "LapTime": 78762,
+          "Cuts": 0,
+          "Sectors": [
+            30216,
+            30127,
+            18419
+          ],
+          "Timestamp": 1787514902,
+          "CarModel": "ng_lexus_rcf_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "IdentityType": "steam_guid",
+          "DriverName": "IGAO",
+          "LapTime": 78622,
+          "Cuts": 0,
+          "Sectors": [
+            30139,
+            29975,
+            18508
+          ],
+          "Timestamp": 1787514903,
+          "CarModel": "ford_mustang_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-bcb7db465fb3f4c14f82",
+          "IdentityType": "steam_guid",
+          "DriverName": "Marcos Braga",
+          "LapTime": 82060,
+          "Cuts": 0,
+          "Sectors": [
+            32492,
+            31015,
+            18553
+          ],
+          "Timestamp": 1787514907,
+          "CarModel": "mclaren_720s_gt3_evo_endurance",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 91233,
+          "Cuts": 0,
+          "Sectors": [
+            42462,
+            30437,
+            18334
+          ],
+          "Timestamp": 1787514913,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-76cddf439ce87ce6ed79",
+          "IdentityType": "steam_guid",
+          "DriverName": "edrick09",
+          "LapTime": 84663,
+          "Cuts": 0,
+          "Sectors": [
+            33124,
+            31568,
+            19971
+          ],
+          "Timestamp": 1787514934,
+          "CarModel": "lamborghini_huracan_gt3_evo2",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-e24c66a6a307d8b8ec3d",
+          "IdentityType": "steam_guid",
+          "DriverName": "jp_games421",
+          "LapTime": 129738,
+          "Cuts": 0,
+          "Sectors": [
+            59700,
+            38740,
+            31298
+          ],
+          "Timestamp": 1787514942,
+          "CarModel": "ks_ferrari_296_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "IdentityType": "steam_guid",
+          "DriverName": "IGAO",
+          "LapTime": 81046,
+          "Cuts": 0,
+          "Sectors": [
+            31317,
+            30510,
+            19219
+          ],
+          "Timestamp": 1787514984,
+          "CarModel": "ford_mustang_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 79659,
+          "Cuts": 0,
+          "Sectors": [
+            30410,
+            30223,
+            19026
+          ],
+          "Timestamp": 1787514992,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-bcb7db465fb3f4c14f82",
+          "IdentityType": "steam_guid",
+          "DriverName": "Marcos Braga",
+          "LapTime": 88696,
+          "Cuts": 0,
+          "Sectors": [
+            30489,
+            30635,
+            27572
+          ],
+          "Timestamp": 1787514995,
+          "CarModel": "mclaren_720s_gt3_evo_endurance",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-4ce32d744c4b74d2e1a6",
+          "IdentityType": "steam_guid",
+          "DriverName": "D. Batista",
+          "LapTime": 95795,
+          "Cuts": 0,
+          "Sectors": [
+            31396,
+            30640,
+            33759
+          ],
+          "Timestamp": 1787514998,
+          "CarModel": "ng_lexus_rcf_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-76cddf439ce87ce6ed79",
+          "IdentityType": "steam_guid",
+          "DriverName": "edrick09",
+          "LapTime": 84168,
+          "Cuts": 0,
+          "Sectors": [
+            33268,
+            31109,
+            19791
+          ],
+          "Timestamp": 1787515018,
+          "CarModel": "lamborghini_huracan_gt3_evo2",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-e24c66a6a307d8b8ec3d",
+          "IdentityType": "steam_guid",
+          "DriverName": "jp_games421",
+          "LapTime": 97605,
+          "Cuts": 0,
+          "Sectors": [
+            41467,
+            35869,
+            20269
+          ],
+          "Timestamp": 1787515039,
+          "CarModel": "ks_ferrari_296_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "IdentityType": "steam_guid",
+          "DriverName": "IGAO",
+          "LapTime": 78557,
+          "Cuts": 0,
+          "Sectors": [
+            30097,
+            30191,
+            18269
+          ],
+          "Timestamp": 1787515062,
+          "CarModel": "ford_mustang_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 78867,
+          "Cuts": 0,
+          "Sectors": [
+            30348,
+            30285,
+            18234
+          ],
+          "Timestamp": 1787515071,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-bcb7db465fb3f4c14f82",
+          "IdentityType": "steam_guid",
+          "DriverName": "Marcos Braga",
+          "LapTime": 79453,
+          "Cuts": 0,
+          "Sectors": [
+            30380,
+            30547,
+            18526
+          ],
+          "Timestamp": 1787515075,
+          "CarModel": "mclaren_720s_gt3_evo_endurance",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-4ce32d744c4b74d2e1a6",
+          "IdentityType": "steam_guid",
+          "DriverName": "D. Batista",
+          "LapTime": 80049,
+          "Cuts": 0,
+          "Sectors": [
+            30666,
+            30915,
+            18468
+          ],
+          "Timestamp": 1787515078,
+          "CarModel": "ng_lexus_rcf_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-76cddf439ce87ce6ed79",
+          "IdentityType": "steam_guid",
+          "DriverName": "edrick09",
+          "LapTime": 84743,
+          "Cuts": 0,
+          "Sectors": [
+            32660,
+            31411,
+            20672
+          ],
+          "Timestamp": 1787515103,
+          "CarModel": "lamborghini_huracan_gt3_evo2",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "IdentityType": "steam_guid",
+          "DriverName": "IGAO",
+          "LapTime": 78438,
+          "Cuts": 0,
+          "Sectors": [
+            29941,
+            30182,
+            18315
+          ],
+          "Timestamp": 1787515141,
+          "CarModel": "ford_mustang_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 79767,
+          "Cuts": 0,
+          "Sectors": [
+            30663,
+            30757,
+            18347
+          ],
+          "Timestamp": 1787515151,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-bcb7db465fb3f4c14f82",
+          "IdentityType": "steam_guid",
+          "DriverName": "Marcos Braga",
+          "LapTime": 78963,
+          "Cuts": 0,
+          "Sectors": [
+            30196,
+            30352,
+            18415
+          ],
+          "Timestamp": 1787515154,
+          "CarModel": "mclaren_720s_gt3_evo_endurance",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-4ce32d744c4b74d2e1a6",
+          "IdentityType": "steam_guid",
+          "DriverName": "D. Batista",
+          "LapTime": 78749,
+          "Cuts": 0,
+          "Sectors": [
+            29884,
+            30510,
+            18355
+          ],
+          "Timestamp": 1787515157,
+          "CarModel": "ng_lexus_rcf_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-e24c66a6a307d8b8ec3d",
+          "IdentityType": "steam_guid",
+          "DriverName": "jp_games421",
+          "LapTime": 131202,
+          "Cuts": 0,
+          "Sectors": [
+            64494,
+            46440,
+            20268
+          ],
+          "Timestamp": 1787515171,
+          "CarModel": "ks_ferrari_296_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-76cddf439ce87ce6ed79",
+          "IdentityType": "steam_guid",
+          "DriverName": "edrick09",
+          "LapTime": 84256,
+          "Cuts": 0,
+          "Sectors": [
+            32875,
+            31450,
+            19931
+          ],
+          "Timestamp": 1787515187,
+          "CarModel": "lamborghini_huracan_gt3_evo2",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "IdentityType": "steam_guid",
+          "DriverName": "IGAO",
+          "LapTime": 79389,
+          "Cuts": 0,
+          "Sectors": [
+            30329,
+            30362,
+            18698
+          ],
+          "Timestamp": 1787515220,
+          "CarModel": "ford_mustang_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 78704,
+          "Cuts": 0,
+          "Sectors": [
+            30334,
+            29916,
+            18454
+          ],
+          "Timestamp": 1787515230,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-bcb7db465fb3f4c14f82",
+          "IdentityType": "steam_guid",
+          "DriverName": "Marcos Braga",
+          "LapTime": 78912,
+          "Cuts": 0,
+          "Sectors": [
+            30185,
+            30187,
+            18540
+          ],
+          "Timestamp": 1787515233,
+          "CarModel": "mclaren_720s_gt3_evo_endurance",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-4ce32d744c4b74d2e1a6",
+          "IdentityType": "steam_guid",
+          "DriverName": "D. Batista",
+          "LapTime": 78577,
+          "Cuts": 0,
+          "Sectors": [
+            29855,
+            30241,
+            18481
+          ],
+          "Timestamp": 1787515236,
+          "CarModel": "ng_lexus_rcf_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-76cddf439ce87ce6ed79",
+          "IdentityType": "steam_guid",
+          "DriverName": "edrick09",
+          "LapTime": 83341,
+          "Cuts": 0,
+          "Sectors": [
+            32140,
+            31522,
+            19679
+          ],
+          "Timestamp": 1787515270,
+          "CarModel": "lamborghini_huracan_gt3_evo2",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-c5977d4eee3836515932",
+          "IdentityType": "steam_guid",
+          "DriverName": "IGAO",
+          "LapTime": 79604,
+          "Cuts": 0,
+          "Sectors": [
+            30105,
+            30415,
+            19084
+          ],
+          "Timestamp": 1787515300,
+          "CarModel": "ford_mustang_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-1cdad67a2bc13147e250",
+          "IdentityType": "steam_guid",
+          "DriverName": "Borborema",
+          "LapTime": 79369,
+          "Cuts": 0,
+          "Sectors": [
+            30656,
+            30398,
+            18315
+          ],
+          "Timestamp": 1787515309,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-bcb7db465fb3f4c14f82",
+          "IdentityType": "steam_guid",
+          "DriverName": "Marcos Braga",
+          "LapTime": 79442,
+          "Cuts": 0,
+          "Sectors": [
+            30334,
+            30730,
+            18378
+          ],
+          "Timestamp": 1787515312,
+          "CarModel": "mclaren_720s_gt3_evo_endurance",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-4ce32d744c4b74d2e1a6",
+          "IdentityType": "steam_guid",
+          "DriverName": "D. Batista",
+          "LapTime": 79250,
+          "Cuts": 0,
+          "Sectors": [
+            30552,
+            30446,
+            18252
+          ],
+          "Timestamp": 1787515315,
+          "CarModel": "ng_lexus_rcf_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-76cddf439ce87ce6ed79",
+          "IdentityType": "steam_guid",
+          "DriverName": "edrick09",
+          "LapTime": 83301,
+          "Cuts": 0,
+          "Sectors": [
+            32424,
+            31531,
+            19346
+          ],
+          "Timestamp": 1787515354,
+          "CarModel": "lamborghini_huracan_gt3_evo2",
+          "Tyre": "S8M"
+        }
+      ],
+      "Events": [
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1787514593,
+          "AfterSessionEnd": false,
+          "CarId": 6,
+          "OtherCarId": 1,
+          "Driver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "OtherDriver": {
+            "Id": "driver-0662342e6895a4302420",
+            "IdentityType": "steam_guid",
+            "Name": "Max Verstappen"
+          },
+          "WorldPosition": {
+            "X": 350.95163,
+            "Y": -11.706455,
+            "Z": 252.76956
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1787514596,
+          "AfterSessionEnd": false,
+          "CarId": 1,
+          "OtherCarId": 6,
+          "Driver": {
+            "Id": "driver-0662342e6895a4302420",
+            "IdentityType": "steam_guid",
+            "Name": "Max Verstappen"
+          },
+          "OtherDriver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "WorldPosition": {
+            "X": 347.96384,
+            "Y": -11.7961855,
+            "Z": 247.5179
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787514622,
+          "AfterSessionEnd": false,
+          "CarId": 10,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-e24c66a6a307d8b8ec3d",
+            "IdentityType": "steam_guid",
+            "Name": "jp_games421"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -225.58542,
+            "Y": 4.154179,
+            "Z": 1080.7749
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787514637,
+          "AfterSessionEnd": false,
+          "CarId": 10,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-e24c66a6a307d8b8ec3d",
+            "IdentityType": "steam_guid",
+            "Name": "jp_games421"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -408.73807,
+            "Y": 3.3885338,
+            "Z": 1568.7607
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787514672,
+          "AfterSessionEnd": false,
+          "CarId": 10,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-e24c66a6a307d8b8ec3d",
+            "IdentityType": "steam_guid",
+            "Name": "jp_games421"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -336.16397,
+            "Y": 21.731815,
+            "Z": 69.207245
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787514707,
+          "AfterSessionEnd": false,
+          "CarId": 10,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-e24c66a6a307d8b8ec3d",
+            "IdentityType": "steam_guid",
+            "Name": "jp_games421"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 95.67422,
+            "Y": -1.1848626,
+            "Z": 710.9602
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787514732,
+          "AfterSessionEnd": false,
+          "CarId": 10,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-e24c66a6a307d8b8ec3d",
+            "IdentityType": "steam_guid",
+            "Name": "jp_games421"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -215.00958,
+            "Y": -3.8662117,
+            "Z": 1507.5602
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787514736,
+          "AfterSessionEnd": false,
+          "CarId": 2,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-f2da1b9dff830f07a982",
+            "IdentityType": "steam_guid",
+            "Name": "Léo Firme"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -364.23737,
+            "Y": 0.22052114,
+            "Z": 1459.3655
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787514737,
+          "AfterSessionEnd": false,
+          "CarId": 10,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-e24c66a6a307d8b8ec3d",
+            "IdentityType": "steam_guid",
+            "Name": "jp_games421"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -215.08853,
+            "Y": -3.8585835,
+            "Z": 1509.2694
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787514771,
+          "AfterSessionEnd": false,
+          "CarId": 2,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-f2da1b9dff830f07a982",
+            "IdentityType": "steam_guid",
+            "Name": "Léo Firme"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -148.48077,
+            "Y": 6.794727,
+            "Z": -12.655058
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787514776,
+          "AfterSessionEnd": false,
+          "CarId": 1,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-0662342e6895a4302420",
+            "IdentityType": "steam_guid",
+            "Name": "Max Verstappen"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 306.4085,
+            "Y": -1.9975675,
+            "Z": 398.27063
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787514787,
+          "AfterSessionEnd": false,
+          "CarId": 10,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-e24c66a6a307d8b8ec3d",
+            "IdentityType": "steam_guid",
+            "Name": "jp_games421"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -335.17825,
+            "Y": 9.532309,
+            "Z": 319.84796
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787514797,
+          "AfterSessionEnd": false,
+          "CarId": 10,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-e24c66a6a307d8b8ec3d",
+            "IdentityType": "steam_guid",
+            "Name": "jp_games421"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -294.7252,
+            "Y": 22.827555,
+            "Z": 8.660366
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1787514805,
+          "AfterSessionEnd": false,
+          "CarId": 9,
+          "OtherCarId": 6,
+          "Driver": {
+            "Id": "driver-4ce32d744c4b74d2e1a6",
+            "IdentityType": "steam_guid",
+            "Name": "D. Batista"
+          },
+          "OtherDriver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "WorldPosition": {
+            "X": -422.0343,
+            "Y": 20.18992,
+            "Z": 701.85254
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1787514808,
+          "AfterSessionEnd": false,
+          "CarId": 6,
+          "OtherCarId": 9,
+          "Driver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "OtherDriver": {
+            "Id": "driver-4ce32d744c4b74d2e1a6",
+            "IdentityType": "steam_guid",
+            "Name": "D. Batista"
+          },
+          "WorldPosition": {
+            "X": -421.85092,
+            "Y": 20.145763,
+            "Z": 704.99274
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787514812,
+          "AfterSessionEnd": false,
+          "CarId": 10,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-e24c66a6a307d8b8ec3d",
+            "IdentityType": "steam_guid",
+            "Name": "jp_games421"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -7.8967733,
+            "Y": 0.37970218,
+            "Z": 7.4058886
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787514817,
+          "AfterSessionEnd": false,
+          "CarId": 10,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-e24c66a6a307d8b8ec3d",
+            "IdentityType": "steam_guid",
+            "Name": "jp_games421"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 16.186867,
+            "Y": 0.29991186,
+            "Z": 22.804163
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787514838,
+          "AfterSessionEnd": false,
+          "CarId": 3,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "IdentityType": "steam_guid",
+            "Name": "Borborema"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 209.1101,
+            "Y": 6.6063,
+            "Z": 593.2044
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787514843,
+          "AfterSessionEnd": false,
+          "CarId": 3,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-1cdad67a2bc13147e250",
+            "IdentityType": "steam_guid",
+            "Name": "Borborema"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 190.98175,
+            "Y": 6.3042164,
+            "Z": 635.86066
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787514846,
+          "AfterSessionEnd": false,
+          "CarId": 1,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-0662342e6895a4302420",
+            "IdentityType": "steam_guid",
+            "Name": "Max Verstappen"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -226.10268,
+            "Y": 4.3074055,
+            "Z": 1077.9763
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787514850,
+          "AfterSessionEnd": false,
+          "CarId": 5,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-bcb7db465fb3f4c14f82",
+            "IdentityType": "steam_guid",
+            "Name": "Marcos Braga"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -133.02936,
+            "Y": -8.43645,
+            "Z": 971.9728
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787514855,
+          "AfterSessionEnd": false,
+          "CarId": 5,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-bcb7db465fb3f4c14f82",
+            "IdentityType": "steam_guid",
+            "Name": "Marcos Braga"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -157.92749,
+            "Y": -6.726302,
+            "Z": 991.94275
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787514912,
+          "AfterSessionEnd": false,
+          "CarId": 10,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-e24c66a6a307d8b8ec3d",
+            "IdentityType": "steam_guid",
+            "Name": "jp_games421"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -430.61932,
+            "Y": 21.104774,
+            "Z": 615.4991
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1787514918,
+          "AfterSessionEnd": false,
+          "CarId": 6,
+          "OtherCarId": 9,
+          "Driver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "OtherDriver": {
+            "Id": "driver-4ce32d744c4b74d2e1a6",
+            "IdentityType": "steam_guid",
+            "Name": "D. Batista"
+          },
+          "WorldPosition": {
+            "X": 226.96199,
+            "Y": 6.907209,
+            "Z": 507.14923
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1787514920,
+          "AfterSessionEnd": false,
+          "CarId": 9,
+          "OtherCarId": 6,
+          "Driver": {
+            "Id": "driver-4ce32d744c4b74d2e1a6",
+            "IdentityType": "steam_guid",
+            "Name": "D. Batista"
+          },
+          "OtherDriver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "WorldPosition": {
+            "X": 187.15503,
+            "Y": 6.6261573,
+            "Z": 590.4767
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787514922,
+          "AfterSessionEnd": false,
+          "CarId": 10,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-e24c66a6a307d8b8ec3d",
+            "IdentityType": "steam_guid",
+            "Name": "jp_games421"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -291.2162,
+            "Y": 22.4968,
+            "Z": 4.4150023
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1787514923,
+          "AfterSessionEnd": false,
+          "CarId": 6,
+          "OtherCarId": 9,
+          "Driver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "OtherDriver": {
+            "Id": "driver-4ce32d744c4b74d2e1a6",
+            "IdentityType": "steam_guid",
+            "Name": "D. Batista"
+          },
+          "WorldPosition": {
+            "X": 183.67703,
+            "Y": 6.557604,
+            "Z": 594.304
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787514946,
+          "AfterSessionEnd": false,
+          "CarId": 1,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-0662342e6895a4302420",
+            "IdentityType": "steam_guid",
+            "Name": "Max Verstappen"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -308.18118,
+            "Y": 1.7747227,
+            "Z": 1613.5327
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1787514973,
+          "AfterSessionEnd": false,
+          "CarId": 6,
+          "OtherCarId": 9,
+          "Driver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "OtherDriver": {
+            "Id": "driver-4ce32d744c4b74d2e1a6",
+            "IdentityType": "steam_guid",
+            "Name": "D. Batista"
+          },
+          "WorldPosition": {
+            "X": -365.64075,
+            "Y": 12.947889,
+            "Z": 184.69235
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1787514975,
+          "AfterSessionEnd": false,
+          "CarId": 9,
+          "OtherCarId": 6,
+          "Driver": {
+            "Id": "driver-4ce32d744c4b74d2e1a6",
+            "IdentityType": "steam_guid",
+            "Name": "D. Batista"
+          },
+          "OtherDriver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "WorldPosition": {
+            "X": -365.67267,
+            "Y": 12.487957,
+            "Z": 184.26147
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1787514978,
+          "AfterSessionEnd": false,
+          "CarId": 6,
+          "OtherCarId": 9,
+          "Driver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "OtherDriver": {
+            "Id": "driver-4ce32d744c4b74d2e1a6",
+            "IdentityType": "steam_guid",
+            "Name": "D. Batista"
+          },
+          "WorldPosition": {
+            "X": -365.7001,
+            "Y": 12.957115,
+            "Z": 184.56303
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787515002,
+          "AfterSessionEnd": false,
+          "CarId": 10,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-e24c66a6a307d8b8ec3d",
+            "IdentityType": "steam_guid",
+            "Name": "jp_games421"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -388.66116,
+            "Y": 1.3879606,
+            "Z": 1473.6744
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787515062,
+          "AfterSessionEnd": false,
+          "CarId": 10,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-e24c66a6a307d8b8ec3d",
+            "IdentityType": "steam_guid",
+            "Name": "jp_games421"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 99.28415,
+            "Y": -0.9023607,
+            "Z": 708.15027
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787515077,
+          "AfterSessionEnd": false,
+          "CarId": 10,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-e24c66a6a307d8b8ec3d",
+            "IdentityType": "steam_guid",
+            "Name": "jp_games421"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 349.53482,
+            "Y": -10.673063,
+            "Z": 305.8092
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787515112,
+          "AfterSessionEnd": false,
+          "CarId": 10,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-e24c66a6a307d8b8ec3d",
+            "IdentityType": "steam_guid",
+            "Name": "jp_games421"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -220.24326,
+            "Y": -5.004302,
+            "Z": 1446.5332
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787515122,
+          "AfterSessionEnd": false,
+          "CarId": 10,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-e24c66a6a307d8b8ec3d",
+            "IdentityType": "steam_guid",
+            "Name": "jp_games421"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -408.84238,
+            "Y": 2.3154054,
+            "Z": 1568.1002
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787515197,
+          "AfterSessionEnd": false,
+          "CarId": 10,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-e24c66a6a307d8b8ec3d",
+            "IdentityType": "steam_guid",
+            "Name": "jp_games421"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -98.324356,
+            "Y": -14.307497,
+            "Z": 902.1865
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787515207,
+          "AfterSessionEnd": false,
+          "CarId": 10,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-e24c66a6a307d8b8ec3d",
+            "IdentityType": "steam_guid",
+            "Name": "jp_games421"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -151.09308,
+            "Y": -8.336574,
+            "Z": 943.61523
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787515311,
+          "AfterSessionEnd": false,
+          "CarId": 20,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-e24c66a6a307d8b8ec3d",
+            "IdentityType": "steam_guid",
+            "Name": "jp_games421"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 336.80267,
+            "Y": -11.208482,
+            "Z": 265.9595
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787515316,
+          "AfterSessionEnd": false,
+          "CarId": 20,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-e24c66a6a307d8b8ec3d",
+            "IdentityType": "steam_guid",
+            "Name": "jp_games421"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 348.27017,
+            "Y": -11.112099,
+            "Z": 316.66336
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1787515320,
+          "AfterSessionEnd": true,
+          "CarId": 9,
+          "OtherCarId": 6,
+          "Driver": {
+            "Id": "driver-4ce32d744c4b74d2e1a6",
+            "IdentityType": "steam_guid",
+            "Name": "D. Batista"
+          },
+          "OtherDriver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "WorldPosition": {
+            "X": 296.21323,
+            "Y": -7.9973927,
+            "Z": 176.10384
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1787515323,
+          "AfterSessionEnd": true,
+          "CarId": 6,
+          "OtherCarId": 9,
+          "Driver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "OtherDriver": {
+            "Id": "driver-4ce32d744c4b74d2e1a6",
+            "IdentityType": "steam_guid",
+            "Name": "D. Batista"
+          },
+          "WorldPosition": {
+            "X": 296.13953,
+            "Y": -7.7015624,
+            "Z": 176.22745
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787515323,
+          "AfterSessionEnd": true,
+          "CarId": 6,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 322.97217,
+            "Y": -9.338381,
+            "Z": 189.5548
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_CAR",
+          "Timestamp": 1787515325,
+          "AfterSessionEnd": true,
+          "CarId": 9,
+          "OtherCarId": 6,
+          "Driver": {
+            "Id": "driver-4ce32d744c4b74d2e1a6",
+            "IdentityType": "steam_guid",
+            "Name": "D. Batista"
+          },
+          "OtherDriver": {
+            "Id": "driver-c5977d4eee3836515932",
+            "IdentityType": "steam_guid",
+            "Name": "IGAO"
+          },
+          "WorldPosition": {
+            "X": 299.9027,
+            "Y": -8.421559,
+            "Z": 177.92763
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787515325,
+          "AfterSessionEnd": true,
+          "CarId": 9,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-4ce32d744c4b74d2e1a6",
+            "IdentityType": "steam_guid",
+            "Name": "D. Batista"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 318.79657,
+            "Y": -8.164105,
+            "Z": 186.39441
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787515331,
+          "AfterSessionEnd": true,
+          "CarId": 5,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-bcb7db465fb3f4c14f82",
+            "IdentityType": "steam_guid",
+            "Name": "Marcos Braga"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 115.46422,
+            "Y": 1.1365724,
+            "Z": 693.3548
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1787515387,
+          "AfterSessionEnd": false,
+          "CarId": 0,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-fd25d9e21341230ed6af",
+            "IdentityType": "steam_guid",
+            "Name": "Wood$"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -102.99595,
+            "Y": -12.507961,
+            "Z": 945.27563
+          }
+        }
+      ]
+    },
     {
       "Type": "RACE",
       "Date": "2026-08-23T12:26:00-07:00",
@@ -62184,3387 +64110,6 @@
             "X": 202.00786,
             "Y": 10.056856,
             "Z": 370.2147
-          }
-        }
-      ]
-    },
-    {
-      "Type": "RACE",
-      "Date": "2026-08-16T13:30:00-07:00",
-      "SessionFile": "2026_8_16_13_30_RACE",
-      "TrackName": "road_atlanta2018",
-      "TrackConfig": "grandprix",
-      "Result": [
-        {
-          "DriverId": "driver-1cdad67a2bc13147e250",
-          "IdentityType": "steam_guid",
-          "DriverName": "Borborema",
-          "BestLap": 79491,
-          "TotalTime": 726888,
-          "NumLaps": 9,
-          "GridPosition": 1,
-          "CarModel": "rss_gtm_bayer_i6_evo",
-          "Disqualified": false,
-          "HasPenalty": false
-        },
-        {
-          "DriverId": "driver-c5977d4eee3836515932",
-          "IdentityType": "steam_guid",
-          "DriverName": "IGAO",
-          "BestLap": 78903,
-          "TotalTime": 727470,
-          "NumLaps": 9,
-          "GridPosition": 6,
-          "CarModel": "rss_gtm_hyperion_v8",
-          "Disqualified": false,
-          "HasPenalty": false
-        },
-        {
-          "DriverId": "driver-89def28036d6be47eb47",
-          "IdentityType": "steam_guid",
-          "DriverName": "joao lucas",
-          "BestLap": 80409,
-          "TotalTime": 738879,
-          "NumLaps": 9,
-          "GridPosition": 7,
-          "CarModel": "rss_gtm_lanzo_v8",
-          "Disqualified": false,
-          "HasPenalty": false
-        },
-        {
-          "DriverId": "driver-daec84ea209127a8a053",
-          "IdentityType": "steam_guid",
-          "DriverName": "William Trostt",
-          "BestLap": 79810,
-          "TotalTime": 740080,
-          "NumLaps": 9,
-          "GridPosition": 2,
-          "CarModel": "rss_gtm_furiano_96_v6",
-          "Disqualified": false,
-          "HasPenalty": false
-        },
-        {
-          "DriverId": "driver-bcb7db465fb3f4c14f82",
-          "IdentityType": "steam_guid",
-          "DriverName": "Marcos Braga",
-          "BestLap": 79869,
-          "TotalTime": 579237,
-          "NumLaps": 7,
-          "GridPosition": 5,
-          "CarModel": "rss_gtm_cortex_v8",
-          "Disqualified": false,
-          "HasPenalty": false
-        },
-        {
-          "DriverId": "driver-fd25d9e21341230ed6af",
-          "IdentityType": "steam_guid",
-          "DriverName": "Wood$",
-          "BestLap": 91259,
-          "TotalTime": 287553,
-          "NumLaps": 3,
-          "GridPosition": 8,
-          "CarModel": "rss_gtm_lanzo_v8",
-          "Disqualified": false,
-          "HasPenalty": false
-        },
-        {
-          "DriverId": "driver-fd25d9e21341230ed6af",
-          "IdentityType": "steam_guid",
-          "DriverName": "Wood$",
-          "BestLap": 103854,
-          "TotalTime": 749558,
-          "NumLaps": 3,
-          "GridPosition": 12,
-          "CarModel": "rss_gtm_adonis_v8_evo",
-          "Disqualified": false,
-          "HasPenalty": false
-        },
-        {
-          "DriverId": "driver-f2da1b9dff830f07a982",
-          "IdentityType": "steam_guid",
-          "DriverName": "L. Firme",
-          "BestLap": 81414,
-          "TotalTime": 171496,
-          "NumLaps": 2,
-          "GridPosition": 4,
-          "CarModel": "rss_gtm_bayer_i6_evo",
-          "Disqualified": false,
-          "HasPenalty": false
-        },
-        {
-          "DriverId": "driver-0662342e6895a4302420",
-          "IdentityType": "steam_guid",
-          "DriverName": "Max Verstappen",
-          "BestLap": 101508,
-          "TotalTime": 101442,
-          "NumLaps": 1,
-          "GridPosition": 3,
-          "CarModel": "rss_gtm_mercer_v8",
-          "Disqualified": false,
-          "HasPenalty": false
-        }
-      ],
-      "Laps": [
-        {
-          "DriverId": "driver-1cdad67a2bc13147e250",
-          "IdentityType": "steam_guid",
-          "DriverName": "Borborema",
-          "LapTime": 85650,
-          "Cuts": 0,
-          "Sectors": [
-            36239,
-            30772,
-            18639
-          ],
-          "Timestamp": 1786911416,
-          "CarModel": "rss_gtm_bayer_i6_evo",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-c5977d4eee3836515932",
-          "IdentityType": "steam_guid",
-          "DriverName": "IGAO",
-          "LapTime": 89741,
-          "Cuts": 0,
-          "Sectors": [
-            38927,
-            31928,
-            18886
-          ],
-          "Timestamp": 1786911420,
-          "CarModel": "rss_gtm_hyperion_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-f2da1b9dff830f07a982",
-          "IdentityType": "steam_guid",
-          "DriverName": "L. Firme",
-          "LapTime": 90150,
-          "Cuts": 0,
-          "Sectors": [
-            38616,
-            32309,
-            19225
-          ],
-          "Timestamp": 1786911420,
-          "CarModel": "rss_gtm_bayer_i6_evo",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-89def28036d6be47eb47",
-          "IdentityType": "steam_guid",
-          "DriverName": "joao lucas",
-          "LapTime": 90348,
-          "Cuts": 0,
-          "Sectors": [
-            37608,
-            33759,
-            18981
-          ],
-          "Timestamp": 1786911421,
-          "CarModel": "rss_gtm_lanzo_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-daec84ea209127a8a053",
-          "IdentityType": "steam_guid",
-          "DriverName": "William Trostt",
-          "LapTime": 95485,
-          "Cuts": 0,
-          "Sectors": [
-            37097,
-            39412,
-            18976
-          ],
-          "Timestamp": 1786911426,
-          "CarModel": "rss_gtm_furiano_96_v6",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-bcb7db465fb3f4c14f82",
-          "IdentityType": "steam_guid",
-          "DriverName": "Marcos Braga",
-          "LapTime": 97235,
-          "Cuts": 0,
-          "Sectors": [
-            37503,
-            32598,
-            27134
-          ],
-          "Timestamp": 1786911427,
-          "CarModel": "rss_gtm_cortex_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-fd25d9e21341230ed6af",
-          "IdentityType": "steam_guid",
-          "DriverName": "Wood$",
-          "LapTime": 98163,
-          "Cuts": 0,
-          "Sectors": [
-            47569,
-            31613,
-            18981
-          ],
-          "Timestamp": 1786911428,
-          "CarModel": "rss_gtm_lanzo_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-0662342e6895a4302420",
-          "IdentityType": "steam_guid",
-          "DriverName": "Max Verstappen",
-          "LapTime": 101508,
-          "Cuts": 0,
-          "Sectors": [
-            37959,
-            44523,
-            19026
-          ],
-          "Timestamp": 1786911432,
-          "CarModel": "rss_gtm_mercer_v8",
-          "Tyre": "H"
-        },
-        {
-          "DriverId": "driver-1cdad67a2bc13147e250",
-          "IdentityType": "steam_guid",
-          "DriverName": "Borborema",
-          "LapTime": 79892,
-          "Cuts": 0,
-          "Sectors": [
-            30572,
-            30475,
-            18845
-          ],
-          "Timestamp": 1786911496,
-          "CarModel": "rss_gtm_bayer_i6_evo",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-c5977d4eee3836515932",
-          "IdentityType": "steam_guid",
-          "DriverName": "IGAO",
-          "LapTime": 80517,
-          "Cuts": 0,
-          "Sectors": [
-            30999,
-            31157,
-            18361
-          ],
-          "Timestamp": 1786911500,
-          "CarModel": "rss_gtm_hyperion_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-89def28036d6be47eb47",
-          "IdentityType": "steam_guid",
-          "DriverName": "joao lucas",
-          "LapTime": 81202,
-          "Cuts": 0,
-          "Sectors": [
-            31135,
-            31018,
-            19049
-          ],
-          "Timestamp": 1786911502,
-          "CarModel": "rss_gtm_lanzo_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-f2da1b9dff830f07a982",
-          "IdentityType": "steam_guid",
-          "DriverName": "L. Firme",
-          "LapTime": 81414,
-          "Cuts": 0,
-          "Sectors": [
-            31014,
-            31315,
-            19085
-          ],
-          "Timestamp": 1786911502,
-          "CarModel": "rss_gtm_bayer_i6_evo",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-daec84ea209127a8a053",
-          "IdentityType": "steam_guid",
-          "DriverName": "William Trostt",
-          "LapTime": 79953,
-          "Cuts": 0,
-          "Sectors": [
-            30750,
-            30748,
-            18455
-          ],
-          "Timestamp": 1786911506,
-          "CarModel": "rss_gtm_furiano_96_v6",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-bcb7db465fb3f4c14f82",
-          "IdentityType": "steam_guid",
-          "DriverName": "Marcos Braga",
-          "LapTime": 80409,
-          "Cuts": 0,
-          "Sectors": [
-            30765,
-            30910,
-            18734
-          ],
-          "Timestamp": 1786911508,
-          "CarModel": "rss_gtm_cortex_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-fd25d9e21341230ed6af",
-          "IdentityType": "steam_guid",
-          "DriverName": "Wood$",
-          "LapTime": 91259,
-          "Cuts": 0,
-          "Sectors": [
-            30766,
-            30510,
-            29983
-          ],
-          "Timestamp": 1786911520,
-          "CarModel": "rss_gtm_lanzo_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-1cdad67a2bc13147e250",
-          "IdentityType": "steam_guid",
-          "DriverName": "Borborema",
-          "LapTime": 80219,
-          "Cuts": 0,
-          "Sectors": [
-            30814,
-            30771,
-            18634
-          ],
-          "Timestamp": 1786911576,
-          "CarModel": "rss_gtm_bayer_i6_evo",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-c5977d4eee3836515932",
-          "IdentityType": "steam_guid",
-          "DriverName": "IGAO",
-          "LapTime": 79542,
-          "Cuts": 0,
-          "Sectors": [
-            30428,
-            30668,
-            18446
-          ],
-          "Timestamp": 1786911580,
-          "CarModel": "rss_gtm_hyperion_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-89def28036d6be47eb47",
-          "IdentityType": "steam_guid",
-          "DriverName": "joao lucas",
-          "LapTime": 83332,
-          "Cuts": 0,
-          "Sectors": [
-            33148,
-            31009,
-            19175
-          ],
-          "Timestamp": 1786911585,
-          "CarModel": "rss_gtm_lanzo_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-daec84ea209127a8a053",
-          "IdentityType": "steam_guid",
-          "DriverName": "William Trostt",
-          "LapTime": 81787,
-          "Cuts": 0,
-          "Sectors": [
-            30798,
-            30906,
-            20083
-          ],
-          "Timestamp": 1786911587,
-          "CarModel": "rss_gtm_furiano_96_v6",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-bcb7db465fb3f4c14f82",
-          "IdentityType": "steam_guid",
-          "DriverName": "Marcos Braga",
-          "LapTime": 80217,
-          "Cuts": 0,
-          "Sectors": [
-            30609,
-            30739,
-            18869
-          ],
-          "Timestamp": 1786911588,
-          "CarModel": "rss_gtm_cortex_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-fd25d9e21341230ed6af",
-          "IdentityType": "steam_guid",
-          "DriverName": "Wood$",
-          "LapTime": 98206,
-          "Cuts": 0,
-          "Sectors": [
-            30737,
-            31546,
-            35923
-          ],
-          "Timestamp": 1786911618,
-          "CarModel": "rss_gtm_lanzo_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-1cdad67a2bc13147e250",
-          "IdentityType": "steam_guid",
-          "DriverName": "Borborema",
-          "LapTime": 79491,
-          "Cuts": 0,
-          "Sectors": [
-            30431,
-            30627,
-            18433
-          ],
-          "Timestamp": 1786911655,
-          "CarModel": "rss_gtm_bayer_i6_evo",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-c5977d4eee3836515932",
-          "IdentityType": "steam_guid",
-          "DriverName": "IGAO",
-          "LapTime": 78903,
-          "Cuts": 0,
-          "Sectors": [
-            30037,
-            30469,
-            18397
-          ],
-          "Timestamp": 1786911659,
-          "CarModel": "rss_gtm_hyperion_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-89def28036d6be47eb47",
-          "IdentityType": "steam_guid",
-          "DriverName": "joao lucas",
-          "LapTime": 80556,
-          "Cuts": 0,
-          "Sectors": [
-            30790,
-            30928,
-            18838
-          ],
-          "Timestamp": 1786911666,
-          "CarModel": "rss_gtm_lanzo_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-bcb7db465fb3f4c14f82",
-          "IdentityType": "steam_guid",
-          "DriverName": "Marcos Braga",
-          "LapTime": 80207,
-          "Cuts": 0,
-          "Sectors": [
-            30676,
-            30708,
-            18823
-          ],
-          "Timestamp": 1786911668,
-          "CarModel": "rss_gtm_cortex_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-daec84ea209127a8a053",
-          "IdentityType": "steam_guid",
-          "DriverName": "William Trostt",
-          "LapTime": 81348,
-          "Cuts": 0,
-          "Sectors": [
-            31249,
-            31432,
-            18667
-          ],
-          "Timestamp": 1786911669,
-          "CarModel": "rss_gtm_furiano_96_v6",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-1cdad67a2bc13147e250",
-          "IdentityType": "steam_guid",
-          "DriverName": "Borborema",
-          "LapTime": 80028,
-          "Cuts": 0,
-          "Sectors": [
-            30824,
-            30627,
-            18577
-          ],
-          "Timestamp": 1786911735,
-          "CarModel": "rss_gtm_bayer_i6_evo",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-c5977d4eee3836515932",
-          "IdentityType": "steam_guid",
-          "DriverName": "IGAO",
-          "LapTime": 79893,
-          "Cuts": 0,
-          "Sectors": [
-            30109,
-            30537,
-            19247
-          ],
-          "Timestamp": 1786911739,
-          "CarModel": "rss_gtm_hyperion_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-89def28036d6be47eb47",
-          "IdentityType": "steam_guid",
-          "DriverName": "joao lucas",
-          "LapTime": 80720,
-          "Cuts": 0,
-          "Sectors": [
-            30815,
-            31015,
-            18890
-          ],
-          "Timestamp": 1786911746,
-          "CarModel": "rss_gtm_lanzo_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-bcb7db465fb3f4c14f82",
-          "IdentityType": "steam_guid",
-          "DriverName": "Marcos Braga",
-          "LapTime": 80273,
-          "Cuts": 0,
-          "Sectors": [
-            30575,
-            31114,
-            18584
-          ],
-          "Timestamp": 1786911749,
-          "CarModel": "rss_gtm_cortex_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-daec84ea209127a8a053",
-          "IdentityType": "steam_guid",
-          "DriverName": "William Trostt",
-          "LapTime": 80518,
-          "Cuts": 0,
-          "Sectors": [
-            30842,
-            30925,
-            18751
-          ],
-          "Timestamp": 1786911749,
-          "CarModel": "rss_gtm_furiano_96_v6",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-1cdad67a2bc13147e250",
-          "IdentityType": "steam_guid",
-          "DriverName": "Borborema",
-          "LapTime": 80172,
-          "Cuts": 0,
-          "Sectors": [
-            30932,
-            30565,
-            18675
-          ],
-          "Timestamp": 1786911816,
-          "CarModel": "rss_gtm_bayer_i6_evo",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-c5977d4eee3836515932",
-          "IdentityType": "steam_guid",
-          "DriverName": "IGAO",
-          "LapTime": 80568,
-          "Cuts": 0,
-          "Sectors": [
-            30703,
-            30690,
-            19175
-          ],
-          "Timestamp": 1786911819,
-          "CarModel": "rss_gtm_hyperion_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-89def28036d6be47eb47",
-          "IdentityType": "steam_guid",
-          "DriverName": "joao lucas",
-          "LapTime": 80917,
-          "Cuts": 0,
-          "Sectors": [
-            31323,
-            30928,
-            18666
-          ],
-          "Timestamp": 1786911827,
-          "CarModel": "rss_gtm_lanzo_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-bcb7db465fb3f4c14f82",
-          "IdentityType": "steam_guid",
-          "DriverName": "Marcos Braga",
-          "LapTime": 79869,
-          "Cuts": 0,
-          "Sectors": [
-            30521,
-            30736,
-            18612
-          ],
-          "Timestamp": 1786911828,
-          "CarModel": "rss_gtm_cortex_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-daec84ea209127a8a053",
-          "IdentityType": "steam_guid",
-          "DriverName": "William Trostt",
-          "LapTime": 80231,
-          "Cuts": 0,
-          "Sectors": [
-            30439,
-            30802,
-            18990
-          ],
-          "Timestamp": 1786911830,
-          "CarModel": "rss_gtm_furiano_96_v6",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-fd25d9e21341230ed6af",
-          "IdentityType": "steam_guid",
-          "DriverName": "Wood$",
-          "LapTime": 144194,
-          "Cuts": 0,
-          "Sectors": [
-            93781,
-            31284,
-            19129
-          ],
-          "Timestamp": 1786911870,
-          "CarModel": "rss_gtm_adonis_v8_evo",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-1cdad67a2bc13147e250",
-          "IdentityType": "steam_guid",
-          "DriverName": "Borborema",
-          "LapTime": 80423,
-          "Cuts": 0,
-          "Sectors": [
-            30869,
-            30808,
-            18746
-          ],
-          "Timestamp": 1786911896,
-          "CarModel": "rss_gtm_bayer_i6_evo",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-c5977d4eee3836515932",
-          "IdentityType": "steam_guid",
-          "DriverName": "IGAO",
-          "LapTime": 79515,
-          "Cuts": 0,
-          "Sectors": [
-            30492,
-            30577,
-            18446
-          ],
-          "Timestamp": 1786911899,
-          "CarModel": "rss_gtm_hyperion_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-89def28036d6be47eb47",
-          "IdentityType": "steam_guid",
-          "DriverName": "joao lucas",
-          "LapTime": 80762,
-          "Cuts": 0,
-          "Sectors": [
-            30988,
-            30955,
-            18819
-          ],
-          "Timestamp": 1786911908,
-          "CarModel": "rss_gtm_lanzo_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-daec84ea209127a8a053",
-          "IdentityType": "steam_guid",
-          "DriverName": "William Trostt",
-          "LapTime": 79810,
-          "Cuts": 0,
-          "Sectors": [
-            30040,
-            30721,
-            19049
-          ],
-          "Timestamp": 1786911909,
-          "CarModel": "rss_gtm_furiano_96_v6",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-bcb7db465fb3f4c14f82",
-          "IdentityType": "steam_guid",
-          "DriverName": "Marcos Braga",
-          "LapTime": 81139,
-          "Cuts": 0,
-          "Sectors": [
-            30428,
-            31167,
-            19544
-          ],
-          "Timestamp": 1786911910,
-          "CarModel": "rss_gtm_cortex_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-fd25d9e21341230ed6af",
-          "IdentityType": "steam_guid",
-          "DriverName": "Wood$",
-          "LapTime": 103854,
-          "Cuts": 0,
-          "Sectors": [
-            30571,
-            45607,
-            27676
-          ],
-          "Timestamp": 1786911974,
-          "CarModel": "rss_gtm_adonis_v8_evo",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-1cdad67a2bc13147e250",
-          "IdentityType": "steam_guid",
-          "DriverName": "Borborema",
-          "LapTime": 81101,
-          "Cuts": 0,
-          "Sectors": [
-            30918,
-            31648,
-            18535
-          ],
-          "Timestamp": 1786911977,
-          "CarModel": "rss_gtm_bayer_i6_evo",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-c5977d4eee3836515932",
-          "IdentityType": "steam_guid",
-          "DriverName": "IGAO",
-          "LapTime": 79339,
-          "Cuts": 0,
-          "Sectors": [
-            30240,
-            30604,
-            18495
-          ],
-          "Timestamp": 1786911978,
-          "CarModel": "rss_gtm_hyperion_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-89def28036d6be47eb47",
-          "IdentityType": "steam_guid",
-          "DriverName": "joao lucas",
-          "LapTime": 80409,
-          "Cuts": 0,
-          "Sectors": [
-            30944,
-            30898,
-            18567
-          ],
-          "Timestamp": 1786911988,
-          "CarModel": "rss_gtm_lanzo_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-daec84ea209127a8a053",
-          "IdentityType": "steam_guid",
-          "DriverName": "William Trostt",
-          "LapTime": 79962,
-          "Cuts": 0,
-          "Sectors": [
-            30408,
-            30964,
-            18590
-          ],
-          "Timestamp": 1786911989,
-          "CarModel": "rss_gtm_furiano_96_v6",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-1cdad67a2bc13147e250",
-          "IdentityType": "steam_guid",
-          "DriverName": "Borborema",
-          "LapTime": 80008,
-          "Cuts": 0,
-          "Sectors": [
-            30809,
-            30704,
-            18495
-          ],
-          "Timestamp": 1786912057,
-          "CarModel": "rss_gtm_bayer_i6_evo",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-c5977d4eee3836515932",
-          "IdentityType": "steam_guid",
-          "DriverName": "IGAO",
-          "LapTime": 79512,
-          "Cuts": 0,
-          "Sectors": [
-            30349,
-            30569,
-            18594
-          ],
-          "Timestamp": 1786912058,
-          "CarModel": "rss_gtm_hyperion_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-89def28036d6be47eb47",
-          "IdentityType": "steam_guid",
-          "DriverName": "joao lucas",
-          "LapTime": 80711,
-          "Cuts": 0,
-          "Sectors": [
-            30996,
-            31094,
-            18621
-          ],
-          "Timestamp": 1786912069,
-          "CarModel": "rss_gtm_lanzo_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-daec84ea209127a8a053",
-          "IdentityType": "steam_guid",
-          "DriverName": "William Trostt",
-          "LapTime": 81045,
-          "Cuts": 0,
-          "Sectors": [
-            30959,
-            31078,
-            19008
-          ],
-          "Timestamp": 1786912070,
-          "CarModel": "rss_gtm_furiano_96_v6",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-fd25d9e21341230ed6af",
-          "IdentityType": "steam_guid",
-          "DriverName": "Wood$",
-          "LapTime": 105858,
-          "Cuts": 0,
-          "Sectors": [
-            35806,
-            31117,
-            38935
-          ],
-          "Timestamp": 1786912080,
-          "CarModel": "rss_gtm_adonis_v8_evo",
-          "Tyre": "D"
-        }
-      ],
-      "Events": [
-        {
-          "Type": "COLLISION_WITH_ENV",
-          "Timestamp": 1786911293,
-          "AfterSessionEnd": false,
-          "CarId": 0,
-          "OtherCarId": 0,
-          "Driver": {
-            "Id": "driver-1cdad67a2bc13147e250",
-            "IdentityType": "steam_guid",
-            "Name": "Borborema"
-          },
-          "OtherDriver": {
-            "Id": "driver-7a115c3ef9b2810403c3",
-            "IdentityType": "name_fallback",
-            "Name": ""
-          },
-          "WorldPosition": {
-            "X": -432.6732,
-            "Y": 21.174255,
-            "Z": 658.18964
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786911337,
-          "AfterSessionEnd": false,
-          "CarId": 6,
-          "OtherCarId": 2,
-          "Driver": {
-            "Id": "driver-bcb7db465fb3f4c14f82",
-            "IdentityType": "steam_guid",
-            "Name": "Marcos Braga"
-          },
-          "OtherDriver": {
-            "Id": "driver-0662342e6895a4302420",
-            "IdentityType": "steam_guid",
-            "Name": "Max Verstappen"
-          },
-          "WorldPosition": {
-            "X": 50.94186,
-            "Y": -1.0631176,
-            "Z": 27.48593
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786911337,
-          "AfterSessionEnd": false,
-          "CarId": 2,
-          "OtherCarId": 6,
-          "Driver": {
-            "Id": "driver-0662342e6895a4302420",
-            "IdentityType": "steam_guid",
-            "Name": "Max Verstappen"
-          },
-          "OtherDriver": {
-            "Id": "driver-bcb7db465fb3f4c14f82",
-            "IdentityType": "steam_guid",
-            "Name": "Marcos Braga"
-          },
-          "WorldPosition": {
-            "X": 53.355495,
-            "Y": -1.1340058,
-            "Z": 29.049335
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_ENV",
-          "Timestamp": 1786911367,
-          "AfterSessionEnd": false,
-          "CarId": 7,
-          "OtherCarId": 0,
-          "Driver": {
-            "Id": "driver-537042fe404a735c853d",
-            "IdentityType": "steam_guid",
-            "Name": "D3CK0L"
-          },
-          "OtherDriver": {
-            "Id": "driver-7a115c3ef9b2810403c3",
-            "IdentityType": "name_fallback",
-            "Name": ""
-          },
-          "WorldPosition": {
-            "X": -110.20057,
-            "Y": -11.39793,
-            "Z": 952.4133
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_ENV",
-          "Timestamp": 1786911372,
-          "AfterSessionEnd": false,
-          "CarId": 7,
-          "OtherCarId": 0,
-          "Driver": {
-            "Id": "driver-537042fe404a735c853d",
-            "IdentityType": "steam_guid",
-            "Name": "D3CK0L"
-          },
-          "OtherDriver": {
-            "Id": "driver-7a115c3ef9b2810403c3",
-            "IdentityType": "name_fallback",
-            "Name": ""
-          },
-          "WorldPosition": {
-            "X": -176.93289,
-            "Y": -2.771381,
-            "Z": 1009.1289
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786911376,
-          "AfterSessionEnd": false,
-          "CarId": 1,
-          "OtherCarId": 11,
-          "Driver": {
-            "Id": "driver-daec84ea209127a8a053",
-            "IdentityType": "steam_guid",
-            "Name": "William Trostt"
-          },
-          "OtherDriver": {
-            "Id": "driver-89def28036d6be47eb47",
-            "IdentityType": "steam_guid",
-            "Name": "joao lucas"
-          },
-          "WorldPosition": {
-            "X": -211.5266,
-            "Y": -2.9125302,
-            "Z": 1526.1632
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_ENV",
-          "Timestamp": 1786911377,
-          "AfterSessionEnd": false,
-          "CarId": 7,
-          "OtherCarId": 0,
-          "Driver": {
-            "Id": "driver-537042fe404a735c853d",
-            "IdentityType": "steam_guid",
-            "Name": "D3CK0L"
-          },
-          "OtherDriver": {
-            "Id": "driver-7a115c3ef9b2810403c3",
-            "IdentityType": "name_fallback",
-            "Name": ""
-          },
-          "WorldPosition": {
-            "X": -180.64464,
-            "Y": -1.0774634,
-            "Z": 1014.5165
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786911381,
-          "AfterSessionEnd": false,
-          "CarId": 11,
-          "OtherCarId": 1,
-          "Driver": {
-            "Id": "driver-89def28036d6be47eb47",
-            "IdentityType": "steam_guid",
-            "Name": "joao lucas"
-          },
-          "OtherDriver": {
-            "Id": "driver-daec84ea209127a8a053",
-            "IdentityType": "steam_guid",
-            "Name": "William Trostt"
-          },
-          "WorldPosition": {
-            "X": -229.79802,
-            "Y": -2.4353557,
-            "Z": 1554.0856
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786911381,
-          "AfterSessionEnd": false,
-          "CarId": 11,
-          "OtherCarId": 6,
-          "Driver": {
-            "Id": "driver-89def28036d6be47eb47",
-            "IdentityType": "steam_guid",
-            "Name": "joao lucas"
-          },
-          "OtherDriver": {
-            "Id": "driver-bcb7db465fb3f4c14f82",
-            "IdentityType": "steam_guid",
-            "Name": "Marcos Braga"
-          },
-          "WorldPosition": {
-            "X": -280.61447,
-            "Y": -0.1163089,
-            "Z": 1573.2363
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786911381,
-          "AfterSessionEnd": false,
-          "CarId": 1,
-          "OtherCarId": 11,
-          "Driver": {
-            "Id": "driver-daec84ea209127a8a053",
-            "IdentityType": "steam_guid",
-            "Name": "William Trostt"
-          },
-          "OtherDriver": {
-            "Id": "driver-89def28036d6be47eb47",
-            "IdentityType": "steam_guid",
-            "Name": "joao lucas"
-          },
-          "WorldPosition": {
-            "X": -231.82436,
-            "Y": -2.3963382,
-            "Z": 1556.1932
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786911381,
-          "AfterSessionEnd": false,
-          "CarId": 1,
-          "OtherCarId": 2,
-          "Driver": {
-            "Id": "driver-daec84ea209127a8a053",
-            "IdentityType": "steam_guid",
-            "Name": "William Trostt"
-          },
-          "OtherDriver": {
-            "Id": "driver-0662342e6895a4302420",
-            "IdentityType": "steam_guid",
-            "Name": "Max Verstappen"
-          },
-          "WorldPosition": {
-            "X": -347.70532,
-            "Y": 2.1010346,
-            "Z": 1580.4602
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786911382,
-          "AfterSessionEnd": false,
-          "CarId": 6,
-          "OtherCarId": 11,
-          "Driver": {
-            "Id": "driver-bcb7db465fb3f4c14f82",
-            "IdentityType": "steam_guid",
-            "Name": "Marcos Braga"
-          },
-          "OtherDriver": {
-            "Id": "driver-89def28036d6be47eb47",
-            "IdentityType": "steam_guid",
-            "Name": "joao lucas"
-          },
-          "WorldPosition": {
-            "X": -281.04446,
-            "Y": -0.10479409,
-            "Z": 1573.0934
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786911382,
-          "AfterSessionEnd": false,
-          "CarId": 2,
-          "OtherCarId": 1,
-          "Driver": {
-            "Id": "driver-0662342e6895a4302420",
-            "IdentityType": "steam_guid",
-            "Name": "Max Verstappen"
-          },
-          "OtherDriver": {
-            "Id": "driver-daec84ea209127a8a053",
-            "IdentityType": "steam_guid",
-            "Name": "William Trostt"
-          },
-          "WorldPosition": {
-            "X": -385.15216,
-            "Y": 2.3963575,
-            "Z": 1554.5713
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786911386,
-          "AfterSessionEnd": false,
-          "CarId": 1,
-          "OtherCarId": 2,
-          "Driver": {
-            "Id": "driver-daec84ea209127a8a053",
-            "IdentityType": "steam_guid",
-            "Name": "William Trostt"
-          },
-          "OtherDriver": {
-            "Id": "driver-0662342e6895a4302420",
-            "IdentityType": "steam_guid",
-            "Name": "Max Verstappen"
-          },
-          "WorldPosition": {
-            "X": -385.03357,
-            "Y": 2.3315742,
-            "Z": 1554.9104
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786911387,
-          "AfterSessionEnd": false,
-          "CarId": 2,
-          "OtherCarId": 1,
-          "Driver": {
-            "Id": "driver-0662342e6895a4302420",
-            "IdentityType": "steam_guid",
-            "Name": "Max Verstappen"
-          },
-          "OtherDriver": {
-            "Id": "driver-daec84ea209127a8a053",
-            "IdentityType": "steam_guid",
-            "Name": "William Trostt"
-          },
-          "WorldPosition": {
-            "X": -387.33392,
-            "Y": 2.8932564,
-            "Z": 1541.679
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786911391,
-          "AfterSessionEnd": false,
-          "CarId": 1,
-          "OtherCarId": 2,
-          "Driver": {
-            "Id": "driver-daec84ea209127a8a053",
-            "IdentityType": "steam_guid",
-            "Name": "William Trostt"
-          },
-          "OtherDriver": {
-            "Id": "driver-0662342e6895a4302420",
-            "IdentityType": "steam_guid",
-            "Name": "Max Verstappen"
-          },
-          "WorldPosition": {
-            "X": -387.4364,
-            "Y": 3.0178077,
-            "Z": 1541.3838
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_ENV",
-          "Timestamp": 1786911427,
-          "AfterSessionEnd": false,
-          "CarId": 2,
-          "OtherCarId": 0,
-          "Driver": {
-            "Id": "driver-0662342e6895a4302420",
-            "IdentityType": "steam_guid",
-            "Name": "Max Verstappen"
-          },
-          "OtherDriver": {
-            "Id": "driver-7a115c3ef9b2810403c3",
-            "IdentityType": "name_fallback",
-            "Name": ""
-          },
-          "WorldPosition": {
-            "X": -335.90427,
-            "Y": 22.47941,
-            "Z": 68.96408
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_ENV",
-          "Timestamp": 1786911452,
-          "AfterSessionEnd": false,
-          "CarId": 2,
-          "OtherCarId": 0,
-          "Driver": {
-            "Id": "driver-0662342e6895a4302420",
-            "IdentityType": "steam_guid",
-            "Name": "Max Verstappen"
-          },
-          "OtherDriver": {
-            "Id": "driver-7a115c3ef9b2810403c3",
-            "IdentityType": "name_fallback",
-            "Name": ""
-          },
-          "WorldPosition": {
-            "X": 49.422646,
-            "Y": -1.521445,
-            "Z": 708.05273
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786911467,
-          "AfterSessionEnd": false,
-          "CarId": 4,
-          "OtherCarId": 11,
-          "Driver": {
-            "Id": "driver-f2da1b9dff830f07a982",
-            "IdentityType": "steam_guid",
-            "Name": "L. Firme"
-          },
-          "OtherDriver": {
-            "Id": "driver-89def28036d6be47eb47",
-            "IdentityType": "steam_guid",
-            "Name": "joao lucas"
-          },
-          "WorldPosition": {
-            "X": -380.58362,
-            "Y": 1.289735,
-            "Z": 1495.7101
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786911506,
-          "AfterSessionEnd": false,
-          "CarId": 11,
-          "OtherCarId": 4,
-          "Driver": {
-            "Id": "driver-89def28036d6be47eb47",
-            "IdentityType": "steam_guid",
-            "Name": "joao lucas"
-          },
-          "OtherDriver": {
-            "Id": "driver-f2da1b9dff830f07a982",
-            "IdentityType": "steam_guid",
-            "Name": "L. Firme"
-          },
-          "WorldPosition": {
-            "X": 64.99465,
-            "Y": -1.7912112,
-            "Z": 40.2025
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786911507,
-          "AfterSessionEnd": false,
-          "CarId": 4,
-          "OtherCarId": 11,
-          "Driver": {
-            "Id": "driver-f2da1b9dff830f07a982",
-            "IdentityType": "steam_guid",
-            "Name": "L. Firme"
-          },
-          "OtherDriver": {
-            "Id": "driver-89def28036d6be47eb47",
-            "IdentityType": "steam_guid",
-            "Name": "joao lucas"
-          },
-          "WorldPosition": {
-            "X": 64.21515,
-            "Y": -2.1424499,
-            "Z": 39.625145
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_ENV",
-          "Timestamp": 1786911507,
-          "AfterSessionEnd": false,
-          "CarId": 4,
-          "OtherCarId": 0,
-          "Driver": {
-            "Id": "driver-f2da1b9dff830f07a982",
-            "IdentityType": "steam_guid",
-            "Name": "L. Firme"
-          },
-          "OtherDriver": {
-            "Id": "driver-7a115c3ef9b2810403c3",
-            "IdentityType": "name_fallback",
-            "Name": ""
-          },
-          "WorldPosition": {
-            "X": 106.39276,
-            "Y": -3.1410801,
-            "Z": 80.26219
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_ENV",
-          "Timestamp": 1786911644,
-          "AfterSessionEnd": false,
-          "CarId": 13,
-          "OtherCarId": 0,
-          "Driver": {
-            "Id": "driver-fd25d9e21341230ed6af",
-            "IdentityType": "steam_guid",
-            "Name": "Wood$"
-          },
-          "OtherDriver": {
-            "Id": "driver-7a115c3ef9b2810403c3",
-            "IdentityType": "name_fallback",
-            "Name": ""
-          },
-          "WorldPosition": {
-            "X": -75.86983,
-            "Y": -17.131277,
-            "Z": 873.4484
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_ENV",
-          "Timestamp": 1786911916,
-          "AfterSessionEnd": false,
-          "CarId": 3,
-          "OtherCarId": 0,
-          "Driver": {
-            "Id": "driver-fd25d9e21341230ed6af",
-            "IdentityType": "steam_guid",
-            "Name": "Wood$"
-          },
-          "OtherDriver": {
-            "Id": "driver-7a115c3ef9b2810403c3",
-            "IdentityType": "name_fallback",
-            "Name": ""
-          },
-          "WorldPosition": {
-            "X": -311.43958,
-            "Y": 0.81492436,
-            "Z": 1562.0094
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_ENV",
-          "Timestamp": 1786911928,
-          "AfterSessionEnd": false,
-          "CarId": 0,
-          "OtherCarId": 0,
-          "Driver": {
-            "Id": "driver-1cdad67a2bc13147e250",
-            "IdentityType": "steam_guid",
-            "Name": "Borborema"
-          },
-          "OtherDriver": {
-            "Id": "driver-7a115c3ef9b2810403c3",
-            "IdentityType": "name_fallback",
-            "Name": ""
-          },
-          "WorldPosition": {
-            "X": -222.01723,
-            "Y": 5.0715423,
-            "Z": 1101.1935
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_ENV",
-          "Timestamp": 1786911976,
-          "AfterSessionEnd": false,
-          "CarId": 3,
-          "OtherCarId": 0,
-          "Driver": {
-            "Id": "driver-fd25d9e21341230ed6af",
-            "IdentityType": "steam_guid",
-            "Name": "Wood$"
-          },
-          "OtherDriver": {
-            "Id": "driver-7a115c3ef9b2810403c3",
-            "IdentityType": "name_fallback",
-            "Name": ""
-          },
-          "WorldPosition": {
-            "X": 10.805243,
-            "Y": 0.118699566,
-            "Z": 19.378006
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_ENV",
-          "Timestamp": 1786912051,
-          "AfterSessionEnd": false,
-          "CarId": 3,
-          "OtherCarId": 0,
-          "Driver": {
-            "Id": "driver-fd25d9e21341230ed6af",
-            "IdentityType": "steam_guid",
-            "Name": "Wood$"
-          },
-          "OtherDriver": {
-            "Id": "driver-7a115c3ef9b2810403c3",
-            "IdentityType": "name_fallback",
-            "Name": ""
-          },
-          "WorldPosition": {
-            "X": -385.12253,
-            "Y": 12.419526,
-            "Z": 199.98323
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_ENV",
-          "Timestamp": 1786912056,
-          "AfterSessionEnd": false,
-          "CarId": 3,
-          "OtherCarId": 0,
-          "Driver": {
-            "Id": "driver-fd25d9e21341230ed6af",
-            "IdentityType": "steam_guid",
-            "Name": "Wood$"
-          },
-          "OtherDriver": {
-            "Id": "driver-7a115c3ef9b2810403c3",
-            "IdentityType": "name_fallback",
-            "Name": ""
-          },
-          "WorldPosition": {
-            "X": -384.88602,
-            "Y": 12.395436,
-            "Z": 200.19212
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_ENV",
-          "Timestamp": 1786912061,
-          "AfterSessionEnd": false,
-          "CarId": 3,
-          "OtherCarId": 0,
-          "Driver": {
-            "Id": "driver-fd25d9e21341230ed6af",
-            "IdentityType": "steam_guid",
-            "Name": "Wood$"
-          },
-          "OtherDriver": {
-            "Id": "driver-7a115c3ef9b2810403c3",
-            "IdentityType": "name_fallback",
-            "Name": ""
-          },
-          "WorldPosition": {
-            "X": -384.88174,
-            "Y": 12.395273,
-            "Z": 200.19827
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_ENV",
-          "Timestamp": 1786912076,
-          "AfterSessionEnd": true,
-          "CarId": 11,
-          "OtherCarId": 0,
-          "Driver": {
-            "Id": "driver-89def28036d6be47eb47",
-            "IdentityType": "steam_guid",
-            "Name": "joao lucas"
-          },
-          "OtherDriver": {
-            "Id": "driver-7a115c3ef9b2810403c3",
-            "IdentityType": "name_fallback",
-            "Name": ""
-          },
-          "WorldPosition": {
-            "X": 155.64812,
-            "Y": -3.6005623,
-            "Z": 80.798904
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_ENV",
-          "Timestamp": 1786912076,
-          "AfterSessionEnd": true,
-          "CarId": 8,
-          "OtherCarId": 0,
-          "Driver": {
-            "Id": "driver-c5977d4eee3836515932",
-            "IdentityType": "steam_guid",
-            "Name": "IGAO"
-          },
-          "OtherDriver": {
-            "Id": "driver-7a115c3ef9b2810403c3",
-            "IdentityType": "name_fallback",
-            "Name": ""
-          },
-          "WorldPosition": {
-            "X": 196.52048,
-            "Y": 7.1220107,
-            "Z": 528.9721
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786912081,
-          "AfterSessionEnd": true,
-          "CarId": 11,
-          "OtherCarId": 1,
-          "Driver": {
-            "Id": "driver-89def28036d6be47eb47",
-            "IdentityType": "steam_guid",
-            "Name": "joao lucas"
-          },
-          "OtherDriver": {
-            "Id": "driver-daec84ea209127a8a053",
-            "IdentityType": "steam_guid",
-            "Name": "William Trostt"
-          },
-          "WorldPosition": {
-            "X": 261.78317,
-            "Y": -6.3157606,
-            "Z": 165.07199
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_ENV",
-          "Timestamp": 1786912081,
-          "AfterSessionEnd": true,
-          "CarId": 8,
-          "OtherCarId": 0,
-          "Driver": {
-            "Id": "driver-c5977d4eee3836515932",
-            "IdentityType": "steam_guid",
-            "Name": "IGAO"
-          },
-          "OtherDriver": {
-            "Id": "driver-7a115c3ef9b2810403c3",
-            "IdentityType": "name_fallback",
-            "Name": ""
-          },
-          "WorldPosition": {
-            "X": 183.01367,
-            "Y": 6.866267,
-            "Z": 559.3216
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786912091,
-          "AfterSessionEnd": true,
-          "CarId": 3,
-          "OtherCarId": 1,
-          "Driver": {
-            "Id": "driver-fd25d9e21341230ed6af",
-            "IdentityType": "steam_guid",
-            "Name": "Wood$"
-          },
-          "OtherDriver": {
-            "Id": "driver-daec84ea209127a8a053",
-            "IdentityType": "steam_guid",
-            "Name": "William Trostt"
-          },
-          "WorldPosition": {
-            "X": 296.72174,
-            "Y": 0.20392182,
-            "Z": 422.54605
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786912091,
-          "AfterSessionEnd": true,
-          "CarId": 1,
-          "OtherCarId": 3,
-          "Driver": {
-            "Id": "driver-daec84ea209127a8a053",
-            "IdentityType": "steam_guid",
-            "Name": "William Trostt"
-          },
-          "OtherDriver": {
-            "Id": "driver-fd25d9e21341230ed6af",
-            "IdentityType": "steam_guid",
-            "Name": "Wood$"
-          },
-          "WorldPosition": {
-            "X": 297.1134,
-            "Y": 0.21004072,
-            "Z": 423.0864
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786912096,
-          "AfterSessionEnd": true,
-          "CarId": 3,
-          "OtherCarId": 1,
-          "Driver": {
-            "Id": "driver-fd25d9e21341230ed6af",
-            "IdentityType": "steam_guid",
-            "Name": "Wood$"
-          },
-          "OtherDriver": {
-            "Id": "driver-daec84ea209127a8a053",
-            "IdentityType": "steam_guid",
-            "Name": "William Trostt"
-          },
-          "WorldPosition": {
-            "X": 294.99454,
-            "Y": 0.43683237,
-            "Z": 424.2957
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_ENV",
-          "Timestamp": 1786912096,
-          "AfterSessionEnd": true,
-          "CarId": 3,
-          "OtherCarId": 0,
-          "Driver": {
-            "Id": "driver-fd25d9e21341230ed6af",
-            "IdentityType": "steam_guid",
-            "Name": "Wood$"
-          },
-          "OtherDriver": {
-            "Id": "driver-7a115c3ef9b2810403c3",
-            "IdentityType": "name_fallback",
-            "Name": ""
-          },
-          "WorldPosition": {
-            "X": 229.57333,
-            "Y": 6.803951,
-            "Z": 472.98633
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786912096,
-          "AfterSessionEnd": true,
-          "CarId": 1,
-          "OtherCarId": 3,
-          "Driver": {
-            "Id": "driver-daec84ea209127a8a053",
-            "IdentityType": "steam_guid",
-            "Name": "William Trostt"
-          },
-          "OtherDriver": {
-            "Id": "driver-fd25d9e21341230ed6af",
-            "IdentityType": "steam_guid",
-            "Name": "Wood$"
-          },
-          "WorldPosition": {
-            "X": 292.76468,
-            "Y": 1.2903745,
-            "Z": 426.7911
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_ENV",
-          "Timestamp": 1786912096,
-          "AfterSessionEnd": true,
-          "CarId": 1,
-          "OtherCarId": 0,
-          "Driver": {
-            "Id": "driver-daec84ea209127a8a053",
-            "IdentityType": "steam_guid",
-            "Name": "William Trostt"
-          },
-          "OtherDriver": {
-            "Id": "driver-7a115c3ef9b2810403c3",
-            "IdentityType": "name_fallback",
-            "Name": ""
-          },
-          "WorldPosition": {
-            "X": 271.56277,
-            "Y": 2.1144502,
-            "Z": 431.46313
-          }
-        }
-      ]
-    },
-    {
-      "Type": "RACE",
-      "Date": "2026-08-16T13:01:00-07:00",
-      "SessionFile": "2026_8_16_13_1_RACE",
-      "TrackName": "rt_daytona",
-      "TrackConfig": "sportscar_m4x_lfm_nodrs",
-      "Result": [
-        {
-          "DriverId": "driver-c5977d4eee3836515932",
-          "IdentityType": "steam_guid",
-          "DriverName": "IGAO",
-          "BestLap": 105145,
-          "TotalTime": 759499,
-          "NumLaps": 7,
-          "GridPosition": 2,
-          "CarModel": "rss_gtm_lanzo_v8",
-          "Disqualified": false,
-          "HasPenalty": false
-        },
-        {
-          "DriverId": "driver-daec84ea209127a8a053",
-          "IdentityType": "steam_guid",
-          "DriverName": "William Trostt",
-          "BestLap": 106006,
-          "TotalTime": 761505,
-          "NumLaps": 7,
-          "GridPosition": 3,
-          "CarModel": "rss_gtm_furiano_96_v6",
-          "Disqualified": false,
-          "HasPenalty": false
-        },
-        {
-          "DriverId": "driver-0662342e6895a4302420",
-          "IdentityType": "steam_guid",
-          "DriverName": "Max Verstappen",
-          "BestLap": 101365,
-          "TotalTime": 765258,
-          "NumLaps": 7,
-          "GridPosition": 4,
-          "CarModel": "rss_gtm_mercer_v8",
-          "Disqualified": false,
-          "HasPenalty": false
-        },
-        {
-          "DriverId": "driver-f2da1b9dff830f07a982",
-          "IdentityType": "steam_guid",
-          "DriverName": "L. Firme",
-          "BestLap": 107148,
-          "TotalTime": 767694,
-          "NumLaps": 7,
-          "GridPosition": 6,
-          "CarModel": "rss_gtm_bayer_i6_evo",
-          "Disqualified": false,
-          "HasPenalty": false
-        },
-        {
-          "DriverId": "driver-1cdad67a2bc13147e250",
-          "IdentityType": "steam_guid",
-          "DriverName": "Borborema",
-          "BestLap": 102695,
-          "TotalTime": 769965,
-          "NumLaps": 7,
-          "GridPosition": 1,
-          "CarModel": "rss_gtm_bayer_i6_evo",
-          "Disqualified": false,
-          "HasPenalty": false
-        },
-        {
-          "DriverId": "driver-02b499e602d76cff548a",
-          "IdentityType": "steam_guid",
-          "DriverName": "nixon48d",
-          "BestLap": 102463,
-          "TotalTime": 774644,
-          "NumLaps": 6,
-          "GridPosition": 10,
-          "CarModel": "rss_gtm_lanzo_v8",
-          "Disqualified": false,
-          "HasPenalty": false
-        },
-        {
-          "DriverId": "driver-fb4ff6c418875e09186d",
-          "IdentityType": "steam_guid",
-          "DriverName": "Igor",
-          "BestLap": 109695,
-          "TotalTime": 232252,
-          "NumLaps": 2,
-          "GridPosition": 5,
-          "CarModel": "rss_gtm_hyperion_v8",
-          "Disqualified": false,
-          "HasPenalty": false
-        }
-      ],
-      "Laps": [
-        {
-          "DriverId": "driver-c5977d4eee3836515932",
-          "IdentityType": "steam_guid",
-          "DriverName": "IGAO",
-          "LapTime": 116130,
-          "Cuts": 0,
-          "Sectors": [
-            48341,
-            37553,
-            30236
-          ],
-          "Timestamp": 1786909765,
-          "CarModel": "rss_gtm_lanzo_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-1cdad67a2bc13147e250",
-          "IdentityType": "steam_guid",
-          "DriverName": "Borborema",
-          "LapTime": 118141,
-          "Cuts": 0,
-          "Sectors": [
-            50079,
-            38070,
-            29992
-          ],
-          "Timestamp": 1786909767,
-          "CarModel": "rss_gtm_bayer_i6_evo",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-daec84ea209127a8a053",
-          "IdentityType": "steam_guid",
-          "DriverName": "William Trostt",
-          "LapTime": 118176,
-          "Cuts": 0,
-          "Sectors": [
-            49402,
-            38317,
-            30457
-          ],
-          "Timestamp": 1786909767,
-          "CarModel": "rss_gtm_furiano_96_v6",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-f2da1b9dff830f07a982",
-          "IdentityType": "steam_guid",
-          "DriverName": "L. Firme",
-          "LapTime": 121925,
-          "Cuts": 0,
-          "Sectors": [
-            52203,
-            38974,
-            30748
-          ],
-          "Timestamp": 1786909770,
-          "CarModel": "rss_gtm_bayer_i6_evo",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-fb4ff6c418875e09186d",
-          "IdentityType": "steam_guid",
-          "DriverName": "Igor",
-          "LapTime": 122639,
-          "Cuts": 0,
-          "Sectors": [
-            51764,
-            39654,
-            31221
-          ],
-          "Timestamp": 1786909771,
-          "CarModel": "rss_gtm_hyperion_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-0662342e6895a4302420",
-          "IdentityType": "steam_guid",
-          "DriverName": "Max Verstappen",
-          "LapTime": 124253,
-          "Cuts": 0,
-          "Sectors": [
-            54504,
-            39230,
-            30519
-          ],
-          "Timestamp": 1786909773,
-          "CarModel": "rss_gtm_mercer_v8",
-          "Tyre": "H"
-        },
-        {
-          "DriverId": "driver-c5977d4eee3836515932",
-          "IdentityType": "steam_guid",
-          "DriverName": "IGAO",
-          "LapTime": 106020,
-          "Cuts": 0,
-          "Sectors": [
-            38142,
-            37970,
-            29908
-          ],
-          "Timestamp": 1786909871,
-          "CarModel": "rss_gtm_lanzo_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-daec84ea209127a8a053",
-          "IdentityType": "steam_guid",
-          "DriverName": "William Trostt",
-          "LapTime": 106006,
-          "Cuts": 0,
-          "Sectors": [
-            37925,
-            38169,
-            29912
-          ],
-          "Timestamp": 1786909873,
-          "CarModel": "rss_gtm_furiano_96_v6",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-1cdad67a2bc13147e250",
-          "IdentityType": "steam_guid",
-          "DriverName": "Borborema",
-          "LapTime": 106304,
-          "Cuts": 0,
-          "Sectors": [
-            38422,
-            38191,
-            29691
-          ],
-          "Timestamp": 1786909873,
-          "CarModel": "rss_gtm_bayer_i6_evo",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-f2da1b9dff830f07a982",
-          "IdentityType": "steam_guid",
-          "DriverName": "L. Firme",
-          "LapTime": 108201,
-          "Cuts": 0,
-          "Sectors": [
-            38757,
-            39226,
-            30218
-          ],
-          "Timestamp": 1786909879,
-          "CarModel": "rss_gtm_bayer_i6_evo",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-fb4ff6c418875e09186d",
-          "IdentityType": "steam_guid",
-          "DriverName": "Igor",
-          "LapTime": 109695,
-          "Cuts": 0,
-          "Sectors": [
-            39625,
-            39137,
-            30933
-          ],
-          "Timestamp": 1786909881,
-          "CarModel": "rss_gtm_hyperion_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-0662342e6895a4302420",
-          "IdentityType": "steam_guid",
-          "DriverName": "Max Verstappen",
-          "LapTime": 109339,
-          "Cuts": 0,
-          "Sectors": [
-            40629,
-            40473,
-            28237
-          ],
-          "Timestamp": 1786909882,
-          "CarModel": "rss_gtm_mercer_v8",
-          "Tyre": "H"
-        },
-        {
-          "DriverId": "driver-02b499e602d76cff548a",
-          "IdentityType": "steam_guid",
-          "DriverName": "nixon48d",
-          "LapTime": 231395,
-          "Cuts": 0,
-          "Sectors": [
-            166991,
-            39529,
-            24875
-          ],
-          "Timestamp": 1786909906,
-          "CarModel": "rss_gtm_lanzo_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-1cdad67a2bc13147e250",
-          "IdentityType": "steam_guid",
-          "DriverName": "Borborema",
-          "LapTime": 106414,
-          "Cuts": 0,
-          "Sectors": [
-            38406,
-            38294,
-            29714
-          ],
-          "Timestamp": 1786909979,
-          "CarModel": "rss_gtm_bayer_i6_evo",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-daec84ea209127a8a053",
-          "IdentityType": "steam_guid",
-          "DriverName": "William Trostt",
-          "LapTime": 106808,
-          "Cuts": 0,
-          "Sectors": [
-            38746,
-            38583,
-            29479
-          ],
-          "Timestamp": 1786909980,
-          "CarModel": "rss_gtm_furiano_96_v6",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-c5977d4eee3836515932",
-          "IdentityType": "steam_guid",
-          "DriverName": "IGAO",
-          "LapTime": 111536,
-          "Cuts": 0,
-          "Sectors": [
-            44082,
-            37908,
-            29546
-          ],
-          "Timestamp": 1786909982,
-          "CarModel": "rss_gtm_lanzo_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-f2da1b9dff830f07a982",
-          "IdentityType": "steam_guid",
-          "DriverName": "L. Firme",
-          "LapTime": 107621,
-          "Cuts": 0,
-          "Sectors": [
-            39204,
-            38569,
-            29848
-          ],
-          "Timestamp": 1786909986,
-          "CarModel": "rss_gtm_bayer_i6_evo",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-0662342e6895a4302420",
-          "IdentityType": "steam_guid",
-          "DriverName": "Max Verstappen",
-          "LapTime": 104253,
-          "Cuts": 0,
-          "Sectors": [
-            38876,
-            39105,
-            26272
-          ],
-          "Timestamp": 1786909986,
-          "CarModel": "rss_gtm_mercer_v8",
-          "Tyre": "H"
-        },
-        {
-          "DriverId": "driver-02b499e602d76cff548a",
-          "IdentityType": "steam_guid",
-          "DriverName": "nixon48d",
-          "LapTime": 104177,
-          "Cuts": 0,
-          "Sectors": [
-            40183,
-            39244,
-            24750
-          ],
-          "Timestamp": 1786910010,
-          "CarModel": "rss_gtm_lanzo_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-c5977d4eee3836515932",
-          "IdentityType": "steam_guid",
-          "DriverName": "IGAO",
-          "LapTime": 107786,
-          "Cuts": 0,
-          "Sectors": [
-            39233,
-            38197,
-            30356
-          ],
-          "Timestamp": 1786910090,
-          "CarModel": "rss_gtm_lanzo_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-1cdad67a2bc13147e250",
-          "IdentityType": "steam_guid",
-          "DriverName": "Borborema",
-          "LapTime": 111101,
-          "Cuts": 0,
-          "Sectors": [
-            41698,
-            39231,
-            30172
-          ],
-          "Timestamp": 1786910090,
-          "CarModel": "rss_gtm_bayer_i6_evo",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-daec84ea209127a8a053",
-          "IdentityType": "steam_guid",
-          "DriverName": "William Trostt",
-          "LapTime": 111459,
-          "Cuts": 0,
-          "Sectors": [
-            42411,
-            38515,
-            30533
-          ],
-          "Timestamp": 1786910091,
-          "CarModel": "rss_gtm_furiano_96_v6",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-f2da1b9dff830f07a982",
-          "IdentityType": "steam_guid",
-          "DriverName": "L. Firme",
-          "LapTime": 107868,
-          "Cuts": 0,
-          "Sectors": [
-            39351,
-            38726,
-            29791
-          ],
-          "Timestamp": 1786910094,
-          "CarModel": "rss_gtm_bayer_i6_evo",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-0662342e6895a4302420",
-          "IdentityType": "steam_guid",
-          "DriverName": "Max Verstappen",
-          "LapTime": 109683,
-          "Cuts": 0,
-          "Sectors": [
-            40891,
-            38336,
-            30456
-          ],
-          "Timestamp": 1786910096,
-          "CarModel": "rss_gtm_mercer_v8",
-          "Tyre": "H"
-        },
-        {
-          "DriverId": "driver-02b499e602d76cff548a",
-          "IdentityType": "steam_guid",
-          "DriverName": "nixon48d",
-          "LapTime": 102463,
-          "Cuts": 0,
-          "Sectors": [
-            38626,
-            39029,
-            24808
-          ],
-          "Timestamp": 1786910113,
-          "CarModel": "rss_gtm_lanzo_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-c5977d4eee3836515932",
-          "IdentityType": "steam_guid",
-          "DriverName": "IGAO",
-          "LapTime": 105973,
-          "Cuts": 0,
-          "Sectors": [
-            38725,
-            37966,
-            29282
-          ],
-          "Timestamp": 1786910196,
-          "CarModel": "rss_gtm_lanzo_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-1cdad67a2bc13147e250",
-          "IdentityType": "steam_guid",
-          "DriverName": "Borborema",
-          "LapTime": 105559,
-          "Cuts": 0,
-          "Sectors": [
-            37964,
-            37981,
-            29614
-          ],
-          "Timestamp": 1786910196,
-          "CarModel": "rss_gtm_bayer_i6_evo",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-daec84ea209127a8a053",
-          "IdentityType": "steam_guid",
-          "DriverName": "William Trostt",
-          "LapTime": 106204,
-          "Cuts": 0,
-          "Sectors": [
-            38245,
-            38390,
-            29569
-          ],
-          "Timestamp": 1786910197,
-          "CarModel": "rss_gtm_furiano_96_v6",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-f2da1b9dff830f07a982",
-          "IdentityType": "steam_guid",
-          "DriverName": "L. Firme",
-          "LapTime": 107504,
-          "Cuts": 0,
-          "Sectors": [
-            38911,
-            38794,
-            29799
-          ],
-          "Timestamp": 1786910202,
-          "CarModel": "rss_gtm_bayer_i6_evo",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-0662342e6895a4302420",
-          "IdentityType": "steam_guid",
-          "DriverName": "Max Verstappen",
-          "LapTime": 108153,
-          "Cuts": 0,
-          "Sectors": [
-            38385,
-            39653,
-            30115
-          ],
-          "Timestamp": 1786910204,
-          "CarModel": "rss_gtm_mercer_v8",
-          "Tyre": "H"
-        },
-        {
-          "DriverId": "driver-02b499e602d76cff548a",
-          "IdentityType": "steam_guid",
-          "DriverName": "nixon48d",
-          "LapTime": 103028,
-          "Cuts": 0,
-          "Sectors": [
-            39029,
-            39196,
-            24803
-          ],
-          "Timestamp": 1786910216,
-          "CarModel": "rss_gtm_lanzo_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-c5977d4eee3836515932",
-          "IdentityType": "steam_guid",
-          "DriverName": "IGAO",
-          "LapTime": 106979,
-          "Cuts": 0,
-          "Sectors": [
-            38467,
-            38281,
-            30231
-          ],
-          "Timestamp": 1786910303,
-          "CarModel": "rss_gtm_lanzo_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-daec84ea209127a8a053",
-          "IdentityType": "steam_guid",
-          "DriverName": "William Trostt",
-          "LapTime": 106831,
-          "Cuts": 0,
-          "Sectors": [
-            38183,
-            38723,
-            29925
-          ],
-          "Timestamp": 1786910304,
-          "CarModel": "rss_gtm_furiano_96_v6",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-f2da1b9dff830f07a982",
-          "IdentityType": "steam_guid",
-          "DriverName": "L. Firme",
-          "LapTime": 107148,
-          "Cuts": 0,
-          "Sectors": [
-            38918,
-            38260,
-            29970
-          ],
-          "Timestamp": 1786910309,
-          "CarModel": "rss_gtm_bayer_i6_evo",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-0662342e6895a4302420",
-          "IdentityType": "steam_guid",
-          "DriverName": "Max Verstappen",
-          "LapTime": 108296,
-          "Cuts": 0,
-          "Sectors": [
-            39086,
-            39079,
-            30131
-          ],
-          "Timestamp": 1786910312,
-          "CarModel": "rss_gtm_mercer_v8",
-          "Tyre": "H"
-        },
-        {
-          "DriverId": "driver-1cdad67a2bc13147e250",
-          "IdentityType": "steam_guid",
-          "DriverName": "Borborema",
-          "LapTime": 119845,
-          "Cuts": 0,
-          "Sectors": [
-            38066,
-            38754,
-            43025
-          ],
-          "Timestamp": 1786910316,
-          "CarModel": "rss_gtm_bayer_i6_evo",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-02b499e602d76cff548a",
-          "IdentityType": "steam_guid",
-          "DriverName": "nixon48d",
-          "LapTime": 103907,
-          "Cuts": 0,
-          "Sectors": [
-            39364,
-            39721,
-            24822
-          ],
-          "Timestamp": 1786910320,
-          "CarModel": "rss_gtm_lanzo_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-c5977d4eee3836515932",
-          "IdentityType": "steam_guid",
-          "DriverName": "IGAO",
-          "LapTime": 105145,
-          "Cuts": 0,
-          "Sectors": [
-            37740,
-            37980,
-            29425
-          ],
-          "Timestamp": 1786910408,
-          "CarModel": "rss_gtm_lanzo_v8",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-daec84ea209127a8a053",
-          "IdentityType": "steam_guid",
-          "DriverName": "William Trostt",
-          "LapTime": 106079,
-          "Cuts": 0,
-          "Sectors": [
-            38039,
-            38466,
-            29574
-          ],
-          "Timestamp": 1786910410,
-          "CarModel": "rss_gtm_furiano_96_v6",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-0662342e6895a4302420",
-          "IdentityType": "steam_guid",
-          "DriverName": "Max Verstappen",
-          "LapTime": 101365,
-          "Cuts": 0,
-          "Sectors": [
-            38491,
-            38696,
-            24178
-          ],
-          "Timestamp": 1786910414,
-          "CarModel": "rss_gtm_mercer_v8",
-          "Tyre": "H"
-        },
-        {
-          "DriverId": "driver-f2da1b9dff830f07a982",
-          "IdentityType": "steam_guid",
-          "DriverName": "L. Firme",
-          "LapTime": 107518,
-          "Cuts": 0,
-          "Sectors": [
-            38960,
-            38417,
-            30141
-          ],
-          "Timestamp": 1786910416,
-          "CarModel": "rss_gtm_bayer_i6_evo",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-1cdad67a2bc13147e250",
-          "IdentityType": "steam_guid",
-          "DriverName": "Borborema",
-          "LapTime": 102695,
-          "Cuts": 0,
-          "Sectors": [
-            37918,
-            37732,
-            27045
-          ],
-          "Timestamp": 1786910419,
-          "CarModel": "rss_gtm_bayer_i6_evo",
-          "Tyre": "D"
-        },
-        {
-          "DriverId": "driver-02b499e602d76cff548a",
-          "IdentityType": "steam_guid",
-          "DriverName": "nixon48d",
-          "LapTime": 103507,
-          "Cuts": 0,
-          "Sectors": [
-            39787,
-            38934,
-            24786
-          ],
-          "Timestamp": 1786910423,
-          "CarModel": "rss_gtm_lanzo_v8",
-          "Tyre": "D"
-        }
-      ],
-      "Events": [
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786909911,
-          "AfterSessionEnd": false,
-          "CarId": 1,
-          "OtherCarId": 5,
-          "Driver": {
-            "Id": "driver-1cdad67a2bc13147e250",
-            "IdentityType": "steam_guid",
-            "Name": "Borborema"
-          },
-          "OtherDriver": {
-            "Id": "driver-daec84ea209127a8a053",
-            "IdentityType": "steam_guid",
-            "Name": "William Trostt"
-          },
-          "WorldPosition": {
-            "X": -631.9949,
-            "Y": -6.0638347,
-            "Z": 118.790344
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786909915,
-          "AfterSessionEnd": false,
-          "CarId": 5,
-          "OtherCarId": 1,
-          "Driver": {
-            "Id": "driver-daec84ea209127a8a053",
-            "IdentityType": "steam_guid",
-            "Name": "William Trostt"
-          },
-          "OtherDriver": {
-            "Id": "driver-1cdad67a2bc13147e250",
-            "IdentityType": "steam_guid",
-            "Name": "Borborema"
-          },
-          "WorldPosition": {
-            "X": -630.36554,
-            "Y": -6.1880474,
-            "Z": 118.97488
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_ENV",
-          "Timestamp": 1786909955,
-          "AfterSessionEnd": false,
-          "CarId": 2,
-          "OtherCarId": 0,
-          "Driver": {
-            "Id": "driver-c5977d4eee3836515932",
-            "IdentityType": "steam_guid",
-            "Name": "IGAO"
-          },
-          "OtherDriver": {
-            "Id": "driver-7a115c3ef9b2810403c3",
-            "IdentityType": "name_fallback",
-            "Name": ""
-          },
-          "WorldPosition": {
-            "X": -2.1819947,
-            "Y": -5.7125034,
-            "Z": 371.39423
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_ENV",
-          "Timestamp": 1786909982,
-          "AfterSessionEnd": false,
-          "CarId": 7,
-          "OtherCarId": 0,
-          "Driver": {
-            "Id": "driver-0662342e6895a4302420",
-            "IdentityType": "steam_guid",
-            "Name": "Max Verstappen"
-          },
-          "OtherDriver": {
-            "Id": "driver-7a115c3ef9b2810403c3",
-            "IdentityType": "name_fallback",
-            "Name": ""
-          },
-          "WorldPosition": {
-            "X": 528.70685,
-            "Y": -5.8926735,
-            "Z": -274.61008
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786909985,
-          "AfterSessionEnd": false,
-          "CarId": 5,
-          "OtherCarId": 1,
-          "Driver": {
-            "Id": "driver-daec84ea209127a8a053",
-            "IdentityType": "steam_guid",
-            "Name": "William Trostt"
-          },
-          "OtherDriver": {
-            "Id": "driver-1cdad67a2bc13147e250",
-            "IdentityType": "steam_guid",
-            "Name": "Borborema"
-          },
-          "WorldPosition": {
-            "X": -269.69327,
-            "Y": -6.3232856,
-            "Z": -366.31796
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786909986,
-          "AfterSessionEnd": false,
-          "CarId": 1,
-          "OtherCarId": 5,
-          "Driver": {
-            "Id": "driver-1cdad67a2bc13147e250",
-            "IdentityType": "steam_guid",
-            "Name": "Borborema"
-          },
-          "OtherDriver": {
-            "Id": "driver-daec84ea209127a8a053",
-            "IdentityType": "steam_guid",
-            "Name": "William Trostt"
-          },
-          "WorldPosition": {
-            "X": -258.1065,
-            "Y": -6.178482,
-            "Z": -371.7461
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786909990,
-          "AfterSessionEnd": false,
-          "CarId": 5,
-          "OtherCarId": 1,
-          "Driver": {
-            "Id": "driver-daec84ea209127a8a053",
-            "IdentityType": "steam_guid",
-            "Name": "William Trostt"
-          },
-          "OtherDriver": {
-            "Id": "driver-1cdad67a2bc13147e250",
-            "IdentityType": "steam_guid",
-            "Name": "Borborema"
-          },
-          "WorldPosition": {
-            "X": -404.4833,
-            "Y": -6.3881736,
-            "Z": -225.51843
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_ENV",
-          "Timestamp": 1786909991,
-          "AfterSessionEnd": false,
-          "CarId": 1,
-          "OtherCarId": 0,
-          "Driver": {
-            "Id": "driver-1cdad67a2bc13147e250",
-            "IdentityType": "steam_guid",
-            "Name": "Borborema"
-          },
-          "OtherDriver": {
-            "Id": "driver-7a115c3ef9b2810403c3",
-            "IdentityType": "name_fallback",
-            "Name": ""
-          },
-          "WorldPosition": {
-            "X": -410.6829,
-            "Y": -5.5752153,
-            "Z": -225.84088
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786909991,
-          "AfterSessionEnd": false,
-          "CarId": 1,
-          "OtherCarId": 5,
-          "Driver": {
-            "Id": "driver-1cdad67a2bc13147e250",
-            "IdentityType": "steam_guid",
-            "Name": "Borborema"
-          },
-          "OtherDriver": {
-            "Id": "driver-daec84ea209127a8a053",
-            "IdentityType": "steam_guid",
-            "Name": "William Trostt"
-          },
-          "WorldPosition": {
-            "X": -405.15814,
-            "Y": -6.628185,
-            "Z": -224.6444
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786909995,
-          "AfterSessionEnd": false,
-          "CarId": 5,
-          "OtherCarId": 1,
-          "Driver": {
-            "Id": "driver-daec84ea209127a8a053",
-            "IdentityType": "steam_guid",
-            "Name": "William Trostt"
-          },
-          "OtherDriver": {
-            "Id": "driver-1cdad67a2bc13147e250",
-            "IdentityType": "steam_guid",
-            "Name": "Borborema"
-          },
-          "WorldPosition": {
-            "X": -380.01108,
-            "Y": -6.8849235,
-            "Z": -207.6933
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786910000,
-          "AfterSessionEnd": false,
-          "CarId": 2,
-          "OtherCarId": 1,
-          "Driver": {
-            "Id": "driver-c5977d4eee3836515932",
-            "IdentityType": "steam_guid",
-            "Name": "IGAO"
-          },
-          "OtherDriver": {
-            "Id": "driver-1cdad67a2bc13147e250",
-            "IdentityType": "steam_guid",
-            "Name": "Borborema"
-          },
-          "WorldPosition": {
-            "X": -88.83076,
-            "Y": -6.900079,
-            "Z": -141.62357
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786910001,
-          "AfterSessionEnd": false,
-          "CarId": 1,
-          "OtherCarId": 2,
-          "Driver": {
-            "Id": "driver-1cdad67a2bc13147e250",
-            "IdentityType": "steam_guid",
-            "Name": "Borborema"
-          },
-          "OtherDriver": {
-            "Id": "driver-c5977d4eee3836515932",
-            "IdentityType": "steam_guid",
-            "Name": "IGAO"
-          },
-          "WorldPosition": {
-            "X": -86.80387,
-            "Y": -6.852323,
-            "Z": -141.60458
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786910065,
-          "AfterSessionEnd": false,
-          "CarId": 5,
-          "OtherCarId": 1,
-          "Driver": {
-            "Id": "driver-daec84ea209127a8a053",
-            "IdentityType": "steam_guid",
-            "Name": "William Trostt"
-          },
-          "OtherDriver": {
-            "Id": "driver-1cdad67a2bc13147e250",
-            "IdentityType": "steam_guid",
-            "Name": "Borborema"
-          },
-          "WorldPosition": {
-            "X": 157.22484,
-            "Y": -6.910532,
-            "Z": 336.24002
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786910066,
-          "AfterSessionEnd": false,
-          "CarId": 1,
-          "OtherCarId": 5,
-          "Driver": {
-            "Id": "driver-1cdad67a2bc13147e250",
-            "IdentityType": "steam_guid",
-            "Name": "Borborema"
-          },
-          "OtherDriver": {
-            "Id": "driver-daec84ea209127a8a053",
-            "IdentityType": "steam_guid",
-            "Name": "William Trostt"
-          },
-          "WorldPosition": {
-            "X": 153.95537,
-            "Y": -6.852085,
-            "Z": 338.6246
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_ENV",
-          "Timestamp": 1786910075,
-          "AfterSessionEnd": false,
-          "CarId": 2,
-          "OtherCarId": 0,
-          "Driver": {
-            "Id": "driver-c5977d4eee3836515932",
-            "IdentityType": "steam_guid",
-            "Name": "IGAO"
-          },
-          "OtherDriver": {
-            "Id": "driver-7a115c3ef9b2810403c3",
-            "IdentityType": "name_fallback",
-            "Name": ""
-          },
-          "WorldPosition": {
-            "X": 673.7913,
-            "Y": 0.09814801,
-            "Z": 316.8355
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786910115,
-          "AfterSessionEnd": false,
-          "CarId": 2,
-          "OtherCarId": 5,
-          "Driver": {
-            "Id": "driver-c5977d4eee3836515932",
-            "IdentityType": "steam_guid",
-            "Name": "IGAO"
-          },
-          "OtherDriver": {
-            "Id": "driver-daec84ea209127a8a053",
-            "IdentityType": "steam_guid",
-            "Name": "William Trostt"
-          },
-          "WorldPosition": {
-            "X": 29.551079,
-            "Y": -5.6645174,
-            "Z": -64.372116
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786910115,
-          "AfterSessionEnd": false,
-          "CarId": 5,
-          "OtherCarId": 2,
-          "Driver": {
-            "Id": "driver-daec84ea209127a8a053",
-            "IdentityType": "steam_guid",
-            "Name": "William Trostt"
-          },
-          "OtherDriver": {
-            "Id": "driver-c5977d4eee3836515932",
-            "IdentityType": "steam_guid",
-            "Name": "IGAO"
-          },
-          "WorldPosition": {
-            "X": 54.406292,
-            "Y": -6.51785,
-            "Z": -119.67036
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786910205,
-          "AfterSessionEnd": false,
-          "CarId": 2,
-          "OtherCarId": 1,
-          "Driver": {
-            "Id": "driver-c5977d4eee3836515932",
-            "IdentityType": "steam_guid",
-            "Name": "IGAO"
-          },
-          "OtherDriver": {
-            "Id": "driver-1cdad67a2bc13147e250",
-            "IdentityType": "steam_guid",
-            "Name": "Borborema"
-          },
-          "WorldPosition": {
-            "X": -343.00046,
-            "Y": -6.3954654,
-            "Z": -320.54965
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786910206,
-          "AfterSessionEnd": false,
-          "CarId": 1,
-          "OtherCarId": 2,
-          "Driver": {
-            "Id": "driver-1cdad67a2bc13147e250",
-            "IdentityType": "steam_guid",
-            "Name": "Borborema"
-          },
-          "OtherDriver": {
-            "Id": "driver-c5977d4eee3836515932",
-            "IdentityType": "steam_guid",
-            "Name": "IGAO"
-          },
-          "WorldPosition": {
-            "X": -347.06363,
-            "Y": -5.985159,
-            "Z": -316.83932
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786910230,
-          "AfterSessionEnd": false,
-          "CarId": 2,
-          "OtherCarId": 1,
-          "Driver": {
-            "Id": "driver-c5977d4eee3836515932",
-            "IdentityType": "steam_guid",
-            "Name": "IGAO"
-          },
-          "OtherDriver": {
-            "Id": "driver-1cdad67a2bc13147e250",
-            "IdentityType": "steam_guid",
-            "Name": "Borborema"
-          },
-          "WorldPosition": {
-            "X": -425.1666,
-            "Y": -6.2018614,
-            "Z": -31.998714
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786910231,
-          "AfterSessionEnd": false,
-          "CarId": 1,
-          "OtherCarId": 2,
-          "Driver": {
-            "Id": "driver-1cdad67a2bc13147e250",
-            "IdentityType": "steam_guid",
-            "Name": "Borborema"
-          },
-          "OtherDriver": {
-            "Id": "driver-c5977d4eee3836515932",
-            "IdentityType": "steam_guid",
-            "Name": "IGAO"
-          },
-          "WorldPosition": {
-            "X": -437.14386,
-            "Y": -6.1211977,
-            "Z": -25.692553
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786910250,
-          "AfterSessionEnd": false,
-          "CarId": 2,
-          "OtherCarId": 1,
-          "Driver": {
-            "Id": "driver-c5977d4eee3836515932",
-            "IdentityType": "steam_guid",
-            "Name": "IGAO"
-          },
-          "OtherDriver": {
-            "Id": "driver-1cdad67a2bc13147e250",
-            "IdentityType": "steam_guid",
-            "Name": "Borborema"
-          },
-          "WorldPosition": {
-            "X": -510.94086,
-            "Y": -6.6338015,
-            "Z": -240.98558
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786910251,
-          "AfterSessionEnd": false,
-          "CarId": 1,
-          "OtherCarId": 2,
-          "Driver": {
-            "Id": "driver-1cdad67a2bc13147e250",
-            "IdentityType": "steam_guid",
-            "Name": "Borborema"
-          },
-          "OtherDriver": {
-            "Id": "driver-c5977d4eee3836515932",
-            "IdentityType": "steam_guid",
-            "Name": "IGAO"
-          },
-          "WorldPosition": {
-            "X": -516.4755,
-            "Y": -6.674383,
-            "Z": -242.51105
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_ENV",
-          "Timestamp": 1786910283,
-          "AfterSessionEnd": false,
-          "CarId": 7,
-          "OtherCarId": 0,
-          "Driver": {
-            "Id": "driver-0662342e6895a4302420",
-            "IdentityType": "steam_guid",
-            "Name": "Max Verstappen"
-          },
-          "OtherDriver": {
-            "Id": "driver-7a115c3ef9b2810403c3",
-            "IdentityType": "name_fallback",
-            "Name": ""
-          },
-          "WorldPosition": {
-            "X": -61.59994,
-            "Y": -5.9668446,
-            "Z": 371.3001
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_ENV",
-          "Timestamp": 1786910376,
-          "AfterSessionEnd": false,
-          "CarId": 4,
-          "OtherCarId": 0,
-          "Driver": {
-            "Id": "driver-bcb7db465fb3f4c14f82",
-            "IdentityType": "steam_guid",
-            "Name": "Marcos Braga"
-          },
-          "OtherDriver": {
-            "Id": "driver-7a115c3ef9b2810403c3",
-            "IdentityType": "name_fallback",
-            "Name": ""
-          },
-          "WorldPosition": {
-            "X": -348.46896,
-            "Y": -6.734607,
-            "Z": -208.19792
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_ENV",
-          "Timestamp": 1786910415,
-          "AfterSessionEnd": true,
-          "CarId": 2,
-          "OtherCarId": 0,
-          "Driver": {
-            "Id": "driver-c5977d4eee3836515932",
-            "IdentityType": "steam_guid",
-            "Name": "IGAO"
-          },
-          "OtherDriver": {
-            "Id": "driver-7a115c3ef9b2810403c3",
-            "IdentityType": "name_fallback",
-            "Name": ""
-          },
-          "WorldPosition": {
-            "X": -178.1439,
-            "Y": -4.3264623,
-            "Z": -409.8958
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_ENV",
-          "Timestamp": 1786910420,
-          "AfterSessionEnd": true,
-          "CarId": 2,
-          "OtherCarId": 0,
-          "Driver": {
-            "Id": "driver-c5977d4eee3836515932",
-            "IdentityType": "steam_guid",
-            "Name": "IGAO"
-          },
-          "OtherDriver": {
-            "Id": "driver-7a115c3ef9b2810403c3",
-            "IdentityType": "name_fallback",
-            "Name": ""
-          },
-          "WorldPosition": {
-            "X": -311.4358,
-            "Y": -5.9268646,
-            "Z": -360.33878
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786910430,
-          "AfterSessionEnd": true,
-          "CarId": 2,
-          "OtherCarId": 19,
-          "Driver": {
-            "Id": "driver-c5977d4eee3836515932",
-            "IdentityType": "steam_guid",
-            "Name": "IGAO"
-          },
-          "OtherDriver": {
-            "Id": "driver-f2da1b9dff830f07a982",
-            "IdentityType": "steam_guid",
-            "Name": "L. Firme"
-          },
-          "WorldPosition": {
-            "X": -341.049,
-            "Y": -6.4616156,
-            "Z": -333.4195
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786910430,
-          "AfterSessionEnd": true,
-          "CarId": 2,
-          "OtherCarId": 18,
-          "Driver": {
-            "Id": "driver-c5977d4eee3836515932",
-            "IdentityType": "steam_guid",
-            "Name": "IGAO"
-          },
-          "OtherDriver": {
-            "Id": "driver-02b499e602d76cff548a",
-            "IdentityType": "steam_guid",
-            "Name": "nixon48d"
-          },
-          "WorldPosition": {
-            "X": -343.15344,
-            "Y": -5.893347,
-            "Z": -331.8727
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786910430,
-          "AfterSessionEnd": true,
-          "CarId": 18,
-          "OtherCarId": 19,
-          "Driver": {
-            "Id": "driver-02b499e602d76cff548a",
-            "IdentityType": "steam_guid",
-            "Name": "nixon48d"
-          },
-          "OtherDriver": {
-            "Id": "driver-f2da1b9dff830f07a982",
-            "IdentityType": "steam_guid",
-            "Name": "L. Firme"
-          },
-          "WorldPosition": {
-            "X": -323.18185,
-            "Y": -6.5242367,
-            "Z": -341.87396
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786910431,
-          "AfterSessionEnd": true,
-          "CarId": 19,
-          "OtherCarId": 18,
-          "Driver": {
-            "Id": "driver-f2da1b9dff830f07a982",
-            "IdentityType": "steam_guid",
-            "Name": "L. Firme"
-          },
-          "OtherDriver": {
-            "Id": "driver-02b499e602d76cff548a",
-            "IdentityType": "steam_guid",
-            "Name": "nixon48d"
-          },
-          "WorldPosition": {
-            "X": -323.54517,
-            "Y": -6.2635508,
-            "Z": -342.13138
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786910431,
-          "AfterSessionEnd": true,
-          "CarId": 19,
-          "OtherCarId": 2,
-          "Driver": {
-            "Id": "driver-f2da1b9dff830f07a982",
-            "IdentityType": "steam_guid",
-            "Name": "L. Firme"
-          },
-          "OtherDriver": {
-            "Id": "driver-c5977d4eee3836515932",
-            "IdentityType": "steam_guid",
-            "Name": "IGAO"
-          },
-          "WorldPosition": {
-            "X": -342.6866,
-            "Y": -6.0841966,
-            "Z": -330.17914
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_ENV",
-          "Timestamp": 1786910431,
-          "AfterSessionEnd": false,
-          "CarId": 4,
-          "OtherCarId": 0,
-          "Driver": {
-            "Id": "driver-bcb7db465fb3f4c14f82",
-            "IdentityType": "steam_guid",
-            "Name": "Marcos Braga"
-          },
-          "OtherDriver": {
-            "Id": "driver-7a115c3ef9b2810403c3",
-            "IdentityType": "name_fallback",
-            "Name": ""
-          },
-          "WorldPosition": {
-            "X": -425.09964,
-            "Y": -5.802092,
-            "Z": -276.43427
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_CAR",
-          "Timestamp": 1786910435,
-          "AfterSessionEnd": true,
-          "CarId": 2,
-          "OtherCarId": 19,
-          "Driver": {
-            "Id": "driver-c5977d4eee3836515932",
-            "IdentityType": "steam_guid",
-            "Name": "IGAO"
-          },
-          "OtherDriver": {
-            "Id": "driver-f2da1b9dff830f07a982",
-            "IdentityType": "steam_guid",
-            "Name": "L. Firme"
-          },
-          "WorldPosition": {
-            "X": -369.988,
-            "Y": -5.933829,
-            "Z": -315.68976
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_ENV",
-          "Timestamp": 1786910435,
-          "AfterSessionEnd": true,
-          "CarId": 18,
-          "OtherCarId": 0,
-          "Driver": {
-            "Id": "driver-02b499e602d76cff548a",
-            "IdentityType": "steam_guid",
-            "Name": "nixon48d"
-          },
-          "OtherDriver": {
-            "Id": "driver-7a115c3ef9b2810403c3",
-            "IdentityType": "name_fallback",
-            "Name": ""
-          },
-          "WorldPosition": {
-            "X": -424.85452,
-            "Y": -5.704164,
-            "Z": -293.8612
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_ENV",
-          "Timestamp": 1786910441,
-          "AfterSessionEnd": false,
-          "CarId": 4,
-          "OtherCarId": 0,
-          "Driver": {
-            "Id": "driver-bcb7db465fb3f4c14f82",
-            "IdentityType": "steam_guid",
-            "Name": "Marcos Braga"
-          },
-          "OtherDriver": {
-            "Id": "driver-7a115c3ef9b2810403c3",
-            "IdentityType": "name_fallback",
-            "Name": ""
-          },
-          "WorldPosition": {
-            "X": -514.21686,
-            "Y": -5.9739275,
-            "Z": -279.87692
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_ENV",
-          "Timestamp": 1786910451,
-          "AfterSessionEnd": false,
-          "CarId": 4,
-          "OtherCarId": 0,
-          "Driver": {
-            "Id": "driver-bcb7db465fb3f4c14f82",
-            "IdentityType": "steam_guid",
-            "Name": "Marcos Braga"
-          },
-          "OtherDriver": {
-            "Id": "driver-7a115c3ef9b2810403c3",
-            "IdentityType": "name_fallback",
-            "Name": ""
-          },
-          "WorldPosition": {
-            "X": -758.5812,
-            "Y": 0.080658995,
-            "Z": -118.570274
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_ENV",
-          "Timestamp": 1786910456,
-          "AfterSessionEnd": false,
-          "CarId": 4,
-          "OtherCarId": 0,
-          "Driver": {
-            "Id": "driver-bcb7db465fb3f4c14f82",
-            "IdentityType": "steam_guid",
-            "Name": "Marcos Braga"
-          },
-          "OtherDriver": {
-            "Id": "driver-7a115c3ef9b2810403c3",
-            "IdentityType": "name_fallback",
-            "Name": ""
-          },
-          "WorldPosition": {
-            "X": -766.63983,
-            "Y": 0.037887365,
-            "Z": 217.9604
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_ENV",
-          "Timestamp": 1786910461,
-          "AfterSessionEnd": false,
-          "CarId": 4,
-          "OtherCarId": 0,
-          "Driver": {
-            "Id": "driver-bcb7db465fb3f4c14f82",
-            "IdentityType": "steam_guid",
-            "Name": "Marcos Braga"
-          },
-          "OtherDriver": {
-            "Id": "driver-7a115c3ef9b2810403c3",
-            "IdentityType": "name_fallback",
-            "Name": ""
-          },
-          "WorldPosition": {
-            "X": -642.0237,
-            "Y": -0.31498477,
-            "Z": 330.73053
-          }
-        },
-        {
-          "Type": "COLLISION_WITH_ENV",
-          "Timestamp": 1786910466,
-          "AfterSessionEnd": false,
-          "CarId": 4,
-          "OtherCarId": 0,
-          "Driver": {
-            "Id": "driver-bcb7db465fb3f4c14f82",
-            "IdentityType": "steam_guid",
-            "Name": "Marcos Braga"
-          },
-          "OtherDriver": {
-            "Id": "driver-7a115c3ef9b2810403c3",
-            "IdentityType": "name_fallback",
-            "Name": ""
-          },
-          "WorldPosition": {
-            "X": -436.73734,
-            "Y": -5.76698,
-            "Z": 370.60266
           }
         }
       ]
