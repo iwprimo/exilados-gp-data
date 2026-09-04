@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "generated_at": "2026-09-04T04:21:04.544472+00:00",
+  "generated_at": "2026-09-04T16:52:01.720577+00:00",
   "window_days": 7,
   "race_count": 36,
   "identity_summary": {
@@ -11,7 +11,7 @@
   "races": [
     {
       "Type": "RACE",
-      "Date": "2026-09-03T18:37:00-07:00",
+      "Date": "2026-09-03T18:37:00-04:00",
       "SessionFile": "2026_9_3_18_37_RACE",
       "TrackName": "jr_daytona_2026",
       "TrackConfig": "road_course",
@@ -675,7 +675,7 @@
     },
     {
       "Type": "RACE",
-      "Date": "2026-09-03T18:22:00-07:00",
+      "Date": "2026-09-03T18:22:00-04:00",
       "SessionFile": "2026_9_3_18_22_RACE",
       "TrackName": "jr_daytona_2026",
       "TrackConfig": "road_course",
@@ -2526,7 +2526,7 @@
     },
     {
       "Type": "RACE",
-      "Date": "2026-09-03T17:59:00-07:00",
+      "Date": "2026-09-03T17:59:00-04:00",
       "SessionFile": "2026_9_3_17_59_RACE",
       "TrackName": "fn_lemans",
       "TrackConfig": null,
@@ -3786,7 +3786,7 @@
     },
     {
       "Type": "RACE",
-      "Date": "2026-09-03T17:36:00-07:00",
+      "Date": "2026-09-03T17:36:00-04:00",
       "SessionFile": "2026_9_3_17_36_RACE",
       "TrackName": "monza",
       "TrackConfig": "2022",
@@ -5270,7 +5270,7 @@
     },
     {
       "Type": "RACE",
-      "Date": "2026-09-03T17:02:00-07:00",
+      "Date": "2026-09-03T17:02:00-04:00",
       "SessionFile": "2026_9_3_17_2_RACE",
       "TrackName": "ks_red_bull_ring",
       "TrackConfig": "layout_gp_lfm",
@@ -5819,7 +5819,7 @@
     },
     {
       "Type": "RACE",
-      "Date": "2026-09-01T18:11:00-07:00",
+      "Date": "2026-09-01T18:11:00-04:00",
       "SessionFile": "2026_9_1_18_11_RACE",
       "TrackName": "monza",
       "TrackConfig": null,
@@ -9459,7 +9459,7 @@
     },
     {
       "Type": "RACE",
-      "Date": "2026-09-01T17:41:00-07:00",
+      "Date": "2026-09-01T17:41:00-04:00",
       "SessionFile": "2026_9_1_17_41_RACE",
       "TrackName": "rt_oulton_park",
       "TrackConfig": "international22",
@@ -12434,7 +12434,7 @@
     },
     {
       "Type": "RACE",
-      "Date": "2026-09-01T17:12:00-07:00",
+      "Date": "2026-09-01T17:12:00-04:00",
       "SessionFile": "2026_9_1_17_12_RACE",
       "TrackName": "rt_bathurst",
       "TrackConfig": null,
@@ -16753,7 +16753,7 @@
     },
     {
       "Type": "RACE",
-      "Date": "2026-09-01T16:50:00-07:00",
+      "Date": "2026-09-01T16:50:00-04:00",
       "SessionFile": "2026_9_1_16_50_RACE",
       "TrackName": "fn_lemans",
       "TrackConfig": null,
@@ -18416,7 +18416,7 @@
     },
     {
       "Type": "RACE",
-      "Date": "2026-09-01T16:35:00-07:00",
+      "Date": "2026-09-01T16:35:00-04:00",
       "SessionFile": "2026_9_1_16_35_RACE",
       "TrackName": "fn_lemans",
       "TrackConfig": null,
@@ -19937,7 +19937,7 @@
     },
     {
       "Type": "RACE",
-      "Date": "2026-09-01T15:59:00-07:00",
+      "Date": "2026-09-01T15:59:00-04:00",
       "SessionFile": "2026_9_1_15_59_RACE",
       "TrackName": "vhe_interlagos",
       "TrackConfig": "acf_gp_lfm",
@@ -22359,7 +22359,7 @@
     },
     {
       "Type": "RACE",
-      "Date": "2026-08-30T13:39:00-07:00",
+      "Date": "2026-08-30T13:39:00-04:00",
       "SessionFile": "2026_8_30_13_39_RACE",
       "TrackName": "vhe_interlagos",
       "TrackConfig": "acf_gp_lfm",
@@ -23184,7 +23184,7 @@
     },
     {
       "Type": "RACE",
-      "Date": "2026-08-30T13:12:00-07:00",
+      "Date": "2026-08-30T13:12:00-04:00",
       "SessionFile": "2026_8_30_13_12_RACE",
       "TrackName": "paul_ricard",
       "TrackConfig": "blancpain",
@@ -24731,7 +24731,7 @@
     },
     {
       "Type": "RACE",
-      "Date": "2026-08-30T12:32:00-07:00",
+      "Date": "2026-08-30T12:32:00-04:00",
       "SessionFile": "2026_8_30_12_32_RACE",
       "TrackName": "rt_oulton_park",
       "TrackConfig": "international22",
@@ -26565,7 +26565,7 @@
     },
     {
       "Type": "RACE",
-      "Date": "2026-08-30T12:09:00-07:00",
+      "Date": "2026-08-30T12:09:00-04:00",
       "SessionFile": "2026_8_30_12_9_RACE",
       "TrackName": "spa",
       "TrackConfig": null,
@@ -28224,7 +28224,7 @@
     },
     {
       "Type": "RACE",
-      "Date": "2026-08-30T11:43:00-07:00",
+      "Date": "2026-08-30T11:43:00-04:00",
       "SessionFile": "2026_8_30_11_43_RACE",
       "TrackName": "rt_bathurst",
       "TrackConfig": null,
@@ -30902,7 +30902,7 @@
     },
     {
       "Type": "RACE",
-      "Date": "2026-08-30T11:17:00-07:00",
+      "Date": "2026-08-30T11:17:00-04:00",
       "SessionFile": "2026_8_30_11_17_RACE",
       "TrackName": "rt_suzuka",
       "TrackConfig": "layout_f1_2025",
@@ -32473,7 +32473,7 @@
     },
     {
       "Type": "RACE",
-      "Date": "2026-08-30T10:41:00-07:00",
+      "Date": "2026-08-30T10:41:00-04:00",
       "SessionFile": "2026_8_30_10_41_RACE",
       "TrackName": "lilski_road_america",
       "TrackConfig": "gp_lfm",
@@ -34592,7 +34592,7 @@
     },
     {
       "Type": "RACE",
-      "Date": "2026-08-30T10:20:00-07:00",
+      "Date": "2026-08-30T10:20:00-04:00",
       "SessionFile": "2026_8_30_10_20_RACE",
       "TrackName": "lilski_watkins_glen",
       "TrackConfig": "boot",
@@ -38503,7 +38503,7 @@
     },
     {
       "Type": "RACE",
-      "Date": "2026-08-30T09:53:00-07:00",
+      "Date": "2026-08-30T09:53:00-04:00",
       "SessionFile": "2026_8_30_9_53_RACE",
       "TrackName": "rt_daytona",
       "TrackConfig": "sportscar_m4x_lfm_nodrs",
@@ -42391,7 +42391,7 @@
     },
     {
       "Type": "RACE",
-      "Date": "2026-08-30T08:10:00-07:00",
+      "Date": "2026-08-30T08:10:00-04:00",
       "SessionFile": "2026_8_30_8_10_RACE",
       "TrackName": "rt_daytona",
       "TrackConfig": "sportscar_m4x_lfm_nodrs",
@@ -42555,7 +42555,7 @@
     },
     {
       "Type": "RACE",
-      "Date": "2026-08-29T13:43:00-07:00",
+      "Date": "2026-08-29T13:43:00-04:00",
       "SessionFile": "2026_8_29_13_43_RACE",
       "TrackName": "rt_daytona",
       "TrackConfig": "sportscar_m4x_lfm_nodrs",
@@ -43620,7 +43620,7 @@
     },
     {
       "Type": "RACE",
-      "Date": "2026-08-29T13:17:00-07:00",
+      "Date": "2026-08-29T13:17:00-04:00",
       "SessionFile": "2026_8_29_13_17_RACE",
       "TrackName": "spa",
       "TrackConfig": null,
@@ -47374,7 +47374,7 @@
     },
     {
       "Type": "RACE",
-      "Date": "2026-08-29T12:43:00-07:00",
+      "Date": "2026-08-29T12:43:00-04:00",
       "SessionFile": "2026_8_29_12_43_RACE",
       "TrackName": "vir",
       "TrackConfig": "full course",
@@ -49879,7 +49879,7 @@
     },
     {
       "Type": "RACE",
-      "Date": "2026-08-29T12:03:00-07:00",
+      "Date": "2026-08-29T12:03:00-04:00",
       "SessionFile": "2026_8_29_12_3_RACE",
       "TrackName": "lilski_watkins_glen",
       "TrackConfig": "boot",
@@ -53536,7 +53536,7 @@
     },
     {
       "Type": "RACE",
-      "Date": "2026-08-29T11:31:00-07:00",
+      "Date": "2026-08-29T11:31:00-04:00",
       "SessionFile": "2026_8_29_11_31_RACE",
       "TrackName": "ks_nordschleife",
       "TrackConfig": "endurance_108_lfm",
@@ -58241,7 +58241,7 @@
     },
     {
       "Type": "RACE",
-      "Date": "2026-08-29T10:05:00-07:00",
+      "Date": "2026-08-29T10:05:00-04:00",
       "SessionFile": "2026_8_29_10_5_RACE",
       "TrackName": "lilski_road_america",
       "TrackConfig": "gp_lfm",
@@ -58931,7 +58931,7 @@
     },
     {
       "Type": "RACE",
-      "Date": "2026-08-29T08:34:00-07:00",
+      "Date": "2026-08-29T08:34:00-04:00",
       "SessionFile": "2026_8_29_8_34_RACE",
       "TrackName": "lilski_road_america",
       "TrackConfig": "gp_lfm",
@@ -59762,7 +59762,7 @@
     },
     {
       "Type": "RACE",
-      "Date": "2026-08-28T19:35:00-07:00",
+      "Date": "2026-08-28T19:35:00-04:00",
       "SessionFile": "2026_8_28_19_35_RACE",
       "TrackName": "lilski_road_america",
       "TrackConfig": "gp_lfm",
@@ -62385,7 +62385,7 @@
     },
     {
       "Type": "RACE",
-      "Date": "2026-08-28T18:56:00-07:00",
+      "Date": "2026-08-28T18:56:00-04:00",
       "SessionFile": "2026_8_28_18_56_RACE",
       "TrackName": "jr_road_atlanta_2022",
       "TrackConfig": "full",
@@ -66400,7 +66400,7 @@
     },
     {
       "Type": "RACE",
-      "Date": "2026-08-28T18:25:00-07:00",
+      "Date": "2026-08-28T18:25:00-04:00",
       "SessionFile": "2026_8_28_18_25_RACE",
       "TrackName": "rt_bathurst",
       "TrackConfig": null,
@@ -72490,7 +72490,7 @@
     },
     {
       "Type": "RACE",
-      "Date": "2026-08-28T17:47:00-07:00",
+      "Date": "2026-08-28T17:47:00-04:00",
       "SessionFile": "2026_8_28_17_47_RACE",
       "TrackName": "monza",
       "TrackConfig": null,
@@ -76288,7 +76288,7 @@
     },
     {
       "Type": "RACE",
-      "Date": "2026-08-28T17:19:00-07:00",
+      "Date": "2026-08-28T17:19:00-04:00",
       "SessionFile": "2026_8_28_17_19_RACE",
       "TrackName": "fn_imola",
       "TrackConfig": "imola_wec_2026",
@@ -78384,7 +78384,7 @@
     },
     {
       "Type": "RACE",
-      "Date": "2026-08-28T16:52:00-07:00",
+      "Date": "2026-08-28T16:52:00-04:00",
       "SessionFile": "2026_8_28_16_52_RACE",
       "TrackName": "spa",
       "TrackConfig": null,
@@ -80700,7 +80700,7 @@
     },
     {
       "Type": "RACE",
-      "Date": "2026-08-28T16:15:00-07:00",
+      "Date": "2026-08-28T16:15:00-04:00",
       "SessionFile": "2026_8_28_16_15_RACE",
       "TrackName": "okayama",
       "TrackConfig": "circuit_gp",
@@ -82251,7 +82251,7 @@
     },
     {
       "Type": "RACE",
-      "Date": "2026-08-28T15:49:00-07:00",
+      "Date": "2026-08-28T15:49:00-04:00",
       "SessionFile": "2026_8_28_15_49_RACE",
       "TrackName": "ks_red_bull_ring",
       "TrackConfig": "layout_gp",
