@@ -1,14 +1,206 @@
 {
   "ok": true,
-  "generated_at": "2026-09-06T18:14:06.338676+00:00",
+  "generated_at": "2026-09-06T20:25:05.044466+00:00",
   "window_days": 7,
-  "race_count": 15,
+  "race_count": 16,
   "identity_summary": {
     "steam_guid_captured": 27,
     "name_fallback": 1,
     "raw_steam_ids_public": false
   },
   "races": [
+    {
+      "Type": "RACE",
+      "Date": "2026-09-06T14:59:00-04:00",
+      "SessionFile": "2026_9_6_14_59_RACE",
+      "TrackName": "vhe_interlagos",
+      "TrackConfig": null,
+      "Result": [
+        {
+          "DriverId": "driver-afec56bae628254557be",
+          "IdentityType": "steam_guid",
+          "DriverName": "Shooter_Fast",
+          "BestLap": 188200,
+          "TotalTime": 740551,
+          "NumLaps": 2,
+          "GridPosition": 1,
+          "CarModel": "lmgt3_bmw_m4_gt3",
+          "Disqualified": false,
+          "HasPenalty": false
+        },
+        {
+          "DriverId": "driver-a0c21338698692de954d",
+          "IdentityType": "steam_guid",
+          "DriverName": "Peagah",
+          "BestLap": 166325,
+          "TotalTime": 688000,
+          "NumLaps": 1,
+          "GridPosition": 7,
+          "CarModel": "fsr_audi_lms_evo_ii_gt3",
+          "Disqualified": false,
+          "HasPenalty": false
+        }
+      ],
+      "Laps": [
+        {
+          "DriverId": "driver-afec56bae628254557be",
+          "IdentityType": "steam_guid",
+          "DriverName": "Shooter_Fast",
+          "LapTime": 188200,
+          "Cuts": 0,
+          "Sectors": [
+            94361,
+            55431,
+            38408
+          ],
+          "Timestamp": 1788720473,
+          "CarModel": "lmgt3_bmw_m4_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-a0c21338698692de954d",
+          "IdentityType": "steam_guid",
+          "DriverName": "Peagah",
+          "LapTime": 166325,
+          "Cuts": 0,
+          "Sectors": [
+            91040,
+            51552,
+            23733
+          ],
+          "Timestamp": 1788720973,
+          "CarModel": "fsr_audi_lms_evo_ii_gt3",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-afec56bae628254557be",
+          "IdentityType": "steam_guid",
+          "DriverName": "Shooter_Fast",
+          "LapTime": 552421,
+          "Cuts": 0,
+          "Sectors": [
+            48714,
+            53316,
+            450391
+          ],
+          "Timestamp": 1788721026,
+          "CarModel": "lmgt3_bmw_m4_gt3",
+          "Tyre": "S8M"
+        }
+      ],
+      "Events": [
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1788720371,
+          "AfterSessionEnd": false,
+          "CarId": 1,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-afec56bae628254557be",
+            "IdentityType": "steam_guid",
+            "Name": "Shooter_Fast"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -204.08133,
+            "Y": 4.3402615,
+            "Z": 393.26364
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1788720607,
+          "AfterSessionEnd": false,
+          "CarId": 1,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-afec56bae628254557be",
+            "IdentityType": "steam_guid",
+            "Name": "Shooter_Fast"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -424.2793,
+            "Y": 15.036078,
+            "Z": -334.92062
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1788720612,
+          "AfterSessionEnd": false,
+          "CarId": 1,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-afec56bae628254557be",
+            "IdentityType": "steam_guid",
+            "Name": "Shooter_Fast"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -459.49225,
+            "Y": 15.415742,
+            "Z": -289.69855
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1788721102,
+          "AfterSessionEnd": false,
+          "CarId": 6,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-a0c21338698692de954d",
+            "IdentityType": "steam_guid",
+            "Name": "Peagah"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -18.472452,
+            "Y": -12.510347,
+            "Z": -485.57452
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1788721107,
+          "AfterSessionEnd": false,
+          "CarId": 6,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-a0c21338698692de954d",
+            "IdentityType": "steam_guid",
+            "Name": "Peagah"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -13.57649,
+            "Y": -12.142943,
+            "Z": -501.44098
+          }
+        }
+      ]
+    },
     {
       "Type": "RACE",
       "Date": "2026-09-06T13:28:00-04:00",
