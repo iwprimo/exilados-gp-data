@@ -1,14 +1,157 @@
 {
   "ok": true,
-  "generated_at": "2026-09-06T22:12:12.209163+00:00",
+  "generated_at": "2026-09-07T01:21:37.597530+00:00",
   "window_days": 7,
-  "race_count": 17,
+  "race_count": 18,
   "identity_summary": {
     "steam_guid_captured": 30,
     "name_fallback": 1,
     "raw_steam_ids_public": false
   },
   "races": [
+    {
+      "Type": "RACE",
+      "Date": "2026-09-06T20:56:00-04:00",
+      "SessionFile": "2026_9_6_20_56_RACE",
+      "TrackName": "spa",
+      "TrackConfig": null,
+      "Result": [
+        {
+          "DriverId": "driver-c159bceee74ce3af6a1a",
+          "IdentityType": "steam_guid",
+          "DriverName": "jefferson azevedo",
+          "BestLap": 254791,
+          "TotalTime": 1529921,
+          "NumLaps": 2,
+          "GridPosition": 1,
+          "CarModel": "porsche_992_gt3_r",
+          "Disqualified": false,
+          "HasPenalty": false
+        }
+      ],
+      "Laps": [
+        {
+          "DriverId": "driver-c159bceee74ce3af6a1a",
+          "IdentityType": "steam_guid",
+          "DriverName": "jefferson azevedo",
+          "LapTime": 254791,
+          "Cuts": 0,
+          "Sectors": [
+            47859,
+            66343,
+            140589
+          ],
+          "Timestamp": 1788741243,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        },
+        {
+          "DriverId": "driver-c159bceee74ce3af6a1a",
+          "IdentityType": "steam_guid",
+          "DriverName": "jefferson azevedo",
+          "LapTime": 1272848,
+          "Cuts": 0,
+          "Sectors": [
+            41945,
+            974683,
+            256220
+          ],
+          "Timestamp": 1788742518,
+          "CarModel": "porsche_992_gt3_r",
+          "Tyre": "S8M"
+        }
+      ],
+      "Events": [
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1788741113,
+          "AfterSessionEnd": false,
+          "CarId": 9,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-c159bceee74ce3af6a1a",
+            "IdentityType": "steam_guid",
+            "Name": "jefferson azevedo"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -588.62885,
+            "Y": -23.079184,
+            "Z": 694.4298
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1788741293,
+          "AfterSessionEnd": false,
+          "CarId": 9,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-c159bceee74ce3af6a1a",
+            "IdentityType": "steam_guid",
+            "Name": "jefferson azevedo"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": 553.39044,
+            "Y": 72.89099,
+            "Z": 708.0503
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1788742248,
+          "AfterSessionEnd": false,
+          "CarId": 9,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-c159bceee74ce3af6a1a",
+            "IdentityType": "steam_guid",
+            "Name": "jefferson azevedo"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -358.9991,
+            "Y": -19.438864,
+            "Z": 844.0371
+          }
+        },
+        {
+          "Type": "COLLISION_WITH_ENV",
+          "Timestamp": 1788742253,
+          "AfterSessionEnd": false,
+          "CarId": 9,
+          "OtherCarId": 0,
+          "Driver": {
+            "Id": "driver-c159bceee74ce3af6a1a",
+            "IdentityType": "steam_guid",
+            "Name": "jefferson azevedo"
+          },
+          "OtherDriver": {
+            "Id": "driver-7a115c3ef9b2810403c3",
+            "IdentityType": "name_fallback",
+            "Name": ""
+          },
+          "WorldPosition": {
+            "X": -360.63193,
+            "Y": -19.463636,
+            "Z": 846.8278
+          }
+        }
+      ]
+    },
     {
       "Type": "RACE",
       "Date": "2026-09-06T16:34:00-04:00",
