@@ -460,7 +460,8 @@ def main() -> int:
     try:
         races = fetch_recent_races()
         if not races:
-            raise RuntimeError(f"Nenhuma corrida encontrada nos últimos {DAYS} dias.")
+            print(f"Nenhuma corrida oficial encontrada nos últimos {DAYS} dias. Repositório mantido sem alterações.")
+            return 0
 
         generated_at = datetime.now(timezone.utc).isoformat()
         write_identity_bundle(private_identity_payload(generated_at))
