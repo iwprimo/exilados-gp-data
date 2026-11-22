@@ -24,20 +24,25 @@ REMOTE_BASE = os.environ.get(
     "ACSM_BASE_URL", "https://usa4.assettohosting.com:50709"
 ).rstrip("/")
 DAYS = int(os.environ.get("DAYS_WINDOW", "7"))
-MAX_PAGES = 100
-MAX_RACES = 100
+MAX_PAGES = int(os.environ.get("MAX_PAGES", "100"))
+MAX_RACES = int(os.environ.get("MAX_RACES", "100"))
 OUTPUT = Path(os.environ.get("OUTPUT_FILE", "data/races.json"))
-IDENTITY_BUNDLE_OUTPUT = Path(os.environ.get("IDENTITY_BUNDLE_OUTPUT", "data/identities.enc.json"))
-USER_AGENT = "Mozilla/5.0 (compatible; ExiladosGP-GitHubSync/1.4)"
+IDENTITY_BUNDLE_OUTPUT = Path(
+    os.environ.get("IDENTITY_BUNDLE_OUTPUT", "data/identities.enc.json")
+)
+USER_AGENT = "Mozilla/5.0 (compatible; ExiladosGP-GitHubSync/1.5)"
 IDENTITY_BUNDLE_KEY = os.environ.get("IDENTITY_BUNDLE_KEY", "").strip()
-IDENTITY_BUNDLE_REQUIRED = os.environ.get("IDENTITY_BUNDLE_REQUIRED", "1").strip().lower() in {"1", "true", "yes"}
+IDENTITY_BUNDLE_REQUIRED = os.environ.get(
+    "IDENTITY_BUNDLE_REQUIRED", "1"
+).strip().lower() in {"1", "true", "yes"}
 IDENTITY_BUNDLE_AAD = b"exilados-gp-identity-bundle-v1"
+REFRESH_STALE_HOURS = int(os.environ.get("REFRESH_STALE_HOURS", "24"))
 
 IDENTITIES: dict[str, dict[str, Any]] = {}
 FALLBACK_DRIVER_IDS: set[str] = set()
 
 # A documentação do ACSM limita a API a 5 requisições em 20 segundos.
-MIN_REQUEST_INTERVAL = 4.2
+MIN_REQUEST_INTERVAL = float(os.environ.get("MIN_REQUEST_INTERVAL", "4.2"))
 _last_request_at = 0.0
 
 
@@ -53,6 +58,8 @@ def parse_date(value: str) -> datetime | None:
 
 def throttle() -> None:
     global _last_request_at
+    if MIN_REQUEST_INTERVAL <= 0:
+        return
     elapsed = time.monotonic() - _last_request_at
     if elapsed < MIN_REQUEST_INTERVAL:
         time.sleep(MIN_REQUEST_INTERVAL - elapsed)
@@ -62,6 +69,13 @@ def throttle() -> None:
 def response_preview(text: str, limit: int = 180) -> str:
     compact = re.sub(r"\s+", " ", text).strip()
     return compact[:limit] or "resposta vazia"
+
+
+def atomic_write_text(path: Path, content: str, encoding: str = "utf-8") -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp_path = path.with_suffix(f".tmp.{os.getpid()}.{time.time_ns()}")
+    tmp_path.write_text(content, encoding=encoding)
+    tmp_path.replace(path)
 
 
 def get_json(url: str, timeout: int = 45, attempts: int = 3) -> dict[str, Any]:
@@ -116,21 +130,30 @@ def get_json(url: str, timeout: int = 45, attempts: int = 3) -> dict[str, Any]:
             return payload
 
         except urllib.error.HTTPError as exc:
+            if exc.code in {401, 403}:
+                raise RuntimeError(
+                    f"HTTP {exc.code} (Autenticação/Permissão recusada) em {url}"
+                ) from exc
             if exc.code == 429 and attempt < attempts:
                 retry_after = exc.headers.get("Retry-After")
                 try:
-                    wait = max(20, int(retry_after or 20))
+                    wait = max(5, min(120, int(retry_after or 20)))
                 except ValueError:
                     wait = 20
-                print(f"Limite da API atingido; aguardando {wait}s...", file=sys.stderr)
+                print(f"Limite da API atingido (HTTP 429); aguardando {wait}s...", file=sys.stderr)
+                time.sleep(wait)
+                continue
+            if exc.code >= 500 and attempt < attempts:
+                wait = (2 ** attempt) + 1
+                print(f"Erro {exc.code} no servidor; retentando em {wait}s...", file=sys.stderr)
                 time.sleep(wait)
                 continue
             raise RuntimeError(f"HTTP {exc.code} em {url}") from exc
         except (urllib.error.URLError, TimeoutError) as exc:
             if attempt < attempts:
-                wait = 5 * attempt
+                wait = (2 ** attempt) * 2
                 print(
-                    f"Tentativa {attempt}/{attempts} falhou; aguardando {wait}s...",
+                    f"Tentativa {attempt}/{attempts} falhou ({exc}); aguardando {wait}s...",
                     file=sys.stderr,
                 )
                 time.sleep(wait)
@@ -315,7 +338,9 @@ def private_identity_payload(generated_at: str) -> dict[str, Any]:
     drivers = []
     for driver_id in sorted(IDENTITIES):
         record = dict(IDENTITIES[driver_id])
-        record["aliases"] = sorted(set(str(alias) for alias in record.get("aliases", []) if str(alias).strip()))
+        record["aliases"] = sorted(
+            set(str(alias) for alias in record.get("aliases", []) if str(alias).strip())
+        )
         drivers.append(record)
     return {
         "ok": True,
@@ -328,12 +353,16 @@ def private_identity_payload(generated_at: str) -> dict[str, Any]:
 def identity_content_without_timestamp(payload: dict[str, Any]) -> str:
     comparable = dict(payload)
     comparable.pop("generated_at", None)
-    return json.dumps(comparable, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+    return json.dumps(
+        comparable, ensure_ascii=False, sort_keys=True, separators=(",", ":")
+    )
 
 
 def identity_bundle_key_bytes() -> bytes:
     if not IDENTITY_BUNDLE_KEY:
-        raise RuntimeError("Configure o secret IDENTITY_INGEST_KEY usado como chave do bundle privado.")
+        raise RuntimeError(
+            "Configure o secret IDENTITY_INGEST_KEY usado como chave do bundle privado."
+        )
     return hashlib.sha256(IDENTITY_BUNDLE_KEY.encode("utf-8")).digest()
 
 
@@ -345,7 +374,9 @@ def decrypt_identity_bundle(path: Path) -> dict[str, Any] | None:
         if not isinstance(bundle, dict) or int(bundle.get("version") or 0) != 1:
             return None
         nonce = base64.b64decode(str(bundle.get("nonce") or ""), validate=True)
-        ciphertext = base64.b64decode(str(bundle.get("ciphertext") or ""), validate=True)
+        ciphertext = base64.b64decode(
+            str(bundle.get("ciphertext") or ""), validate=True
+        )
         tag = base64.b64decode(str(bundle.get("tag") or ""), validate=True)
         plaintext = AESGCM(identity_bundle_key_bytes()).decrypt(
             nonce, ciphertext + tag, IDENTITY_BUNDLE_AAD
@@ -354,6 +385,22 @@ def decrypt_identity_bundle(path: Path) -> dict[str, Any] | None:
         return payload if isinstance(payload, dict) else None
     except Exception:
         return None
+
+
+def load_existing_identities() -> None:
+    """Preserva identidades conhecidas carregando o bundle anterior se existente."""
+    if not IDENTITY_BUNDLE_KEY or not IDENTITY_BUNDLE_OUTPUT.exists():
+        return
+    try:
+        previous = decrypt_identity_bundle(IDENTITY_BUNDLE_OUTPUT)
+        if isinstance(previous, dict) and isinstance(previous.get("drivers"), list):
+            for record in previous["drivers"]:
+                driver_id = record.get("driver_id")
+                if driver_id and isinstance(record, dict):
+                    IDENTITIES[driver_id] = record
+            print(f"Identidades prévias carregadas: {len(IDENTITIES)}")
+    except Exception as exc:
+        print(f"Aviso ao carregar bundle prévio: {exc}", file=sys.stderr)
 
 
 def write_identity_bundle(payload: dict[str, Any]) -> bool:
@@ -365,13 +412,21 @@ def write_identity_bundle(payload: dict[str, Any]) -> bool:
         return False
 
     previous = decrypt_identity_bundle(IDENTITY_BUNDLE_OUTPUT)
-    if previous is not None and identity_content_without_timestamp(previous) == identity_content_without_timestamp(payload):
+    if (
+        previous is not None
+        and identity_content_without_timestamp(previous)
+        == identity_content_without_timestamp(payload)
+    ):
         print("Nenhuma mudança nas identidades capturadas.")
         return False
 
-    plaintext = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
+    plaintext = json.dumps(
+        payload, ensure_ascii=False, separators=(",", ":")
+    ).encode("utf-8")
     nonce = os.urandom(12)
-    sealed = AESGCM(identity_bundle_key_bytes()).encrypt(nonce, plaintext, IDENTITY_BUNDLE_AAD)
+    sealed = AESGCM(identity_bundle_key_bytes()).encrypt(
+        nonce, plaintext, IDENTITY_BUNDLE_AAD
+    )
     ciphertext, tag = sealed[:-16], sealed[-16:]
     bundle = {
         "ok": True,
@@ -384,9 +439,10 @@ def write_identity_bundle(payload: dict[str, Any]) -> bool:
         "ciphertext": base64.b64encode(ciphertext).decode("ascii"),
         "tag": base64.b64encode(tag).decode("ascii"),
     }
-    IDENTITY_BUNDLE_OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-    IDENTITY_BUNDLE_OUTPUT.write_text(
-        json.dumps(bundle, ensure_ascii=False, indent=2), encoding="utf-8"
+    atomic_write_text(
+        IDENTITY_BUNDLE_OUTPUT,
+        json.dumps(bundle, ensure_ascii=False, indent=2),
+        encoding="utf-8",
     )
     print(
         f"Bundle privado atualizado: {IDENTITY_BUNDLE_OUTPUT} "
@@ -453,21 +509,38 @@ def fetch_recent_races() -> list[dict[str, Any]]:
 def content_without_timestamp(payload: dict[str, Any]) -> str:
     comparable = dict(payload)
     comparable.pop("generated_at", None)
-    return json.dumps(comparable, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+    return json.dumps(
+        comparable, ensure_ascii=False, sort_keys=True, separators=(",", ":")
+    )
+
+
+def should_update_output(old: dict[str, Any], new: dict[str, Any]) -> bool:
+    """Verifica se deve atualizar o arquivo.
+    Atualiza se os dados mudaram OU se passaram mais de REFRESH_STALE_HOURS desde o último commit.
+    Isso mantém a documentação recente e impede o bloqueio de 60 dias do GitHub Actions por inatividade.
+    """
+    if content_without_timestamp(old) != content_without_timestamp(new):
+        return True
+    old_generated = parse_date(str(old.get("generated_at") or ""))
+    if old_generated is None:
+        return True
+    age = datetime.now(timezone.utc) - old_generated
+    return age >= timedelta(hours=REFRESH_STALE_HOURS)
 
 
 def main() -> int:
     try:
+        load_existing_identities()
         races = fetch_recent_races()
-        if not races:
-            print(f"Nenhuma corrida oficial encontrada nos últimos {DAYS} dias. Repositório mantido sem alterações.")
-            return 0
-
         generated_at = datetime.now(timezone.utc).isoformat()
+
+        # Atualiza bundle de identidades se configurado
         write_identity_bundle(private_identity_payload(generated_at))
 
+        status = "online" if races else "empty_window"
         payload = {
             "ok": True,
+            "status": status,
             "generated_at": generated_at,
             "window_days": DAYS,
             "race_count": len(races),
@@ -482,17 +555,18 @@ def main() -> int:
         if OUTPUT.exists():
             try:
                 old = json.loads(OUTPUT.read_text(encoding="utf-8"))
-                if isinstance(old, dict) and content_without_timestamp(old) == content_without_timestamp(payload):
-                    print("Nenhuma mudança nos resultados.")
+                if isinstance(old, dict) and not should_update_output(old, payload):
+                    print("Nenhuma mudança relevante nos resultados nem necessidade de keepalive.")
                     return 0
             except (OSError, json.JSONDecodeError):
                 pass
 
-        OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-        OUTPUT.write_text(
-            json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8"
+        atomic_write_text(
+            OUTPUT,
+            json.dumps(payload, ensure_ascii=False, indent=2),
+            encoding="utf-8",
         )
-        print(f"Arquivo atualizado: {OUTPUT} ({len(races)} corridas)")
+        print(f"Arquivo atualizado: {OUTPUT} ({len(races)} corridas, status: {status})")
         return 0
     except (RuntimeError, ValueError) as error:
         print(f"Erro: {error}", file=sys.stderr)
