@@ -112,7 +112,9 @@
       background: rgba(255,255,255,.025);
     }
     .status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--green); box-shadow: 0 0 14px var(--green); }
-    .status-pill.offline .status-dot { background: var(--orange); box-shadow: 0 0 14px var(--orange); }
+    .status-pill.offline .status-dot { background: var(--red); box-shadow: 0 0 14px var(--red); }
+    .status-pill.warning .status-dot { background: var(--yellow); box-shadow: 0 0 14px var(--yellow); }
+    .status-pill.info .status-dot { background: var(--blue); box-shadow: 0 0 14px var(--blue); }
 
     .hero { padding: 72px 0 36px; position: relative; }
     .hero::after {
@@ -475,7 +477,7 @@ const INITIAL_SR = 500;
 const CAR_COLLISION_PENALTY = 2;
 const ENV_COLLISION_PENALTY = 1;
 const DAYS_WINDOW = 7;
-const DATA_ENDPOINT = "https://raw.githubusercontent.com/SEU_USUARIO/exilados-gp-data/main/data/races.json";
+const DATA_ENDPOINT = "https://raw.githubusercontent.com/iwprimo/exilados-gp-data/main/data/races.json";
 const REFRESH_INTERVAL_MS = 5 * 60 * 1000;
 const STORAGE_KEY = "exilados-gp-races-v5";
 const state = { races: [], activeRace: 0, demo: false };
@@ -509,8 +511,29 @@ function formatTime(ms) {
   const base = `${String(minutes).padStart(hours ? 2 : 1, "0")}:${String(seconds).padStart(2, "0")}.${String(millis).padStart(3, "0")}`;
   return hours ? `${hours}:${base}` : base;
 }
-function formatDate(iso) { if (!iso) return "Data não informada"; return new Intl.DateTimeFormat("pt-BR", {day:"2-digit",month:"short",year:"numeric",hour:"2-digit",minute:"2-digit"}).format(new Date(iso)); }
-function formatShortDate(date) { return new Intl.DateTimeFormat("pt-BR", {day:"2-digit",month:"short"}).format(date); }
+
+function formatBrasilia(iso, withYear = false) {
+  if (!iso) return "Data não informada";
+  const d = new Date(iso);
+  if (!Number.isFinite(d.getTime())) return "Data inválida";
+  return new Intl.DateTimeFormat("pt-BR", {
+    timeZone: "America/Sao_Paulo",
+    day: "2-digit",
+    month: "short",
+    year: withYear ? "numeric" : undefined,
+    hour: "2-digit",
+    minute: "2-digit"
+  }).format(d);
+}
+
+function formatDate(iso) { return formatBrasilia(iso, true); }
+function formatShortDate(date) {
+  if (!date) return "—";
+  const d = new Date(date);
+  if (!Number.isFinite(d.getTime())) return "—";
+  return new Intl.DateTimeFormat("pt-BR", { timeZone: "America/Sao_Paulo", day: "2-digit", month: "short" }).format(d);
+}
+
 function humanizeTrack(value = "") {
   const aliases={"rt_bannochbrae":"Bannochbrae","vir":"Virginia International Raceway","vhe_interlagos":"Interlagos","vhe_velopark":"Velopark","rt_bathurst":"Mount Panorama","spa":"Spa-Francorchamps","ks_nordschleife":"Nordschleife","lilski_watkins_glen":"Watkins Glen","rt_misano":"Misano","fn_imola":"Imola"};
   return aliases[value] || value.replace(/^(ks|rt|vhe|fn|lilski)_/,"").replaceAll("_"," ").replace(/\b\w/g,c=>c.toUpperCase());
@@ -557,7 +580,6 @@ function normalizeRaceJson(raw, filename = "resultado.json") {
 function buildOverallRanking(races) {
   const drivers=new Map();
   for (const race of races) for (const [index,result] of race.results.entries()) {
-    // The normalized visible name is deliberate: identical names never appear in separate rows.
     const key=normalizeName(result.driverName) || result.driverId;
     if (!drivers.has(key)) drivers.set(key,{driverName:result.driverName,nameCounts:new Map(),points:0,starts:0,wins:0,podiums:0,bestFinish:Infinity,finishes:[],carCollisions:0,envCollisions:0});
     const driver=drivers.get(key), count=driver.nameCounts.get(result.driverName)||0;
@@ -568,54 +590,106 @@ function buildOverallRanking(races) {
 }
 
 function renderPodium(ranking) {
+  if (!ranking || !ranking.length) {
+    el("podiumGrid").innerHTML = '<article class="podium-card" style="grid-column: 1 / -1; text-align: center; padding: 2.5rem 1.5rem;"><div class="podium-name" style="font-size: 1.15rem; margin-bottom: 0.5rem;">Nenhum piloto pontuou nos últimos 7 dias</div><div class="podium-place">Aguardando a realização das próximas corridas oficiais</div></article>';
+    return;
+  }
   const labels=["Líder","Vice-líder","Terceiro lugar"];
   el("podiumGrid").innerHTML=ranking.slice(0,3).map((driver,i)=>`<article class="podium-card" data-place="${i+1}"><div class="podium-place">${labels[i]}</div><div class="podium-name">${escapeHtml(driver.driverName)}</div><div class="podium-stats"><div><span>Pontos</span><strong>${driver.points}</strong></div><div><span>Vitórias</span><strong>${driver.wins}</strong></div><div><span>Safety Rating</span><strong>${driver.safetyRating}</strong></div></div></article>`).join("");
 }
+
 function renderOverallTable(ranking) {
+  if (!ranking || !ranking.length) {
+    el("overallTable").innerHTML = '<tr><td colspan="8" style="text-align: center; padding: 2.5rem; color: var(--muted);">Nenhuma corrida oficial classificada nos últimos 7 dias.</td></tr>';
+    return;
+  }
   el("overallTable").innerHTML=ranking.map((driver,index)=>`<tr><td class="position">${String(index+1).padStart(2,"0")}</td><td class="driver-cell"><strong>${escapeHtml(driver.driverName)}</strong><small>${driver.finishes.map(p=>`P${p}`).join(" · ")}</small></td><td>${driver.starts}</td><td>${driver.wins}</td><td>${driver.podiums}</td><td>P${driver.bestFinish}</td><td><span class="sr-badge ${srClass(driver.safetyRating)}">${driver.safetyRating}</span></td><td class="points">${driver.points}</td></tr>`).join("");
 }
+
 function renderSafetyTable(ranking) {
+  if (!ranking || !ranking.length) {
+    el("safetyTable").innerHTML = '<tr><td colspan="6" style="text-align: center; padding: 2.5rem; color: var(--muted);">Sem incidentes contabilizados no período.</td></tr>';
+    return;
+  }
   const safety=[...ranking].sort((a,b)=>b.safetyRating-a.safetyRating||a.carCollisions-b.carCollisions||a.envCollisions-b.envCollisions||a.driverName.localeCompare(b.driverName));
   el("safetyTable").innerHTML=safety.map((driver,index)=>`<tr><td class="position">${String(index+1).padStart(2,"0")}</td><td class="driver-cell"><strong>${escapeHtml(driver.driverName)}</strong><small>${driver.starts} corrida${driver.starts!==1?"s":""} no período</small></td><td><span class="sr-badge ${srClass(driver.safetyRating)}">${driver.safetyRating}</span></td><td>${driver.carCollisions}</td><td>${driver.envCollisions}</td><td class="delta-negative">-${driver.srLoss}</td></tr>`).join("");
 }
+
 function renderInsights(races,ranking) {
+  if (!races.length || !ranking.length) {
+    el("insights").innerHTML = `<div class="insight"><span>Maior pontuador</span><strong>—</strong><small>Sem corridas nos últimos 7 dias.</small></div><div class="insight"><span>Melhor Safety Rating</span><strong>—</strong><small>Sem incidentes registrados.</small></div><div class="insight"><span>Volta mais rápida</span><strong>—</strong><small>Sem volta registrada.</small></div><div class="insight"><span>Maior recuperação</span><strong>—</strong><small>Grid indisponível.</small></div><div class="insight"><span>Voltas contabilizadas</span><strong>0</strong><small>Nenhuma volta registrada no período.</small></div>`;
+    return;
+  }
   const all=races.flatMap(r=>r.results.map((x,i)=>({...x,finish:i+1,race:r}))), fastest=all.filter(x=>x.bestLap>0).sort((a,b)=>a.bestLap-b.bestLap)[0], mover=all.filter(x=>Number.isFinite(x.gridPosition)).sort((a,b)=>(b.gridPosition-b.finish)-(a.gridPosition-a.finish))[0], totalLaps=all.reduce((s,x)=>s+(x.numLaps||0),0), safest=[...ranking].sort((a,b)=>b.safetyRating-a.safetyRating||a.carCollisions-b.carCollisions)[0];
   el("insights").innerHTML=`<div class="insight"><span>Maior pontuador</span><strong>${escapeHtml(ranking[0]?.driverName||"—")}</strong><small>${ranking[0]?.points||0} pontos nos últimos 7 dias.</small></div><div class="insight"><span>Melhor Safety Rating</span><strong>${safest?.safetyRating??"—"} SR</strong><small>${safest?escapeHtml(safest.driverName):"Sem dados de incidentes."}</small></div><div class="insight"><span>Volta mais rápida</span><strong>${fastest?formatTime(fastest.bestLap):"—"}</strong><small>${fastest?`${escapeHtml(fastest.driverName)} · ${escapeHtml(humanizeTrack(fastest.race.track))}`:"Sem volta registrada."}</small></div><div class="insight"><span>Maior recuperação</span><strong>${mover?`+${Math.max(0,mover.gridPosition-mover.finish)} posições`:"—"}</strong><small>${mover?`${escapeHtml(mover.driverName)} · ${escapeHtml(humanizeTrack(mover.race.track))}`:"Grid indisponível."}</small></div><div class="insight"><span>Voltas contabilizadas</span><strong>${totalLaps}</strong><small>Soma das voltas dos classificados no período.</small></div>`;
 }
+
 function renderTabs() {
+  if (!state.races.length) {
+    el("raceTabs").innerHTML = '<div style="padding: 0.75rem 1rem; color: var(--muted); font-size: 0.9rem;">Nenhuma sessão de corrida oficial nos últimos 7 dias</div>';
+    return;
+  }
   el("raceTabs").innerHTML=state.races.map((race,index)=>`<button class="race-tab ${index===state.activeRace?"active":""}" data-index="${index}" role="tab" aria-selected="${index===state.activeRace}"><small>${formatShortDate(new Date(race.date))}</small><strong>${escapeHtml(humanizeTrack(race.track))}</strong></button>`).join("");
   el("raceTabs").querySelectorAll("button").forEach(button=>button.addEventListener("click",()=>{state.activeRace=Number(button.dataset.index);renderTabs();renderRaceDetail();}));
 }
+
 function gapLabel(result,leader) { if(!leader||result.position===1)return"Vencedor"; const lapDiff=(leader.numLaps||0)-(result.numLaps||0); if(lapDiff>0)return`+${lapDiff} volta${lapDiff>1?"s":""}`; const gap=(result.totalTime||0)-(leader.totalTime||0); return gap>0?`+${formatTime(gap)}`:"—"; }
+
 function renderRaceDetail() {
-  const race=state.races[state.activeRace]; if(!race){el("raceDetail").innerHTML='<div class="panel"><div class="loading">Nenhuma corrida encontrada no período.</div></div>';return;}
+  const race=state.races[state.activeRace];
+  if(!race){
+    el("raceDetail").innerHTML='<div class="panel"><div class="loading">Nenhuma corrida encontrada na janela móvel de 7 dias.</div></div>';
+    return;
+  }
   const winner=race.results[0],fastest=[...race.results].filter(r=>r.bestLap>0).sort((a,b)=>a.bestLap-b.bestLap)[0];
   el("raceDetail").innerHTML=`<div class="race-hero"><article class="race-summary"><div class="race-index">Resultado oficial</div><div class="race-title">${escapeHtml(humanizeTrack(race.track))}</div><div class="race-detail-row"><div><span>Layout</span><strong>${escapeHtml(race.trackLayout||"Padrão")}</strong></div><div><span>Data</span><strong>${escapeHtml(formatDate(race.date))}</strong></div><div><span>Carro</span><strong>${escapeHtml(humanizeCar(race.carModel))}</strong></div><div><span>Classificados</span><strong>${race.results.length}</strong></div></div></article><article class="winner-card"><div class="label">Vencedor da prova</div><div class="winner-name">${escapeHtml(winner?.driverName||"—")}</div><div class="winner-stats"><div class="winner-stat"><span>Tempo total</span><strong>${formatTime(winner?.totalTime)}</strong></div><div class="winner-stat"><span>Melhor volta</span><strong>${formatTime(winner?.bestLap)}</strong></div><div class="winner-stat"><span>Voltas</span><strong>${winner?.numLaps??"—"}</strong></div><div class="winner-stat"><span>Fastest lap</span><strong>${escapeHtml(fastest?.driverName||"—")}</strong></div></div></article></div><div class="panel"><div class="panel-head"><div><div class="panel-title">Resultado da corrida</div><div class="panel-subtitle">Incidentes contam apenas durante a sessão</div></div></div><div class="table-wrap"><table><thead><tr><th>Pos.</th><th>Piloto</th><th>Grid</th><th>Ganho</th><th>Voltas</th><th>Melhor volta</th><th>Colisões</th><th>SR prova</th><th>Diferença</th></tr></thead><tbody>${race.results.map((result,index)=>{const gain=Number.isFinite(result.gridPosition)?result.gridPosition-(index+1):null,gainClass=gain>0?"delta-positive":gain<0?"delta-negative":"delta-neutral",loss=CAR_COLLISION_PENALTY*(result.collisionsCar||0)+ENV_COLLISION_PENALTY*(result.collisionsEnv||0);return`<tr><td class="position">${String(index+1).padStart(2,"0")}</td><td class="driver-cell"><strong>${escapeHtml(result.driverName)}</strong><small>${escapeHtml(humanizeCar(result.carModel||race.carModel))}</small></td><td>${Number.isFinite(result.gridPosition)?`P${result.gridPosition}`:"—"}</td><td class="${gainClass}">${gain===null?"—":gain>0?`+${gain}`:String(gain)}</td><td>${result.numLaps??"—"}</td><td>${formatTime(result.bestLap)}</td><td><div class="collision-pair"><span class="collision-chip">carro ${result.collisionsCar||0}</span><span class="collision-chip">amb. ${result.collisionsEnv||0}</span></div></td><td class="${loss?"delta-negative":"delta-positive"}">${loss?`-${loss}`:"0"}</td><td>${gapLabel({...result,position:index+1},winner)}</td></tr>`;}).join("")}</tbody></table></div></div>`;
 }
+
 function render(data) {
-  state.races=data.races||[]; state.activeRace=Math.min(state.activeRace,Math.max(0,state.races.length-1));
-  const ranking=buildOverallRanking(state.races); el("raceCount").textContent=String(state.races.length).padStart(2,"0"); el("driverCount").textContent=String(ranking.length).padStart(2,"0");
-  const end=new Date(),start=cutoffDate(); el("periodLabel").textContent=`${formatShortDate(start)}–${formatShortDate(end)}`;
-  renderPodium(ranking); renderOverallTable(ranking); renderSafetyTable(ranking); renderInsights(state.races,ranking); renderTabs(); renderRaceDetail();
+  state.races=data.races||[];
+  state.activeRace=Math.min(state.activeRace,Math.max(0,state.races.length-1));
+  const ranking=buildOverallRanking(state.races);
+  el("raceCount").textContent=String(state.races.length).padStart(2,"0");
+  el("driverCount").textContent=String(ranking.length).padStart(2,"0");
+  const end=new Date(),start=cutoffDate();
+  el("periodLabel").textContent=`${formatShortDate(start)}–${formatShortDate(end)}`;
+  renderPodium(ranking);
+  renderOverallTable(ranking);
+  renderSafetyTable(ranking);
+  renderInsights(state.races,ranking);
+  renderTabs();
+  renderRaceDetail();
 }
+
 function showSyncFeedback(message, isError = false, autoHide = false) {
   const feedback = el("syncFeedback");
   feedback.textContent = message;
   feedback.classList.add("visible");
   feedback.classList.toggle("error", isError);
-  if (autoHide) window.setTimeout(() => feedback.classList.remove("visible"), 4200);
+  if (autoHide) window.setTimeout(() => feedback.classList.remove("visible"), 5000);
 }
+
 function hideSyncFeedback() { el("syncFeedback").classList.remove("visible"); }
+
 function setStatus(label, mode = "offline", updatedAt = null) {
   const status = el("apiStatus");
-  status.classList.toggle("offline", mode === "offline");
-  status.classList.toggle("loading", mode === "loading");
+  status.classList.remove("offline", "loading", "warning", "info");
+  if (mode === "offline") status.classList.add("offline");
+  else if (mode === "loading") status.classList.add("loading");
+  else if (mode === "warning") status.classList.add("warning");
+  else if (mode === "info") status.classList.add("info");
   status.querySelector("span:last-child").textContent = label;
-  const stamp = updatedAt ? new Date(updatedAt) : new Date();
-  el("updatedAt").textContent = Number.isFinite(stamp.getTime())
-    ? `Atualizado ${new Intl.DateTimeFormat("pt-BR", {day:"2-digit", month:"2-digit", hour:"2-digit", minute:"2-digit"}).format(stamp)}`
-    : "Atualização automática";
+
+  if (updatedAt) {
+    const stamp = new Date(updatedAt);
+    if (Number.isFinite(stamp.getTime())) {
+      el("updatedAt").textContent = `Coleta: ${formatBrasilia(updatedAt, false)} (Brasília)`;
+      return;
+    }
+  }
+  el("updatedAt").textContent = "Horário de sincronização não disponível";
 }
+
 function persistRaces(races) { localStorage.setItem(STORAGE_KEY, JSON.stringify(races)); }
 function loadPersistedRaces() {
   try {
@@ -641,10 +715,12 @@ async function fetchJson(url, timeout = 90000) {
 
 async function fetchApiResults({silent = false} = {}) {
   setStatus("Atualizando", "loading");
-  if (!silent) showSyncFeedback("Carregando automaticamente as corridas dos últimos 7 dias...");
+  if (!silent) showSyncFeedback("Consultando atualizações dos rankings...");
   try {
     const payload = await fetchJson(`${DATA_ENDPOINT}?_=${Date.now()}`);
-    if (!payload?.ok || !Array.isArray(payload.races)) throw new Error(payload?.error || "Resposta inválida do servidor.");
+    if (!payload?.ok || !Array.isArray(payload.races)) {
+      throw new Error(payload?.error || "Resposta do servidor não possui o formato esperado.");
+    }
 
     const normalized = [];
     const failures = [];
@@ -655,26 +731,51 @@ async function fetchApiResults({silent = false} = {}) {
 
     const recent = [...new Map(filterLast7Days(normalized).map(race => [race.sessionFile, race])).values()]
       .sort((a,b) => new Date(b.date) - new Date(a.date));
-    if (!recent.length) throw new Error("Nenhuma corrida válida foi encontrada nos últimos 7 dias.");
 
-    persistRaces(recent);
-    state.activeRace = 0;
-    render({races: recent, demo: false});
-    setStatus("Dados sincronizados", "online", payload.generated_at);
-    const suffix = failures.length ? ` ${failures.length} arquivo(s) inválido(s) foram ignorados.` : "";
-    showSyncFeedback(`${recent.length} corrida${recent.length !== 1 ? "s" : ""} carregada${recent.length !== 1 ? "s" : ""}. Ranking e Safety Rating atualizados.${suffix}`, false, true);
+    const generatedAt = payload.generated_at || null;
+    const genDate = generatedAt ? new Date(generatedAt) : null;
+    const now = Date.now();
+    // Considera desatualizado se a última coleta ocorreu há mais de 2 horas (120 min)
+    const isStale = genDate && Number.isFinite(genDate.getTime()) && (now - genDate.getTime()) > (120 * 60 * 1000);
+
+    if (recent.length > 0) {
+      persistRaces(recent);
+      state.activeRace = 0;
+      render({races: recent, demo: false});
+
+      if (isStale) {
+        setStatus("Dados desatualizados", "warning", generatedAt);
+        showSyncFeedback(`Exibindo dados da coleta de ${formatBrasilia(generatedAt)} (Brasília). Próxima atualização automática em breve.`, true);
+      } else {
+        setStatus("Dados sincronizados", "online", generatedAt);
+        const suffix = failures.length ? ` (${failures.length} arquivo(s) inválido(s) ignorados).` : "";
+        showSyncFeedback(`${recent.length} corrida${recent.length !== 1 ? "s" : ""} recente${recent.length !== 1 ? "s" : ""} carregada${recent.length !== 1 ? "s" : ""}. Rankings e Safety Rating atualizados.${suffix}`, false, true);
+      }
+    } else {
+      // Coleta bem-sucedida, mas sem corridas nos últimos 7 dias
+      state.activeRace = 0;
+      render({races: [], demo: false});
+
+      if (isStale) {
+        setStatus("Dados desatualizados", "warning", generatedAt);
+        showSyncFeedback(`Última coleta em ${formatBrasilia(generatedAt)} (Brasília). Nenhuma corrida oficial nos últimos 7 dias.`, true);
+      } else {
+        setStatus("Sem corridas recentes", "info", generatedAt);
+        showSyncFeedback("Sincronização confirmada com sucesso. Nenhuma corrida oficial foi realizada na janela dos últimos 7 dias.", false, true);
+      }
+    }
   } catch (error) {
     console.error(error);
     const cached = loadPersistedRaces();
     if (cached?.length) {
       state.activeRace = 0;
       render({races: cached, demo: false});
-      setStatus("Último cache", "offline");
-      showSyncFeedback(`A sincronização externa falhou (${error.message}). Exibindo os últimos dados salvos neste navegador.`, true);
+      setStatus("Últimos dados salvos", "warning");
+      showSyncFeedback(`A sincronização externa falhou (${error.message}). Exibindo os últimos dados válidos salvos no navegador.`, true);
     } else {
       render({races: [], demo: false});
-      setStatus("API indisponível", "offline");
-      showSyncFeedback(`Não foi possível carregar os resultados: ${error.message}. Verifique a URL DATA_ENDPOINT configurada no código e a execução do sincronizador no GitHub Actions.`, true);
+      setStatus("Sincronização indisponível", "offline");
+      showSyncFeedback(`Não foi possível sincronizar os resultados: ${error.message}.`, true);
     }
   }
 }
